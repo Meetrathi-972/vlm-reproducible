@@ -1,0 +1,134 @@
+{
+  "objects": [
+    {
+      "label": "bed",
+      "object_type": "bulk",
+      "anchor": null,
+      "bbox": [
+        -1.2,
+        3.5,
+        2.4,
+        1.8
+      ],
+      "position": [
+        0.0,
+        4.4
+      ],
+      "rotation_angle": 0.0,
+      "description": "A bed positioned against the back wall, centered in the room.",
+      "concise_description": "A standard double bed with a headboard."
+    },
+    {
+      "label": "cabinet",
+      "object_type": "bulk",
+      "anchor": "bed",
+      "bbox": [
+        -2.2,
+        3.8,
+        0.8,
+        1.2
+      ],
+      "position": [
+        -1.8,
+        4.4
+      ],
+      "rotation_angle": 0.0,
+      "description": "A cabinet to the left of the bed, aligned with the head.",
+      "concise_description": "A wooden nightstand cabinet with drawers."
+    },
+    {
+      "label": "cabinet",
+      "object_type": "bulk",
+      "anchor": "bed",
+      "bbox": [
+        1.4,
+        3.8,
+        0.8,
+        1.2
+      ],
+      "position": [
+        1.8,
+        4.4
+      ],
+      "rotation_angle": 0.0,
+      "description": "A cabinet to the right of the bed, aligned with the head.",
+      "concise_description": "A wooden nightstand cabinet with drawers."
+    },
+    {
+      "label": "desk",
+      "object_type": "bulk",
+      "anchor": null,
+      "bbox": [
+        1.5,
+        0.5,
+        1.2,
+        1.5
+      ],
+      "position": [
+        2.1,
+        1.25
+      ],
+      "rotation_angle": 90.0,
+      "description": "A desk against the right wall, positioned to utilize natural light.",
+      "concise_description": "A modern writing desk with a flat surface."
+    },
+    {
+      "label": "chair",
+      "object_type": "bulk",
+      "anchor": "desk",
+      "bbox": [
+        1.2,
+        0.0,
+        0.6,
+        0.8
+      ],
+      "position": [
+        1.5,
+        0.4
+      ],
+      "rotation_angle": 90.0,
+      "description": "A chair in front of the desk.",
+      "concise_description": "An ergonomic office chair."
+    },
+    {
+      "label": "shelf",
+      "object_type": "bulk",
+      "anchor": "desk",
+      "bbox": [
+        1.5,
+        2.0,
+        1.2,
+        0.3
+      ],
+      "position": [
+        2.1,
+        2.15
+      ],
+      "rotation_angle": 90.0,
+      "description": "A shelf above the desk.",
+      "concise_description": "A wall-mounted floating shelf."
+    },
+    {
+      "label": "ego_person",
+      "object_type": "bulk",
+      "anchor": null,
+      "label_index": "ego_person",
+      "position": [
+        0,
+        0
+      ],
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "description": "Ego agent position",
+      "rotation_angle": 0.0
+    }
+  ],
+  "Environmental_note": "Instruction: This is a bright indoor bedroom.",
+  "scene_description": "A bright indoor bedroom filled with natural light.",
+  "Environment Name": "Bedroom",
+  "Scene Area": "indoor"
+}

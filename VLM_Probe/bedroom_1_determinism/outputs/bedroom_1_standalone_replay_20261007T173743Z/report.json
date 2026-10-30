@@ -1,0 +1,38 @@
+{
+  "status": "blocked_or_failed",
+  "benchmark": "bedroom_1",
+  "stage": "placement",
+  "requested_replays": 10,
+  "completed_replays": 0,
+  "api_attempts": 1,
+  "retries": 0,
+  "api_calls_other_stages": 0,
+  "request_sha256": "54e05c6da96221ce40da36a3aada987cd26d88d542a630471b94329792133115",
+  "generation_parameters": {
+    "model": "Qwen/Qwen3.5-27B:deepinfra",
+    "seed": 1234,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "max_tokens": 8192,
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "stop": [],
+    "reasoning_effort": "none",
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "n": 1
+  },
+  "runs": [],
+  "comparison": "Complete content UTF-8 bytes: no trimming, normalization, or reasoning removal; IDs/usage excluded",
+  "do_sample": "Omitted: not documented in DeepInfra chat-completion schema",
+  "documentation": "https://docs.deepinfra.com/api-reference/chat-completions/openai-chat-completions",
+  "limitation": "Fixed saved placement prompt; not a replay of the complete multistage pipeline. Internal provider execution is not observable.",
+  "plot_convention": "Axis-aligned bbox footprints, as in SceneCritic top-down plots; arrows use yaw 0=-y, 90=+x. Rendering does not modify comparison content.",
+  "error": "HTTP Error 402: Payment Required",
+  "difference_origin": "No difference observed among completed calls; this is not a guarantee of future determinism.",
+  "script_sha256": "9674bc81448d529b1923ce97cb2e4cfca1f157e64b4dcd3662ec8f42ef7a2773"
+}

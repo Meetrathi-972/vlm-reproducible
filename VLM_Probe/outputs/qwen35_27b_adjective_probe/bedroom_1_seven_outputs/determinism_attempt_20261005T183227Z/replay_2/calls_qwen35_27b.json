@@ -1,0 +1,131 @@
+[
+  {
+    "index": 0,
+    "stage": "description",
+    "prompt": "Role: You generate a concise updated description of the current scene using prior context, environment notes, and predicted area type.\n\nPrevious scene description: No previous scene description!\nEnvironment note: Instruction: This is an indoor bedroom.\n\nOutput ONLY a JSON object of exactly this shape (no markdown, no commentary):\n{\n  \"new_scene_description\": \"<short, coherent description of the new scene>\",\n  \"concise_scene_name\": \"<one-word name for this area>\",\n  \"scene_area\": \"<indoor or outdoor>\"\n}",
+    "system": "You are a strict JSON generator. Output ONLY a single valid JSON value and nothing else. Do NOT include any reasoning, thinking, explanation, preamble, markdown, or code fences. Your entire response must be parseable by json.loads().",
+    "output_text": "{\n  \"new_scene_description\": \"A cozy indoor bedroom with a neatly made bed, soft lighting, and personal decor.\",\n  \"concise_scene_name\": \"Bedroom\",\n  \"scene_area\": \"indoor\"\n}",
+    "api_response": {
+      "request": {
+        "model": "Qwen/Qwen3.5-27B:deepinfra",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a strict JSON generator. Output ONLY a single valid JSON value and nothing else. Do NOT include any reasoning, thinking, explanation, preamble, markdown, or code fences. Your entire response must be parseable by json.loads()."
+          },
+          {
+            "role": "user",
+            "content": "Role: You generate a concise updated description of the current scene using prior context, environment notes, and predicted area type.\n\nPrevious scene description: No previous scene description!\nEnvironment note: Instruction: This is an indoor bedroom.\n\nOutput ONLY a JSON object of exactly this shape (no markdown, no commentary):\n{\n  \"new_scene_description\": \"<short, coherent description of the new scene>\",\n  \"concise_scene_name\": \"<one-word name for this area>\",\n  \"scene_area\": \"<indoor or outdoor>\"\n}"
+          }
+        ],
+        "seed": 1234,
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "top_k": 1,
+        "max_tokens": 8192,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0,
+        "repetition_penalty": 1.0,
+        "stop": [],
+        "reasoning_effort": "none",
+        "response_format": {
+          "type": "json_object"
+        },
+        "stream": false,
+        "n": 1
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "success"
+        }
+      ],
+      "raw_response": {
+        "service_tier": "default",
+        "id": "chatcmpl-RKbJj2UuMvI6dhAcmI2bilAr",
+        "object": "chat.completion",
+        "created": 1791225191,
+        "model": "Qwen/Qwen3.5-27B",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"new_scene_description\": \"A cozy indoor bedroom with a neatly made bed, soft lighting, and personal decor.\",\n  \"concise_scene_name\": \"Bedroom\",\n  \"scene_area\": \"indoor\"\n}",
+              "reasoning_content": null,
+              "name": null,
+              "tool_calls": []
+            },
+            "finish_reason": "stop",
+            "logprobs": null
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 176,
+          "total_tokens": 227,
+          "completion_tokens": 51,
+          "estimated_cost": 0.00017835999999999997,
+          "prompt_tokens_details": null
+        }
+      },
+      "id": "chatcmpl-RKbJj2UuMvI6dhAcmI2bilAr",
+      "response_model": "Qwen/Qwen3.5-27B",
+      "response_provider": null,
+      "system_fingerprint": null,
+      "usage": {
+        "prompt_tokens": 176,
+        "total_tokens": 227,
+        "completion_tokens": 51,
+        "estimated_cost": 0.00017835999999999997,
+        "prompt_tokens_details": null
+      },
+      "finish_reason": "stop"
+    }
+  },
+  {
+    "index": 1,
+    "stage": "object_choice",
+    "prompt": "Role: Decide potential bulk and ornament objects for the described scene.\n\nEnvironment note: Instruction: This is an indoor bedroom.\nScene description: A cozy indoor bedroom with a neatly made bed, soft lighting, and personal decor.\nChoice restrictions: \n            Strictly follow these rules:\n- Objects not to include:\n    - windows, doors, walls, partitions or anything attached to it.\n    - floors, roofs.\n    - roads, street, pavement, footpath, sidewalk, pathway,lawn and any other part of ground.\n    - objects like counter that has multiple english meanings.\n- Include only specific objects, not generalized names like new_object, appliances etc.\n- Do not include any objects in plural.\n- Do not repeat any object more than twice. Try to avoid repeating objects.\n        \n\nbulk_objects: large, structural, or fixed objects (e.g., building, tree, table, sofa, road).\nornament_objects: smaller, decorative, or movable objects (e.g., lamp, plant, trash bin, signboard).\n\nOutput ONLY a JSON object of exactly this shape (no markdown, no commentary):\n{\n  \"bulk_objects\": [\"<large/structural/fixed object>\", \"...\"],\n  \"ornament_objects\": [\"<small/decorative/movable object>\", \"...\"]\n}",
+    "system": "You are a strict JSON generator. Output ONLY a single valid JSON value and nothing else. Do NOT include any reasoning, thinking, explanation, preamble, markdown, or code fences. Your entire response must be parseable by json.loads().",
+    "error": "ApiError: Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+    "api_response": {
+      "request": {
+        "model": "Qwen/Qwen3.5-27B:deepinfra",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a strict JSON generator. Output ONLY a single valid JSON value and nothing else. Do NOT include any reasoning, thinking, explanation, preamble, markdown, or code fences. Your entire response must be parseable by json.loads()."
+          },
+          {
+            "role": "user",
+            "content": "Role: Decide potential bulk and ornament objects for the described scene.\n\nEnvironment note: Instruction: This is an indoor bedroom.\nScene description: A cozy indoor bedroom with a neatly made bed, soft lighting, and personal decor.\nChoice restrictions: \n            Strictly follow these rules:\n- Objects not to include:\n    - windows, doors, walls, partitions or anything attached to it.\n    - floors, roofs.\n    - roads, street, pavement, footpath, sidewalk, pathway,lawn and any other part of ground.\n    - objects like counter that has multiple english meanings.\n- Include only specific objects, not generalized names like new_object, appliances etc.\n- Do not include any objects in plural.\n- Do not repeat any object more than twice. Try to avoid repeating objects.\n        \n\nbulk_objects: large, structural, or fixed objects (e.g., building, tree, table, sofa, road).\nornament_objects: smaller, decorative, or movable objects (e.g., lamp, plant, trash bin, signboard).\n\nOutput ONLY a JSON object of exactly this shape (no markdown, no commentary):\n{\n  \"bulk_objects\": [\"<large/structural/fixed object>\", \"...\"],\n  \"ornament_objects\": [\"<small/decorative/movable object>\", \"...\"]\n}"
+          }
+        ],
+        "seed": 1234,
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "top_k": 1,
+        "max_tokens": 8192,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0,
+        "repetition_penalty": 1.0,
+        "stop": [],
+        "reasoning_effort": "none",
+        "response_format": {
+          "type": "json_object"
+        },
+        "stream": false,
+        "n": 1
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "failed",
+          "error": "Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+          "http_status": 402
+        }
+      ],
+      "raw_response": null
+    }
+  }
+]

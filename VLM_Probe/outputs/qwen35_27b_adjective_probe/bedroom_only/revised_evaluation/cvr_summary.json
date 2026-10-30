@@ -1,0 +1,58 @@
+[
+  {
+    "benchmark": "bedroom_1",
+    "condition": "baseline",
+    "cvr": 0.015625,
+    "violated_checks": 1,
+    "total_checks": 64,
+    "violation_details": "desk#1 + shelf#1 \u2014 footprint_nonoverlap \u2014 ('desk', 1) bbox=[-1.2, 3.8, 1.4, 0.8]; ('shelf', 1) bbox=[-1.2, 4.5, 1.4, 0.4]; intersection area=0.14 > 1e-6"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "well_organized",
+    "cvr": 0.046875,
+    "violated_checks": 3,
+    "total_checks": 64,
+    "violation_details": "desk#1 \u2014 inside_room \u2014 x_max=2.7 exceeds room limit 2.5; shelf#1 \u2014 inside_room \u2014 x_max=2.7 exceeds room limit 2.5; desk#1 + chair#1 \u2014 footprint_nonoverlap \u2014 ('desk', 1) bbox=[1.5, 0.5, 1.2, 0.8]; ('chair', 1) bbox=[1.0, 0.5, 0.6, 0.8]; intersection area=0.08 > 1e-6"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "spacious",
+    "cvr": 0.03125,
+    "violated_checks": 2,
+    "total_checks": 64,
+    "violation_details": "desk#1 + chair#1 \u2014 footprint_nonoverlap \u2014 ('desk', 1) bbox=[-1.2, 0.2, 2.4, 0.6]; ('chair', 1) bbox=[-0.4, 0.0, 0.5, 0.9]; intersection area=0.3 > 1e-6; chair#1 + shelf#1 \u2014 footprint_nonoverlap \u2014 ('chair', 1) bbox=[-0.4, 0.0, 0.5, 0.9]; ('shelf', 1) bbox=[-1.0, 0.8, 2.0, 0.15]; intersection area=0.05 > 1e-6"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "bright",
+    "cvr": 0.0625,
+    "violated_checks": 4,
+    "total_checks": 64,
+    "violation_details": "bed#1 \u2014 inside_room \u2014 y_max=5.3 exceeds room limit 5; desk#1 \u2014 inside_room \u2014 x_max=2.7 exceeds room limit 2.5; shelf#1 \u2014 inside_room \u2014 x_max=2.7 exceeds room limit 2.5; desk#1 + chair#1 \u2014 footprint_nonoverlap \u2014 ('desk', 1) bbox=[1.5, 0.5, 1.2, 1.5]; ('chair', 1) bbox=[1.2, 0.0, 0.6, 0.8]; intersection area=0.09 > 1e-6"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "quiet",
+    "cvr": 0.046875,
+    "violated_checks": 3,
+    "total_checks": 64,
+    "violation_details": "bed#1 \u2014 inside_room \u2014 y_max=5.5 exceeds room limit 5; cabinet#1 \u2014 inside_room \u2014 y_max=5.2 exceeds room limit 5; cabinet#2 \u2014 inside_room \u2014 y_max=5.2 exceeds room limit 5"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "cluttered",
+    "cvr": 0.03125,
+    "violated_checks": 2,
+    "total_checks": 64,
+    "violation_details": "shelf#1 \u2014 inside_room \u2014 y_max=5.2 exceeds room limit 5; desk#1 + shelf#1 \u2014 footprint_nonoverlap \u2014 ('desk', 1) bbox=[-1.2, 4.2, 2.4, 0.8]; ('shelf', 1) bbox=[-0.8, 4.9, 1.6, 0.3]; intersection area=0.16 > 1e-6"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "crowded",
+    "cvr": 0.046875,
+    "violated_checks": 3,
+    "total_checks": 64,
+    "violation_details": "bed#1 \u2014 inside_room \u2014 y_max=5.5 exceeds room limit 5; desk#1 + chair#1 \u2014 footprint_nonoverlap \u2014 ('desk', 1) bbox=[-1.5, 0.2, 1.4, 0.7]; ('chair', 1) bbox=[-1.0, 0.8, 0.5, 0.9]; intersection area=0.05 > 1e-6; chair#1 + shelf#1 \u2014 footprint_nonoverlap \u2014 ('chair', 1) bbox=[-1.0, 0.8, 0.5, 0.9]; ('shelf', 1) bbox=[-1.4, 1.5, 1.2, 0.3]; intersection area=0.1 > 1e-6"
+  }
+]

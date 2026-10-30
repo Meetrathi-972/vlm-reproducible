@@ -1,0 +1,62 @@
+[
+  {
+    "adjective": "well_organized",
+    "n_benchmarks": 1,
+    "direction_accuracy": 0.5,
+    "ccr": 0.06249999609375024,
+    "cvr_delta": 0.03125,
+    "src": 1.0,
+    "occupancy_hamming": 0.84,
+    "centroid_shift": 3.5414398002172502
+  },
+  {
+    "adjective": "spacious",
+    "n_benchmarks": 1,
+    "direction_accuracy": 0.25,
+    "ccr": 0.07692307100591762,
+    "cvr_delta": 0.015625,
+    "src": 1.0,
+    "occupancy_hamming": 0.72,
+    "centroid_shift": 3.5330558662868827
+  },
+  {
+    "adjective": "bright",
+    "n_benchmarks": 1,
+    "direction_accuracy": null,
+    "ccr": null,
+    "cvr_delta": 0.046875,
+    "src": 1.0,
+    "occupancy_hamming": 0.88,
+    "centroid_shift": 3.6409519639241523
+  },
+  {
+    "adjective": "quiet",
+    "n_benchmarks": 1,
+    "direction_accuracy": null,
+    "ccr": null,
+    "cvr_delta": 0.03125,
+    "src": 1.0,
+    "occupancy_hamming": 0.72,
+    "centroid_shift": 3.545261600604664
+  },
+  {
+    "adjective": "cluttered",
+    "n_benchmarks": 1,
+    "direction_accuracy": 0.75,
+    "ccr": 0.07142856632653098,
+    "cvr_delta": 0.015625,
+    "src": 1.0,
+    "occupancy_hamming": 0.2,
+    "centroid_shift": 0.35388690114727583
+  },
+  {
+    "adjective": "crowded",
+    "n_benchmarks": 1,
+    "direction_accuracy": 0.5,
+    "ccr": 0.0,
+    "cvr_delta": 0.03125,
+    "src": 0.5,
+    "occupancy_hamming": 0.68,
+    "centroid_shift": 3.3815640690288946
+  }
+]

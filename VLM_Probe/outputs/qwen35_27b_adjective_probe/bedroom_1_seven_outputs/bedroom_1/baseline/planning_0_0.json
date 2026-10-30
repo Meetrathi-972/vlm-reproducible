@@ -1,0 +1,238 @@
+{
+  "atomic_tasks": [
+    {
+      "id": "task_001",
+      "object_type": "bulk",
+      "type": "Add",
+      "label": "bed",
+      "anchor": null,
+      "spatial_hint": "Place the bed against the main wall, centered to maximize floor space.",
+      "bbox_hint": [
+        100,
+        150,
+        400,
+        300
+      ],
+      "output_schema": {
+        "add": [
+          {
+            "label": "bed",
+            "object_type": "bulk",
+            "anchor": null,
+            "bbox": [
+              100,
+              150,
+              400,
+              300
+            ],
+            "position": {
+              "x": 300,
+              "y": 300
+            },
+            "rotation_angle": 0,
+            "description": "A neatly made bed with soft bedding in a cozy indoor bedroom.",
+            "concise_description": "Neatly made bed"
+          }
+        ],
+        "remove": [],
+        "update": []
+      },
+      "execution_prompt": "Add a neatly made bed centered against the main wall."
+    },
+    {
+      "id": "task_002",
+      "object_type": "bulk",
+      "type": "Add",
+      "label": "cabinet",
+      "anchor": "bed",
+      "spatial_hint": "Place the first cabinet to the left of the bed, aligned with the wall.",
+      "bbox_hint": [
+        20,
+        180,
+        80,
+        200
+      ],
+      "output_schema": {
+        "add": [
+          {
+            "label": "cabinet",
+            "object_type": "bulk",
+            "anchor": "bed",
+            "bbox": [
+              20,
+              180,
+              80,
+              200
+            ],
+            "position": {
+              "x": 60,
+              "y": 280
+            },
+            "rotation_angle": 0,
+            "description": "A wooden cabinet placed beside the bed for storage.",
+            "concise_description": "Wooden cabinet"
+          }
+        ],
+        "remove": [],
+        "update": []
+      },
+      "execution_prompt": "Add a cabinet to the left of the bed."
+    },
+    {
+      "id": "task_003",
+      "object_type": "bulk",
+      "type": "Add",
+      "label": "cabinet",
+      "anchor": "bed",
+      "spatial_hint": "Place the second cabinet to the right of the bed, aligned with the wall.",
+      "bbox_hint": [
+        500,
+        180,
+        80,
+        200
+      ],
+      "output_schema": {
+        "add": [
+          {
+            "label": "cabinet",
+            "object_type": "bulk",
+            "anchor": "bed",
+            "bbox": [
+              500,
+              180,
+              80,
+              200
+            ],
+            "position": {
+              "x": 540,
+              "y": 280
+            },
+            "rotation_angle": 0,
+            "description": "A wooden cabinet placed beside the bed for storage.",
+            "concise_description": "Wooden cabinet"
+          }
+        ],
+        "remove": [],
+        "update": []
+      },
+      "execution_prompt": "Add a cabinet to the right of the bed."
+    },
+    {
+      "id": "task_004",
+      "object_type": "bulk",
+      "type": "Add",
+      "label": "desk",
+      "anchor": null,
+      "spatial_hint": "Place the desk against the opposite wall from the bed, near the window.",
+      "bbox_hint": [
+        150,
+        50,
+        200,
+        100
+      ],
+      "output_schema": {
+        "add": [
+          {
+            "label": "desk",
+            "object_type": "bulk",
+            "anchor": null,
+            "bbox": [
+              150,
+              50,
+              200,
+              100
+            ],
+            "position": {
+              "x": 250,
+              "y": 100
+            },
+            "rotation_angle": 0,
+            "description": "A functional desk placed near the window for natural light.",
+            "concise_description": "Functional desk"
+          }
+        ],
+        "remove": [],
+        "update": []
+      },
+      "execution_prompt": "Add a desk against the opposite wall near the window."
+    },
+    {
+      "id": "task_005",
+      "object_type": "bulk",
+      "type": "Add",
+      "label": "chair",
+      "anchor": "desk",
+      "spatial_hint": "Place the chair in front of the desk, slightly tucked under.",
+      "bbox_hint": [
+        180,
+        110,
+        60,
+        60
+      ],
+      "output_schema": {
+        "add": [
+          {
+            "label": "chair",
+            "object_type": "bulk",
+            "anchor": "desk",
+            "bbox": [
+              180,
+              110,
+              60,
+              60
+            ],
+            "position": {
+              "x": 210,
+              "y": 140
+            },
+            "rotation_angle": 0,
+            "description": "A comfortable chair positioned in front of the desk.",
+            "concise_description": "Comfortable chair"
+          }
+        ],
+        "remove": [],
+        "update": []
+      },
+      "execution_prompt": "Add a chair in front of the desk."
+    },
+    {
+      "id": "task_006",
+      "object_type": "bulk",
+      "type": "Add",
+      "label": "shelf",
+      "anchor": "desk",
+      "spatial_hint": "Place the shelf above the desk or on the wall above it.",
+      "bbox_hint": [
+        160,
+        20,
+        180,
+        40
+      ],
+      "output_schema": {
+        "add": [
+          {
+            "label": "shelf",
+            "object_type": "bulk",
+            "anchor": "desk",
+            "bbox": [
+              160,
+              20,
+              180,
+              40
+            ],
+            "position": {
+              "x": 250,
+              "y": 40
+            },
+            "rotation_angle": 0,
+            "description": "A wall-mounted shelf placed above the desk for storage.",
+            "concise_description": "Wall-mounted shelf"
+          }
+        ],
+        "remove": [],
+        "update": []
+      },
+      "execution_prompt": "Add a shelf above the desk."
+    }
+  ]
+}

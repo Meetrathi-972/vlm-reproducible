@@ -1,0 +1,64 @@
+{
+  "objects": [
+    {
+      "label": "bed",
+      "object_type": "bulk",
+      "anchor": null,
+      "bbox": [-2.4, 3.5, 1.8, 2.0],
+      "position": [-1.5, 4.5],
+      "rotation_angle": 0.0,
+      "description": "A double bed positioned against the left wall in the corner of the room.",
+      "concise_description": "A double bed with a standard mattress and frame."
+    },
+    {
+      "label": "cabinet",
+      "object_type": "bulk",
+      "anchor": "bed",
+      "bbox": [-0.6, 3.5, 0.6, 0.8],
+      "position": [-0.3, 3.9],
+      "rotation_angle": 0.0,
+      "description": "A small bedside cabinet placed next to the head of the bed on the right side.",
+      "concise_description": "A compact wooden nightstand with drawers."
+    },
+    {
+      "label": "cabinet",
+      "object_type": "bulk",
+      "anchor": "bed",
+      "bbox": [-2.4, 1.5, 0.6, 0.8],
+      "position": [-2.1, 1.9],
+      "rotation_angle": 0.0,
+      "description": "A second cabinet placed on the opposite side of the bed, near the foot.",
+      "concise_description": "A compact wooden nightstand with drawers."
+    },
+    {
+      "label": "desk",
+      "object_type": "bulk",
+      "anchor": null,
+      "bbox": [-1.5, 0.2, 1.4, 0.7],
+      "position": [-0.8, 0.55],
+      "rotation_angle": 0.0,
+      "description": "A work desk positioned along the far wall (bottom of the room) to create a work zone.",
+      "concise_description": "A rectangular wooden desk with a flat surface."
+    },
+    {
+      "label": "chair",
+      "object_type": "bulk",
+      "anchor": "desk",
+      "bbox": [-1.0, 0.8, 0.5, 0.9],
+      "position": [-0.75, 1.25],
+      "rotation_angle": 180.0,
+      "description": "An office chair positioned in front of the desk, facing it.",
+      "concise_description": "A swivel office chair with wheels."
+    },
+    {
+      "label": "shelf",
+      "object_type": "bulk",
+      "anchor": "desk",
+      "bbox": [-1.4, 1.5, 1.2, 0.3],
+      "position": [-0.8, 1.65],
+      "rotation_angle": 0.0,
+      "description": "A wall-mounted shelf positioned above the desk area.",
+      "concise_description": "A horizontal wooden shelf for storage."
+    }
+  ]
+}

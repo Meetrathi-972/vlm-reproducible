@@ -1,0 +1,772 @@
+[
+  {
+    "benchmark": "bedroom_1",
+    "condition": "baseline",
+    "subject": "cabinet#1",
+    "relation": "left",
+    "anchor": "bed",
+    "textual_statement": "A wooden cabinet placed to the left of the bed against the wall.",
+    "geometry_test": "x_subject=-2 < x_anchor=0 - 1e-6",
+    "expected": "left",
+    "actual": "left",
+    "result": "SATISFIED",
+    "reason": "Preserved prior explicit geometric rule",
+    "subject_bbox": [
+      -2.3,
+      0.2,
+      0.6,
+      1.0
+    ],
+    "anchor_bbox": [
+      -1.0,
+      0.2,
+      2.0,
+      1.8
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "baseline",
+    "subject": "cabinet#2",
+    "relation": "right",
+    "anchor": "bed",
+    "textual_statement": "A matching wooden cabinet placed to the right of the bed against the wall.",
+    "geometry_test": "x_subject=2 > x_anchor=0 + 1e-6",
+    "expected": "right",
+    "actual": "right",
+    "result": "SATISFIED",
+    "reason": "Preserved prior explicit geometric rule",
+    "subject_bbox": [
+      1.7,
+      0.2,
+      0.6,
+      1.0
+    ],
+    "anchor_bbox": [
+      -1.0,
+      0.2,
+      2.0,
+      1.8
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "baseline",
+    "subject": "desk#1",
+    "relation": "near",
+    "anchor": null,
+    "textual_statement": "A desk placed against the opposite wall near the window.",
+    "geometry_test": "",
+    "expected": "near",
+    "actual": null,
+    "result": "UNEVALUATED",
+    "reason": "Missing/ambiguous/unmentioned anchor target; no guessed referent",
+    "subject_bbox": [
+      -1.2,
+      3.8,
+      1.4,
+      0.8
+    ],
+    "anchor_bbox": null
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "baseline",
+    "subject": "chair#1",
+    "relation": "front of",
+    "anchor": "desk",
+    "textual_statement": "A chair positioned in front of the desk for seating.",
+    "geometry_test": "",
+    "expected": "front of",
+    "actual": null,
+    "result": "UNEVALUATED",
+    "reason": "UNEVALUATED: checked-in OrientationVerifier verifies facing directions, not textual front/behind half-spaces. No arbitrary proxy added.",
+    "subject_bbox": [
+      -1.0,
+      2.8,
+      0.6,
+      0.8
+    ],
+    "anchor_bbox": [
+      -1.2,
+      3.8,
+      1.4,
+      0.8
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "baseline",
+    "subject": "shelf#1",
+    "relation": "above",
+    "anchor": "desk",
+    "textual_statement": "A shelf mounted on the wall above the desk.",
+    "geometry_test": "2D footprint intersection=0.14; no z_min/z_max or support-surface elevation",
+    "expected": "above",
+    "actual": null,
+    "result": "UNEVALUATED",
+    "reason": "UNEVALUATED: no vertical extent; full 3D projection + contact cannot be established. Checked-in evaluator has no textual vertical/support verifier.",
+    "subject_bbox": [
+      -1.2,
+      4.5,
+      1.4,
+      0.4
+    ],
+    "anchor_bbox": [
+      -1.2,
+      3.8,
+      1.4,
+      0.8
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "well_organized",
+    "subject": "cabinet#1",
+    "relation": "left",
+    "anchor": "bed",
+    "textual_statement": "A cabinet placed to the left of the bed.",
+    "geometry_test": "x_subject=-1.6 < x_anchor=0 - 1e-6",
+    "expected": "left",
+    "actual": "left",
+    "result": "SATISFIED",
+    "reason": "Preserved prior explicit geometric rule",
+    "subject_bbox": [
+      -2.0,
+      3.5,
+      0.8,
+      1.0
+    ],
+    "anchor_bbox": [
+      -1.0,
+      3.5,
+      2.0,
+      1.5
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "well_organized",
+    "subject": "cabinet#2",
+    "relation": "right",
+    "anchor": "bed",
+    "textual_statement": "A cabinet placed to the right of the bed.",
+    "geometry_test": "x_subject=1.6 > x_anchor=0 + 1e-6",
+    "expected": "right",
+    "actual": "right",
+    "result": "SATISFIED",
+    "reason": "Preserved prior explicit geometric rule",
+    "subject_bbox": [
+      1.2,
+      3.5,
+      0.8,
+      1.0
+    ],
+    "anchor_bbox": [
+      -1.0,
+      3.5,
+      2.0,
+      1.5
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "well_organized",
+    "subject": "chair#1",
+    "relation": "front of",
+    "anchor": "desk",
+    "textual_statement": "A chair positioned in front of the desk.",
+    "geometry_test": "",
+    "expected": "front of",
+    "actual": null,
+    "result": "UNEVALUATED",
+    "reason": "UNEVALUATED: checked-in OrientationVerifier verifies facing directions, not textual front/behind half-spaces. No arbitrary proxy added.",
+    "subject_bbox": [
+      1.0,
+      0.5,
+      0.6,
+      0.8
+    ],
+    "anchor_bbox": [
+      1.5,
+      0.5,
+      1.2,
+      0.8
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "well_organized",
+    "subject": "shelf#1",
+    "relation": "on top of",
+    "anchor": "desk",
+    "textual_statement": "A shelf placed on top of the desk.",
+    "geometry_test": "2D footprint intersection=0; no z_min/z_max or support-surface elevation",
+    "expected": "on top of",
+    "actual": null,
+    "result": "UNEVALUATED",
+    "reason": "UNEVALUATED: no vertical extent; full 3D projection + contact cannot be established. Checked-in evaluator has no textual vertical/support verifier.",
+    "subject_bbox": [
+      1.5,
+      1.3,
+      1.2,
+      0.2
+    ],
+    "anchor_bbox": [
+      1.5,
+      0.5,
+      1.2,
+      0.8
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "spacious",
+    "subject": "cabinet#1",
+    "relation": "left",
+    "anchor": "bed",
+    "textual_statement": "A cabinet placed to the left of the bed.",
+    "geometry_test": "x_subject=-1.9 < x_anchor=0 - 1e-6",
+    "expected": "left",
+    "actual": "left",
+    "result": "SATISFIED",
+    "reason": "Preserved prior explicit geometric rule",
+    "subject_bbox": [
+      -2.2,
+      4.0,
+      0.6,
+      0.8
+    ],
+    "anchor_bbox": [
+      -1.0,
+      4.2,
+      2.0,
+      0.6
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "spacious",
+    "subject": "cabinet#2",
+    "relation": "right",
+    "anchor": "bed",
+    "textual_statement": "A cabinet placed to the right of the bed.",
+    "geometry_test": "x_subject=1.9 > x_anchor=0 + 1e-6",
+    "expected": "right",
+    "actual": "right",
+    "result": "SATISFIED",
+    "reason": "Preserved prior explicit geometric rule",
+    "subject_bbox": [
+      1.6,
+      4.0,
+      0.6,
+      0.8
+    ],
+    "anchor_bbox": [
+      -1.0,
+      4.2,
+      2.0,
+      0.6
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "spacious",
+    "subject": "chair#1",
+    "relation": "under",
+    "anchor": "desk",
+    "textual_statement": "A chair placed under the desk.",
+    "geometry_test": "2D footprint intersection=0.3; no z_min/z_max or support-surface elevation",
+    "expected": "under",
+    "actual": null,
+    "result": "UNEVALUATED",
+    "reason": "UNEVALUATED: no vertical extent; full 3D projection + contact cannot be established. Checked-in evaluator has no textual vertical/support verifier.",
+    "subject_bbox": [
+      -0.4,
+      0.0,
+      0.5,
+      0.9
+    ],
+    "anchor_bbox": [
+      -1.2,
+      0.2,
+      2.4,
+      0.6
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "spacious",
+    "subject": "shelf#1",
+    "relation": "on top of",
+    "anchor": "desk",
+    "textual_statement": "A shelf placed on top of the desk.",
+    "geometry_test": "2D footprint intersection=0; no z_min/z_max or support-surface elevation",
+    "expected": "on top of",
+    "actual": null,
+    "result": "UNEVALUATED",
+    "reason": "UNEVALUATED: no vertical extent; full 3D projection + contact cannot be established. Checked-in evaluator has no textual vertical/support verifier.",
+    "subject_bbox": [
+      -1.0,
+      0.8,
+      2.0,
+      0.15
+    ],
+    "anchor_bbox": [
+      -1.2,
+      0.2,
+      2.4,
+      0.6
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "bright",
+    "subject": "cabinet#1",
+    "relation": "left",
+    "anchor": "bed",
+    "textual_statement": "A cabinet to the left of the bed, aligned with the head.",
+    "geometry_test": "x_subject=-1.8 < x_anchor=0 - 1e-6",
+    "expected": "left",
+    "actual": "left",
+    "result": "SATISFIED",
+    "reason": "Preserved prior explicit geometric rule",
+    "subject_bbox": [
+      -2.2,
+      3.8,
+      0.8,
+      1.2
+    ],
+    "anchor_bbox": [
+      -1.2,
+      3.5,
+      2.4,
+      1.8
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "bright",
+    "subject": "cabinet#2",
+    "relation": "right",
+    "anchor": "bed",
+    "textual_statement": "A cabinet to the right of the bed, aligned with the head.",
+    "geometry_test": "x_subject=1.8 > x_anchor=0 + 1e-6",
+    "expected": "right",
+    "actual": "right",
+    "result": "SATISFIED",
+    "reason": "Preserved prior explicit geometric rule",
+    "subject_bbox": [
+      1.4,
+      3.8,
+      0.8,
+      1.2
+    ],
+    "anchor_bbox": [
+      -1.2,
+      3.5,
+      2.4,
+      1.8
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "bright",
+    "subject": "chair#1",
+    "relation": "front of",
+    "anchor": "desk",
+    "textual_statement": "A chair in front of the desk.",
+    "geometry_test": "",
+    "expected": "front of",
+    "actual": null,
+    "result": "UNEVALUATED",
+    "reason": "UNEVALUATED: checked-in OrientationVerifier verifies facing directions, not textual front/behind half-spaces. No arbitrary proxy added.",
+    "subject_bbox": [
+      1.2,
+      0.0,
+      0.6,
+      0.8
+    ],
+    "anchor_bbox": [
+      1.5,
+      0.5,
+      1.2,
+      1.5
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "bright",
+    "subject": "shelf#1",
+    "relation": "above",
+    "anchor": "desk",
+    "textual_statement": "A shelf above the desk.",
+    "geometry_test": "2D footprint intersection=0; no z_min/z_max or support-surface elevation",
+    "expected": "above",
+    "actual": null,
+    "result": "UNEVALUATED",
+    "reason": "UNEVALUATED: no vertical extent; full 3D projection + contact cannot be established. Checked-in evaluator has no textual vertical/support verifier.",
+    "subject_bbox": [
+      1.5,
+      2.0,
+      1.2,
+      0.3
+    ],
+    "anchor_bbox": [
+      1.5,
+      0.5,
+      1.2,
+      1.5
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "quiet",
+    "subject": "cabinet#1",
+    "relation": "left",
+    "anchor": "bed",
+    "textual_statement": "A cabinet placed to the left of the bed against the wall.",
+    "geometry_test": "x_subject=-2 < x_anchor=0 - 1e-6",
+    "expected": "left",
+    "actual": "left",
+    "result": "SATISFIED",
+    "reason": "Preserved prior explicit geometric rule",
+    "subject_bbox": [
+      -2.3,
+      4.2,
+      0.6,
+      1.0
+    ],
+    "anchor_bbox": [
+      -1.0,
+      4.0,
+      2.0,
+      1.5
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "quiet",
+    "subject": "cabinet#2",
+    "relation": "right",
+    "anchor": "bed",
+    "textual_statement": "A second cabinet placed to the right of the bed against the wall.",
+    "geometry_test": "x_subject=2 > x_anchor=0 + 1e-6",
+    "expected": "right",
+    "actual": "right",
+    "result": "SATISFIED",
+    "reason": "Preserved prior explicit geometric rule",
+    "subject_bbox": [
+      1.7,
+      4.2,
+      0.6,
+      1.0
+    ],
+    "anchor_bbox": [
+      -1.0,
+      4.0,
+      2.0,
+      1.5
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "quiet",
+    "subject": "chair#1",
+    "relation": "front of",
+    "anchor": "desk",
+    "textual_statement": "A chair placed in front of the desk.",
+    "geometry_test": "",
+    "expected": "front of",
+    "actual": null,
+    "result": "UNEVALUATED",
+    "reason": "UNEVALUATED: checked-in OrientationVerifier verifies facing directions, not textual front/behind half-spaces. No arbitrary proxy added.",
+    "subject_bbox": [
+      -0.5,
+      1.0,
+      0.6,
+      0.8
+    ],
+    "anchor_bbox": [
+      -1.2,
+      0.2,
+      2.4,
+      0.8
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "quiet",
+    "subject": "shelf#1",
+    "relation": "near",
+    "anchor": "desk",
+    "textual_statement": "A shelf placed near the desk area against the right wall.",
+    "geometry_test": "edge gap=0.3 <= 1.061",
+    "expected": "near",
+    "actual": "near",
+    "result": "SATISFIED",
+    "reason": "Preserved prior explicit geometric rule",
+    "subject_bbox": [
+      1.5,
+      0.5,
+      0.5,
+      1.5
+    ],
+    "anchor_bbox": [
+      -1.2,
+      0.2,
+      2.4,
+      0.8
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "cluttered",
+    "subject": "cabinet#1",
+    "relation": "left",
+    "anchor": "bed",
+    "textual_statement": "A cabinet placed to the immediate left of the bed.",
+    "geometry_test": "x_subject=-1.9 < x_anchor=0 - 1e-6",
+    "expected": "left",
+    "actual": "left",
+    "result": "SATISFIED",
+    "reason": "Preserved prior explicit geometric rule",
+    "subject_bbox": [
+      -2.3,
+      0.1,
+      0.8,
+      1.2
+    ],
+    "anchor_bbox": [
+      -1.2,
+      0.1,
+      2.4,
+      2.0
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "cluttered",
+    "subject": "cabinet#2",
+    "relation": "right",
+    "anchor": "bed",
+    "textual_statement": "A cabinet placed to the immediate right of the bed.",
+    "geometry_test": "x_subject=1.9 > x_anchor=0 + 1e-6",
+    "expected": "right",
+    "actual": "right",
+    "result": "SATISFIED",
+    "reason": "Preserved prior explicit geometric rule",
+    "subject_bbox": [
+      1.5,
+      0.1,
+      0.8,
+      1.2
+    ],
+    "anchor_bbox": [
+      -1.2,
+      0.1,
+      2.4,
+      2.0
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "cluttered",
+    "subject": "chair#1",
+    "relation": "front of",
+    "anchor": "desk",
+    "textual_statement": "A chair positioned in front of the desk.",
+    "geometry_test": "",
+    "expected": "front of",
+    "actual": null,
+    "result": "UNEVALUATED",
+    "reason": "UNEVALUATED: checked-in OrientationVerifier verifies facing directions, not textual front/behind half-spaces. No arbitrary proxy added.",
+    "subject_bbox": [
+      -0.5,
+      3.2,
+      0.6,
+      0.9
+    ],
+    "anchor_bbox": [
+      -1.2,
+      4.2,
+      2.4,
+      0.8
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "cluttered",
+    "subject": "shelf#1",
+    "relation": "on top of",
+    "anchor": "desk",
+    "textual_statement": "A shelf placed on top of the desk.",
+    "geometry_test": "2D footprint intersection=0.16; no z_min/z_max or support-surface elevation",
+    "expected": "on top of",
+    "actual": null,
+    "result": "UNEVALUATED",
+    "reason": "UNEVALUATED: no vertical extent; full 3D projection + contact cannot be established. Checked-in evaluator has no textual vertical/support verifier.",
+    "subject_bbox": [
+      -0.8,
+      4.9,
+      1.6,
+      0.3
+    ],
+    "anchor_bbox": [
+      -1.2,
+      4.2,
+      2.4,
+      0.8
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "crowded",
+    "subject": "cabinet#1",
+    "relation": "right",
+    "anchor": "bed",
+    "textual_statement": "A small bedside cabinet placed next to the head of the bed on the right side.",
+    "geometry_test": "x_subject=-0.3 > x_anchor=-1.5 + 1e-6",
+    "expected": "right",
+    "actual": "right",
+    "result": "SATISFIED",
+    "reason": "Preserved prior explicit geometric rule",
+    "subject_bbox": [
+      -0.6,
+      3.5,
+      0.6,
+      0.8
+    ],
+    "anchor_bbox": [
+      -2.4,
+      3.5,
+      1.8,
+      2.0
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "crowded",
+    "subject": "cabinet#1",
+    "relation": "adjacent",
+    "anchor": "bed",
+    "textual_statement": "A small bedside cabinet placed next to the head of the bed on the right side.",
+    "geometry_test": "edge gap=0 <= 0.3536; intersection=8.882e-17 <= 1e-6",
+    "expected": "adjacent",
+    "actual": "adjacent",
+    "result": "SATISFIED",
+    "reason": "Preserved prior explicit geometric rule",
+    "subject_bbox": [
+      -0.6,
+      3.5,
+      0.6,
+      0.8
+    ],
+    "anchor_bbox": [
+      -2.4,
+      3.5,
+      1.8,
+      2.0
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "crowded",
+    "subject": "cabinet#2",
+    "relation": "near",
+    "anchor": "bed",
+    "textual_statement": "A second cabinet placed on the opposite side of the bed, near the foot.",
+    "geometry_test": "edge gap=1.2 <= 1.061",
+    "expected": "near",
+    "actual": "not near",
+    "result": "VIOLATED",
+    "reason": "Preserved prior explicit geometric rule",
+    "subject_bbox": [
+      -2.4,
+      1.5,
+      0.6,
+      0.8
+    ],
+    "anchor_bbox": [
+      -2.4,
+      3.5,
+      1.8,
+      2.0
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "crowded",
+    "subject": "chair#1",
+    "relation": "front of",
+    "anchor": "desk",
+    "textual_statement": "An office chair positioned in front of the desk, facing it.",
+    "geometry_test": "",
+    "expected": "front of",
+    "actual": null,
+    "result": "UNEVALUATED",
+    "reason": "UNEVALUATED: checked-in OrientationVerifier verifies facing directions, not textual front/behind half-spaces. No arbitrary proxy added.",
+    "subject_bbox": [
+      -1.0,
+      0.8,
+      0.5,
+      0.9
+    ],
+    "anchor_bbox": [
+      -1.5,
+      0.2,
+      1.4,
+      0.7
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "crowded",
+    "subject": "chair#1",
+    "relation": "facing",
+    "anchor": "desk",
+    "textual_statement": "An office chair positioned in front of the desk, facing it.",
+    "geometry_test": "SceneCritic yaw=180; target yaw=355.9; angular error=175.9 deg <= 75 (coincident centers pass)",
+    "expected": "facing",
+    "actual": "not facing",
+    "result": "VIOLATED",
+    "reason": "Exact OrientationVerifier._check_faces_point / _angle_check: hard",
+    "subject_bbox": [
+      -1.0,
+      0.8,
+      0.5,
+      0.9
+    ],
+    "anchor_bbox": [
+      -1.5,
+      0.2,
+      1.4,
+      0.7
+    ]
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "crowded",
+    "subject": "shelf#1",
+    "relation": "above",
+    "anchor": "desk",
+    "textual_statement": "A wall-mounted shelf positioned above the desk area.",
+    "geometry_test": "2D footprint intersection=0; no z_min/z_max or support-surface elevation",
+    "expected": "above",
+    "actual": null,
+    "result": "UNEVALUATED",
+    "reason": "UNEVALUATED: no vertical extent; full 3D projection + contact cannot be established. Checked-in evaluator has no textual vertical/support verifier.",
+    "subject_bbox": [
+      -1.4,
+      1.5,
+      1.2,
+      0.3
+    ],
+    "anchor_bbox": [
+      -1.5,
+      0.2,
+      1.4,
+      0.7
+    ]
+  }
+]

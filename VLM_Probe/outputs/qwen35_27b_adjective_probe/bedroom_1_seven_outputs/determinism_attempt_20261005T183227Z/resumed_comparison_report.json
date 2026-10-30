@@ -1,0 +1,78 @@
+{
+  "status": "complete",
+  "account": "arjun1234554321",
+  "first_run": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/determinism_attempt_20261005T183227Z/replay_1",
+  "resumed_run": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/determinism_attempt_20261005T183227Z/replay_2_resumed_20261005T183643Z",
+  "reused_stage": "description",
+  "generation_parameters": {
+    "model": "Qwen/Qwen3.5-27B:deepinfra",
+    "seed": 1234,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "max_tokens": 8192,
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "stop": [],
+    "reasoning_effort": "none",
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "n": 1
+  },
+  "stage_comparisons": [
+    {
+      "stage": "description",
+      "requests_identical": true,
+      "outputs_byte_identical": true,
+      "first_sha256": "8adea266e1a9cdfd0dc5f01d1f51d184d8c9040e1c1c14eaf91e98d33712ac62",
+      "second_sha256": "8adea266e1a9cdfd0dc5f01d1f51d184d8c9040e1c1c14eaf91e98d33712ac62"
+    },
+    {
+      "stage": "object_choice",
+      "requests_identical": true,
+      "outputs_byte_identical": false,
+      "first_sha256": "2ccadde153df5956b89689f00644338fa923bc584ef48ccb61b84d998fadc10c",
+      "second_sha256": "0416c7741b2d91f5a6d6fa035b57bc4a1c3b2fae0c6b14b011eb96bfe76ba1a9"
+    },
+    {
+      "stage": "planning",
+      "requests_identical": true,
+      "outputs_byte_identical": false,
+      "first_sha256": "4a4b57c2a315dc2b008e9d25b1d20785f817325cf9e81695790f2aed673e127a",
+      "second_sha256": "47776486d5e555813f089946d792c65469e687ef2e8390a2a08f4e1976174514"
+    },
+    {
+      "stage": "placement",
+      "requests_identical": false,
+      "outputs_byte_identical": false,
+      "first_sha256": "92ac00ffe2d0f076d7e10e60c350ecb3b0493d4b8f23c08827464abaf8df8b91",
+      "second_sha256": "f8100aca3e964ca98b126f315e4bba34c6b8545c120fe6c9703dc320039b41fd"
+    }
+  ],
+  "all_outputs_identical": false,
+  "scene_objects_identical": false,
+  "behavioral": {
+    "object_set_diff": 0.0,
+    "object_count_diff": 0,
+    "occupancy_hamming": 0.32,
+    "centroid_shift": 1.2401728232690976,
+    "legality_flip": 1,
+    "first_divergent_call": 1,
+    "first_divergent_stage": "object_choice",
+    "structural_divergence": false,
+    "placement_changed": true,
+    "baseline_call_count": 4,
+    "adjective_call_count": 4,
+    "baseline_object_count": 6,
+    "adjective_object_count": 6,
+    "baseline_legality": 1,
+    "adjective_legality": 0,
+    "baseline_oob": true,
+    "adjective_oob": true
+  },
+  "limitation": "Requests span two HF accounts and times; later requests may differ because earlier outputs changed. Description was reused from the already-completed second-run request, not generated again.",
+  "new_api_attempts": 3
+}

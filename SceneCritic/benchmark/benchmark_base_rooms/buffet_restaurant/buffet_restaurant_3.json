@@ -1,0 +1,12 @@
+{
+  "task_description": "This is an indoor restaurant.",
+  "room_dimension": {
+    "room_dimension_x": 6,
+    "room_dimension_y": 4
+  },
+  "assets": {
+    "table": 5,
+    "chair": 15,
+    "coffee table": 2
+  }
+}

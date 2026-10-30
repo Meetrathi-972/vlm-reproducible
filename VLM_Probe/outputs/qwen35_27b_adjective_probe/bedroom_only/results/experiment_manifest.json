@@ -1,0 +1,408 @@
+{
+  "status": "complete_with_failures",
+  "model": "Qwen/Qwen3.5-27B",
+  "provider": "deepinfra",
+  "authentication": "Existing HF_TOKEN, never saved",
+  "benchmarks": [
+    {
+      "category": "bedroom",
+      "benchmark": "bedroom_1",
+      "path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_1.json",
+      "sha256": "fd0cf864184d99d2775f03d220828b6777ee69350b3b00b3a76f8f8ac8300877",
+      "original": {
+        "task_description": "This is an indoor bedroom.",
+        "room_dimension": {
+          "room_dimension_x": 5,
+          "room_dimension_y": 5
+        },
+        "assets": {
+          "bed": 1,
+          "cabinet": 2,
+          "desk": 1,
+          "chair": 1,
+          "shelf": 1
+        }
+      }
+    },
+    {
+      "category": "bedroom",
+      "benchmark": "bedroom_2",
+      "path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_2.json",
+      "sha256": "2dc5da8f9d81ebf2faba144c12e2e223bc315ae737aebfaf2c7de37a93b280ca",
+      "original": {
+        "task_description": "This is an indoor bedroom.",
+        "room_dimension": {
+          "room_dimension_x": 6,
+          "room_dimension_y": 4
+        },
+        "assets": {
+          "bed": 1,
+          "desk": 1,
+          "chair": 1,
+          "cabinet": 1,
+          "bedside table": 1,
+          "dresser": 1,
+          "mirror": 1,
+          "floor lamp": 1
+        }
+      }
+    },
+    {
+      "category": "bedroom",
+      "benchmark": "bedroom_3",
+      "path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_3.json",
+      "sha256": "858fa0883af35e7d4721bd2dec579065fd3e6ead308d3024ec2e4068595f2a68",
+      "original": {
+        "task_description": "This is an indoor bedroom.",
+        "room_dimension": {
+          "room_dimension_x": 4,
+          "room_dimension_y": 6
+        },
+        "assets": {
+          "bed": 1,
+          "mirror": 1,
+          "wardrobe": 1,
+          "trash can": 1
+        }
+      }
+    }
+  ],
+  "conditions": [
+    "baseline",
+    "well_organized",
+    "spacious",
+    "bright",
+    "quiet",
+    "cluttered",
+    "crowded"
+  ],
+  "seeds": null,
+  "replicates": 0,
+  "requested_generations": 21,
+  "successful_generations": 1,
+  "failed_generations": 20,
+  "attempted_generations": 21,
+  "refinement": {
+    "placement_calls": 1,
+    "best_of_n": false,
+    "heuristic_scoring": false,
+    "feedback": false,
+    "candidate_selection": false,
+    "orientation": false,
+    "scale": false,
+    "hidden_state_capture": false
+  },
+  "placement_call_count": 1,
+  "started_at": "2026-10-05T07:58:33.339835+00:00",
+  "runs": [
+    {
+      "benchmark": "bedroom_1",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_1.json",
+      "condition": "baseline",
+      "adjective": null,
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is an indoor bedroom.",
+      "output_path": "bedroom_1/baseline",
+      "status": "success",
+      "started_at": "2026-10-05T07:58:33.795609+00:00",
+      "finished_at": "2026-10-05T07:59:05.465577+00:00"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_1.json",
+      "condition": "well_organized",
+      "adjective": "well-organized",
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is a well-organized indoor bedroom.",
+      "output_path": "bedroom_1/well_organized",
+      "status": "failed",
+      "started_at": "2026-10-05T07:59:05.465903+00:00",
+      "error": "ApiError: Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "finished_at": "2026-10-05T07:59:07.582398+00:00"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_1.json",
+      "condition": "spacious",
+      "adjective": "spacious",
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is a spacious indoor bedroom.",
+      "output_path": "bedroom_1/spacious",
+      "status": "failed",
+      "started_at": "2026-10-05T07:59:07.582749+00:00",
+      "error": "ApiError: Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "finished_at": "2026-10-05T07:59:07.699732+00:00"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_1.json",
+      "condition": "bright",
+      "adjective": "bright",
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is a bright indoor bedroom.",
+      "output_path": "bedroom_1/bright",
+      "status": "failed",
+      "started_at": "2026-10-05T07:59:07.700068+00:00",
+      "error": "ApiError: Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "finished_at": "2026-10-05T07:59:07.803898+00:00"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_1.json",
+      "condition": "quiet",
+      "adjective": "quiet",
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is a quiet indoor bedroom.",
+      "output_path": "bedroom_1/quiet",
+      "status": "failed",
+      "started_at": "2026-10-05T07:59:07.804296+00:00",
+      "error": "ApiError: Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "finished_at": "2026-10-05T07:59:07.912796+00:00"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_1.json",
+      "condition": "cluttered",
+      "adjective": "cluttered",
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is a cluttered indoor bedroom.",
+      "output_path": "bedroom_1/cluttered",
+      "status": "failed",
+      "started_at": "2026-10-05T07:59:07.913363+00:00",
+      "error": "ApiError: Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "finished_at": "2026-10-05T07:59:08.030816+00:00"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_1.json",
+      "condition": "crowded",
+      "adjective": "crowded",
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is a crowded indoor bedroom.",
+      "output_path": "bedroom_1/crowded",
+      "status": "failed",
+      "started_at": "2026-10-05T07:59:08.031194+00:00",
+      "error": "ApiError: Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "finished_at": "2026-10-05T07:59:08.137147+00:00"
+    },
+    {
+      "benchmark": "bedroom_2",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_2.json",
+      "condition": "baseline",
+      "adjective": null,
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is an indoor bedroom.",
+      "output_path": "bedroom_2/baseline",
+      "status": "failed",
+      "started_at": "2026-10-05T07:59:08.137644+00:00",
+      "error": "ApiError: Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "finished_at": "2026-10-05T07:59:08.251065+00:00"
+    },
+    {
+      "benchmark": "bedroom_2",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_2.json",
+      "condition": "well_organized",
+      "adjective": "well-organized",
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is a well-organized indoor bedroom.",
+      "output_path": "bedroom_2/well_organized",
+      "status": "failed",
+      "started_at": "2026-10-05T07:59:08.251728+00:00",
+      "error": "ApiError: Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "finished_at": "2026-10-05T07:59:08.364570+00:00"
+    },
+    {
+      "benchmark": "bedroom_2",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_2.json",
+      "condition": "spacious",
+      "adjective": "spacious",
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is a spacious indoor bedroom.",
+      "output_path": "bedroom_2/spacious",
+      "status": "failed",
+      "started_at": "2026-10-05T07:59:08.365221+00:00",
+      "error": "ApiError: Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "finished_at": "2026-10-05T07:59:08.492367+00:00"
+    },
+    {
+      "benchmark": "bedroom_2",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_2.json",
+      "condition": "bright",
+      "adjective": "bright",
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is a bright indoor bedroom.",
+      "output_path": "bedroom_2/bright",
+      "status": "failed",
+      "started_at": "2026-10-05T07:59:08.492777+00:00",
+      "error": "ApiError: Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "finished_at": "2026-10-05T07:59:08.599828+00:00"
+    },
+    {
+      "benchmark": "bedroom_2",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_2.json",
+      "condition": "quiet",
+      "adjective": "quiet",
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is a quiet indoor bedroom.",
+      "output_path": "bedroom_2/quiet",
+      "status": "failed",
+      "started_at": "2026-10-05T07:59:08.600303+00:00",
+      "error": "ApiError: Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "finished_at": "2026-10-05T07:59:08.708776+00:00"
+    },
+    {
+      "benchmark": "bedroom_2",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_2.json",
+      "condition": "cluttered",
+      "adjective": "cluttered",
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is a cluttered indoor bedroom.",
+      "output_path": "bedroom_2/cluttered",
+      "status": "failed",
+      "started_at": "2026-10-05T07:59:08.708966+00:00",
+      "error": "ApiError: Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "finished_at": "2026-10-05T07:59:08.809655+00:00"
+    },
+    {
+      "benchmark": "bedroom_2",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_2.json",
+      "condition": "crowded",
+      "adjective": "crowded",
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is a crowded indoor bedroom.",
+      "output_path": "bedroom_2/crowded",
+      "status": "failed",
+      "started_at": "2026-10-05T07:59:08.809878+00:00",
+      "error": "ApiError: Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "finished_at": "2026-10-05T07:59:08.916821+00:00"
+    },
+    {
+      "benchmark": "bedroom_3",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_3.json",
+      "condition": "baseline",
+      "adjective": null,
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is an indoor bedroom.",
+      "output_path": "bedroom_3/baseline",
+      "status": "failed",
+      "started_at": "2026-10-05T07:59:08.917213+00:00",
+      "error": "ApiError: Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "finished_at": "2026-10-05T07:59:09.027454+00:00"
+    },
+    {
+      "benchmark": "bedroom_3",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_3.json",
+      "condition": "well_organized",
+      "adjective": "well-organized",
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is a well-organized indoor bedroom.",
+      "output_path": "bedroom_3/well_organized",
+      "status": "failed",
+      "started_at": "2026-10-05T07:59:09.028165+00:00",
+      "error": "ApiError: Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "finished_at": "2026-10-05T07:59:09.136772+00:00"
+    },
+    {
+      "benchmark": "bedroom_3",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_3.json",
+      "condition": "spacious",
+      "adjective": "spacious",
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is a spacious indoor bedroom.",
+      "output_path": "bedroom_3/spacious",
+      "status": "failed",
+      "started_at": "2026-10-05T07:59:09.137212+00:00",
+      "error": "ApiError: Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "finished_at": "2026-10-05T07:59:09.241587+00:00"
+    },
+    {
+      "benchmark": "bedroom_3",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_3.json",
+      "condition": "bright",
+      "adjective": "bright",
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is a bright indoor bedroom.",
+      "output_path": "bedroom_3/bright",
+      "status": "failed",
+      "started_at": "2026-10-05T07:59:09.242175+00:00",
+      "error": "ApiError: Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "finished_at": "2026-10-05T07:59:09.340797+00:00"
+    },
+    {
+      "benchmark": "bedroom_3",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_3.json",
+      "condition": "quiet",
+      "adjective": "quiet",
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is a quiet indoor bedroom.",
+      "output_path": "bedroom_3/quiet",
+      "status": "failed",
+      "started_at": "2026-10-05T07:59:09.341648+00:00",
+      "error": "ApiError: Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "finished_at": "2026-10-05T07:59:09.459662+00:00"
+    },
+    {
+      "benchmark": "bedroom_3",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_3.json",
+      "condition": "cluttered",
+      "adjective": "cluttered",
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is a cluttered indoor bedroom.",
+      "output_path": "bedroom_3/cluttered",
+      "status": "failed",
+      "started_at": "2026-10-05T07:59:09.460421+00:00",
+      "error": "ApiError: Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "finished_at": "2026-10-05T07:59:09.578768+00:00"
+    },
+    {
+      "benchmark": "bedroom_3",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_3.json",
+      "condition": "crowded",
+      "adjective": "crowded",
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is a crowded indoor bedroom.",
+      "output_path": "bedroom_3/crowded",
+      "status": "failed",
+      "started_at": "2026-10-05T07:59:09.579264+00:00",
+      "error": "ApiError: Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+      "finished_at": "2026-10-05T07:59:09.693214+00:00"
+    }
+  ],
+  "source_hashes": {
+    "scenegen/scenegen/Heuristic_wo_dspy.py": "485198b3496aa927b60701164a073735773b8dd9d59e76d510329ee8506e2502",
+    "probe_metrics/utils_copy_img.py": "8408d724f303b0bfce746f2882161b1adfa682372d398cd19f8749deecff95bf",
+    "probe_metrics/probe_capture.py": "4501fa08757bdb0d0231db8807f57320bf2e0ed641172c296f5070d00323ad67",
+    "probe_metrics/adv_l1_variance.py": "8d6dec2238d1071e70a39cd08f37dae1a77e3e5b3390e8c68bd1be36938876b5",
+    "adjective_common_qwen35_27b.py": "cf6de1dce23ee89e821a2cd4558abaa1b3b98ade4f57d9a6b71b0e2af5f3367e",
+    "adv_l1_behavioral_qwen35_27b.py": "25b3123e24af7c3b1b9407897ecdcf87739796044dbfd5356b6c1d92289aa19e",
+    "adv_l1_variance_qwen35_27b.py": "4337a374c47db04abe05fd05d164a21e4fa222443e84119efae71b106e218333",
+    "api_backend_qwen35_27b.py": "557f38e556885e21fb2557089e963d0e11d1358455947e012a7427dbea45a04c",
+    "bedroom_only_qwen35_27b.py": "27791ce65e39a420485748d2f326b47f630d26f7feaba2edb53a205c59d16ced",
+    "classroom_greedy_qwen35_27b.py": "7014abb2ffe005861b344a454bb7ae9880c721198b493a107217a347b0dce50e",
+    "generate_adjective_scenes_qwen35_27b.py": "894d84e46f869914b783e367c7dbbde460dd7c963bb0cfb23b56882d434d067d",
+    "replay_strict_greedy_qwen35_27b.py": "e101c4b66e1701870d884af81c650bc10dd54b2224e80f1cab22adcef58e4172",
+    "test_adjective_experiment_qwen35_27b.py": "9a3bb0b360c9ed0945ad00a4024a895cd2c80c9b9bf3a4b4ae6b7c95ae222bb0"
+  },
+  "retries": 0,
+  "generation_parameters": {
+    "model": "Qwen/Qwen3.5-27B:deepinfra",
+    "temperature": 0.5,
+    "top_p": 0.9,
+    "top_k": 20,
+    "max_tokens": 8192,
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "stop": [],
+    "reasoning_effort": "none",
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "n": 1
+  },
+  "api_attempt_count": 25,
+  "finished_at": "2026-10-05T07:59:09.693585+00:00",
+  "benchmarks_unchanged": true,
+  "behavioral_comparisons": 18
+}

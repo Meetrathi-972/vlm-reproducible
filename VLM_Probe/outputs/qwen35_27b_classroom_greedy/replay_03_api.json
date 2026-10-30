@@ -1,0 +1,42 @@
+{
+  "run": 3,
+  "api_response": {
+    "request": {
+      "model": "Qwen/Qwen3.5-27B:deepinfra",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a strict JSON generator. Output ONLY a single valid JSON value and nothing else. Do NOT include any reasoning, thinking, explanation, preamble, markdown, or code fences. Your entire response must be parseable by json.loads()."
+        },
+        {
+          "role": "user",
+          "content": "Instruction: This is an indoor classroom.\nRoom dimensions: {\"room_dimension_x\": 6, \"room_dimension_y\": 4}\nRequired assets: {\"bean bag chair\": 1, \"bookshelf\": 2, \"chair\": 4, \"desk\": 1, \"table\": 4, \"toy chest\": 1}\nReturn one initial layout with all requested assets and no ego_person.\nOutput ONLY a JSON object of exactly this shape (no markdown, no commentary):\n{\n  \"objects\": [\n    {\n      \"label\": \"<object name, same as plan, NO adjectives, singular>\",\n      \"object_type\": \"<'bulk' or 'ornaments'>\",\n      \"anchor\": \"<reference object label for a spatial relation, or null>\",\n      \"bbox\": [x, y, w, h],\n      \"position\": [x + w/2, y + h/2],\n      \"rotation_angle\": <float degrees>,\n      \"description\": \"<natural language description, may mention relations>\",\n      \"concise_description\": \"<description of ONLY this object, no relations>\"\n    }\n  ]\n}\nEvery object MUST include all of these fields."
+        }
+      ],
+      "seed": 1234,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "top_k": 20,
+      "max_tokens": 8192,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0,
+      "repetition_penalty": 1.0,
+      "stop": [],
+      "reasoning_effort": "none",
+      "response_format": {
+        "type": "json_object"
+      },
+      "stream": false,
+      "n": 1
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "status": "failed",
+        "error": "Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+        "http_status": 402
+      }
+    ],
+    "raw_response": null
+  }
+}

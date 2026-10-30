@@ -1,0 +1,29 @@
+[
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "well_organized",
+    "classification": "COLLATERAL",
+    "subject": "shelf#1",
+    "channel": "object_type",
+    "before": "bulk",
+    "after": "ornaments"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "spacious",
+    "classification": "COLLATERAL",
+    "subject": "shelf#1",
+    "channel": "object_type",
+    "before": "bulk",
+    "after": "ornaments"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "cluttered",
+    "classification": "COLLATERAL",
+    "subject": "shelf#1",
+    "channel": "object_type",
+    "before": "bulk",
+    "after": "ornaments"
+  }
+]

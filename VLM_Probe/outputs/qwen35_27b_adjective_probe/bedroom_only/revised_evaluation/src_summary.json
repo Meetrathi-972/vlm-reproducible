@@ -1,0 +1,65 @@
+[
+  {
+    "benchmark": "bedroom_1",
+    "condition": "baseline",
+    "src": 1.0,
+    "evaluated_relations": 2,
+    "satisfied_relations": 2,
+    "violated_relations": 0,
+    "unevaluated_relations": 3
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "well_organized",
+    "src": 1.0,
+    "evaluated_relations": 2,
+    "satisfied_relations": 2,
+    "violated_relations": 0,
+    "unevaluated_relations": 2
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "spacious",
+    "src": 1.0,
+    "evaluated_relations": 2,
+    "satisfied_relations": 2,
+    "violated_relations": 0,
+    "unevaluated_relations": 2
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "bright",
+    "src": 1.0,
+    "evaluated_relations": 2,
+    "satisfied_relations": 2,
+    "violated_relations": 0,
+    "unevaluated_relations": 2
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "quiet",
+    "src": 1.0,
+    "evaluated_relations": 3,
+    "satisfied_relations": 3,
+    "violated_relations": 0,
+    "unevaluated_relations": 1
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "cluttered",
+    "src": 1.0,
+    "evaluated_relations": 2,
+    "satisfied_relations": 2,
+    "violated_relations": 0,
+    "unevaluated_relations": 2
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "crowded",
+    "src": 0.5,
+    "evaluated_relations": 4,
+    "satisfied_relations": 2,
+    "violated_relations": 2,
+    "unevaluated_relations": 2
+  }
+]

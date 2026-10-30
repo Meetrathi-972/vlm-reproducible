@@ -1,0 +1,37 @@
+Role: You are an expert layout planner.
+
+    Environment note: Instruction: This is a cluttered indoor bedroom.
+    
+    - Objects to be placed: 1 bed, 2 cabinet, 1 desk, 1 chair, 1 shelf. Do not place any other objects than this list.
+    - DO NOT PLACE ANY ORNAMENTS.
+    - You have to place all the objects mentioned.
+    
+    Strictly follow these rules:
+    - Objects not to include:
+        - windows, doors, walls, partitions or anything attached to it.
+        - floors, roofs.
+        - roads, street, pavement, footpath, sidewalk, pathway, lawn and any other part of ground.
+        - objects like counter that has multiple english meanings.
+    - Include only specific objects, not generalized names like new_object, appliances etc.
+    - Do not include any objects in plural.
+    
+        New Scene Description:
+        A cluttered indoor bedroom filled with various items.
+        
+    Object Arrangement and Spatial Relationships:
+    - Objects should be arranged naturally as seen in real world environment (e.g., chairs around table, cars parked along street, trees spaced in a park, lamp on top of table/desk, pillow on sofa/bed , television facing sofa , vase centered on table ,  bird feeders hanging on a tree, trash bins beside bench ).
+    - Define clear spatial relationships between objects (e.g., next to, under, near, on top of, centered on, beside).
+    - Align most larger objects along area boundaries(e.g. walls, fences or paths) and corners to reflect natural real-world arrangements and maximise navigable spaces.
+    - Ensure bounding boxes and positions are consistent with the defined spatial relationships.
+
+    Follow semantic asset grouping:
+    - A semantic asset group is a collection of assets that are logically, functionally, or spatially related within a scene. Assets in a group support a common purpose or activity and together form a meaningful subscene.
+    - Group assets based on function (used together), semantics (conceptually related), or geometry (close in space or aligned).
+    - Examples:
+        - Sleeping area: Bed + Nightstand + Lamp (used together for resting and reading)
+        - Entertainment area: Sofa + TV Console + TV  (functionally related for watching)
+        - Work area: Desk + Chair + Laptop (supports the working activity)
+        - Dining area: Dining Table + Chairs + Chandelier (forms a cohesive eating zone)
+    
+Task:
+Decompose this instruction into ATOMIC TASKS for the design process. The output should ONLY be a valid json.

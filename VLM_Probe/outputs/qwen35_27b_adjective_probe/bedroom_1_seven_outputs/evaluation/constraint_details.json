@@ -1,0 +1,3201 @@
+{
+  "metadata": {
+    "scope": "bedroom_1 only, seven conditions, one output per condition",
+    "benchmark": "bedroom_1",
+    "evaluation_implementation_sha256": "b2797e183e285bffe69cff33bea2a8f9de1389688c49cf30fb74b3dce8f6872b",
+    "regression_command": "python -m unittest discover -s VLM_Probe -p 'test_*qwen35_27b.py'",
+    "n_benchmarks": 1,
+    "stochastic_replicates": 0,
+    "api_calls": 0,
+    "statistical_interpretation": "DESCRIPTIVE",
+    "aggregate": "Arithmetic mean over available benchmark values; with one benchmark, aggregate equals bedroom_1.",
+    "observational_limit": "API nondeterminism was observed previously; one unseeded sample per condition cannot isolate causal adjective effects.",
+    "epsilon": 1e-06,
+    "unsupported_adjectives": {
+      "bright": "NOT DIRECTLY OBSERVABLE FROM CURRENT OUTPUT REPRESENTATION",
+      "quiet": "NOT DIRECTLY OBSERVABLE FROM CURRENT OUTPUT REPRESENTATION"
+    },
+    "input_inventory": [
+      {
+        "condition": "baseline",
+        "status": "available",
+        "path": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/baseline/run_qwen35_27b.json",
+        "sha256": "1abf997da1555a62b9d4c6a516648e5291c676878fc639b5a5f9e361d39c98d0"
+      },
+      {
+        "condition": "well_organized",
+        "status": "available",
+        "path": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/well_organized/run_qwen35_27b.json",
+        "sha256": "d1166b0a78efc81311bead1515a5293e37455914bf10cf89e3e13327f415a47f"
+      },
+      {
+        "condition": "spacious",
+        "status": "available",
+        "path": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/spacious/run_qwen35_27b.json",
+        "sha256": "1ae93bcb7c63dd4079d7b9dc793ad99e1e13d9d91360d262bc95fff1371d82d7"
+      },
+      {
+        "condition": "bright",
+        "status": "available",
+        "path": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/bright/run_qwen35_27b.json",
+        "sha256": "670fc2177f9c0e5e70d086c76a7de80240da8d5a8a9ee84bf8544d2ae858f0e4"
+      },
+      {
+        "condition": "quiet",
+        "status": "available",
+        "path": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/quiet/run_qwen35_27b.json",
+        "sha256": "1dc6a6e618a573a789daf985d59d123b934498518926e633f754e7b541d9ce78"
+      },
+      {
+        "condition": "cluttered",
+        "status": "available",
+        "path": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/cluttered/run_qwen35_27b.json",
+        "sha256": "4078be70c59a3855592b364e58432c4c520ec20c185214c0979ff28a422105ee"
+      },
+      {
+        "condition": "crowded",
+        "status": "available",
+        "path": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/crowded/run_qwen35_27b.json",
+        "sha256": "68c3ffb374421bd794b908d3a3ae658cf6fb88c5c6643f7134bfd2edb3a9487e"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "scene_structure",
+      "item": "objects_list",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "required_object_count",
+      "item": "bed",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "required_object_count",
+      "item": "cabinet",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "required_object_count",
+      "item": "desk",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "required_object_count",
+      "item": "chair",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "required_object_count",
+      "item": "shelf",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "unexpected_inventory",
+      "item": "categories",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "required_fields",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "valid_geometry",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "finite_rotation",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "inside_room",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "position_matches_bbox_center",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "anchor_exists",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "anchor_unambiguous",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "required_fields",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "valid_geometry",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "finite_rotation",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "inside_room",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "position_matches_bbox_center",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "anchor_exists",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "anchor_unambiguous",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "required_fields",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "valid_geometry",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "finite_rotation",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "inside_room",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "position_matches_bbox_center",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "anchor_exists",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "anchor_unambiguous",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "required_fields",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "valid_geometry",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "finite_rotation",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "inside_room",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "position_matches_bbox_center",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "anchor_exists",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "anchor_unambiguous",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "required_fields",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "valid_geometry",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "finite_rotation",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "inside_room",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "position_matches_bbox_center",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "anchor_exists",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "anchor_unambiguous",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "required_fields",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "valid_geometry",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "finite_rotation",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "inside_room",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "position_matches_bbox_center",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "anchor_exists",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "anchor_unambiguous",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('cabinet', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('cabinet', 2)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('desk', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('chair', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('cabinet', 2)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('desk', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('chair', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 2)|('desk', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 2)|('chair', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 2)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "footprint_nonoverlap",
+      "item": "('desk', 1)|('chair', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "footprint_nonoverlap",
+      "item": "('desk', 1)|('shelf', 1)",
+      "violated": true
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "check": "footprint_nonoverlap",
+      "item": "('chair', 1)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "scene_structure",
+      "item": "objects_list",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "required_object_count",
+      "item": "bed",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "required_object_count",
+      "item": "cabinet",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "required_object_count",
+      "item": "desk",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "required_object_count",
+      "item": "chair",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "required_object_count",
+      "item": "shelf",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "unexpected_inventory",
+      "item": "categories",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "required_fields",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "valid_geometry",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "finite_rotation",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "inside_room",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "position_matches_bbox_center",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "anchor_exists",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "anchor_unambiguous",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "required_fields",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "valid_geometry",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "finite_rotation",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "inside_room",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "position_matches_bbox_center",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "anchor_exists",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "anchor_unambiguous",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "required_fields",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "valid_geometry",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "finite_rotation",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "inside_room",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "position_matches_bbox_center",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "anchor_exists",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "anchor_unambiguous",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "required_fields",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "valid_geometry",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "finite_rotation",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "inside_room",
+      "item": "desk#1",
+      "violated": true
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "position_matches_bbox_center",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "anchor_exists",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "anchor_unambiguous",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "required_fields",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "valid_geometry",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "finite_rotation",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "inside_room",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "position_matches_bbox_center",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "anchor_exists",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "anchor_unambiguous",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "required_fields",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "valid_geometry",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "finite_rotation",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "inside_room",
+      "item": "shelf#1",
+      "violated": true
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "position_matches_bbox_center",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "anchor_exists",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "anchor_unambiguous",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('cabinet', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('cabinet', 2)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('desk', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('chair', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('cabinet', 2)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('desk', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('chair', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 2)|('desk', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 2)|('chair', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 2)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "footprint_nonoverlap",
+      "item": "('desk', 1)|('chair', 1)",
+      "violated": true
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "footprint_nonoverlap",
+      "item": "('desk', 1)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "check": "footprint_nonoverlap",
+      "item": "('chair', 1)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "scene_structure",
+      "item": "objects_list",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "required_object_count",
+      "item": "bed",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "required_object_count",
+      "item": "cabinet",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "required_object_count",
+      "item": "desk",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "required_object_count",
+      "item": "chair",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "required_object_count",
+      "item": "shelf",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "unexpected_inventory",
+      "item": "categories",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "required_fields",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "valid_geometry",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "finite_rotation",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "inside_room",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "position_matches_bbox_center",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "anchor_exists",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "anchor_unambiguous",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "required_fields",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "valid_geometry",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "finite_rotation",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "inside_room",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "position_matches_bbox_center",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "anchor_exists",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "anchor_unambiguous",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "required_fields",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "valid_geometry",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "finite_rotation",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "inside_room",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "position_matches_bbox_center",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "anchor_exists",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "anchor_unambiguous",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "required_fields",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "valid_geometry",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "finite_rotation",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "inside_room",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "position_matches_bbox_center",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "anchor_exists",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "anchor_unambiguous",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "required_fields",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "valid_geometry",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "finite_rotation",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "inside_room",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "position_matches_bbox_center",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "anchor_exists",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "anchor_unambiguous",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "required_fields",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "valid_geometry",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "finite_rotation",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "inside_room",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "position_matches_bbox_center",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "anchor_exists",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "anchor_unambiguous",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('cabinet', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('cabinet', 2)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('desk', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('chair', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('cabinet', 2)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('desk', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('chair', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 2)|('desk', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 2)|('chair', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 2)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "footprint_nonoverlap",
+      "item": "('desk', 1)|('chair', 1)",
+      "violated": true
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "footprint_nonoverlap",
+      "item": "('desk', 1)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "check": "footprint_nonoverlap",
+      "item": "('chair', 1)|('shelf', 1)",
+      "violated": true
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "scene_structure",
+      "item": "objects_list",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "required_object_count",
+      "item": "bed",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "required_object_count",
+      "item": "cabinet",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "required_object_count",
+      "item": "desk",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "required_object_count",
+      "item": "chair",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "required_object_count",
+      "item": "shelf",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "unexpected_inventory",
+      "item": "categories",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "required_fields",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "valid_geometry",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "finite_rotation",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "inside_room",
+      "item": "bed#1",
+      "violated": true
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "position_matches_bbox_center",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "anchor_exists",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "anchor_unambiguous",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "required_fields",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "valid_geometry",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "finite_rotation",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "inside_room",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "position_matches_bbox_center",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "anchor_exists",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "anchor_unambiguous",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "required_fields",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "valid_geometry",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "finite_rotation",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "inside_room",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "position_matches_bbox_center",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "anchor_exists",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "anchor_unambiguous",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "required_fields",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "valid_geometry",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "finite_rotation",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "inside_room",
+      "item": "desk#1",
+      "violated": true
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "position_matches_bbox_center",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "anchor_exists",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "anchor_unambiguous",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "required_fields",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "valid_geometry",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "finite_rotation",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "inside_room",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "position_matches_bbox_center",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "anchor_exists",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "anchor_unambiguous",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "required_fields",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "valid_geometry",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "finite_rotation",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "inside_room",
+      "item": "shelf#1",
+      "violated": true
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "position_matches_bbox_center",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "anchor_exists",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "anchor_unambiguous",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('cabinet', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('cabinet', 2)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('desk', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('chair', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('cabinet', 2)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('desk', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('chair', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 2)|('desk', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 2)|('chair', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 2)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "footprint_nonoverlap",
+      "item": "('desk', 1)|('chair', 1)",
+      "violated": true
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "footprint_nonoverlap",
+      "item": "('desk', 1)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "check": "footprint_nonoverlap",
+      "item": "('chair', 1)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "scene_structure",
+      "item": "objects_list",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "required_object_count",
+      "item": "bed",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "required_object_count",
+      "item": "cabinet",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "required_object_count",
+      "item": "desk",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "required_object_count",
+      "item": "chair",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "required_object_count",
+      "item": "shelf",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "unexpected_inventory",
+      "item": "categories",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "required_fields",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "valid_geometry",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "finite_rotation",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "inside_room",
+      "item": "bed#1",
+      "violated": true
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "position_matches_bbox_center",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "anchor_exists",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "anchor_unambiguous",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "required_fields",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "valid_geometry",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "finite_rotation",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "inside_room",
+      "item": "cabinet#1",
+      "violated": true
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "position_matches_bbox_center",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "anchor_exists",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "anchor_unambiguous",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "required_fields",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "valid_geometry",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "finite_rotation",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "inside_room",
+      "item": "cabinet#2",
+      "violated": true
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "position_matches_bbox_center",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "anchor_exists",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "anchor_unambiguous",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "required_fields",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "valid_geometry",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "finite_rotation",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "inside_room",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "position_matches_bbox_center",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "anchor_exists",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "anchor_unambiguous",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "required_fields",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "valid_geometry",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "finite_rotation",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "inside_room",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "position_matches_bbox_center",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "anchor_exists",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "anchor_unambiguous",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "required_fields",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "valid_geometry",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "finite_rotation",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "inside_room",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "position_matches_bbox_center",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "anchor_exists",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "anchor_unambiguous",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('cabinet', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('cabinet', 2)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('desk', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('chair', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('cabinet', 2)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('desk', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('chair', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 2)|('desk', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 2)|('chair', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 2)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "footprint_nonoverlap",
+      "item": "('desk', 1)|('chair', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "footprint_nonoverlap",
+      "item": "('desk', 1)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "check": "footprint_nonoverlap",
+      "item": "('chair', 1)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "scene_structure",
+      "item": "objects_list",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "required_object_count",
+      "item": "bed",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "required_object_count",
+      "item": "cabinet",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "required_object_count",
+      "item": "desk",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "required_object_count",
+      "item": "chair",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "required_object_count",
+      "item": "shelf",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "unexpected_inventory",
+      "item": "categories",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "required_fields",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "valid_geometry",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "finite_rotation",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "inside_room",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "position_matches_bbox_center",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "anchor_exists",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "anchor_unambiguous",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "required_fields",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "valid_geometry",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "finite_rotation",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "inside_room",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "position_matches_bbox_center",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "anchor_exists",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "anchor_unambiguous",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "required_fields",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "valid_geometry",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "finite_rotation",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "inside_room",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "position_matches_bbox_center",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "anchor_exists",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "anchor_unambiguous",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "required_fields",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "valid_geometry",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "finite_rotation",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "inside_room",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "position_matches_bbox_center",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "anchor_exists",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "anchor_unambiguous",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "required_fields",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "valid_geometry",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "finite_rotation",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "inside_room",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "position_matches_bbox_center",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "anchor_exists",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "anchor_unambiguous",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "required_fields",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "valid_geometry",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "finite_rotation",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "inside_room",
+      "item": "shelf#1",
+      "violated": true
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "position_matches_bbox_center",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "anchor_exists",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "anchor_unambiguous",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('cabinet', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('cabinet', 2)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('desk', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('chair', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('cabinet', 2)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('desk', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('chair', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 2)|('desk', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 2)|('chair', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 2)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "footprint_nonoverlap",
+      "item": "('desk', 1)|('chair', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "footprint_nonoverlap",
+      "item": "('desk', 1)|('shelf', 1)",
+      "violated": true
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "check": "footprint_nonoverlap",
+      "item": "('chair', 1)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "scene_structure",
+      "item": "objects_list",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "required_object_count",
+      "item": "bed",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "required_object_count",
+      "item": "cabinet",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "required_object_count",
+      "item": "desk",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "required_object_count",
+      "item": "chair",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "required_object_count",
+      "item": "shelf",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "unexpected_inventory",
+      "item": "categories",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "required_fields",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "valid_geometry",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "finite_rotation",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "inside_room",
+      "item": "bed#1",
+      "violated": true
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "position_matches_bbox_center",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "anchor_exists",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "anchor_unambiguous",
+      "item": "bed#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "required_fields",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "valid_geometry",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "finite_rotation",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "inside_room",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "position_matches_bbox_center",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "anchor_exists",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "anchor_unambiguous",
+      "item": "cabinet#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "required_fields",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "valid_geometry",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "finite_rotation",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "inside_room",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "position_matches_bbox_center",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "anchor_exists",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "anchor_unambiguous",
+      "item": "cabinet#2",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "required_fields",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "valid_geometry",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "finite_rotation",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "inside_room",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "position_matches_bbox_center",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "anchor_exists",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "anchor_unambiguous",
+      "item": "desk#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "required_fields",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "valid_geometry",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "finite_rotation",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "inside_room",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "position_matches_bbox_center",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "anchor_exists",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "anchor_unambiguous",
+      "item": "chair#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "required_fields",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "valid_geometry",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "finite_rotation",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "inside_room",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "position_matches_bbox_center",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "anchor_exists",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "anchor_unambiguous",
+      "item": "shelf#1",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('cabinet', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('cabinet', 2)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('desk', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('chair', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "footprint_nonoverlap",
+      "item": "('bed', 1)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('cabinet', 2)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('desk', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('chair', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 1)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 2)|('desk', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 2)|('chair', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "footprint_nonoverlap",
+      "item": "('cabinet', 2)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "footprint_nonoverlap",
+      "item": "('desk', 1)|('chair', 1)",
+      "violated": true
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "footprint_nonoverlap",
+      "item": "('desk', 1)|('shelf', 1)",
+      "violated": false
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "check": "footprint_nonoverlap",
+      "item": "('chair', 1)|('shelf', 1)",
+      "violated": true
+    }
+  ]
+}

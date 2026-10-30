@@ -1,0 +1,174 @@
+{
+  "atomic_tasks": [
+    {
+      "id": "add_bed_001",
+      "object_type": "bulk",
+      "type": "Add",
+      "label": "bed",
+      "anchor": null,
+      "spatial_hint": "In the top-left area, aligned with the top and left boundaries.",
+      "bbox_hint": null,
+      "output_schema": {
+        "add": [
+          {
+            "label": "bed",
+            "object_type": "bulk",
+            "anchor": null,
+            "bbox": [
+              0.1,
+              0.1,
+              2.0,
+              1.5
+            ],
+            "position": [
+              1.1,
+              0.85
+            ],
+            "rotation_angle": 0.0,
+            "description": "A standard bed placed in the top-left area, aligned with the surrounding boundaries.",
+            "concise_description": "standard bed"
+          }
+        ],
+        "remove": null,
+        "update": null
+      },
+      "execution_prompt": "Add a standard bed in the top-left area, aligned with the top and left boundaries."
+    },
+    {
+      "id": "add_cabinet_001",
+      "object_type": "bulk",
+      "type": "Add",
+      "label": "cabinet",
+      "anchor": null,
+      "spatial_hint": "In the top-right area, aligned with the top boundary and to the right of the bed.",
+      "bbox_hint": null,
+      "output_schema": {
+        "add": [
+          {
+            "label": "cabinet",
+            "object_type": "bulk",
+            "anchor": null,
+            "bbox": [
+              3.4,
+              0.1,
+              0.6,
+              0.9
+            ],
+            "position": [
+              3.7,
+              0.55
+            ],
+            "rotation_angle": 0.0,
+            "description": "A tall storage cabinet placed in the top-right area, aligned with the top boundary.",
+            "concise_description": "tall storage cabinet"
+          }
+        ],
+        "remove": null,
+        "update": null
+      },
+      "execution_prompt": "Add a tall storage cabinet in the top-right area, aligned with the top boundary."
+    },
+    {
+      "id": "add_cabinet_002",
+      "object_type": "bulk",
+      "type": "Add",
+      "label": "cabinet",
+      "anchor": null,
+      "spatial_hint": "In the bottom-left area, aligned with the bottom boundary.",
+      "bbox_hint": null,
+      "output_schema": {
+        "add": [
+          {
+            "label": "cabinet",
+            "object_type": "bulk",
+            "anchor": null,
+            "bbox": [
+              0.1,
+              2.6,
+              0.8,
+              0.4
+            ],
+            "position": [
+              0.5,
+              2.8
+            ],
+            "rotation_angle": 0.0,
+            "description": "A low cabinet placed in the bottom-left area, aligned with the bottom boundary.",
+            "concise_description": "low cabinet"
+          }
+        ],
+        "remove": null,
+        "update": null
+      },
+      "execution_prompt": "Add a low cabinet in the bottom-left area, aligned with the bottom boundary."
+    },
+    {
+      "id": "add_desk_001",
+      "object_type": "bulk",
+      "type": "Add",
+      "label": "desk",
+      "anchor": null,
+      "spatial_hint": "In the bottom-right area, aligned with the bottom boundary.",
+      "bbox_hint": null,
+      "output_schema": {
+        "add": [
+          {
+            "label": "desk",
+            "object_type": "bulk",
+            "anchor": null,
+            "bbox": [
+              2.3,
+              2.4,
+              1.3,
+              0.6
+            ],
+            "position": [
+              2.95,
+              2.7
+            ],
+            "rotation_angle": 0.0,
+            "description": "A desk placed in the bottom-right area, aligned with the bottom boundary.",
+            "concise_description": "desk"
+          }
+        ],
+        "remove": null,
+        "update": null
+      },
+      "execution_prompt": "Add a desk in the bottom-right area, aligned with the bottom boundary."
+    },
+    {
+      "id": "add_chair_001",
+      "object_type": "bulk",
+      "type": "Add",
+      "label": "chair",
+      "anchor": "desk",
+      "spatial_hint": "In front of the desk, positioned toward the center of the room.",
+      "bbox_hint": null,
+      "output_schema": {
+        "add": [
+          {
+            "label": "chair",
+            "object_type": "bulk",
+            "anchor": "desk",
+            "bbox": [
+              2.7,
+              1.7,
+              0.5,
+              0.5
+            ],
+            "position": [
+              2.95,
+              1.95
+            ],
+            "rotation_angle": 0.0,
+            "description": "A chair placed in front of the desk, facing the desk and toward the room center.",
+            "concise_description": "chair"
+          }
+        ],
+        "remove": null,
+        "update": null
+      },
+      "execution_prompt": "Add a chair in front of the desk, positioned toward the center of the room."
+    }
+  ]
+}

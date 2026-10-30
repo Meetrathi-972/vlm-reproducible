@@ -1,0 +1,64 @@
+{
+  "objects": [
+    {
+      "label": "bed",
+      "object_type": "bulk",
+      "anchor": null,
+      "bbox": [-1.0, 4.0, 2.0, 1.8],
+      "position": [0.0, 4.9],
+      "rotation_angle": 0.0,
+      "description": "A bed centered against the back wall of the room.",
+      "concise_description": "A standard double bed with a headboard."
+    },
+    {
+      "label": "cabinet",
+      "object_type": "bulk",
+      "anchor": "bed",
+      "bbox": [-2.2, 4.0, 0.8, 1.2],
+      "position": [-1.8, 4.6],
+      "rotation_angle": 0.0,
+      "description": "A cabinet placed to the left of the bed against the back wall.",
+      "concise_description": "A wooden nightstand cabinet with drawers."
+    },
+    {
+      "label": "cabinet",
+      "object_type": "bulk",
+      "anchor": "bed",
+      "bbox": [1.0, 4.0, 0.8, 1.2],
+      "position": [1.4, 4.6],
+      "rotation_angle": 0.0,
+      "description": "A cabinet placed to the right of the bed against the back wall.",
+      "concise_description": "A wooden nightstand cabinet with drawers."
+    },
+    {
+      "label": "desk",
+      "object_type": "bulk",
+      "anchor": null,
+      "bbox": [-2.4, 1.5, 0.6, 1.4],
+      "position": [-2.1, 2.2],
+      "rotation_angle": 90.0,
+      "description": "A desk placed against the left wall, perpendicular to the bed.",
+      "concise_description": "A compact wooden writing desk."
+    },
+    {
+      "label": "chair",
+      "object_type": "bulk",
+      "anchor": "desk",
+      "bbox": [-1.8, 0.8, 0.6, 0.8],
+      "position": [-1.5, 1.2],
+      "rotation_angle": 90.0,
+      "description": "A chair positioned in front of the desk for seating.",
+      "concise_description": "An ergonomic office chair."
+    },
+    {
+      "label": "shelf",
+      "object_type": "bulk",
+      "anchor": "desk",
+      "bbox": [-2.3, 2.9, 0.4, 0.4],
+      "position": [-2.1, 3.1],
+      "rotation_angle": 90.0,
+      "description": "A shelf mounted on top of the desk.",
+      "concise_description": "A small wall-mounted shelf unit."
+    }
+  ]
+}

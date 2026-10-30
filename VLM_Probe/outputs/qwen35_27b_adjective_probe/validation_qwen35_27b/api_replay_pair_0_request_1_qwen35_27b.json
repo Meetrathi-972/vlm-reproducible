@@ -1,0 +1,82 @@
+{
+  "prompt": "Instruction: This is an indoor classroom.\nRoom dimensions: {\"room_dimension_x\": 6, \"room_dimension_y\": 4}\nRequired assets: {\"bean bag chair\": 1, \"bookshelf\": 2, \"chair\": 4, \"desk\": 1, \"table\": 4, \"toy chest\": 1}\nReturn one initial layout with all requested assets and no ego_person.\nOutput ONLY a JSON object of exactly this shape (no markdown, no commentary):\n{\n  \"objects\": [\n    {\n      \"label\": \"<object name, same as plan, NO adjectives, singular>\",\n      \"object_type\": \"<'bulk' or 'ornaments'>\",\n      \"anchor\": \"<reference object label for a spatial relation, or null>\",\n      \"bbox\": [x, y, w, h],\n      \"position\": [x + w/2, y + h/2],\n      \"rotation_angle\": <float degrees>,\n      \"description\": \"<natural language description, may mention relations>\",\n      \"concise_description\": \"<description of ONLY this object, no relations>\"\n    }\n  ]\n}\nEvery object MUST include all of these fields.",
+  "system": "You are a strict JSON generator. Output ONLY a single valid JSON value and nothing else. Do NOT include any reasoning, thinking, explanation, preamble, markdown, or code fences. Your entire response must be parseable by json.loads().",
+  "seed": 1238,
+  "content": "{\n  \"objects\": [\n    {\n      \"label\": \"desk\",\n      \"object_type\": \"bulk\",\n      \"anchor\": null,\n      \"bbox\": [0.5, 0.5, 1.0, 1.0],\n      \"position\": [1.0, 1.0],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A desk placed near the entrance of the classroom.\",\n      \"concise_description\": \"A standard classroom desk.\"\n    },\n    {\n      \"label\": \"chair\",\n      \"object_type\": \"bulk\",\n      \"anchor\": \"desk\",\n      \"bbox\": [0.6, 1.6, 0.4, 0.4],\n      \"position\": [0.8, 1.8],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A chair positioned in front of the desk.\",\n      \"concise_description\": \"A simple classroom chair.\"\n    },\n    {\n      \"label\": \"chair\",\n      \"object_type\": \"bulk\",\n      \"anchor\": \"desk\",\n      \"bbox\": [1.2, 1.6, 0.4, 0.4],\n      \"position\": [1.4, 1.8],\n      \"rotation_angle\": 0.0,\n      \"description\": \"Another chair placed next to the first one near the desk.\",\n      \"concise_description\": \"A simple classroom chair.\"\n    },\n    {\n      \"label\": \"chair\",\n      \"object_type\": \"bulk\",\n      \"anchor\": \"table\",\n      \"bbox\": [3.5, 0.5, 0.4, 0.4],\n      \"position\": [3.7, 0.7],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A chair placed near the first table.\",\n      \"concise_description\": \"A simple classroom chair.\"\n    },\n    {\n      \"label\": \"chair\",\n      \"object_type\": \"bulk\",\n      \"anchor\": \"table\",\n      \"bbox\": [4.1, 0.5, 0.4, 0.4],\n      \"position\": [4.3, 0.7],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A chair placed next to the previous one near the table.\",\n      \"concise_description\": \"A simple classroom chair.\"\n    },\n    {\n      \"label\": \"table\",\n      \"object_type\": \"bulk\",\n      \"anchor\": null,\n      \"bbox\": [3.0, 1.0, 1.5, 1.0],\n      \"position\": [3.75, 1.5],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A large table in the center of the room for group activities.\",\n      \"concise_description\": \"A large group activity table.\"\n    },\n    {\n      \"label\": \"table\",\n      \"object_type\": \"bulk\",\n      \"anchor\": null,\n      \"bbox\": [0.5, 2.5, 1.0, 1.0],\n      \"position\": [1.0, 3.0],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A small table placed near the wall for individual work.\",\n      \"concise_description\": \"A small individual work table.\"\n    },\n    {\n      \"label\": \"table\",\n      \"object_type\": \"bulk\",\n      \"anchor\": null,\n      \"bbox\": [4.5, 2.5, 1.0, 1.0],\n      \"position\": [5.0, 3.0],\n      \"rotation_angle\": 0.0,\n      \"description\": \"Another small table placed on the opposite side of the room.\",\n      \"concise_description\": \"A small individual work table.\"\n    },\n    {\n      \"label\": \"table\",\n      \"object_type\": \"bulk\",\n      \"anchor\": null,\n      \"bbox\": [2.5, 3.0, 1.0, 1.0],\n      \"position\": [3.0, 3.5],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A fourth table placed near the back wall.\",\n      \"concise_description\": \"A small individual work table.\"\n    },\n    {\n      \"label\": \"bookshelf\",\n      \"object_type\": \"bulk\",\n      \"anchor\": null,\n      \"bbox\": [5.0, 0.5, 0.5, 2.0],\n      \"position\": [5.25, 1.5],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A tall bookshelf placed against the right wall.\",\n      \"concise_description\": \"A tall bookshelf for storing books.\"\n    },\n    {\n      \"label\": \"bookshelf\",\n      \"object_type\": \"bulk\",\n      \"anchor\": null,\n      \"bbox\": [5.0, 2.5, 0.5, 1.0],\n      \"position\": [5.25, 3.0],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A shorter bookshelf placed below the first one.\",\n      \"concise_description\": \"A shorter bookshelf for storing books.\"\n    },\n    {\n      \"label\": \"bean bag chair\",\n      \"object_type\": \"bulk\",\n      \"anchor\": null,\n      \"bbox\": [0.5, 3.5, 0.8, 0.8],\n      \"position\": [0.9, 3.9],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A comfortable bean bag chair placed in the corner for reading.\",\n      \"concise_description\": \"A comfortable bean bag chair.\"\n    },\n    {\n      \"label\": \"toy chest\",\n      \"object_type\": \"bulk\",\n      \"anchor\": null,\n      \"bbox\": [1.5, 3.5, 0.8, 0.8],\n      \"position\": [1.9, 3.9],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A toy chest placed next to the bean bag chair for storing toys.\",\n      \"concise_description\": \"A toy chest for storing toys.\"\n    }\n  ]\n}",
+  "api_response": {
+    "request": {
+      "model": "Qwen/Qwen3.5-27B:deepinfra",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a strict JSON generator. Output ONLY a single valid JSON value and nothing else. Do NOT include any reasoning, thinking, explanation, preamble, markdown, or code fences. Your entire response must be parseable by json.loads()."
+        },
+        {
+          "role": "user",
+          "content": "Instruction: This is an indoor classroom.\nRoom dimensions: {\"room_dimension_x\": 6, \"room_dimension_y\": 4}\nRequired assets: {\"bean bag chair\": 1, \"bookshelf\": 2, \"chair\": 4, \"desk\": 1, \"table\": 4, \"toy chest\": 1}\nReturn one initial layout with all requested assets and no ego_person.\nOutput ONLY a JSON object of exactly this shape (no markdown, no commentary):\n{\n  \"objects\": [\n    {\n      \"label\": \"<object name, same as plan, NO adjectives, singular>\",\n      \"object_type\": \"<'bulk' or 'ornaments'>\",\n      \"anchor\": \"<reference object label for a spatial relation, or null>\",\n      \"bbox\": [x, y, w, h],\n      \"position\": [x + w/2, y + h/2],\n      \"rotation_angle\": <float degrees>,\n      \"description\": \"<natural language description, may mention relations>\",\n      \"concise_description\": \"<description of ONLY this object, no relations>\"\n    }\n  ]\n}\nEvery object MUST include all of these fields."
+        }
+      ],
+      "seed": 1238,
+      "temperature": 0.5,
+      "top_p": 0.9,
+      "top_k": 20,
+      "max_tokens": 8192,
+      "frequency_penalty": 0.0,
+      "presence_penalty": 0.0,
+      "repetition_penalty": 1.0,
+      "stop": [],
+      "reasoning_effort": "none",
+      "response_format": {
+        "type": "json_object"
+      },
+      "stream": false,
+      "n": 1
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "status": "success"
+      }
+    ],
+    "raw_response": {
+      "service_tier": "default",
+      "id": "chatcmpl-RH6FIVNZ0NAfsC5sAMg1Abb2",
+      "object": "chat.completion",
+      "created": 1791182046,
+      "model": "Qwen/Qwen3.5-27B",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"objects\": [\n    {\n      \"label\": \"desk\",\n      \"object_type\": \"bulk\",\n      \"anchor\": null,\n      \"bbox\": [0.5, 0.5, 1.0, 1.0],\n      \"position\": [1.0, 1.0],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A desk placed near the entrance of the classroom.\",\n      \"concise_description\": \"A standard classroom desk.\"\n    },\n    {\n      \"label\": \"chair\",\n      \"object_type\": \"bulk\",\n      \"anchor\": \"desk\",\n      \"bbox\": [0.6, 1.6, 0.4, 0.4],\n      \"position\": [0.8, 1.8],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A chair positioned in front of the desk.\",\n      \"concise_description\": \"A simple classroom chair.\"\n    },\n    {\n      \"label\": \"chair\",\n      \"object_type\": \"bulk\",\n      \"anchor\": \"desk\",\n      \"bbox\": [1.2, 1.6, 0.4, 0.4],\n      \"position\": [1.4, 1.8],\n      \"rotation_angle\": 0.0,\n      \"description\": \"Another chair placed next to the first one near the desk.\",\n      \"concise_description\": \"A simple classroom chair.\"\n    },\n    {\n      \"label\": \"chair\",\n      \"object_type\": \"bulk\",\n      \"anchor\": \"table\",\n      \"bbox\": [3.5, 0.5, 0.4, 0.4],\n      \"position\": [3.7, 0.7],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A chair placed near the first table.\",\n      \"concise_description\": \"A simple classroom chair.\"\n    },\n    {\n      \"label\": \"chair\",\n      \"object_type\": \"bulk\",\n      \"anchor\": \"table\",\n      \"bbox\": [4.1, 0.5, 0.4, 0.4],\n      \"position\": [4.3, 0.7],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A chair placed next to the previous one near the table.\",\n      \"concise_description\": \"A simple classroom chair.\"\n    },\n    {\n      \"label\": \"table\",\n      \"object_type\": \"bulk\",\n      \"anchor\": null,\n      \"bbox\": [3.0, 1.0, 1.5, 1.0],\n      \"position\": [3.75, 1.5],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A large table in the center of the room for group activities.\",\n      \"concise_description\": \"A large group activity table.\"\n    },\n    {\n      \"label\": \"table\",\n      \"object_type\": \"bulk\",\n      \"anchor\": null,\n      \"bbox\": [0.5, 2.5, 1.0, 1.0],\n      \"position\": [1.0, 3.0],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A small table placed near the wall for individual work.\",\n      \"concise_description\": \"A small individual work table.\"\n    },\n    {\n      \"label\": \"table\",\n      \"object_type\": \"bulk\",\n      \"anchor\": null,\n      \"bbox\": [4.5, 2.5, 1.0, 1.0],\n      \"position\": [5.0, 3.0],\n      \"rotation_angle\": 0.0,\n      \"description\": \"Another small table placed on the opposite side of the room.\",\n      \"concise_description\": \"A small individual work table.\"\n    },\n    {\n      \"label\": \"table\",\n      \"object_type\": \"bulk\",\n      \"anchor\": null,\n      \"bbox\": [2.5, 3.0, 1.0, 1.0],\n      \"position\": [3.0, 3.5],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A fourth table placed near the back wall.\",\n      \"concise_description\": \"A small individual work table.\"\n    },\n    {\n      \"label\": \"bookshelf\",\n      \"object_type\": \"bulk\",\n      \"anchor\": null,\n      \"bbox\": [5.0, 0.5, 0.5, 2.0],\n      \"position\": [5.25, 1.5],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A tall bookshelf placed against the right wall.\",\n      \"concise_description\": \"A tall bookshelf for storing books.\"\n    },\n    {\n      \"label\": \"bookshelf\",\n      \"object_type\": \"bulk\",\n      \"anchor\": null,\n      \"bbox\": [5.0, 2.5, 0.5, 1.0],\n      \"position\": [5.25, 3.0],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A shorter bookshelf placed below the first one.\",\n      \"concise_description\": \"A shorter bookshelf for storing books.\"\n    },\n    {\n      \"label\": \"bean bag chair\",\n      \"object_type\": \"bulk\",\n      \"anchor\": null,\n      \"bbox\": [0.5, 3.5, 0.8, 0.8],\n      \"position\": [0.9, 3.9],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A comfortable bean bag chair placed in the corner for reading.\",\n      \"concise_description\": \"A comfortable bean bag chair.\"\n    },\n    {\n      \"label\": \"toy chest\",\n      \"object_type\": \"bulk\",\n      \"anchor\": null,\n      \"bbox\": [1.5, 3.5, 0.8, 0.8],\n      \"position\": [1.9, 3.9],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A toy chest placed next to the bean bag chair for storing toys.\",\n      \"concise_description\": \"A toy chest for storing toys.\"\n    }\n  ]\n}",
+            "reasoning_content": null,
+            "name": null,
+            "tool_calls": []
+          },
+          "finish_reason": "stop",
+          "logprobs": null
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 321,
+        "total_tokens": 1801,
+        "completion_tokens": 1480,
+        "estimated_cost": 0.00393146,
+        "prompt_tokens_details": null
+      }
+    },
+    "id": "chatcmpl-RH6FIVNZ0NAfsC5sAMg1Abb2",
+    "response_model": "Qwen/Qwen3.5-27B",
+    "response_provider": null,
+    "system_fingerprint": null,
+    "usage": {
+      "prompt_tokens": 321,
+      "total_tokens": 1801,
+      "completion_tokens": 1480,
+      "estimated_cost": 0.00393146,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop"
+  }
+}

@@ -1,0 +1,8 @@
+relation,scenecritic_supported,current_data_sufficient,evaluation_rule,used,source
+front of,NO explicit textual rule,NO,No textual front/behind verifier in checked-in source,NO,/home/meetrathi-97/Desktop/vlm/SceneCritic/SceneCritic/SceneCritic_evaluator.py
+behind,NO explicit textual rule,NO,No textual front/behind verifier in checked-in source,NO,/home/meetrathi-97/Desktop/vlm/SceneCritic/SceneCritic/SceneCritic_evaluator.py
+facing,YES (orientation facing test),YES,"Exact _check_faces_point: yaw target=(atan2(dy,dx)+90)%360; angular error <=75; coincident centers pass",YES for stated unique-target relations,/home/meetrathi-97/Desktop/vlm/SceneCritic/SceneCritic/SceneCritic_evaluator.py
+above,NO explicit textual rule,NO,No vertical relation verifier; missing z extent,NO,/home/meetrathi-97/Desktop/vlm/SceneCritic/SceneCritic/SceneCritic_evaluator.py
+below,NO explicit textual rule,NO,No vertical relation verifier; missing z extent,NO,/home/meetrathi-97/Desktop/vlm/SceneCritic/SceneCritic/SceneCritic_evaluator.py
+on top of,NO explicit textual rule,NO,No contact/support verifier; missing z/support surfaces; 2D full intersection is insufficient,NO,/home/meetrathi-97/Desktop/vlm/SceneCritic/SceneCritic/SceneCritic_evaluator.py
+under,NO explicit textual rule,NO,No vertical relation verifier; missing z extent,NO,/home/meetrathi-97/Desktop/vlm/SceneCritic/SceneCritic/SceneCritic_evaluator.py

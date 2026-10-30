@@ -1,0 +1,64 @@
+{
+  "objects": [
+    {
+      "label": "bed",
+      "object_type": "bulk",
+      "anchor": null,
+      "bbox": [-1.0, 4.0, 2.0, 1.8],
+      "position": [0.0, 4.9],
+      "rotation_angle": 0.0,
+      "description": "A bed placed in the center of the room against the back wall.",
+      "concise_description": "A standard double bed."
+    },
+    {
+      "label": "cabinet",
+      "object_type": "bulk",
+      "anchor": "bed",
+      "bbox": [-2.2, 4.0, 0.6, 1.2],
+      "position": [-1.9, 4.6],
+      "rotation_angle": 0.0,
+      "description": "A cabinet placed to the left side of the bed.",
+      "concise_description": "A small wooden nightstand cabinet."
+    },
+    {
+      "label": "cabinet",
+      "object_type": "bulk",
+      "anchor": "bed",
+      "bbox": [1.6, 4.0, 0.6, 1.2],
+      "position": [1.9, 4.6],
+      "rotation_angle": 0.0,
+      "description": "A cabinet placed to the right side of the bed.",
+      "concise_description": "A small wooden nightstand cabinet."
+    },
+    {
+      "label": "desk",
+      "object_type": "bulk",
+      "anchor": null,
+      "bbox": [-1.2, 0.2, 2.4, 0.8],
+      "position": [0.0, 0.6],
+      "rotation_angle": 0.0,
+      "description": "A desk placed against the wall opposite the bed.",
+      "concise_description": "A rectangular wooden desk."
+    },
+    {
+      "label": "chair",
+      "object_type": "bulk",
+      "anchor": "desk",
+      "bbox": [-0.5, 0.8, 0.6, 0.9],
+      "position": [-0.2, 1.25],
+      "rotation_angle": 180.0,
+      "description": "A chair placed in front of the desk.",
+      "concise_description": "An office chair."
+    },
+    {
+      "label": "shelf",
+      "object_type": "bulk",
+      "anchor": "desk",
+      "bbox": [-1.0, 1.0, 2.0, 0.2],
+      "position": [0.0, 1.1],
+      "rotation_angle": 0.0,
+      "description": "A shelf placed on top of the desk.",
+      "concise_description": "A narrow wall-mounted shelf."
+    }
+  ]
+}

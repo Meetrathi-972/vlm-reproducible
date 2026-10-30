@@ -1,0 +1,8 @@
+benchmark,condition,src,evaluated_relations,satisfied_relations,violated_relations,unevaluated_relations
+bedroom_1,baseline,1.0,2,2,0,3
+bedroom_1,well_organized,1.0,2,2,0,2
+bedroom_1,spacious,1.0,2,2,0,2
+bedroom_1,bright,1.0,2,2,0,2
+bedroom_1,quiet,1.0,3,3,0,1
+bedroom_1,cluttered,1.0,2,2,0,2
+bedroom_1,crowded,0.5,4,2,2,2

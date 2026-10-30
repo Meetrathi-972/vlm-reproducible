@@ -1,0 +1,188 @@
+{
+  "status": "complete",
+  "model": "Qwen/Qwen3.5-27B",
+  "provider": "deepinfra",
+  "authentication": "Existing HF_TOKEN, never saved",
+  "benchmarks": [
+    {
+      "category": "bedroom",
+      "benchmark": "bedroom_1",
+      "path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_1.json",
+      "sha256": "fd0cf864184d99d2775f03d220828b6777ee69350b3b00b3a76f8f8ac8300877",
+      "original": {
+        "task_description": "This is an indoor bedroom.",
+        "room_dimension": {
+          "room_dimension_x": 5,
+          "room_dimension_y": 5
+        },
+        "assets": {
+          "bed": 1,
+          "cabinet": 2,
+          "desk": 1,
+          "chair": 1,
+          "shelf": 1
+        }
+      }
+    }
+  ],
+  "conditions": [
+    "baseline",
+    "well_organized",
+    "spacious",
+    "bright",
+    "quiet",
+    "cluttered",
+    "crowded"
+  ],
+  "seeds": null,
+  "replicates": 0,
+  "requested_generations": 7,
+  "successful_generations": 7,
+  "failed_generations": 0,
+  "attempted_generations": 7,
+  "refinement": {
+    "placement_calls": 1,
+    "best_of_n": false,
+    "heuristic_scoring": false,
+    "feedback": false,
+    "candidate_selection": false,
+    "orientation": false,
+    "scale": false,
+    "hidden_state_capture": false
+  },
+  "placement_call_count": 1,
+  "started_at": "2026-10-05T18:20:23.562370+00:00",
+  "runs": [
+    {
+      "benchmark": "bedroom_1",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_1.json",
+      "condition": "baseline",
+      "adjective": null,
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is an indoor bedroom.",
+      "output_path": "bedroom_1/baseline",
+      "status": "success",
+      "started_at": "2026-10-05T18:20:23.789093+00:00",
+      "finished_at": "2026-10-05T18:21:37.990476+00:00"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_1.json",
+      "condition": "well_organized",
+      "adjective": "well-organized",
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is a well-organized indoor bedroom.",
+      "output_path": "bedroom_1/well_organized",
+      "status": "success",
+      "started_at": "2026-10-05T18:21:37.990756+00:00",
+      "finished_at": "2026-10-05T18:22:43.617015+00:00"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_1.json",
+      "condition": "spacious",
+      "adjective": "spacious",
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is a spacious indoor bedroom.",
+      "output_path": "bedroom_1/spacious",
+      "status": "success",
+      "started_at": "2026-10-05T18:22:43.617295+00:00",
+      "finished_at": "2026-10-05T18:23:29.303562+00:00"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_1.json",
+      "condition": "bright",
+      "adjective": "bright",
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is a bright indoor bedroom.",
+      "output_path": "bedroom_1/bright",
+      "status": "success",
+      "started_at": "2026-10-05T18:23:29.303804+00:00",
+      "finished_at": "2026-10-05T18:24:40.655042+00:00"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_1.json",
+      "condition": "quiet",
+      "adjective": "quiet",
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is a quiet indoor bedroom.",
+      "output_path": "bedroom_1/quiet",
+      "status": "success",
+      "started_at": "2026-10-05T18:24:40.655482+00:00",
+      "finished_at": "2026-10-05T18:25:54.054914+00:00"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_1.json",
+      "condition": "cluttered",
+      "adjective": "cluttered",
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is a cluttered indoor bedroom.",
+      "output_path": "bedroom_1/cluttered",
+      "status": "success",
+      "started_at": "2026-10-05T18:25:54.055175+00:00",
+      "finished_at": "2026-10-05T18:26:46.084826+00:00"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_1.json",
+      "condition": "crowded",
+      "adjective": "crowded",
+      "original_task_description": "This is an indoor bedroom.",
+      "modified_task_description": "This is a crowded indoor bedroom.",
+      "output_path": "bedroom_1/crowded",
+      "status": "success",
+      "started_at": "2026-10-05T18:26:46.085114+00:00",
+      "finished_at": "2026-10-05T18:27:40.729145+00:00"
+    }
+  ],
+  "source_hashes": {
+    "scenegen/scenegen/Heuristic_wo_dspy.py": "485198b3496aa927b60701164a073735773b8dd9d59e76d510329ee8506e2502",
+    "probe_metrics/utils_copy_img.py": "8408d724f303b0bfce746f2882161b1adfa682372d398cd19f8749deecff95bf",
+    "probe_metrics/probe_capture.py": "4501fa08757bdb0d0231db8807f57320bf2e0ed641172c296f5070d00323ad67",
+    "probe_metrics/adv_l1_variance.py": "8d6dec2238d1071e70a39cd08f37dae1a77e3e5b3390e8c68bd1be36938876b5",
+    "adjective_common_qwen35_27b.py": "cf6de1dce23ee89e821a2cd4558abaa1b3b98ade4f57d9a6b71b0e2af5f3367e",
+    "adv_l1_behavioral_qwen35_27b.py": "25b3123e24af7c3b1b9407897ecdcf87739796044dbfd5356b6c1d92289aa19e",
+    "adv_l1_variance_qwen35_27b.py": "4337a374c47db04abe05fd05d164a21e4fa222443e84119efae71b106e218333",
+    "api_backend_qwen35_27b.py": "557f38e556885e21fb2557089e963d0e11d1358455947e012a7427dbea45a04c",
+    "bedroom_only_qwen35_27b.py": "99bf83a318563003756f3e70af1323f3ea91ecc518b6111b23209188e60780ba",
+    "classroom_greedy_qwen35_27b.py": "7014abb2ffe005861b344a454bb7ae9880c721198b493a107217a347b0dce50e",
+    "generate_adjective_scenes_qwen35_27b.py": "894d84e46f869914b783e367c7dbbde460dd7c963bb0cfb23b56882d434d067d",
+    "replay_strict_greedy_qwen35_27b.py": "e101c4b66e1701870d884af81c650bc10dd54b2224e80f1cab22adcef58e4172",
+    "test_adjective_experiment_qwen35_27b.py": "9a3bb0b360c9ed0945ad00a4024a895cd2c80c9b9bf3a4b4ae6b7c95ae222bb0"
+  },
+  "retries": 0,
+  "generation_parameters": {
+    "model": "Qwen/Qwen3.5-27B:deepinfra",
+    "temperature": 0.5,
+    "top_p": 0.9,
+    "top_k": 20,
+    "max_tokens": 8192,
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "stop": [],
+    "reasoning_effort": "none",
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "n": 1
+  },
+  "api_attempt_count": 28,
+  "finished_at": "2026-10-05T18:27:40.729367+00:00",
+  "benchmarks_unchanged": true,
+  "behavioral_comparisons": 6,
+  "verified_account": "meetrathi97261",
+  "verification": {
+    "seven_outputs": true,
+    "six_behavioral_comparisons": true,
+    "one_placement_per_run": true,
+    "no_seed_parameters_or_prompt_text": true,
+    "no_refinement": true,
+    "benchmarks_unchanged": true,
+    "credentials_excluded": true
+  }
+}

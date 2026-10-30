@@ -1,0 +1,7 @@
+benchmark,condition,status,object_set_diff,object_count_diff,occupancy_hamming,centroid_shift,legality_flip,first_divergent_call,first_divergent_stage,structural_divergence,placement_changed,baseline_call_count,adjective_call_count,baseline_object_count,adjective_object_count,baseline_legality,adjective_legality,baseline_oob,adjective_oob
+bedroom_1,well_organized,available,0.0,0,0.84,3.5414398002172502,0,0,description,False,True,4,4,6,6,0,0,False,True
+bedroom_1,spacious,available,0.0,0,0.72,3.5330558662868827,0,0,description,False,True,4,4,6,6,0,0,False,False
+bedroom_1,bright,available,0.0,0,0.88,3.6409519639241523,0,0,description,False,True,4,4,6,6,0,0,False,True
+bedroom_1,quiet,available,0.0,0,0.72,3.545261600604664,1,0,description,False,True,4,4,6,6,0,1,False,True
+bedroom_1,cluttered,available,0.0,0,0.2,0.35388690114727583,0,0,description,False,True,4,4,6,6,0,0,False,True
+bedroom_1,crowded,available,0.0,0,0.68,3.3815640690288946,0,0,description,False,True,4,4,6,6,0,0,False,True

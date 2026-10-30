@@ -1,0 +1,7 @@
+condition,compared_benchmarks,object_set_diff_mean,object_count_diff_mean,occupancy_hamming_mean,centroid_shift_mean,legality_flip_mean,placement_changed_count,structural_divergence_count,first_divergent_calls
+well_organized,0,,,,,,0,0,{}
+spacious,0,,,,,,0,0,{}
+bright,0,,,,,,0,0,{}
+quiet,0,,,,,,0,0,{}
+cluttered,0,,,,,,0,0,{}
+crowded,0,,,,,,0,0,{}

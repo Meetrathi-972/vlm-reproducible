@@ -1,0 +1,4 @@
+benchmark,adjective,classification,subject,channel,before,after
+bedroom_1,well_organized,COLLATERAL,shelf#1,object_type,bulk,ornaments
+bedroom_1,spacious,COLLATERAL,shelf#1,object_type,bulk,ornaments
+bedroom_1,cluttered,COLLATERAL,shelf#1,object_type,bulk,ornaments

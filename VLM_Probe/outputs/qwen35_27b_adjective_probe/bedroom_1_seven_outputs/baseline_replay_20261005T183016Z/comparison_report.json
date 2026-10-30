@@ -1,0 +1,83 @@
+{
+  "previous_output": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/baseline",
+  "new_output": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/baseline_replay_20261005T183016Z",
+  "generation_parameters_identical": true,
+  "generation_parameters": {
+    "model": "Qwen/Qwen3.5-27B:deepinfra",
+    "temperature": 0.5,
+    "top_p": 0.9,
+    "top_k": 20,
+    "max_tokens": 8192,
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "stop": [],
+    "reasoning_effort": "none",
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "n": 1
+  },
+  "calls": [
+    {
+      "stage": "description",
+      "requests_identical": true,
+      "outputs_byte_identical": false,
+      "previous_sha256": "9b35b57838144264b3b8bdcfd394d84ae1d648c3a259eb1729f7f5cbb4f5ad5e",
+      "new_sha256": "bdc7b524670880d5a6013345a45cc7909df9b8112d961d8d85dd1c7890bb3428",
+      "previous_bytes": 193,
+      "new_bytes": 158
+    },
+    {
+      "stage": "object_choice",
+      "requests_identical": false,
+      "outputs_byte_identical": false,
+      "previous_sha256": "07a27b99c3aac89a6db833bc2eeec85f87e9fd14b05821be7ac0c5e422c7ed5c",
+      "new_sha256": "4e28ef57f1dba5528dddf509e695c96106ca1772e95a21fa06ef496bb338cdd2",
+      "previous_bytes": 128,
+      "new_bytes": 124
+    },
+    {
+      "stage": "planning",
+      "requests_identical": false,
+      "outputs_byte_identical": false,
+      "previous_sha256": "154ed9d79ae5bac65825e5544e55b2fe26fd5c977e0776a468d8a98b7502a12e",
+      "new_sha256": "2121738d61f32017aa5240eaadb3e43a54b355eca0c795062f986c13aac0f21d",
+      "previous_bytes": 5181,
+      "new_bytes": 5046
+    },
+    {
+      "stage": "placement",
+      "requests_identical": false,
+      "outputs_byte_identical": false,
+      "previous_sha256": "ae857ecea2e2c6c9b22a69935eb07392102965c2f9fc688ba19b59ab9e96fb89",
+      "new_sha256": "b3232b7e9e8f8bb667e46a9f7113827f07c4504ac2b41b7bcf63895d70467580",
+      "previous_bytes": 2093,
+      "new_bytes": 1868
+    }
+  ],
+  "behavioral": {
+    "object_set_diff": 0.0,
+    "object_count_diff": 0,
+    "occupancy_hamming": 0.8,
+    "centroid_shift": 3.5828090465904494,
+    "legality_flip": 0,
+    "first_divergent_call": 0,
+    "first_divergent_stage": "description",
+    "structural_divergence": false,
+    "placement_changed": true,
+    "baseline_call_count": 4,
+    "adjective_call_count": 4,
+    "baseline_object_count": 6,
+    "adjective_object_count": 6,
+    "baseline_legality": 0,
+    "adjective_legality": 0,
+    "baseline_oob": false,
+    "adjective_oob": true
+  },
+  "all_outputs_byte_identical": false,
+  "parsed_scene_identical": false,
+  "objects_identical": false,
+  "interpretation": "First-stage request identity isolates replay variation; later prompt changes may propagate from earlier output changes. This unseeded sampled configuration is not a greedy determinism test."
+}

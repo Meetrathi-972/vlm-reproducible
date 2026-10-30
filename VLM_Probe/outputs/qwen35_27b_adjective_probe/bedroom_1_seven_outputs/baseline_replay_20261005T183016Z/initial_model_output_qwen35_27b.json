@@ -1,0 +1,112 @@
+{
+  "objects": [
+    {
+      "label": "bed",
+      "object_type": "bulk",
+      "anchor": null,
+      "bbox": [
+        -0.75,
+        4.2,
+        1.5,
+        2.0
+      ],
+      "position": [
+        0.0,
+        5.2
+      ],
+      "rotation_angle": 0.0,
+      "description": "A neatly made bed centered against the back wall.",
+      "concise_description": "A neatly made bed."
+    },
+    {
+      "label": "cabinet",
+      "object_type": "bulk",
+      "anchor": "bed",
+      "bbox": [
+        -2.0,
+        4.0,
+        0.8,
+        1.2
+      ],
+      "position": [
+        -1.6,
+        4.6
+      ],
+      "rotation_angle": 0.0,
+      "description": "A cabinet placed to the left of the bed against the back wall.",
+      "concise_description": "A wooden cabinet."
+    },
+    {
+      "label": "cabinet",
+      "object_type": "bulk",
+      "anchor": "bed",
+      "bbox": [
+        1.2,
+        4.0,
+        0.8,
+        1.2
+      ],
+      "position": [
+        1.6,
+        4.6
+      ],
+      "rotation_angle": 0.0,
+      "description": "A second cabinet placed to the right of the bed against the back wall.",
+      "concise_description": "A wooden cabinet."
+    },
+    {
+      "label": "desk",
+      "object_type": "bulk",
+      "anchor": null,
+      "bbox": [
+        1.5,
+        1.0,
+        1.2,
+        0.6
+      ],
+      "position": [
+        2.1,
+        1.3
+      ],
+      "rotation_angle": 0.0,
+      "description": "A desk positioned against the right wall.",
+      "concise_description": "A wooden desk."
+    },
+    {
+      "label": "chair",
+      "object_type": "bulk",
+      "anchor": "desk",
+      "bbox": [
+        1.4,
+        0.2,
+        0.6,
+        0.9
+      ],
+      "position": [
+        1.7,
+        0.65
+      ],
+      "rotation_angle": 0.0,
+      "description": "A chair placed in front of the desk.",
+      "concise_description": "An office chair."
+    },
+    {
+      "label": "shelf",
+      "object_type": "bulk",
+      "anchor": null,
+      "bbox": [
+        -2.3,
+        2.5,
+        0.4,
+        1.5
+      ],
+      "position": [
+        -2.1,
+        3.25
+      ],
+      "rotation_angle": 0.0,
+      "description": "A shelf mounted on the left wall.",
+      "concise_description": "A wall-mounted shelf."
+    }
+  ]
+}

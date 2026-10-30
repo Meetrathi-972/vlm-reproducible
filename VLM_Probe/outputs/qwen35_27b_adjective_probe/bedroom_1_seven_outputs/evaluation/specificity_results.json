@@ -1,0 +1,191 @@
+{
+  "metadata": {
+    "scope": "bedroom_1 only, seven conditions, one output per condition",
+    "benchmark": "bedroom_1",
+    "evaluation_implementation_sha256": "b2797e183e285bffe69cff33bea2a8f9de1389688c49cf30fb74b3dce8f6872b",
+    "regression_command": "python -m unittest discover -s VLM_Probe -p 'test_*qwen35_27b.py'",
+    "n_benchmarks": 1,
+    "stochastic_replicates": 0,
+    "api_calls": 0,
+    "statistical_interpretation": "DESCRIPTIVE",
+    "aggregate": "Arithmetic mean over available benchmark values; with one benchmark, aggregate equals bedroom_1.",
+    "observational_limit": "API nondeterminism was observed previously; one unseeded sample per condition cannot isolate causal adjective effects.",
+    "epsilon": 1e-06,
+    "unsupported_adjectives": {
+      "bright": "NOT DIRECTLY OBSERVABLE FROM CURRENT OUTPUT REPRESENTATION",
+      "quiet": "NOT DIRECTLY OBSERVABLE FROM CURRENT OUTPUT REPRESENTATION"
+    },
+    "input_inventory": [
+      {
+        "condition": "baseline",
+        "status": "available",
+        "path": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/baseline/run_qwen35_27b.json",
+        "sha256": "1abf997da1555a62b9d4c6a516648e5291c676878fc639b5a5f9e361d39c98d0"
+      },
+      {
+        "condition": "well_organized",
+        "status": "available",
+        "path": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/well_organized/run_qwen35_27b.json",
+        "sha256": "d1166b0a78efc81311bead1515a5293e37455914bf10cf89e3e13327f415a47f"
+      },
+      {
+        "condition": "spacious",
+        "status": "available",
+        "path": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/spacious/run_qwen35_27b.json",
+        "sha256": "1ae93bcb7c63dd4079d7b9dc793ad99e1e13d9d91360d262bc95fff1371d82d7"
+      },
+      {
+        "condition": "bright",
+        "status": "available",
+        "path": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/bright/run_qwen35_27b.json",
+        "sha256": "670fc2177f9c0e5e70d086c76a7de80240da8d5a8a9ee84bf8544d2ae858f0e4"
+      },
+      {
+        "condition": "quiet",
+        "status": "available",
+        "path": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/quiet/run_qwen35_27b.json",
+        "sha256": "1dc6a6e618a573a789daf985d59d123b934498518926e633f754e7b541d9ce78"
+      },
+      {
+        "condition": "cluttered",
+        "status": "available",
+        "path": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/cluttered/run_qwen35_27b.json",
+        "sha256": "4078be70c59a3855592b364e58432c4c520ec20c185214c0979ff28a422105ee"
+      },
+      {
+        "condition": "crowded",
+        "status": "available",
+        "path": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/crowded/run_qwen35_27b.json",
+        "sha256": "68c3ffb374421bd794b908d3a3ae658cf6fb88c5c6643f7134bfd2edb3a9487e"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "object_set_jaccard": 1.0,
+      "baseline_inventory_recall": 1.0,
+      "required_inventory_recall": 1.0,
+      "relevant_changed_channels": 15,
+      "collateral_changed_channels": 1,
+      "total_changed_channels": 16,
+      "collateral_change_rate": 0.06249999609375024,
+      "semantic_structural_ratio": 0.9375,
+      "ratio_status": "DESCRIPTIVE relevance-channel proxy, not proof of semantic explanation",
+      "shared_objects": 6,
+      "mean_displacement": 3.5414398002172502,
+      "median_displacement": 3.324154027718932,
+      "max_displacement": 4.201190307520001,
+      "mean_structural_change": 0.7878425017918255,
+      "median_structural_change": 0.7275997284519335,
+      "max_structural_change": 0.9835649444749441,
+      "fraction_objects_affected": 1
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "object_set_jaccard": 1.0,
+      "baseline_inventory_recall": 1.0,
+      "required_inventory_recall": 1.0,
+      "relevant_changed_channels": 12,
+      "collateral_changed_channels": 1,
+      "total_changed_channels": 13,
+      "collateral_change_rate": 0.07692307100591762,
+      "semantic_structural_ratio": 0.9230769230769231,
+      "ratio_status": "DESCRIPTIVE relevance-channel proxy, not proof of semantic explanation",
+      "shared_objects": 6,
+      "mean_displacement": 3.5330558662868827,
+      "median_displacement": 3.7013511046643495,
+      "max_displacement": 3.857541315397672,
+      "mean_structural_change": 0.7233395137909138,
+      "median_structural_change": 0.7508661665037252,
+      "max_structural_change": 0.7620121390109216,
+      "fraction_objects_affected": 1
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "object_set_jaccard": 1.0,
+      "baseline_inventory_recall": 1.0,
+      "required_inventory_recall": 1.0,
+      "relevant_changed_channels": null,
+      "collateral_changed_channels": null,
+      "total_changed_channels": 15,
+      "collateral_change_rate": null,
+      "semantic_structural_ratio": null,
+      "ratio_status": "NOT DIRECTLY OBSERVABLE FROM CURRENT OUTPUT REPRESENTATION",
+      "shared_objects": 6,
+      "mean_displacement": 3.6409519639241523,
+      "median_displacement": 3.673586504827905,
+      "max_displacement": 3.932238548206352,
+      "mean_structural_change": 0.8085487647303624,
+      "median_structural_change": 0.8015558423923157,
+      "max_structural_change": 0.9661521619289583,
+      "fraction_objects_affected": 1
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "object_set_jaccard": 1.0,
+      "baseline_inventory_recall": 1.0,
+      "required_inventory_recall": 1.0,
+      "relevant_changed_channels": null,
+      "collateral_changed_channels": null,
+      "total_changed_channels": 13,
+      "collateral_change_rate": null,
+      "semantic_structural_ratio": null,
+      "ratio_status": "NOT DIRECTLY OBSERVABLE FROM CURRENT OUTPUT REPRESENTATION",
+      "shared_objects": 6,
+      "mean_displacement": 3.545261600604664,
+      "median_displacement": 3.825,
+      "max_displacement": 4.118859065323794,
+      "mean_structural_change": 0.8450909589778016,
+      "median_structural_change": 0.8,
+      "max_structural_change": 1.0675204916066015,
+      "fraction_objects_affected": 1
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "object_set_jaccard": 1.0,
+      "baseline_inventory_recall": 1.0,
+      "required_inventory_recall": 1.0,
+      "relevant_changed_channels": 13,
+      "collateral_changed_channels": 1,
+      "total_changed_channels": 14,
+      "collateral_change_rate": 0.07142856632653098,
+      "semantic_structural_ratio": 0.9285714285714286,
+      "ratio_status": "DESCRIPTIVE relevance-channel proxy, not proof of semantic explanation",
+      "shared_objects": 6,
+      "mean_displacement": 0.35388690114727583,
+      "median_displacement": 0.3551638903933425,
+      "max_displacement": 0.6726812023536853,
+      "mean_structural_change": 0.3857455930758988,
+      "median_structural_change": 0.09628562709409708,
+      "max_structural_change": 1.0155786527886455,
+      "fraction_objects_affected": 1
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "object_set_jaccard": 1.0,
+      "baseline_inventory_recall": 1.0,
+      "required_inventory_recall": 1.0,
+      "relevant_changed_channels": 13,
+      "collateral_changed_channels": 0,
+      "total_changed_channels": 13,
+      "collateral_change_rate": 0.0,
+      "semantic_structural_ratio": 1.0,
+      "ratio_status": "DESCRIPTIVE relevance-channel proxy, not proof of semantic explanation",
+      "shared_objects": 6,
+      "mean_displacement": 3.3815640690288946,
+      "median_displacement": 3.642921100922343,
+      "max_displacement": 4.272001872658765,
+      "mean_structural_change": 0.7890471323378673,
+      "median_structural_change": 0.7327332028351974,
+      "max_structural_change": 1.0754068997360953,
+      "fraction_objects_affected": 1
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "objects": [
+    {
+      "label": "bed",
+      "object_type": "bulk",
+      "anchor": null,
+      "bbox": [
+        -1.2,
+        0.1,
+        2.4,
+        2.0
+      ],
+      "position": [
+        0.0,
+        1.1
+      ],
+      "rotation_angle": 0.0,
+      "description": "A bed positioned against the main wall in the center of the room.",
+      "concise_description": "A standard double bed with a mattress and frame."
+    },
+    {
+      "label": "cabinet",
+      "object_type": "bulk",
+      "anchor": "bed",
+      "bbox": [
+        -2.3,
+        0.1,
+        0.8,
+        1.2
+      ],
+      "position": [
+        -1.9,
+        0.7
+      ],
+      "rotation_angle": 0.0,
+      "description": "A cabinet placed to the immediate left of the bed.",
+      "concise_description": "A wooden storage cabinet with drawers."
+    },
+    {
+      "label": "cabinet",
+      "object_type": "bulk",
+      "anchor": "bed",
+      "bbox": [
+        1.5,
+        0.1,
+        0.8,
+        1.2
+      ],
+      "position": [
+        1.9,
+        0.7
+      ],
+      "rotation_angle": 0.0,
+      "description": "A cabinet placed to the immediate right of the bed.",
+      "concise_description": "A wooden storage cabinet with drawers."
+    },
+    {
+      "label": "desk",
+      "object_type": "bulk",
+      "anchor": null,
+      "bbox": [
+        -1.2,
+        4.2,
+        2.4,
+        0.8
+      ],
+      "position": [
+        0.0,
+        4.6
+      ],
+      "rotation_angle": 180.0,
+      "description": "A desk placed against the wall opposite the bed.",
+      "concise_description": "A wooden work desk with a flat surface."
+    },
+    {
+      "label": "chair",
+      "object_type": "bulk",
+      "anchor": "desk",
+      "bbox": [
+        -0.5,
+        3.2,
+        0.6,
+        0.9
+      ],
+      "position": [
+        -0.2,
+        3.65
+      ],
+      "rotation_angle": 180.0,
+      "description": "A chair positioned in front of the desk.",
+      "concise_description": "An office chair with wheels."
+    },
+    {
+      "label": "shelf",
+      "object_type": "ornaments",
+      "anchor": "desk",
+      "bbox": [
+        -0.8,
+        4.9,
+        1.6,
+        0.3
+      ],
+      "position": [
+        0.0,
+        5.05
+      ],
+      "rotation_angle": 0.0,
+      "description": "A shelf placed on top of the desk.",
+      "concise_description": "A small wooden shelf unit."
+    }
+  ]
+}

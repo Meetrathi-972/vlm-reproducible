@@ -1,0 +1,58 @@
+[
+  {
+    "benchmark": "bedroom_1",
+    "condition": "baseline",
+    "free_space": 0.7272,
+    "clearance": 0.05421151989096863,
+    "regularity": 0.6580695747298149,
+    "spacing_consistency": 0.5422419717381923
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "well_organized",
+    "free_space": 0.76,
+    "clearance": 0.014142135623730947,
+    "regularity": 0.681165072150184,
+    "spacing_consistency": 0.5
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "spacious",
+    "free_space": 0.8400000000000001,
+    "clearance": 0.042426406871192854,
+    "regularity": 0.5596325799538462,
+    "spacing_consistency": 0.5
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "bright",
+    "free_space": 0.6916,
+    "clearance": 0.014142135623730952,
+    "regularity": 0.7619191343321259,
+    "spacing_consistency": 0.5
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "quiet",
+    "free_space": 0.7555999999999999,
+    "clearance": 0.05656854249492379,
+    "regularity": 0.7458026813803584,
+    "spacing_consistency": 0.5584815598877472
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "cluttered",
+    "free_space": 0.6328,
+    "clearance": 0.023570226039551567,
+    "regularity": 0.653025468771312,
+    "spacing_consistency": 0.548058983988962
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "crowded",
+    "free_space": 0.788,
+    "clearance": 0.009428090415820631,
+    "regularity": 0.6821539150051451,
+    "spacing_consistency": 0.3090169943749474
+  }
+]

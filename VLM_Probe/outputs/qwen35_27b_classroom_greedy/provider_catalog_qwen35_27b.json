@@ -1,0 +1,24 @@
+{
+  "_id": "699d726468613908140f9c29",
+  "id": "Qwen/Qwen3.5-27B",
+  "inferenceProviderMapping": {
+    "novita": {
+      "status": "live",
+      "providerId": "qwen/qwen3.5-27b",
+      "task": "conversational",
+      "isModelAuthor": false
+    },
+    "featherless-ai": {
+      "status": "live",
+      "providerId": "Qwen/Qwen3.5-27B",
+      "task": "conversational",
+      "isModelAuthor": false
+    },
+    "deepinfra": {
+      "status": "live",
+      "providerId": "Qwen/Qwen3.5-27B",
+      "task": "conversational",
+      "isModelAuthor": false
+    }
+  }
+}

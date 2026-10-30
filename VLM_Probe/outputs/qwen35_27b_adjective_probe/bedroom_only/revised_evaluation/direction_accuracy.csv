@@ -1,0 +1,7 @@
+benchmark,adjective,semantic_direction_cosine,intended_signed_effect_mean,correct_features,denominator,direction_accuracy,status
+bedroom_1,well_organized,-0.1868036135126614,-0.18420471778115105,2,4,0.5,LIMITED operational open-and-regular proxy
+bedroom_1,spacious,-0.12712596569809764,-0.07243963571858969,1,4,0.25,LIMITED operational open-and-regular proxy
+bedroom_1,bright,,,,,,NOT DIRECTLY OBSERVABLE FROM CURRENT OUTPUT REPRESENTATION
+bedroom_1,quiet,,,,,,NOT DIRECTLY OBSERVABLE FROM CURRENT OUTPUT REPRESENTATION
+bedroom_1,cluttered,0.6241718088232142,0.17298926867505685,3,4,0.75,LIMITED operational open-and-regular proxy
+bedroom_1,crowded,0.39201025274376455,0.2839941574998114,2,4,0.5,LIMITED operational open-and-regular proxy

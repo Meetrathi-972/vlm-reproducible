@@ -1,0 +1,13 @@
+{
+  "task_description": "This is an indoor classroom.",
+  "room_dimension": {
+    "room_dimension_x": 5,
+    "room_dimension_y": 5
+  },
+  "assets": {
+    "lab table": 4,
+    "table": 1,
+    "chair": 8,
+    "potted plant": 2
+  }
+}

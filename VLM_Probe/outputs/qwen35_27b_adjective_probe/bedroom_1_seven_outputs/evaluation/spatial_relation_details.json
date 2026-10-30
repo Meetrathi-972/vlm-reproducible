@@ -1,0 +1,425 @@
+{
+  "metadata": {
+    "scope": "bedroom_1 only, seven conditions, one output per condition",
+    "benchmark": "bedroom_1",
+    "evaluation_implementation_sha256": "b2797e183e285bffe69cff33bea2a8f9de1389688c49cf30fb74b3dce8f6872b",
+    "regression_command": "python -m unittest discover -s VLM_Probe -p 'test_*qwen35_27b.py'",
+    "n_benchmarks": 1,
+    "stochastic_replicates": 0,
+    "api_calls": 0,
+    "statistical_interpretation": "DESCRIPTIVE",
+    "aggregate": "Arithmetic mean over available benchmark values; with one benchmark, aggregate equals bedroom_1.",
+    "observational_limit": "API nondeterminism was observed previously; one unseeded sample per condition cannot isolate causal adjective effects.",
+    "epsilon": 1e-06,
+    "unsupported_adjectives": {
+      "bright": "NOT DIRECTLY OBSERVABLE FROM CURRENT OUTPUT REPRESENTATION",
+      "quiet": "NOT DIRECTLY OBSERVABLE FROM CURRENT OUTPUT REPRESENTATION"
+    },
+    "input_inventory": [
+      {
+        "condition": "baseline",
+        "status": "available",
+        "path": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/baseline/run_qwen35_27b.json",
+        "sha256": "1abf997da1555a62b9d4c6a516648e5291c676878fc639b5a5f9e361d39c98d0"
+      },
+      {
+        "condition": "well_organized",
+        "status": "available",
+        "path": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/well_organized/run_qwen35_27b.json",
+        "sha256": "d1166b0a78efc81311bead1515a5293e37455914bf10cf89e3e13327f415a47f"
+      },
+      {
+        "condition": "spacious",
+        "status": "available",
+        "path": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/spacious/run_qwen35_27b.json",
+        "sha256": "1ae93bcb7c63dd4079d7b9dc793ad99e1e13d9d91360d262bc95fff1371d82d7"
+      },
+      {
+        "condition": "bright",
+        "status": "available",
+        "path": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/bright/run_qwen35_27b.json",
+        "sha256": "670fc2177f9c0e5e70d086c76a7de80240da8d5a8a9ee84bf8544d2ae858f0e4"
+      },
+      {
+        "condition": "quiet",
+        "status": "available",
+        "path": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/quiet/run_qwen35_27b.json",
+        "sha256": "1dc6a6e618a573a789daf985d59d123b934498518926e633f754e7b541d9ce78"
+      },
+      {
+        "condition": "cluttered",
+        "status": "available",
+        "path": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/cluttered/run_qwen35_27b.json",
+        "sha256": "4078be70c59a3855592b364e58432c4c520ec20c185214c0979ff28a422105ee"
+      },
+      {
+        "condition": "crowded",
+        "status": "available",
+        "path": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/crowded/run_qwen35_27b.json",
+        "sha256": "68c3ffb374421bd794b908d3a3ae658cf6fb88c5c6643f7134bfd2edb3a9487e"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "label": "cabinet",
+      "occurrence": 1,
+      "relation": "left",
+      "target": "bed",
+      "description": "A wooden cabinet placed to the left of the bed against the wall.",
+      "evaluatable": true,
+      "satisfied": true,
+      "reason": "Unique explicit anchor target"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "label": "cabinet",
+      "occurrence": 2,
+      "relation": "right",
+      "target": "bed",
+      "description": "A matching wooden cabinet placed to the right of the bed against the wall.",
+      "evaluatable": true,
+      "satisfied": true,
+      "reason": "Unique explicit anchor target"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "label": "desk",
+      "occurrence": 1,
+      "relation": "near",
+      "target": null,
+      "description": "A desk placed against the opposite wall near the window.",
+      "evaluatable": false,
+      "satisfied": null,
+      "reason": "Missing/ambiguous/unmentioned anchor target; no guessed referent"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "label": "chair",
+      "occurrence": 1,
+      "relation": "front_back",
+      "target": "desk",
+      "description": "A chair positioned in front of the desk for seating.",
+      "evaluatable": false,
+      "satisfied": null,
+      "reason": "No z/elevation or documented object-local front/back axis in the saved representation"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "baseline",
+      "label": "shelf",
+      "occurrence": 1,
+      "relation": "vertical",
+      "target": "desk",
+      "description": "A shelf mounted on the wall above the desk.",
+      "evaluatable": false,
+      "satisfied": null,
+      "reason": "No z/elevation or documented object-local front/back axis in the saved representation"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "label": "cabinet",
+      "occurrence": 1,
+      "relation": "left",
+      "target": "bed",
+      "description": "A cabinet placed to the left of the bed.",
+      "evaluatable": true,
+      "satisfied": true,
+      "reason": "Unique explicit anchor target"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "label": "cabinet",
+      "occurrence": 2,
+      "relation": "right",
+      "target": "bed",
+      "description": "A cabinet placed to the right of the bed.",
+      "evaluatable": true,
+      "satisfied": true,
+      "reason": "Unique explicit anchor target"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "label": "chair",
+      "occurrence": 1,
+      "relation": "front_back",
+      "target": "desk",
+      "description": "A chair positioned in front of the desk.",
+      "evaluatable": false,
+      "satisfied": null,
+      "reason": "No z/elevation or documented object-local front/back axis in the saved representation"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "well_organized",
+      "label": "shelf",
+      "occurrence": 1,
+      "relation": "vertical",
+      "target": "desk",
+      "description": "A shelf placed on top of the desk.",
+      "evaluatable": false,
+      "satisfied": null,
+      "reason": "No z/elevation or documented object-local front/back axis in the saved representation"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "label": "cabinet",
+      "occurrence": 1,
+      "relation": "left",
+      "target": "bed",
+      "description": "A cabinet placed to the left of the bed.",
+      "evaluatable": true,
+      "satisfied": true,
+      "reason": "Unique explicit anchor target"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "label": "cabinet",
+      "occurrence": 2,
+      "relation": "right",
+      "target": "bed",
+      "description": "A cabinet placed to the right of the bed.",
+      "evaluatable": true,
+      "satisfied": true,
+      "reason": "Unique explicit anchor target"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "label": "chair",
+      "occurrence": 1,
+      "relation": "vertical",
+      "target": "desk",
+      "description": "A chair placed under the desk.",
+      "evaluatable": false,
+      "satisfied": null,
+      "reason": "No z/elevation or documented object-local front/back axis in the saved representation"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "spacious",
+      "label": "shelf",
+      "occurrence": 1,
+      "relation": "vertical",
+      "target": "desk",
+      "description": "A shelf placed on top of the desk.",
+      "evaluatable": false,
+      "satisfied": null,
+      "reason": "No z/elevation or documented object-local front/back axis in the saved representation"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "label": "cabinet",
+      "occurrence": 1,
+      "relation": "left",
+      "target": "bed",
+      "description": "A cabinet to the left of the bed, aligned with the head.",
+      "evaluatable": true,
+      "satisfied": true,
+      "reason": "Unique explicit anchor target"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "label": "cabinet",
+      "occurrence": 2,
+      "relation": "right",
+      "target": "bed",
+      "description": "A cabinet to the right of the bed, aligned with the head.",
+      "evaluatable": true,
+      "satisfied": true,
+      "reason": "Unique explicit anchor target"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "label": "chair",
+      "occurrence": 1,
+      "relation": "front_back",
+      "target": "desk",
+      "description": "A chair in front of the desk.",
+      "evaluatable": false,
+      "satisfied": null,
+      "reason": "No z/elevation or documented object-local front/back axis in the saved representation"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "bright",
+      "label": "shelf",
+      "occurrence": 1,
+      "relation": "vertical",
+      "target": "desk",
+      "description": "A shelf above the desk.",
+      "evaluatable": false,
+      "satisfied": null,
+      "reason": "No z/elevation or documented object-local front/back axis in the saved representation"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "label": "cabinet",
+      "occurrence": 1,
+      "relation": "left",
+      "target": "bed",
+      "description": "A cabinet placed to the left of the bed against the wall.",
+      "evaluatable": true,
+      "satisfied": true,
+      "reason": "Unique explicit anchor target"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "label": "cabinet",
+      "occurrence": 2,
+      "relation": "right",
+      "target": "bed",
+      "description": "A second cabinet placed to the right of the bed against the wall.",
+      "evaluatable": true,
+      "satisfied": true,
+      "reason": "Unique explicit anchor target"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "label": "chair",
+      "occurrence": 1,
+      "relation": "front_back",
+      "target": "desk",
+      "description": "A chair placed in front of the desk.",
+      "evaluatable": false,
+      "satisfied": null,
+      "reason": "No z/elevation or documented object-local front/back axis in the saved representation"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "quiet",
+      "label": "shelf",
+      "occurrence": 1,
+      "relation": "near",
+      "target": "desk",
+      "description": "A shelf placed near the desk area against the right wall.",
+      "evaluatable": true,
+      "satisfied": true,
+      "reason": "Unique explicit anchor target"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "label": "cabinet",
+      "occurrence": 1,
+      "relation": "left",
+      "target": "bed",
+      "description": "A cabinet placed to the immediate left of the bed.",
+      "evaluatable": true,
+      "satisfied": true,
+      "reason": "Unique explicit anchor target"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "label": "cabinet",
+      "occurrence": 2,
+      "relation": "right",
+      "target": "bed",
+      "description": "A cabinet placed to the immediate right of the bed.",
+      "evaluatable": true,
+      "satisfied": true,
+      "reason": "Unique explicit anchor target"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "label": "chair",
+      "occurrence": 1,
+      "relation": "front_back",
+      "target": "desk",
+      "description": "A chair positioned in front of the desk.",
+      "evaluatable": false,
+      "satisfied": null,
+      "reason": "No z/elevation or documented object-local front/back axis in the saved representation"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "cluttered",
+      "label": "shelf",
+      "occurrence": 1,
+      "relation": "vertical",
+      "target": "desk",
+      "description": "A shelf placed on top of the desk.",
+      "evaluatable": false,
+      "satisfied": null,
+      "reason": "No z/elevation or documented object-local front/back axis in the saved representation"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "label": "cabinet",
+      "occurrence": 1,
+      "relation": "right",
+      "target": "bed",
+      "description": "A small bedside cabinet placed next to the head of the bed on the right side.",
+      "evaluatable": true,
+      "satisfied": true,
+      "reason": "Unique explicit anchor target"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "label": "cabinet",
+      "occurrence": 1,
+      "relation": "adjacent",
+      "target": "bed",
+      "description": "A small bedside cabinet placed next to the head of the bed on the right side.",
+      "evaluatable": true,
+      "satisfied": true,
+      "reason": "Unique explicit anchor target"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "label": "cabinet",
+      "occurrence": 2,
+      "relation": "near",
+      "target": "bed",
+      "description": "A second cabinet placed on the opposite side of the bed, near the foot.",
+      "evaluatable": true,
+      "satisfied": false,
+      "reason": "Unique explicit anchor target"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "label": "chair",
+      "occurrence": 1,
+      "relation": "front_back",
+      "target": "desk",
+      "description": "An office chair positioned in front of the desk, facing it.",
+      "evaluatable": false,
+      "satisfied": null,
+      "reason": "No z/elevation or documented object-local front/back axis in the saved representation"
+    },
+    {
+      "benchmark": "bedroom_1",
+      "condition": "crowded",
+      "label": "shelf",
+      "occurrence": 1,
+      "relation": "vertical",
+      "target": "desk",
+      "description": "A wall-mounted shelf positioned above the desk area.",
+      "evaluatable": false,
+      "satisfied": null,
+      "reason": "No z/elevation or documented object-local front/back axis in the saved representation"
+    }
+  ]
+}

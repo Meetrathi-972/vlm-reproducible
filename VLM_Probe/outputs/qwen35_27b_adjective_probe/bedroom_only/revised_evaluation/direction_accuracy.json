@@ -1,0 +1,62 @@
+[
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "well_organized",
+    "semantic_direction_cosine": -0.1868036135126614,
+    "intended_signed_effect_mean": -0.18420471778115105,
+    "correct_features": 2,
+    "denominator": 4,
+    "direction_accuracy": 0.5,
+    "status": "LIMITED operational open-and-regular proxy"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "spacious",
+    "semantic_direction_cosine": -0.12712596569809764,
+    "intended_signed_effect_mean": -0.07243963571858969,
+    "correct_features": 1,
+    "denominator": 4,
+    "direction_accuracy": 0.25,
+    "status": "LIMITED operational open-and-regular proxy"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "bright",
+    "semantic_direction_cosine": null,
+    "intended_signed_effect_mean": null,
+    "correct_features": null,
+    "denominator": null,
+    "direction_accuracy": null,
+    "status": "NOT DIRECTLY OBSERVABLE FROM CURRENT OUTPUT REPRESENTATION"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "quiet",
+    "semantic_direction_cosine": null,
+    "intended_signed_effect_mean": null,
+    "correct_features": null,
+    "denominator": null,
+    "direction_accuracy": null,
+    "status": "NOT DIRECTLY OBSERVABLE FROM CURRENT OUTPUT REPRESENTATION"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "cluttered",
+    "semantic_direction_cosine": 0.6241718088232142,
+    "intended_signed_effect_mean": 0.17298926867505685,
+    "correct_features": 3,
+    "denominator": 4,
+    "direction_accuracy": 0.75,
+    "status": "LIMITED operational open-and-regular proxy"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "crowded",
+    "semantic_direction_cosine": 0.39201025274376455,
+    "intended_signed_effect_mean": 0.2839941574998114,
+    "correct_features": 2,
+    "denominator": 4,
+    "direction_accuracy": 0.5,
+    "status": "LIMITED operational open-and-regular proxy"
+  }
+]

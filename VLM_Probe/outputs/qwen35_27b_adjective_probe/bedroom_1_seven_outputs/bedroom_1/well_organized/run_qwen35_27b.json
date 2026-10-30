@@ -1,0 +1,585 @@
+{
+  "category": "bedroom",
+  "benchmark": "bedroom_1",
+  "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_1.json",
+  "benchmark_sha256": "fd0cf864184d99d2775f03d220828b6777ee69350b3b00b3a76f8f8ac8300877",
+  "benchmark_copy": {
+    "task_description": "This is a well-organized indoor bedroom.",
+    "room_dimension": {
+      "room_dimension_x": 5,
+      "room_dimension_y": 5
+    },
+    "assets": {
+      "bed": 1,
+      "cabinet": 2,
+      "desk": 1,
+      "chair": 1,
+      "shelf": 1
+    }
+  },
+  "condition": "well_organized",
+  "adjective": "well-organized",
+  "model": "Qwen/Qwen3.5-27B",
+  "provider": "deepinfra",
+  "task_description": "This is a well-organized indoor bedroom.",
+  "generation_config": {
+    "model": "Qwen/Qwen3.5-27B:deepinfra",
+    "temperature": 0.5,
+    "top_p": 0.9,
+    "top_k": 20,
+    "max_tokens": 8192,
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "stop": [],
+    "reasoning_effort": "none",
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "n": 1
+  },
+  "refinement": {
+    "placement_calls": 1,
+    "best_of_n": false,
+    "heuristic_scoring": false,
+    "feedback": false,
+    "candidate_selection": false,
+    "orientation": false,
+    "scale": false,
+    "hidden_state_capture": false
+  },
+  "runtime": {
+    "backend": "huggingface_chat_api",
+    "api_base": "https://router.huggingface.co/v1",
+    "api_method": "POST /chat/completions",
+    "provider": "deepinfra",
+    "provider_name": "DeepInfra",
+    "routed_model": "Qwen/Qwen3.5-27B:deepinfra",
+    "quantization": null,
+    "endpoint_name": "Qwen/Qwen3.5-27B",
+    "server_determinism": "Measured by uncached replay; stochastic replay does not block generation",
+    "local_model_loading": false,
+    "response_format": "json_object",
+    "maximum_retries_per_request": 0
+  },
+  "scene": {
+    "objects": [
+      {
+        "label": "bed",
+        "object_type": "bulk",
+        "anchor": null,
+        "bbox": [
+          -1.0,
+          3.5,
+          2.0,
+          1.5
+        ],
+        "position": [
+          0.0,
+          4.25
+        ],
+        "rotation_angle": 0.0,
+        "description": "A bed centered against the back wall of the room.",
+        "concise_description": "A standard double bed."
+      },
+      {
+        "label": "cabinet",
+        "object_type": "bulk",
+        "anchor": "bed",
+        "bbox": [
+          -2.0,
+          3.5,
+          0.8,
+          1.0
+        ],
+        "position": [
+          -1.6,
+          4.0
+        ],
+        "rotation_angle": 0.0,
+        "description": "A cabinet placed to the left of the bed.",
+        "concise_description": "A small wooden cabinet."
+      },
+      {
+        "label": "cabinet",
+        "object_type": "bulk",
+        "anchor": "bed",
+        "bbox": [
+          1.2,
+          3.5,
+          0.8,
+          1.0
+        ],
+        "position": [
+          1.6,
+          4.0
+        ],
+        "rotation_angle": 0.0,
+        "description": "A cabinet placed to the right of the bed.",
+        "concise_description": "A small wooden cabinet."
+      },
+      {
+        "label": "desk",
+        "object_type": "bulk",
+        "anchor": null,
+        "bbox": [
+          1.5,
+          0.5,
+          1.2,
+          0.8
+        ],
+        "position": [
+          2.1,
+          0.9
+        ],
+        "rotation_angle": 90.0,
+        "description": "A desk placed against the right wall.",
+        "concise_description": "A rectangular wooden desk."
+      },
+      {
+        "label": "chair",
+        "object_type": "bulk",
+        "anchor": "desk",
+        "bbox": [
+          1.0,
+          0.5,
+          0.6,
+          0.8
+        ],
+        "position": [
+          1.3,
+          0.9
+        ],
+        "rotation_angle": 90.0,
+        "description": "A chair positioned in front of the desk.",
+        "concise_description": "A standard office chair."
+      },
+      {
+        "label": "shelf",
+        "object_type": "ornaments",
+        "anchor": "desk",
+        "bbox": [
+          1.5,
+          1.3,
+          1.2,
+          0.2
+        ],
+        "position": [
+          2.1,
+          1.4
+        ],
+        "rotation_angle": 90.0,
+        "description": "A shelf placed on top of the desk.",
+        "concise_description": "A narrow wooden shelf."
+      }
+    ],
+    "Environmental_note": "Instruction: This is a well-organized indoor bedroom.",
+    "scene_description": "A well-organized indoor bedroom with tidy furnishings and a clean layout.",
+    "Environment Name": "Bedroom",
+    "Scene Area": "indoor"
+  },
+  "labels": {
+    "occupancy_str": [
+      "E",
+      "E",
+      "E",
+      "chair",
+      "desk",
+      "E",
+      "E",
+      "E",
+      "chair",
+      "desk",
+      "E",
+      "E",
+      "E",
+      "E",
+      "E",
+      "cabinet",
+      "bed",
+      "bed",
+      "bed",
+      "cabinet",
+      "cabinet",
+      "bed",
+      "bed",
+      "bed",
+      "cabinet"
+    ],
+    "contested": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    "legality": 0,
+    "overlap_any": true,
+    "within_overlap": true,
+    "per_new_overlap": [
+      false,
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    "oob": true
+  },
+  "calls": [
+    {
+      "index": 0,
+      "stage": "description",
+      "prompt": "Role: You generate a concise updated description of the current scene using prior context, environment notes, and predicted area type.\n\nPrevious scene description: No previous scene description!\nEnvironment note: Instruction: This is a well-organized indoor bedroom.\n\nOutput ONLY a JSON object of exactly this shape (no markdown, no commentary):\n{\n  \"new_scene_description\": \"<short, coherent description of the new scene>\",\n  \"concise_scene_name\": \"<one-word name for this area>\",\n  \"scene_area\": \"<indoor or outdoor>\"\n}",
+      "system": "You are a strict JSON generator. Output ONLY a single valid JSON value and nothing else. Do NOT include any reasoning, thinking, explanation, preamble, markdown, or code fences. Your entire response must be parseable by json.loads().",
+      "output_text": "{\n  \"new_scene_description\": \"A well-organized indoor bedroom with tidy furnishings and a clean layout.\",\n  \"concise_scene_name\": \"Bedroom\",\n  \"scene_area\": \"indoor\"\n}",
+      "api_response": {
+        "request": {
+          "model": "Qwen/Qwen3.5-27B:deepinfra",
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a strict JSON generator. Output ONLY a single valid JSON value and nothing else. Do NOT include any reasoning, thinking, explanation, preamble, markdown, or code fences. Your entire response must be parseable by json.loads()."
+            },
+            {
+              "role": "user",
+              "content": "Role: You generate a concise updated description of the current scene using prior context, environment notes, and predicted area type.\n\nPrevious scene description: No previous scene description!\nEnvironment note: Instruction: This is a well-organized indoor bedroom.\n\nOutput ONLY a JSON object of exactly this shape (no markdown, no commentary):\n{\n  \"new_scene_description\": \"<short, coherent description of the new scene>\",\n  \"concise_scene_name\": \"<one-word name for this area>\",\n  \"scene_area\": \"<indoor or outdoor>\"\n}"
+            }
+          ],
+          "temperature": 0.5,
+          "top_p": 0.9,
+          "top_k": 20,
+          "max_tokens": 8192,
+          "frequency_penalty": 0.0,
+          "presence_penalty": 0.0,
+          "repetition_penalty": 1.0,
+          "stop": [],
+          "reasoning_effort": "none",
+          "response_format": {
+            "type": "json_object"
+          },
+          "stream": false,
+          "n": 1
+        },
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "success"
+          }
+        ],
+        "raw_response": {
+          "service_tier": "default",
+          "id": "chatcmpl-RJHvpVOAnrO8rOtXrDzD0Fpv",
+          "object": "chat.completion",
+          "created": 1791224499,
+          "model": "Qwen/Qwen3.5-27B",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"new_scene_description\": \"A well-organized indoor bedroom with tidy furnishings and a clean layout.\",\n  \"concise_scene_name\": \"Bedroom\",\n  \"scene_area\": \"indoor\"\n}",
+                "reasoning_content": null,
+                "name": null,
+                "tool_calls": []
+              },
+              "finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 179,
+            "total_tokens": 227,
+            "completion_tokens": 48,
+            "estimated_cost": 0.00017133999999999997,
+            "prompt_tokens_details": null
+          }
+        },
+        "id": "chatcmpl-RJHvpVOAnrO8rOtXrDzD0Fpv",
+        "response_model": "Qwen/Qwen3.5-27B",
+        "response_provider": null,
+        "system_fingerprint": null,
+        "usage": {
+          "prompt_tokens": 179,
+          "total_tokens": 227,
+          "completion_tokens": 48,
+          "estimated_cost": 0.00017133999999999997,
+          "prompt_tokens_details": null
+        },
+        "finish_reason": "stop"
+      }
+    },
+    {
+      "index": 1,
+      "stage": "object_choice",
+      "prompt": "Role: Decide potential bulk and ornament objects for the described scene.\n\nEnvironment note: Instruction: This is a well-organized indoor bedroom.\nScene description: A well-organized indoor bedroom with tidy furnishings and a clean layout.\nChoice restrictions: \n            Strictly follow these rules:\n- Objects not to include:\n    - windows, doors, walls, partitions or anything attached to it.\n    - floors, roofs.\n    - roads, street, pavement, footpath, sidewalk, pathway,lawn and any other part of ground.\n    - objects like counter that has multiple english meanings.\n- Include only specific objects, not generalized names like new_object, appliances etc.\n- Do not include any objects in plural.\n- Do not repeat any object more than twice. Try to avoid repeating objects.\n        \n\nbulk_objects: large, structural, or fixed objects (e.g., building, tree, table, sofa, road).\nornament_objects: smaller, decorative, or movable objects (e.g., lamp, plant, trash bin, signboard).\n\nOutput ONLY a JSON object of exactly this shape (no markdown, no commentary):\n{\n  \"bulk_objects\": [\"<large/structural/fixed object>\", \"...\"],\n  \"ornament_objects\": [\"<small/decorative/movable object>\", \"...\"]\n}",
+      "system": "You are a strict JSON generator. Output ONLY a single valid JSON value and nothing else. Do NOT include any reasoning, thinking, explanation, preamble, markdown, or code fences. Your entire response must be parseable by json.loads().",
+      "output_text": "{\n  \"bulk_objects\": [\"bed\", \"wardrobe\", \"nightstand\", \"dresser\", \"desk\", \"chair\"],\n  \"ornament_objects\": [\"lamp\", \"picture\", \"clock\", \"plant\", \"rug\", \"pillow\", \"curtain\", \"mirror\"]\n}",
+      "api_response": {
+        "request": {
+          "model": "Qwen/Qwen3.5-27B:deepinfra",
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a strict JSON generator. Output ONLY a single valid JSON value and nothing else. Do NOT include any reasoning, thinking, explanation, preamble, markdown, or code fences. Your entire response must be parseable by json.loads()."
+            },
+            {
+              "role": "user",
+              "content": "Role: Decide potential bulk and ornament objects for the described scene.\n\nEnvironment note: Instruction: This is a well-organized indoor bedroom.\nScene description: A well-organized indoor bedroom with tidy furnishings and a clean layout.\nChoice restrictions: \n            Strictly follow these rules:\n- Objects not to include:\n    - windows, doors, walls, partitions or anything attached to it.\n    - floors, roofs.\n    - roads, street, pavement, footpath, sidewalk, pathway,lawn and any other part of ground.\n    - objects like counter that has multiple english meanings.\n- Include only specific objects, not generalized names like new_object, appliances etc.\n- Do not include any objects in plural.\n- Do not repeat any object more than twice. Try to avoid repeating objects.\n        \n\nbulk_objects: large, structural, or fixed objects (e.g., building, tree, table, sofa, road).\nornament_objects: smaller, decorative, or movable objects (e.g., lamp, plant, trash bin, signboard).\n\nOutput ONLY a JSON object of exactly this shape (no markdown, no commentary):\n{\n  \"bulk_objects\": [\"<large/structural/fixed object>\", \"...\"],\n  \"ornament_objects\": [\"<small/decorative/movable object>\", \"...\"]\n}"
+            }
+          ],
+          "temperature": 0.5,
+          "top_p": 0.9,
+          "top_k": 20,
+          "max_tokens": 8192,
+          "frequency_penalty": 0.0,
+          "presence_penalty": 0.0,
+          "repetition_penalty": 1.0,
+          "stop": [],
+          "reasoning_effort": "none",
+          "response_format": {
+            "type": "json_object"
+          },
+          "stream": false,
+          "n": 1
+        },
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "success"
+          }
+        ],
+        "raw_response": {
+          "service_tier": "default",
+          "id": "chatcmpl-Rc1AmA5QAm9B8IZpOU3ho84I",
+          "object": "chat.completion",
+          "created": 1791224501,
+          "model": "Qwen/Qwen3.5-27B",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"bulk_objects\": [\"bed\", \"wardrobe\", \"nightstand\", \"dresser\", \"desk\", \"chair\"],\n  \"ornament_objects\": [\"lamp\", \"picture\", \"clock\", \"plant\", \"rug\", \"pillow\", \"curtain\", \"mirror\"]\n}",
+                "reasoning_content": null,
+                "name": null,
+                "tool_calls": []
+              },
+              "finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 341,
+            "total_tokens": 405,
+            "completion_tokens": 64,
+            "estimated_cost": 0.00025506,
+            "prompt_tokens_details": null
+          }
+        },
+        "id": "chatcmpl-Rc1AmA5QAm9B8IZpOU3ho84I",
+        "response_model": "Qwen/Qwen3.5-27B",
+        "response_provider": null,
+        "system_fingerprint": null,
+        "usage": {
+          "prompt_tokens": 341,
+          "total_tokens": 405,
+          "completion_tokens": 64,
+          "estimated_cost": 0.00025506,
+          "prompt_tokens_details": null
+        },
+        "finish_reason": "stop"
+      }
+    },
+    {
+      "index": 2,
+      "stage": "planning",
+      "prompt": "\nRole: You are an expert layout planner.\n\n    Environment note: Instruction: This is a well-organized indoor bedroom.\n    \n    - Objects to be placed: 1 bed, 2 cabinet, 1 desk, 1 chair, 1 shelf. Do not place any other objects than this list.\n    - DO NOT PLACE ANY ORNAMENTS.\n    - You have to place all the objects mentioned.\n    \n    Strictly follow these rules:\n    - Objects not to include:\n        - windows, doors, walls, partitions or anything attached to it.\n        - floors, roofs.\n        - roads, street, pavement, footpath, sidewalk, pathway, lawn and any other part of ground.\n        - objects like counter that has multiple english meanings.\n    - Include only specific objects, not generalized names like new_object, appliances etc.\n    - Do not include any objects in plural.\n    \n        New Scene Description:\n        A well-organized indoor bedroom with tidy furnishings and a clean layout.\n        \n    Object Arrangement and Spatial Relationships:\n    - Objects should be arranged naturally as seen in real world environment (e.g., chairs around table, cars parked along street, trees spaced in a park, lamp on top of table/desk, pillow on sofa/bed , television facing sofa , vase centered on table ,  bird feeders hanging on a tree, trash bins beside bench ).\n    - Define clear spatial relationships between objects (e.g., next to, under, near, on top of, centered on, beside).\n    - Align most larger objects along area boundaries(e.g. walls, fences or paths) and corners to reflect natural real-world arrangements and maximise navigable spaces.\n    - Ensure bounding boxes and positions are consistent with the defined spatial relationships.\n\n    Follow semantic asset grouping:\n    - A semantic asset group is a collection of assets that are logically, functionally, or spatially related within a scene. Assets in a group support a common purpose or activity and together form a meaningful subscene.\n    - Group assets based on function (used together), semantics (conceptually related), or geometry (close in space or aligned).\n    - Examples:\n        - Sleeping area: Bed + Nightstand + Lamp (used together for resting and reading)\n        - Entertainment area: Sofa + TV Console + TV  (functionally related for watching)\n        - Work area: Desk + Chair + Laptop (supports the working activity)\n        - Dining area: Dining Table + Chairs + Chandelier (forms a cohesive eating zone)\n    \nTask:\nDecompose this instruction into ATOMIC TASKS for the design process. The output should ONLY be a valid json.\n\nOutput ONLY a JSON object of exactly this shape (no markdown, no commentary):\n{\n  \"atomic_tasks\": [\n    {\n      \"id\": \"<unique task id>\",\n      \"object_type\": \"<'bulk' or 'ornaments'>\",\n      \"type\": \"<'Add' | 'Remove' | 'Update'>\",\n      \"label\": \"<object label this task refers to>\",\n      \"anchor\": \"<reference object for a spatial relation, or null>\",\n      \"spatial_hint\": \"<human-readable spatial instruction, or null>\",\n      \"bbox_hint\": [x, y, w, h],\n      \"output_schema\": {\n        \"add\": [],\n        \"remove\": [],\n        \"update\": []\n      },\n      \"execution_prompt\": \"<concise instruction to run this task>\"\n    }\n  ]\n}\n'bbox_hint' may be null. 'output_schema.add'/'update' hold full SceneObject dicts\n(label, object_type, anchor, bbox, position, rotation_angle, description,\nconcise_description); 'remove' holds label strings. Leave them as empty lists\nwhen not needed.",
+      "system": "You are a strict JSON generator. Output ONLY a single valid JSON value and nothing else. Do NOT include any reasoning, thinking, explanation, preamble, markdown, or code fences. Your entire response must be parseable by json.loads().",
+      "output_text": "{\n  \"atomic_tasks\": [\n    {\n      \"id\": \"task_001\",\n      \"object_type\": \"bulk\",\n      \"type\": \"Add\",\n      \"label\": \"bed\",\n      \"anchor\": null,\n      \"spatial_hint\": \"Place the bed against the back wall, centered horizontally to maximize floor space.\",\n      \"bbox_hint\": [150, 200, 300, 400],\n      \"output_schema\": {\n        \"add\": [\n          {\n            \"label\": \"bed\",\n            \"object_type\": \"bulk\",\n            \"anchor\": null,\n            \"bbox\": [150, 200, 300, 400],\n            \"position\": [300, 400],\n            \"rotation_angle\": 0,\n            \"description\": \"A standard double bed with a headboard placed against the wall.\",\n            \"concise_description\": \"Bed against back wall\"\n          }\n        ],\n        \"remove\": [],\n        \"update\": []\n      },\n      \"execution_prompt\": \"Add a bed centered against the back wall.\"\n    },\n    {\n      \"id\": \"task_002\",\n      \"object_type\": \"bulk\",\n      \"type\": \"Add\",\n      \"label\": \"cabinet\",\n      \"anchor\": \"bed\",\n      \"spatial_hint\": \"Place the first cabinet to the immediate left of the bed, aligned with the bed's head.\",\n      \"bbox_hint\": [100, 220, 40, 180],\n      \"output_schema\": {\n        \"add\": [\n          {\n            \"label\": \"cabinet\",\n            \"object_type\": \"bulk\",\n            \"anchor\": \"bed\",\n            \"bbox\": [100, 220, 40, 180],\n            \"position\": [120, 310],\n            \"rotation_angle\": 0,\n            \"description\": \"A tall storage cabinet placed beside the left side of the bed.\",\n            \"concise_description\": \"Cabinet left of bed\"\n          }\n        ],\n        \"remove\": [],\n        \"update\": []\n      },\n      \"execution_prompt\": \"Add a cabinet to the left of the bed.\"\n    },\n    {\n      \"id\": \"task_003\",\n      \"object_type\": \"bulk\",\n      \"type\": \"Add\",\n      \"label\": \"cabinet\",\n      \"anchor\": \"bed\",\n      \"spatial_hint\": \"Place the second cabinet to the immediate right of the bed, aligned with the bed's head.\",\n      \"bbox_hint\": [460, 220, 40, 180],\n      \"output_schema\": {\n        \"add\": [\n          {\n            \"label\": \"cabinet\",\n            \"object_type\": \"bulk\",\n            \"anchor\": \"bed\",\n            \"bbox\": [460, 220, 40, 180],\n            \"position\": [480, 310],\n            \"rotation_angle\": 0,\n            \"description\": \"A tall storage cabinet placed beside the right side of the bed.\",\n            \"concise_description\": \"Cabinet right of bed\"\n          }\n        ],\n        \"remove\": [],\n        \"update\": []\n      },\n      \"execution_prompt\": \"Add a cabinet to the right of the bed.\"\n    },\n    {\n      \"id\": \"task_004\",\n      \"object_type\": \"bulk\",\n      \"type\": \"Add\",\n      \"label\": \"desk\",\n      \"anchor\": null,\n      \"spatial_hint\": \"Place the desk against the right wall, perpendicular to the bed, creating a work zone.\",\n      \"bbox_hint\": [480, 50, 120, 150],\n      \"output_schema\": {\n        \"add\": [\n          {\n            \"label\": \"desk\",\n            \"object_type\": \"bulk\",\n            \"anchor\": null,\n            \"bbox\": [480, 50, 120, 150],\n            \"position\": [540, 125],\n            \"rotation_angle\": 90,\n            \"description\": \"A wooden desk placed against the right wall for working.\",\n            \"concise_description\": \"Desk against right wall\"\n          }\n        ],\n        \"remove\": [],\n        \"update\": []\n      },\n      \"execution_prompt\": \"Add a desk against the right wall.\"\n    },\n    {\n      \"id\": \"task_005\",\n      \"object_type\": \"bulk\",\n      \"type\": \"Add\",\n      \"label\": \"chair\",\n      \"anchor\": \"desk\",\n      \"spatial_hint\": \"Place the chair in front of the desk, tucked slightly underneath the desk surface.\",\n      \"bbox_hint\": [520, 160, 60, 60],\n      \"output_schema\": {\n        \"add\": [\n          {\n            \"label\": \"chair\",\n            \"object_type\": \"bulk\",\n            \"anchor\": \"desk\",\n            \"bbox\": [520, 160, 60, 60],\n            \"position\": [550, 190],\n            \"rotation_angle\": 0,\n            \"description\": \"An office chair positioned in front of the desk.\",\n            \"concise_description\": \"Chair at desk\"\n          }\n        ],\n        \"remove\": [],\n        \"update\": []\n      },\n      \"execution_prompt\": \"Add a chair in front of the desk.\"\n    },\n    {\n      \"id\": \"task_006\",\n      \"object_type\": \"bulk\",\n      \"type\": \"Add\",\n      \"label\": \"shelf\",\n      \"anchor\": \"desk\",\n      \"spatial_hint\": \"Place the shelf on top of the desk, centered horizontally.\",\n      \"bbox_hint\": [500, 50, 80, 20],\n      \"output_schema\": {\n        \"add\": [\n          {\n            \"label\": \"shelf\",\n            \"object_type\": \"bulk\",\n            \"anchor\": \"desk\",\n            \"bbox\": [500, 50, 80, 20],\n            \"position\": [540, 60],\n            \"rotation_angle\": 90,\n            \"description\": \"A small shelf unit placed on top of the desk surface.\",\n            \"concise_description\": \"Shelf on desk\"\n          }\n        ],\n        \"remove\": [],\n        \"update\": []\n      },\n      \"execution_prompt\": \"Add a shelf on top of the desk.\"\n    }\n  ]\n}",
+      "api_response": {
+        "request": {
+          "model": "Qwen/Qwen3.5-27B:deepinfra",
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a strict JSON generator. Output ONLY a single valid JSON value and nothing else. Do NOT include any reasoning, thinking, explanation, preamble, markdown, or code fences. Your entire response must be parseable by json.loads()."
+            },
+            {
+              "role": "user",
+              "content": "\nRole: You are an expert layout planner.\n\n    Environment note: Instruction: This is a well-organized indoor bedroom.\n    \n    - Objects to be placed: 1 bed, 2 cabinet, 1 desk, 1 chair, 1 shelf. Do not place any other objects than this list.\n    - DO NOT PLACE ANY ORNAMENTS.\n    - You have to place all the objects mentioned.\n    \n    Strictly follow these rules:\n    - Objects not to include:\n        - windows, doors, walls, partitions or anything attached to it.\n        - floors, roofs.\n        - roads, street, pavement, footpath, sidewalk, pathway, lawn and any other part of ground.\n        - objects like counter that has multiple english meanings.\n    - Include only specific objects, not generalized names like new_object, appliances etc.\n    - Do not include any objects in plural.\n    \n        New Scene Description:\n        A well-organized indoor bedroom with tidy furnishings and a clean layout.\n        \n    Object Arrangement and Spatial Relationships:\n    - Objects should be arranged naturally as seen in real world environment (e.g., chairs around table, cars parked along street, trees spaced in a park, lamp on top of table/desk, pillow on sofa/bed , television facing sofa , vase centered on table ,  bird feeders hanging on a tree, trash bins beside bench ).\n    - Define clear spatial relationships between objects (e.g., next to, under, near, on top of, centered on, beside).\n    - Align most larger objects along area boundaries(e.g. walls, fences or paths) and corners to reflect natural real-world arrangements and maximise navigable spaces.\n    - Ensure bounding boxes and positions are consistent with the defined spatial relationships.\n\n    Follow semantic asset grouping:\n    - A semantic asset group is a collection of assets that are logically, functionally, or spatially related within a scene. Assets in a group support a common purpose or activity and together form a meaningful subscene.\n    - Group assets based on function (used together), semantics (conceptually related), or geometry (close in space or aligned).\n    - Examples:\n        - Sleeping area: Bed + Nightstand + Lamp (used together for resting and reading)\n        - Entertainment area: Sofa + TV Console + TV  (functionally related for watching)\n        - Work area: Desk + Chair + Laptop (supports the working activity)\n        - Dining area: Dining Table + Chairs + Chandelier (forms a cohesive eating zone)\n    \nTask:\nDecompose this instruction into ATOMIC TASKS for the design process. The output should ONLY be a valid json.\n\nOutput ONLY a JSON object of exactly this shape (no markdown, no commentary):\n{\n  \"atomic_tasks\": [\n    {\n      \"id\": \"<unique task id>\",\n      \"object_type\": \"<'bulk' or 'ornaments'>\",\n      \"type\": \"<'Add' | 'Remove' | 'Update'>\",\n      \"label\": \"<object label this task refers to>\",\n      \"anchor\": \"<reference object for a spatial relation, or null>\",\n      \"spatial_hint\": \"<human-readable spatial instruction, or null>\",\n      \"bbox_hint\": [x, y, w, h],\n      \"output_schema\": {\n        \"add\": [],\n        \"remove\": [],\n        \"update\": []\n      },\n      \"execution_prompt\": \"<concise instruction to run this task>\"\n    }\n  ]\n}\n'bbox_hint' may be null. 'output_schema.add'/'update' hold full SceneObject dicts\n(label, object_type, anchor, bbox, position, rotation_angle, description,\nconcise_description); 'remove' holds label strings. Leave them as empty lists\nwhen not needed."
+            }
+          ],
+          "temperature": 0.5,
+          "top_p": 0.9,
+          "top_k": 20,
+          "max_tokens": 8192,
+          "frequency_penalty": 0.0,
+          "presence_penalty": 0.0,
+          "repetition_penalty": 1.0,
+          "stop": [],
+          "reasoning_effort": "none",
+          "response_format": {
+            "type": "json_object"
+          },
+          "stream": false,
+          "n": 1
+        },
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "success"
+          }
+        ],
+        "raw_response": {
+          "service_tier": "default",
+          "id": "chatcmpl-RL8IW6ihXtPfM6Dqggza9xFK",
+          "object": "chat.completion",
+          "created": 1791224546,
+          "model": "Qwen/Qwen3.5-27B",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"atomic_tasks\": [\n    {\n      \"id\": \"task_001\",\n      \"object_type\": \"bulk\",\n      \"type\": \"Add\",\n      \"label\": \"bed\",\n      \"anchor\": null,\n      \"spatial_hint\": \"Place the bed against the back wall, centered horizontally to maximize floor space.\",\n      \"bbox_hint\": [150, 200, 300, 400],\n      \"output_schema\": {\n        \"add\": [\n          {\n            \"label\": \"bed\",\n            \"object_type\": \"bulk\",\n            \"anchor\": null,\n            \"bbox\": [150, 200, 300, 400],\n            \"position\": [300, 400],\n            \"rotation_angle\": 0,\n            \"description\": \"A standard double bed with a headboard placed against the wall.\",\n            \"concise_description\": \"Bed against back wall\"\n          }\n        ],\n        \"remove\": [],\n        \"update\": []\n      },\n      \"execution_prompt\": \"Add a bed centered against the back wall.\"\n    },\n    {\n      \"id\": \"task_002\",\n      \"object_type\": \"bulk\",\n      \"type\": \"Add\",\n      \"label\": \"cabinet\",\n      \"anchor\": \"bed\",\n      \"spatial_hint\": \"Place the first cabinet to the immediate left of the bed, aligned with the bed's head.\",\n      \"bbox_hint\": [100, 220, 40, 180],\n      \"output_schema\": {\n        \"add\": [\n          {\n            \"label\": \"cabinet\",\n            \"object_type\": \"bulk\",\n            \"anchor\": \"bed\",\n            \"bbox\": [100, 220, 40, 180],\n            \"position\": [120, 310],\n            \"rotation_angle\": 0,\n            \"description\": \"A tall storage cabinet placed beside the left side of the bed.\",\n            \"concise_description\": \"Cabinet left of bed\"\n          }\n        ],\n        \"remove\": [],\n        \"update\": []\n      },\n      \"execution_prompt\": \"Add a cabinet to the left of the bed.\"\n    },\n    {\n      \"id\": \"task_003\",\n      \"object_type\": \"bulk\",\n      \"type\": \"Add\",\n      \"label\": \"cabinet\",\n      \"anchor\": \"bed\",\n      \"spatial_hint\": \"Place the second cabinet to the immediate right of the bed, aligned with the bed's head.\",\n      \"bbox_hint\": [460, 220, 40, 180],\n      \"output_schema\": {\n        \"add\": [\n          {\n            \"label\": \"cabinet\",\n            \"object_type\": \"bulk\",\n            \"anchor\": \"bed\",\n            \"bbox\": [460, 220, 40, 180],\n            \"position\": [480, 310],\n            \"rotation_angle\": 0,\n            \"description\": \"A tall storage cabinet placed beside the right side of the bed.\",\n            \"concise_description\": \"Cabinet right of bed\"\n          }\n        ],\n        \"remove\": [],\n        \"update\": []\n      },\n      \"execution_prompt\": \"Add a cabinet to the right of the bed.\"\n    },\n    {\n      \"id\": \"task_004\",\n      \"object_type\": \"bulk\",\n      \"type\": \"Add\",\n      \"label\": \"desk\",\n      \"anchor\": null,\n      \"spatial_hint\": \"Place the desk against the right wall, perpendicular to the bed, creating a work zone.\",\n      \"bbox_hint\": [480, 50, 120, 150],\n      \"output_schema\": {\n        \"add\": [\n          {\n            \"label\": \"desk\",\n            \"object_type\": \"bulk\",\n            \"anchor\": null,\n            \"bbox\": [480, 50, 120, 150],\n            \"position\": [540, 125],\n            \"rotation_angle\": 90,\n            \"description\": \"A wooden desk placed against the right wall for working.\",\n            \"concise_description\": \"Desk against right wall\"\n          }\n        ],\n        \"remove\": [],\n        \"update\": []\n      },\n      \"execution_prompt\": \"Add a desk against the right wall.\"\n    },\n    {\n      \"id\": \"task_005\",\n      \"object_type\": \"bulk\",\n      \"type\": \"Add\",\n      \"label\": \"chair\",\n      \"anchor\": \"desk\",\n      \"spatial_hint\": \"Place the chair in front of the desk, tucked slightly underneath the desk surface.\",\n      \"bbox_hint\": [520, 160, 60, 60],\n      \"output_schema\": {\n        \"add\": [\n          {\n            \"label\": \"chair\",\n            \"object_type\": \"bulk\",\n            \"anchor\": \"desk\",\n            \"bbox\": [520, 160, 60, 60],\n            \"position\": [550, 190],\n            \"rotation_angle\": 0,\n            \"description\": \"An office chair positioned in front of the desk.\",\n            \"concise_description\": \"Chair at desk\"\n          }\n        ],\n        \"remove\": [],\n        \"update\": []\n      },\n      \"execution_prompt\": \"Add a chair in front of the desk.\"\n    },\n    {\n      \"id\": \"task_006\",\n      \"object_type\": \"bulk\",\n      \"type\": \"Add\",\n      \"label\": \"shelf\",\n      \"anchor\": \"desk\",\n      \"spatial_hint\": \"Place the shelf on top of the desk, centered horizontally.\",\n      \"bbox_hint\": [500, 50, 80, 20],\n      \"output_schema\": {\n        \"add\": [\n          {\n            \"label\": \"shelf\",\n            \"object_type\": \"bulk\",\n            \"anchor\": \"desk\",\n            \"bbox\": [500, 50, 80, 20],\n            \"position\": [540, 60],\n            \"rotation_angle\": 90,\n            \"description\": \"A small shelf unit placed on top of the desk surface.\",\n            \"concise_description\": \"Shelf on desk\"\n          }\n        ],\n        \"remove\": [],\n        \"update\": []\n      },\n      \"execution_prompt\": \"Add a shelf on top of the desk.\"\n    }\n  ]\n}",
+                "reasoning_content": null,
+                "name": null,
+                "tool_calls": []
+              },
+              "finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 873,
+            "total_tokens": 2431,
+            "completion_tokens": 1558,
+            "estimated_cost": 0.004277779999999999,
+            "prompt_tokens_details": null
+          }
+        },
+        "id": "chatcmpl-RL8IW6ihXtPfM6Dqggza9xFK",
+        "response_model": "Qwen/Qwen3.5-27B",
+        "response_provider": null,
+        "system_fingerprint": null,
+        "usage": {
+          "prompt_tokens": 873,
+          "total_tokens": 2431,
+          "completion_tokens": 1558,
+          "estimated_cost": 0.004277779999999999,
+          "prompt_tokens_details": null
+        },
+        "finish_reason": "stop"
+      }
+    },
+    {
+      "index": 3,
+      "stage": "placement",
+      "prompt": "\nRole: You are an expert real world planner.\nEnvironment note: Instruction: This is a well-organized indoor bedroom..\n\n\nPlan summary for the room:\nAdd a bed centered against the back wall.\nAdd a cabinet to the left of the bed.\nAdd a cabinet to the right of the bed.\nAdd a desk against the right wall.\nAdd a chair in front of the desk.\nAdd a shelf on top of the desk.\n\nPlacement Rules:\n- You are populating a 5 meters * 5 meters room.\n- The room dimensions are x ranging between -2.5 to 2.5 and y ranging between 0 to 5. Bounding boxes SHOULD NOT go out of the room area.\n- Design such that two BULK objects bounding boxes SHOULD NOT INTERSECT each other unless the relationship is under or on top of.\n- While placing, verify that the front of the object being placed and already placed objects remains clearly visible and is not obstructed by any larger object positioned in front of it.\n- Maintain realistic distances between the objects you are placing to make the room visually appealing. Do not clutter them together.\n- Align most larger objects along area boundaries(e.g. walls, fences or paths) to reflect natural real-world arrangements and maximise navigable spaces.\n- Each object must include: label(same as the name mentioned in plan, do not add any adjective), object_type, anchor, description, bbox [x,y,w,h] where (x+w/2,y+h/2) is the position/center, (x,y) is the bottom left corner and (w,h) is the width and height, description, position [x+w/2,y+h/2], rotation angle.\n- Object sizes and bounding boxes must be semantically consistent with other objects in the scene and the room dimension.\n- Positions and bounding boxes must accurately reflect spatial relationships (e.g., next to, under, on top of, centered on, near).\n- Anchored objects must be placed and oriented relative to their reference object according to the defined spatial relationship.\n\nInstructions:\n- Output ONLY valid JSON with fields: objects.\n\n\nOutput ONLY a JSON object of exactly this shape (no markdown, no commentary):\n{\n  \"objects\": [\n    {\n      \"label\": \"<object name, same as plan, NO adjectives, singular>\",\n      \"object_type\": \"<'bulk' or 'ornaments'>\",\n      \"anchor\": \"<reference object label for a spatial relation, or null>\",\n      \"bbox\": [x, y, w, h],\n      \"position\": [x + w/2, y + h/2],\n      \"rotation_angle\": <float degrees>,\n      \"description\": \"<natural language description, may mention relations>\",\n      \"concise_description\": \"<description of ONLY this object, no relations>\"\n    }\n  ]\n}\nEvery object MUST include all of these fields.",
+      "system": "You are a strict JSON generator. Output ONLY a single valid JSON value and nothing else. Do NOT include any reasoning, thinking, explanation, preamble, markdown, or code fences. Your entire response must be parseable by json.loads().",
+      "output_text": "{\n  \"objects\": [\n    {\n      \"label\": \"bed\",\n      \"object_type\": \"bulk\",\n      \"anchor\": null,\n      \"bbox\": [-1.0, 3.5, 2.0, 1.5],\n      \"position\": [0.0, 4.25],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A bed centered against the back wall of the room.\",\n      \"concise_description\": \"A standard double bed.\"\n    },\n    {\n      \"label\": \"cabinet\",\n      \"object_type\": \"bulk\",\n      \"anchor\": \"bed\",\n      \"bbox\": [-2.0, 3.5, 0.8, 1.0],\n      \"position\": [-1.6, 4.0],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A cabinet placed to the left of the bed.\",\n      \"concise_description\": \"A small wooden cabinet.\"\n    },\n    {\n      \"label\": \"cabinet\",\n      \"object_type\": \"bulk\",\n      \"anchor\": \"bed\",\n      \"bbox\": [1.2, 3.5, 0.8, 1.0],\n      \"position\": [1.6, 4.0],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A cabinet placed to the right of the bed.\",\n      \"concise_description\": \"A small wooden cabinet.\"\n    },\n    {\n      \"label\": \"desk\",\n      \"object_type\": \"bulk\",\n      \"anchor\": null,\n      \"bbox\": [1.5, 0.5, 1.2, 0.8],\n      \"position\": [2.1, 0.9],\n      \"rotation_angle\": 90.0,\n      \"description\": \"A desk placed against the right wall.\",\n      \"concise_description\": \"A rectangular wooden desk.\"\n    },\n    {\n      \"label\": \"chair\",\n      \"object_type\": \"bulk\",\n      \"anchor\": \"desk\",\n      \"bbox\": [1.0, 0.5, 0.6, 0.8],\n      \"position\": [1.3, 0.9],\n      \"rotation_angle\": 90.0,\n      \"description\": \"A chair positioned in front of the desk.\",\n      \"concise_description\": \"A standard office chair.\"\n    },\n    {\n      \"label\": \"shelf\",\n      \"object_type\": \"ornaments\",\n      \"anchor\": \"desk\",\n      \"bbox\": [1.5, 1.3, 1.2, 0.2],\n      \"position\": [2.1, 1.4],\n      \"rotation_angle\": 90.0,\n      \"description\": \"A shelf placed on top of the desk.\",\n      \"concise_description\": \"A narrow wooden shelf.\"\n    }\n  ]\n}",
+      "api_response": {
+        "request": {
+          "model": "Qwen/Qwen3.5-27B:deepinfra",
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a strict JSON generator. Output ONLY a single valid JSON value and nothing else. Do NOT include any reasoning, thinking, explanation, preamble, markdown, or code fences. Your entire response must be parseable by json.loads()."
+            },
+            {
+              "role": "user",
+              "content": "\nRole: You are an expert real world planner.\nEnvironment note: Instruction: This is a well-organized indoor bedroom..\n\n\nPlan summary for the room:\nAdd a bed centered against the back wall.\nAdd a cabinet to the left of the bed.\nAdd a cabinet to the right of the bed.\nAdd a desk against the right wall.\nAdd a chair in front of the desk.\nAdd a shelf on top of the desk.\n\nPlacement Rules:\n- You are populating a 5 meters * 5 meters room.\n- The room dimensions are x ranging between -2.5 to 2.5 and y ranging between 0 to 5. Bounding boxes SHOULD NOT go out of the room area.\n- Design such that two BULK objects bounding boxes SHOULD NOT INTERSECT each other unless the relationship is under or on top of.\n- While placing, verify that the front of the object being placed and already placed objects remains clearly visible and is not obstructed by any larger object positioned in front of it.\n- Maintain realistic distances between the objects you are placing to make the room visually appealing. Do not clutter them together.\n- Align most larger objects along area boundaries(e.g. walls, fences or paths) to reflect natural real-world arrangements and maximise navigable spaces.\n- Each object must include: label(same as the name mentioned in plan, do not add any adjective), object_type, anchor, description, bbox [x,y,w,h] where (x+w/2,y+h/2) is the position/center, (x,y) is the bottom left corner and (w,h) is the width and height, description, position [x+w/2,y+h/2], rotation angle.\n- Object sizes and bounding boxes must be semantically consistent with other objects in the scene and the room dimension.\n- Positions and bounding boxes must accurately reflect spatial relationships (e.g., next to, under, on top of, centered on, near).\n- Anchored objects must be placed and oriented relative to their reference object according to the defined spatial relationship.\n\nInstructions:\n- Output ONLY valid JSON with fields: objects.\n\n\nOutput ONLY a JSON object of exactly this shape (no markdown, no commentary):\n{\n  \"objects\": [\n    {\n      \"label\": \"<object name, same as plan, NO adjectives, singular>\",\n      \"object_type\": \"<'bulk' or 'ornaments'>\",\n      \"anchor\": \"<reference object label for a spatial relation, or null>\",\n      \"bbox\": [x, y, w, h],\n      \"position\": [x + w/2, y + h/2],\n      \"rotation_angle\": <float degrees>,\n      \"description\": \"<natural language description, may mention relations>\",\n      \"concise_description\": \"<description of ONLY this object, no relations>\"\n    }\n  ]\n}\nEvery object MUST include all of these fields."
+            }
+          ],
+          "temperature": 0.5,
+          "top_p": 0.9,
+          "top_k": 20,
+          "max_tokens": 8192,
+          "frequency_penalty": 0.0,
+          "presence_penalty": 0.0,
+          "repetition_penalty": 1.0,
+          "stop": [],
+          "reasoning_effort": "none",
+          "response_format": {
+            "type": "json_object"
+          },
+          "stream": false,
+          "n": 1
+        },
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "success"
+          }
+        ],
+        "raw_response": {
+          "service_tier": "default",
+          "id": "chatcmpl-RhAdrfVRzeB19ssXY0L1WYuT",
+          "object": "chat.completion",
+          "created": 1791224563,
+          "model": "Qwen/Qwen3.5-27B",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"objects\": [\n    {\n      \"label\": \"bed\",\n      \"object_type\": \"bulk\",\n      \"anchor\": null,\n      \"bbox\": [-1.0, 3.5, 2.0, 1.5],\n      \"position\": [0.0, 4.25],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A bed centered against the back wall of the room.\",\n      \"concise_description\": \"A standard double bed.\"\n    },\n    {\n      \"label\": \"cabinet\",\n      \"object_type\": \"bulk\",\n      \"anchor\": \"bed\",\n      \"bbox\": [-2.0, 3.5, 0.8, 1.0],\n      \"position\": [-1.6, 4.0],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A cabinet placed to the left of the bed.\",\n      \"concise_description\": \"A small wooden cabinet.\"\n    },\n    {\n      \"label\": \"cabinet\",\n      \"object_type\": \"bulk\",\n      \"anchor\": \"bed\",\n      \"bbox\": [1.2, 3.5, 0.8, 1.0],\n      \"position\": [1.6, 4.0],\n      \"rotation_angle\": 0.0,\n      \"description\": \"A cabinet placed to the right of the bed.\",\n      \"concise_description\": \"A small wooden cabinet.\"\n    },\n    {\n      \"label\": \"desk\",\n      \"object_type\": \"bulk\",\n      \"anchor\": null,\n      \"bbox\": [1.5, 0.5, 1.2, 0.8],\n      \"position\": [2.1, 0.9],\n      \"rotation_angle\": 90.0,\n      \"description\": \"A desk placed against the right wall.\",\n      \"concise_description\": \"A rectangular wooden desk.\"\n    },\n    {\n      \"label\": \"chair\",\n      \"object_type\": \"bulk\",\n      \"anchor\": \"desk\",\n      \"bbox\": [1.0, 0.5, 0.6, 0.8],\n      \"position\": [1.3, 0.9],\n      \"rotation_angle\": 90.0,\n      \"description\": \"A chair positioned in front of the desk.\",\n      \"concise_description\": \"A standard office chair.\"\n    },\n    {\n      \"label\": \"shelf\",\n      \"object_type\": \"ornaments\",\n      \"anchor\": \"desk\",\n      \"bbox\": [1.5, 1.3, 1.2, 0.2],\n      \"position\": [2.1, 1.4],\n      \"rotation_angle\": 90.0,\n      \"description\": \"A shelf placed on top of the desk.\",\n      \"concise_description\": \"A narrow wooden shelf.\"\n    }\n  ]\n}",
+                "reasoning_content": null,
+                "name": null,
+                "tool_calls": []
+              },
+              "finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 685,
+            "total_tokens": 1366,
+            "completion_tokens": 681,
+            "estimated_cost": 0.0019486999999999998,
+            "prompt_tokens_details": null
+          }
+        },
+        "id": "chatcmpl-RhAdrfVRzeB19ssXY0L1WYuT",
+        "response_model": "Qwen/Qwen3.5-27B",
+        "response_provider": null,
+        "system_fingerprint": null,
+        "usage": {
+          "prompt_tokens": 685,
+          "total_tokens": 1366,
+          "completion_tokens": 681,
+          "estimated_cost": 0.0019486999999999998,
+          "prompt_tokens_details": null
+        },
+        "finish_reason": "stop"
+      }
+    }
+  ],
+  "initial_generation": true,
+  "original_task_description": "This is an indoor bedroom.",
+  "modified_task_description": "This is a well-organized indoor bedroom.",
+  "timestamp": "2026-10-05T18:22:43.616440+00:00",
+  "status": "success"
+}

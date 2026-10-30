@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "design": "One output per benchmark and condition; no seeds or replicates",
+    "scientific_results": true,
+    "model": "Qwen/Qwen3.5-27B",
+    "provider": "deepinfra",
+    "inference_limitation": "Previously observed nondeterministic API; single outputs cannot isolate adjective effects from generation randomness",
+    "first_divergent_call_indexing": "zero-based"
+  },
+  "rows": [
+    {
+      "condition": "well_organized",
+      "compared_benchmarks": 1,
+      "object_set_diff_mean": 0.0,
+      "object_count_diff_mean": 0,
+      "occupancy_hamming_mean": 0.84,
+      "centroid_shift_mean": 3.5414398002172502,
+      "legality_flip_mean": 0,
+      "placement_changed_count": 1,
+      "structural_divergence_count": 0,
+      "first_divergent_calls": {
+        "bedroom_1": 0
+      }
+    },
+    {
+      "condition": "spacious",
+      "compared_benchmarks": 1,
+      "object_set_diff_mean": 0.0,
+      "object_count_diff_mean": 0,
+      "occupancy_hamming_mean": 0.72,
+      "centroid_shift_mean": 3.5330558662868827,
+      "legality_flip_mean": 0,
+      "placement_changed_count": 1,
+      "structural_divergence_count": 0,
+      "first_divergent_calls": {
+        "bedroom_1": 0
+      }
+    },
+    {
+      "condition": "bright",
+      "compared_benchmarks": 1,
+      "object_set_diff_mean": 0.0,
+      "object_count_diff_mean": 0,
+      "occupancy_hamming_mean": 0.88,
+      "centroid_shift_mean": 3.6409519639241523,
+      "legality_flip_mean": 0,
+      "placement_changed_count": 1,
+      "structural_divergence_count": 0,
+      "first_divergent_calls": {
+        "bedroom_1": 0
+      }
+    },
+    {
+      "condition": "quiet",
+      "compared_benchmarks": 1,
+      "object_set_diff_mean": 0.0,
+      "object_count_diff_mean": 0,
+      "occupancy_hamming_mean": 0.72,
+      "centroid_shift_mean": 3.545261600604664,
+      "legality_flip_mean": 1,
+      "placement_changed_count": 1,
+      "structural_divergence_count": 0,
+      "first_divergent_calls": {
+        "bedroom_1": 0
+      }
+    },
+    {
+      "condition": "cluttered",
+      "compared_benchmarks": 1,
+      "object_set_diff_mean": 0.0,
+      "object_count_diff_mean": 0,
+      "occupancy_hamming_mean": 0.2,
+      "centroid_shift_mean": 0.35388690114727583,
+      "legality_flip_mean": 0,
+      "placement_changed_count": 1,
+      "structural_divergence_count": 0,
+      "first_divergent_calls": {
+        "bedroom_1": 0
+      }
+    },
+    {
+      "condition": "crowded",
+      "compared_benchmarks": 1,
+      "object_set_diff_mean": 0.0,
+      "object_count_diff_mean": 0,
+      "occupancy_hamming_mean": 0.68,
+      "centroid_shift_mean": 3.3815640690288946,
+      "legality_flip_mean": 0,
+      "placement_changed_count": 1,
+      "structural_divergence_count": 0,
+      "first_divergent_calls": {
+        "bedroom_1": 0
+      }
+    }
+  ]
+}

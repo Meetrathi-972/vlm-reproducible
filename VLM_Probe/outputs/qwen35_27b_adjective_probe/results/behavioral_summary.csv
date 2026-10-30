@@ -1,0 +1,1 @@
+benchmark,condition,seed,object_set_diff,object_count_diff,occupancy_hamming,centroid_shift,legality_flip,first_divergent_call,structural_divergence,placement_changed

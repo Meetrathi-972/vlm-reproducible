@@ -1,0 +1,449 @@
+benchmark,condition,check,item,violated
+bedroom_1,baseline,scene_structure,objects_list,False
+bedroom_1,baseline,required_object_count,bed,False
+bedroom_1,baseline,required_object_count,cabinet,False
+bedroom_1,baseline,required_object_count,desk,False
+bedroom_1,baseline,required_object_count,chair,False
+bedroom_1,baseline,required_object_count,shelf,False
+bedroom_1,baseline,unexpected_inventory,categories,False
+bedroom_1,baseline,required_fields,bed#1,False
+bedroom_1,baseline,valid_geometry,bed#1,False
+bedroom_1,baseline,finite_rotation,bed#1,False
+bedroom_1,baseline,inside_room,bed#1,False
+bedroom_1,baseline,position_matches_bbox_center,bed#1,False
+bedroom_1,baseline,anchor_exists,bed#1,False
+bedroom_1,baseline,anchor_unambiguous,bed#1,False
+bedroom_1,baseline,required_fields,cabinet#1,False
+bedroom_1,baseline,valid_geometry,cabinet#1,False
+bedroom_1,baseline,finite_rotation,cabinet#1,False
+bedroom_1,baseline,inside_room,cabinet#1,False
+bedroom_1,baseline,position_matches_bbox_center,cabinet#1,False
+bedroom_1,baseline,anchor_exists,cabinet#1,False
+bedroom_1,baseline,anchor_unambiguous,cabinet#1,False
+bedroom_1,baseline,required_fields,cabinet#2,False
+bedroom_1,baseline,valid_geometry,cabinet#2,False
+bedroom_1,baseline,finite_rotation,cabinet#2,False
+bedroom_1,baseline,inside_room,cabinet#2,False
+bedroom_1,baseline,position_matches_bbox_center,cabinet#2,False
+bedroom_1,baseline,anchor_exists,cabinet#2,False
+bedroom_1,baseline,anchor_unambiguous,cabinet#2,False
+bedroom_1,baseline,required_fields,desk#1,False
+bedroom_1,baseline,valid_geometry,desk#1,False
+bedroom_1,baseline,finite_rotation,desk#1,False
+bedroom_1,baseline,inside_room,desk#1,False
+bedroom_1,baseline,position_matches_bbox_center,desk#1,False
+bedroom_1,baseline,anchor_exists,desk#1,False
+bedroom_1,baseline,anchor_unambiguous,desk#1,False
+bedroom_1,baseline,required_fields,chair#1,False
+bedroom_1,baseline,valid_geometry,chair#1,False
+bedroom_1,baseline,finite_rotation,chair#1,False
+bedroom_1,baseline,inside_room,chair#1,False
+bedroom_1,baseline,position_matches_bbox_center,chair#1,False
+bedroom_1,baseline,anchor_exists,chair#1,False
+bedroom_1,baseline,anchor_unambiguous,chair#1,False
+bedroom_1,baseline,required_fields,shelf#1,False
+bedroom_1,baseline,valid_geometry,shelf#1,False
+bedroom_1,baseline,finite_rotation,shelf#1,False
+bedroom_1,baseline,inside_room,shelf#1,False
+bedroom_1,baseline,position_matches_bbox_center,shelf#1,False
+bedroom_1,baseline,anchor_exists,shelf#1,False
+bedroom_1,baseline,anchor_unambiguous,shelf#1,False
+bedroom_1,baseline,footprint_nonoverlap,"('bed', 1)|('cabinet', 1)",False
+bedroom_1,baseline,footprint_nonoverlap,"('bed', 1)|('cabinet', 2)",False
+bedroom_1,baseline,footprint_nonoverlap,"('bed', 1)|('desk', 1)",False
+bedroom_1,baseline,footprint_nonoverlap,"('bed', 1)|('chair', 1)",False
+bedroom_1,baseline,footprint_nonoverlap,"('bed', 1)|('shelf', 1)",False
+bedroom_1,baseline,footprint_nonoverlap,"('cabinet', 1)|('cabinet', 2)",False
+bedroom_1,baseline,footprint_nonoverlap,"('cabinet', 1)|('desk', 1)",False
+bedroom_1,baseline,footprint_nonoverlap,"('cabinet', 1)|('chair', 1)",False
+bedroom_1,baseline,footprint_nonoverlap,"('cabinet', 1)|('shelf', 1)",False
+bedroom_1,baseline,footprint_nonoverlap,"('cabinet', 2)|('desk', 1)",False
+bedroom_1,baseline,footprint_nonoverlap,"('cabinet', 2)|('chair', 1)",False
+bedroom_1,baseline,footprint_nonoverlap,"('cabinet', 2)|('shelf', 1)",False
+bedroom_1,baseline,footprint_nonoverlap,"('desk', 1)|('chair', 1)",False
+bedroom_1,baseline,footprint_nonoverlap,"('desk', 1)|('shelf', 1)",True
+bedroom_1,baseline,footprint_nonoverlap,"('chair', 1)|('shelf', 1)",False
+bedroom_1,well_organized,scene_structure,objects_list,False
+bedroom_1,well_organized,required_object_count,bed,False
+bedroom_1,well_organized,required_object_count,cabinet,False
+bedroom_1,well_organized,required_object_count,desk,False
+bedroom_1,well_organized,required_object_count,chair,False
+bedroom_1,well_organized,required_object_count,shelf,False
+bedroom_1,well_organized,unexpected_inventory,categories,False
+bedroom_1,well_organized,required_fields,bed#1,False
+bedroom_1,well_organized,valid_geometry,bed#1,False
+bedroom_1,well_organized,finite_rotation,bed#1,False
+bedroom_1,well_organized,inside_room,bed#1,False
+bedroom_1,well_organized,position_matches_bbox_center,bed#1,False
+bedroom_1,well_organized,anchor_exists,bed#1,False
+bedroom_1,well_organized,anchor_unambiguous,bed#1,False
+bedroom_1,well_organized,required_fields,cabinet#1,False
+bedroom_1,well_organized,valid_geometry,cabinet#1,False
+bedroom_1,well_organized,finite_rotation,cabinet#1,False
+bedroom_1,well_organized,inside_room,cabinet#1,False
+bedroom_1,well_organized,position_matches_bbox_center,cabinet#1,False
+bedroom_1,well_organized,anchor_exists,cabinet#1,False
+bedroom_1,well_organized,anchor_unambiguous,cabinet#1,False
+bedroom_1,well_organized,required_fields,cabinet#2,False
+bedroom_1,well_organized,valid_geometry,cabinet#2,False
+bedroom_1,well_organized,finite_rotation,cabinet#2,False
+bedroom_1,well_organized,inside_room,cabinet#2,False
+bedroom_1,well_organized,position_matches_bbox_center,cabinet#2,False
+bedroom_1,well_organized,anchor_exists,cabinet#2,False
+bedroom_1,well_organized,anchor_unambiguous,cabinet#2,False
+bedroom_1,well_organized,required_fields,desk#1,False
+bedroom_1,well_organized,valid_geometry,desk#1,False
+bedroom_1,well_organized,finite_rotation,desk#1,False
+bedroom_1,well_organized,inside_room,desk#1,True
+bedroom_1,well_organized,position_matches_bbox_center,desk#1,False
+bedroom_1,well_organized,anchor_exists,desk#1,False
+bedroom_1,well_organized,anchor_unambiguous,desk#1,False
+bedroom_1,well_organized,required_fields,chair#1,False
+bedroom_1,well_organized,valid_geometry,chair#1,False
+bedroom_1,well_organized,finite_rotation,chair#1,False
+bedroom_1,well_organized,inside_room,chair#1,False
+bedroom_1,well_organized,position_matches_bbox_center,chair#1,False
+bedroom_1,well_organized,anchor_exists,chair#1,False
+bedroom_1,well_organized,anchor_unambiguous,chair#1,False
+bedroom_1,well_organized,required_fields,shelf#1,False
+bedroom_1,well_organized,valid_geometry,shelf#1,False
+bedroom_1,well_organized,finite_rotation,shelf#1,False
+bedroom_1,well_organized,inside_room,shelf#1,True
+bedroom_1,well_organized,position_matches_bbox_center,shelf#1,False
+bedroom_1,well_organized,anchor_exists,shelf#1,False
+bedroom_1,well_organized,anchor_unambiguous,shelf#1,False
+bedroom_1,well_organized,footprint_nonoverlap,"('bed', 1)|('cabinet', 1)",False
+bedroom_1,well_organized,footprint_nonoverlap,"('bed', 1)|('cabinet', 2)",False
+bedroom_1,well_organized,footprint_nonoverlap,"('bed', 1)|('desk', 1)",False
+bedroom_1,well_organized,footprint_nonoverlap,"('bed', 1)|('chair', 1)",False
+bedroom_1,well_organized,footprint_nonoverlap,"('bed', 1)|('shelf', 1)",False
+bedroom_1,well_organized,footprint_nonoverlap,"('cabinet', 1)|('cabinet', 2)",False
+bedroom_1,well_organized,footprint_nonoverlap,"('cabinet', 1)|('desk', 1)",False
+bedroom_1,well_organized,footprint_nonoverlap,"('cabinet', 1)|('chair', 1)",False
+bedroom_1,well_organized,footprint_nonoverlap,"('cabinet', 1)|('shelf', 1)",False
+bedroom_1,well_organized,footprint_nonoverlap,"('cabinet', 2)|('desk', 1)",False
+bedroom_1,well_organized,footprint_nonoverlap,"('cabinet', 2)|('chair', 1)",False
+bedroom_1,well_organized,footprint_nonoverlap,"('cabinet', 2)|('shelf', 1)",False
+bedroom_1,well_organized,footprint_nonoverlap,"('desk', 1)|('chair', 1)",True
+bedroom_1,well_organized,footprint_nonoverlap,"('desk', 1)|('shelf', 1)",False
+bedroom_1,well_organized,footprint_nonoverlap,"('chair', 1)|('shelf', 1)",False
+bedroom_1,spacious,scene_structure,objects_list,False
+bedroom_1,spacious,required_object_count,bed,False
+bedroom_1,spacious,required_object_count,cabinet,False
+bedroom_1,spacious,required_object_count,desk,False
+bedroom_1,spacious,required_object_count,chair,False
+bedroom_1,spacious,required_object_count,shelf,False
+bedroom_1,spacious,unexpected_inventory,categories,False
+bedroom_1,spacious,required_fields,bed#1,False
+bedroom_1,spacious,valid_geometry,bed#1,False
+bedroom_1,spacious,finite_rotation,bed#1,False
+bedroom_1,spacious,inside_room,bed#1,False
+bedroom_1,spacious,position_matches_bbox_center,bed#1,False
+bedroom_1,spacious,anchor_exists,bed#1,False
+bedroom_1,spacious,anchor_unambiguous,bed#1,False
+bedroom_1,spacious,required_fields,cabinet#1,False
+bedroom_1,spacious,valid_geometry,cabinet#1,False
+bedroom_1,spacious,finite_rotation,cabinet#1,False
+bedroom_1,spacious,inside_room,cabinet#1,False
+bedroom_1,spacious,position_matches_bbox_center,cabinet#1,False
+bedroom_1,spacious,anchor_exists,cabinet#1,False
+bedroom_1,spacious,anchor_unambiguous,cabinet#1,False
+bedroom_1,spacious,required_fields,cabinet#2,False
+bedroom_1,spacious,valid_geometry,cabinet#2,False
+bedroom_1,spacious,finite_rotation,cabinet#2,False
+bedroom_1,spacious,inside_room,cabinet#2,False
+bedroom_1,spacious,position_matches_bbox_center,cabinet#2,False
+bedroom_1,spacious,anchor_exists,cabinet#2,False
+bedroom_1,spacious,anchor_unambiguous,cabinet#2,False
+bedroom_1,spacious,required_fields,desk#1,False
+bedroom_1,spacious,valid_geometry,desk#1,False
+bedroom_1,spacious,finite_rotation,desk#1,False
+bedroom_1,spacious,inside_room,desk#1,False
+bedroom_1,spacious,position_matches_bbox_center,desk#1,False
+bedroom_1,spacious,anchor_exists,desk#1,False
+bedroom_1,spacious,anchor_unambiguous,desk#1,False
+bedroom_1,spacious,required_fields,chair#1,False
+bedroom_1,spacious,valid_geometry,chair#1,False
+bedroom_1,spacious,finite_rotation,chair#1,False
+bedroom_1,spacious,inside_room,chair#1,False
+bedroom_1,spacious,position_matches_bbox_center,chair#1,False
+bedroom_1,spacious,anchor_exists,chair#1,False
+bedroom_1,spacious,anchor_unambiguous,chair#1,False
+bedroom_1,spacious,required_fields,shelf#1,False
+bedroom_1,spacious,valid_geometry,shelf#1,False
+bedroom_1,spacious,finite_rotation,shelf#1,False
+bedroom_1,spacious,inside_room,shelf#1,False
+bedroom_1,spacious,position_matches_bbox_center,shelf#1,False
+bedroom_1,spacious,anchor_exists,shelf#1,False
+bedroom_1,spacious,anchor_unambiguous,shelf#1,False
+bedroom_1,spacious,footprint_nonoverlap,"('bed', 1)|('cabinet', 1)",False
+bedroom_1,spacious,footprint_nonoverlap,"('bed', 1)|('cabinet', 2)",False
+bedroom_1,spacious,footprint_nonoverlap,"('bed', 1)|('desk', 1)",False
+bedroom_1,spacious,footprint_nonoverlap,"('bed', 1)|('chair', 1)",False
+bedroom_1,spacious,footprint_nonoverlap,"('bed', 1)|('shelf', 1)",False
+bedroom_1,spacious,footprint_nonoverlap,"('cabinet', 1)|('cabinet', 2)",False
+bedroom_1,spacious,footprint_nonoverlap,"('cabinet', 1)|('desk', 1)",False
+bedroom_1,spacious,footprint_nonoverlap,"('cabinet', 1)|('chair', 1)",False
+bedroom_1,spacious,footprint_nonoverlap,"('cabinet', 1)|('shelf', 1)",False
+bedroom_1,spacious,footprint_nonoverlap,"('cabinet', 2)|('desk', 1)",False
+bedroom_1,spacious,footprint_nonoverlap,"('cabinet', 2)|('chair', 1)",False
+bedroom_1,spacious,footprint_nonoverlap,"('cabinet', 2)|('shelf', 1)",False
+bedroom_1,spacious,footprint_nonoverlap,"('desk', 1)|('chair', 1)",True
+bedroom_1,spacious,footprint_nonoverlap,"('desk', 1)|('shelf', 1)",False
+bedroom_1,spacious,footprint_nonoverlap,"('chair', 1)|('shelf', 1)",True
+bedroom_1,bright,scene_structure,objects_list,False
+bedroom_1,bright,required_object_count,bed,False
+bedroom_1,bright,required_object_count,cabinet,False
+bedroom_1,bright,required_object_count,desk,False
+bedroom_1,bright,required_object_count,chair,False
+bedroom_1,bright,required_object_count,shelf,False
+bedroom_1,bright,unexpected_inventory,categories,False
+bedroom_1,bright,required_fields,bed#1,False
+bedroom_1,bright,valid_geometry,bed#1,False
+bedroom_1,bright,finite_rotation,bed#1,False
+bedroom_1,bright,inside_room,bed#1,True
+bedroom_1,bright,position_matches_bbox_center,bed#1,False
+bedroom_1,bright,anchor_exists,bed#1,False
+bedroom_1,bright,anchor_unambiguous,bed#1,False
+bedroom_1,bright,required_fields,cabinet#1,False
+bedroom_1,bright,valid_geometry,cabinet#1,False
+bedroom_1,bright,finite_rotation,cabinet#1,False
+bedroom_1,bright,inside_room,cabinet#1,False
+bedroom_1,bright,position_matches_bbox_center,cabinet#1,False
+bedroom_1,bright,anchor_exists,cabinet#1,False
+bedroom_1,bright,anchor_unambiguous,cabinet#1,False
+bedroom_1,bright,required_fields,cabinet#2,False
+bedroom_1,bright,valid_geometry,cabinet#2,False
+bedroom_1,bright,finite_rotation,cabinet#2,False
+bedroom_1,bright,inside_room,cabinet#2,False
+bedroom_1,bright,position_matches_bbox_center,cabinet#2,False
+bedroom_1,bright,anchor_exists,cabinet#2,False
+bedroom_1,bright,anchor_unambiguous,cabinet#2,False
+bedroom_1,bright,required_fields,desk#1,False
+bedroom_1,bright,valid_geometry,desk#1,False
+bedroom_1,bright,finite_rotation,desk#1,False
+bedroom_1,bright,inside_room,desk#1,True
+bedroom_1,bright,position_matches_bbox_center,desk#1,False
+bedroom_1,bright,anchor_exists,desk#1,False
+bedroom_1,bright,anchor_unambiguous,desk#1,False
+bedroom_1,bright,required_fields,chair#1,False
+bedroom_1,bright,valid_geometry,chair#1,False
+bedroom_1,bright,finite_rotation,chair#1,False
+bedroom_1,bright,inside_room,chair#1,False
+bedroom_1,bright,position_matches_bbox_center,chair#1,False
+bedroom_1,bright,anchor_exists,chair#1,False
+bedroom_1,bright,anchor_unambiguous,chair#1,False
+bedroom_1,bright,required_fields,shelf#1,False
+bedroom_1,bright,valid_geometry,shelf#1,False
+bedroom_1,bright,finite_rotation,shelf#1,False
+bedroom_1,bright,inside_room,shelf#1,True
+bedroom_1,bright,position_matches_bbox_center,shelf#1,False
+bedroom_1,bright,anchor_exists,shelf#1,False
+bedroom_1,bright,anchor_unambiguous,shelf#1,False
+bedroom_1,bright,footprint_nonoverlap,"('bed', 1)|('cabinet', 1)",False
+bedroom_1,bright,footprint_nonoverlap,"('bed', 1)|('cabinet', 2)",False
+bedroom_1,bright,footprint_nonoverlap,"('bed', 1)|('desk', 1)",False
+bedroom_1,bright,footprint_nonoverlap,"('bed', 1)|('chair', 1)",False
+bedroom_1,bright,footprint_nonoverlap,"('bed', 1)|('shelf', 1)",False
+bedroom_1,bright,footprint_nonoverlap,"('cabinet', 1)|('cabinet', 2)",False
+bedroom_1,bright,footprint_nonoverlap,"('cabinet', 1)|('desk', 1)",False
+bedroom_1,bright,footprint_nonoverlap,"('cabinet', 1)|('chair', 1)",False
+bedroom_1,bright,footprint_nonoverlap,"('cabinet', 1)|('shelf', 1)",False
+bedroom_1,bright,footprint_nonoverlap,"('cabinet', 2)|('desk', 1)",False
+bedroom_1,bright,footprint_nonoverlap,"('cabinet', 2)|('chair', 1)",False
+bedroom_1,bright,footprint_nonoverlap,"('cabinet', 2)|('shelf', 1)",False
+bedroom_1,bright,footprint_nonoverlap,"('desk', 1)|('chair', 1)",True
+bedroom_1,bright,footprint_nonoverlap,"('desk', 1)|('shelf', 1)",False
+bedroom_1,bright,footprint_nonoverlap,"('chair', 1)|('shelf', 1)",False
+bedroom_1,quiet,scene_structure,objects_list,False
+bedroom_1,quiet,required_object_count,bed,False
+bedroom_1,quiet,required_object_count,cabinet,False
+bedroom_1,quiet,required_object_count,desk,False
+bedroom_1,quiet,required_object_count,chair,False
+bedroom_1,quiet,required_object_count,shelf,False
+bedroom_1,quiet,unexpected_inventory,categories,False
+bedroom_1,quiet,required_fields,bed#1,False
+bedroom_1,quiet,valid_geometry,bed#1,False
+bedroom_1,quiet,finite_rotation,bed#1,False
+bedroom_1,quiet,inside_room,bed#1,True
+bedroom_1,quiet,position_matches_bbox_center,bed#1,False
+bedroom_1,quiet,anchor_exists,bed#1,False
+bedroom_1,quiet,anchor_unambiguous,bed#1,False
+bedroom_1,quiet,required_fields,cabinet#1,False
+bedroom_1,quiet,valid_geometry,cabinet#1,False
+bedroom_1,quiet,finite_rotation,cabinet#1,False
+bedroom_1,quiet,inside_room,cabinet#1,True
+bedroom_1,quiet,position_matches_bbox_center,cabinet#1,False
+bedroom_1,quiet,anchor_exists,cabinet#1,False
+bedroom_1,quiet,anchor_unambiguous,cabinet#1,False
+bedroom_1,quiet,required_fields,cabinet#2,False
+bedroom_1,quiet,valid_geometry,cabinet#2,False
+bedroom_1,quiet,finite_rotation,cabinet#2,False
+bedroom_1,quiet,inside_room,cabinet#2,True
+bedroom_1,quiet,position_matches_bbox_center,cabinet#2,False
+bedroom_1,quiet,anchor_exists,cabinet#2,False
+bedroom_1,quiet,anchor_unambiguous,cabinet#2,False
+bedroom_1,quiet,required_fields,desk#1,False
+bedroom_1,quiet,valid_geometry,desk#1,False
+bedroom_1,quiet,finite_rotation,desk#1,False
+bedroom_1,quiet,inside_room,desk#1,False
+bedroom_1,quiet,position_matches_bbox_center,desk#1,False
+bedroom_1,quiet,anchor_exists,desk#1,False
+bedroom_1,quiet,anchor_unambiguous,desk#1,False
+bedroom_1,quiet,required_fields,chair#1,False
+bedroom_1,quiet,valid_geometry,chair#1,False
+bedroom_1,quiet,finite_rotation,chair#1,False
+bedroom_1,quiet,inside_room,chair#1,False
+bedroom_1,quiet,position_matches_bbox_center,chair#1,False
+bedroom_1,quiet,anchor_exists,chair#1,False
+bedroom_1,quiet,anchor_unambiguous,chair#1,False
+bedroom_1,quiet,required_fields,shelf#1,False
+bedroom_1,quiet,valid_geometry,shelf#1,False
+bedroom_1,quiet,finite_rotation,shelf#1,False
+bedroom_1,quiet,inside_room,shelf#1,False
+bedroom_1,quiet,position_matches_bbox_center,shelf#1,False
+bedroom_1,quiet,anchor_exists,shelf#1,False
+bedroom_1,quiet,anchor_unambiguous,shelf#1,False
+bedroom_1,quiet,footprint_nonoverlap,"('bed', 1)|('cabinet', 1)",False
+bedroom_1,quiet,footprint_nonoverlap,"('bed', 1)|('cabinet', 2)",False
+bedroom_1,quiet,footprint_nonoverlap,"('bed', 1)|('desk', 1)",False
+bedroom_1,quiet,footprint_nonoverlap,"('bed', 1)|('chair', 1)",False
+bedroom_1,quiet,footprint_nonoverlap,"('bed', 1)|('shelf', 1)",False
+bedroom_1,quiet,footprint_nonoverlap,"('cabinet', 1)|('cabinet', 2)",False
+bedroom_1,quiet,footprint_nonoverlap,"('cabinet', 1)|('desk', 1)",False
+bedroom_1,quiet,footprint_nonoverlap,"('cabinet', 1)|('chair', 1)",False
+bedroom_1,quiet,footprint_nonoverlap,"('cabinet', 1)|('shelf', 1)",False
+bedroom_1,quiet,footprint_nonoverlap,"('cabinet', 2)|('desk', 1)",False
+bedroom_1,quiet,footprint_nonoverlap,"('cabinet', 2)|('chair', 1)",False
+bedroom_1,quiet,footprint_nonoverlap,"('cabinet', 2)|('shelf', 1)",False
+bedroom_1,quiet,footprint_nonoverlap,"('desk', 1)|('chair', 1)",False
+bedroom_1,quiet,footprint_nonoverlap,"('desk', 1)|('shelf', 1)",False
+bedroom_1,quiet,footprint_nonoverlap,"('chair', 1)|('shelf', 1)",False
+bedroom_1,cluttered,scene_structure,objects_list,False
+bedroom_1,cluttered,required_object_count,bed,False
+bedroom_1,cluttered,required_object_count,cabinet,False
+bedroom_1,cluttered,required_object_count,desk,False
+bedroom_1,cluttered,required_object_count,chair,False
+bedroom_1,cluttered,required_object_count,shelf,False
+bedroom_1,cluttered,unexpected_inventory,categories,False
+bedroom_1,cluttered,required_fields,bed#1,False
+bedroom_1,cluttered,valid_geometry,bed#1,False
+bedroom_1,cluttered,finite_rotation,bed#1,False
+bedroom_1,cluttered,inside_room,bed#1,False
+bedroom_1,cluttered,position_matches_bbox_center,bed#1,False
+bedroom_1,cluttered,anchor_exists,bed#1,False
+bedroom_1,cluttered,anchor_unambiguous,bed#1,False
+bedroom_1,cluttered,required_fields,cabinet#1,False
+bedroom_1,cluttered,valid_geometry,cabinet#1,False
+bedroom_1,cluttered,finite_rotation,cabinet#1,False
+bedroom_1,cluttered,inside_room,cabinet#1,False
+bedroom_1,cluttered,position_matches_bbox_center,cabinet#1,False
+bedroom_1,cluttered,anchor_exists,cabinet#1,False
+bedroom_1,cluttered,anchor_unambiguous,cabinet#1,False
+bedroom_1,cluttered,required_fields,cabinet#2,False
+bedroom_1,cluttered,valid_geometry,cabinet#2,False
+bedroom_1,cluttered,finite_rotation,cabinet#2,False
+bedroom_1,cluttered,inside_room,cabinet#2,False
+bedroom_1,cluttered,position_matches_bbox_center,cabinet#2,False
+bedroom_1,cluttered,anchor_exists,cabinet#2,False
+bedroom_1,cluttered,anchor_unambiguous,cabinet#2,False
+bedroom_1,cluttered,required_fields,desk#1,False
+bedroom_1,cluttered,valid_geometry,desk#1,False
+bedroom_1,cluttered,finite_rotation,desk#1,False
+bedroom_1,cluttered,inside_room,desk#1,False
+bedroom_1,cluttered,position_matches_bbox_center,desk#1,False
+bedroom_1,cluttered,anchor_exists,desk#1,False
+bedroom_1,cluttered,anchor_unambiguous,desk#1,False
+bedroom_1,cluttered,required_fields,chair#1,False
+bedroom_1,cluttered,valid_geometry,chair#1,False
+bedroom_1,cluttered,finite_rotation,chair#1,False
+bedroom_1,cluttered,inside_room,chair#1,False
+bedroom_1,cluttered,position_matches_bbox_center,chair#1,False
+bedroom_1,cluttered,anchor_exists,chair#1,False
+bedroom_1,cluttered,anchor_unambiguous,chair#1,False
+bedroom_1,cluttered,required_fields,shelf#1,False
+bedroom_1,cluttered,valid_geometry,shelf#1,False
+bedroom_1,cluttered,finite_rotation,shelf#1,False
+bedroom_1,cluttered,inside_room,shelf#1,True
+bedroom_1,cluttered,position_matches_bbox_center,shelf#1,False
+bedroom_1,cluttered,anchor_exists,shelf#1,False
+bedroom_1,cluttered,anchor_unambiguous,shelf#1,False
+bedroom_1,cluttered,footprint_nonoverlap,"('bed', 1)|('cabinet', 1)",False
+bedroom_1,cluttered,footprint_nonoverlap,"('bed', 1)|('cabinet', 2)",False
+bedroom_1,cluttered,footprint_nonoverlap,"('bed', 1)|('desk', 1)",False
+bedroom_1,cluttered,footprint_nonoverlap,"('bed', 1)|('chair', 1)",False
+bedroom_1,cluttered,footprint_nonoverlap,"('bed', 1)|('shelf', 1)",False
+bedroom_1,cluttered,footprint_nonoverlap,"('cabinet', 1)|('cabinet', 2)",False
+bedroom_1,cluttered,footprint_nonoverlap,"('cabinet', 1)|('desk', 1)",False
+bedroom_1,cluttered,footprint_nonoverlap,"('cabinet', 1)|('chair', 1)",False
+bedroom_1,cluttered,footprint_nonoverlap,"('cabinet', 1)|('shelf', 1)",False
+bedroom_1,cluttered,footprint_nonoverlap,"('cabinet', 2)|('desk', 1)",False
+bedroom_1,cluttered,footprint_nonoverlap,"('cabinet', 2)|('chair', 1)",False
+bedroom_1,cluttered,footprint_nonoverlap,"('cabinet', 2)|('shelf', 1)",False
+bedroom_1,cluttered,footprint_nonoverlap,"('desk', 1)|('chair', 1)",False
+bedroom_1,cluttered,footprint_nonoverlap,"('desk', 1)|('shelf', 1)",True
+bedroom_1,cluttered,footprint_nonoverlap,"('chair', 1)|('shelf', 1)",False
+bedroom_1,crowded,scene_structure,objects_list,False
+bedroom_1,crowded,required_object_count,bed,False
+bedroom_1,crowded,required_object_count,cabinet,False
+bedroom_1,crowded,required_object_count,desk,False
+bedroom_1,crowded,required_object_count,chair,False
+bedroom_1,crowded,required_object_count,shelf,False
+bedroom_1,crowded,unexpected_inventory,categories,False
+bedroom_1,crowded,required_fields,bed#1,False
+bedroom_1,crowded,valid_geometry,bed#1,False
+bedroom_1,crowded,finite_rotation,bed#1,False
+bedroom_1,crowded,inside_room,bed#1,True
+bedroom_1,crowded,position_matches_bbox_center,bed#1,False
+bedroom_1,crowded,anchor_exists,bed#1,False
+bedroom_1,crowded,anchor_unambiguous,bed#1,False
+bedroom_1,crowded,required_fields,cabinet#1,False
+bedroom_1,crowded,valid_geometry,cabinet#1,False
+bedroom_1,crowded,finite_rotation,cabinet#1,False
+bedroom_1,crowded,inside_room,cabinet#1,False
+bedroom_1,crowded,position_matches_bbox_center,cabinet#1,False
+bedroom_1,crowded,anchor_exists,cabinet#1,False
+bedroom_1,crowded,anchor_unambiguous,cabinet#1,False
+bedroom_1,crowded,required_fields,cabinet#2,False
+bedroom_1,crowded,valid_geometry,cabinet#2,False
+bedroom_1,crowded,finite_rotation,cabinet#2,False
+bedroom_1,crowded,inside_room,cabinet#2,False
+bedroom_1,crowded,position_matches_bbox_center,cabinet#2,False
+bedroom_1,crowded,anchor_exists,cabinet#2,False
+bedroom_1,crowded,anchor_unambiguous,cabinet#2,False
+bedroom_1,crowded,required_fields,desk#1,False
+bedroom_1,crowded,valid_geometry,desk#1,False
+bedroom_1,crowded,finite_rotation,desk#1,False
+bedroom_1,crowded,inside_room,desk#1,False
+bedroom_1,crowded,position_matches_bbox_center,desk#1,False
+bedroom_1,crowded,anchor_exists,desk#1,False
+bedroom_1,crowded,anchor_unambiguous,desk#1,False
+bedroom_1,crowded,required_fields,chair#1,False
+bedroom_1,crowded,valid_geometry,chair#1,False
+bedroom_1,crowded,finite_rotation,chair#1,False
+bedroom_1,crowded,inside_room,chair#1,False
+bedroom_1,crowded,position_matches_bbox_center,chair#1,False
+bedroom_1,crowded,anchor_exists,chair#1,False
+bedroom_1,crowded,anchor_unambiguous,chair#1,False
+bedroom_1,crowded,required_fields,shelf#1,False
+bedroom_1,crowded,valid_geometry,shelf#1,False
+bedroom_1,crowded,finite_rotation,shelf#1,False
+bedroom_1,crowded,inside_room,shelf#1,False
+bedroom_1,crowded,position_matches_bbox_center,shelf#1,False
+bedroom_1,crowded,anchor_exists,shelf#1,False
+bedroom_1,crowded,anchor_unambiguous,shelf#1,False
+bedroom_1,crowded,footprint_nonoverlap,"('bed', 1)|('cabinet', 1)",False
+bedroom_1,crowded,footprint_nonoverlap,"('bed', 1)|('cabinet', 2)",False
+bedroom_1,crowded,footprint_nonoverlap,"('bed', 1)|('desk', 1)",False
+bedroom_1,crowded,footprint_nonoverlap,"('bed', 1)|('chair', 1)",False
+bedroom_1,crowded,footprint_nonoverlap,"('bed', 1)|('shelf', 1)",False
+bedroom_1,crowded,footprint_nonoverlap,"('cabinet', 1)|('cabinet', 2)",False
+bedroom_1,crowded,footprint_nonoverlap,"('cabinet', 1)|('desk', 1)",False
+bedroom_1,crowded,footprint_nonoverlap,"('cabinet', 1)|('chair', 1)",False
+bedroom_1,crowded,footprint_nonoverlap,"('cabinet', 1)|('shelf', 1)",False
+bedroom_1,crowded,footprint_nonoverlap,"('cabinet', 2)|('desk', 1)",False
+bedroom_1,crowded,footprint_nonoverlap,"('cabinet', 2)|('chair', 1)",False
+bedroom_1,crowded,footprint_nonoverlap,"('cabinet', 2)|('shelf', 1)",False
+bedroom_1,crowded,footprint_nonoverlap,"('desk', 1)|('chair', 1)",True
+bedroom_1,crowded,footprint_nonoverlap,"('desk', 1)|('shelf', 1)",False
+bedroom_1,crowded,footprint_nonoverlap,"('chair', 1)|('shelf', 1)",True

@@ -1,0 +1,31 @@
+benchmark,condition,label,occurrence,relation,target,description,evaluatable,satisfied,reason
+bedroom_1,baseline,cabinet,1,left,bed,A wooden cabinet placed to the left of the bed against the wall.,True,True,Unique explicit anchor target
+bedroom_1,baseline,cabinet,2,right,bed,A matching wooden cabinet placed to the right of the bed against the wall.,True,True,Unique explicit anchor target
+bedroom_1,baseline,desk,1,near,,A desk placed against the opposite wall near the window.,False,,Missing/ambiguous/unmentioned anchor target; no guessed referent
+bedroom_1,baseline,chair,1,front_back,desk,A chair positioned in front of the desk for seating.,False,,No z/elevation or documented object-local front/back axis in the saved representation
+bedroom_1,baseline,shelf,1,vertical,desk,A shelf mounted on the wall above the desk.,False,,No z/elevation or documented object-local front/back axis in the saved representation
+bedroom_1,well_organized,cabinet,1,left,bed,A cabinet placed to the left of the bed.,True,True,Unique explicit anchor target
+bedroom_1,well_organized,cabinet,2,right,bed,A cabinet placed to the right of the bed.,True,True,Unique explicit anchor target
+bedroom_1,well_organized,chair,1,front_back,desk,A chair positioned in front of the desk.,False,,No z/elevation or documented object-local front/back axis in the saved representation
+bedroom_1,well_organized,shelf,1,vertical,desk,A shelf placed on top of the desk.,False,,No z/elevation or documented object-local front/back axis in the saved representation
+bedroom_1,spacious,cabinet,1,left,bed,A cabinet placed to the left of the bed.,True,True,Unique explicit anchor target
+bedroom_1,spacious,cabinet,2,right,bed,A cabinet placed to the right of the bed.,True,True,Unique explicit anchor target
+bedroom_1,spacious,chair,1,vertical,desk,A chair placed under the desk.,False,,No z/elevation or documented object-local front/back axis in the saved representation
+bedroom_1,spacious,shelf,1,vertical,desk,A shelf placed on top of the desk.,False,,No z/elevation or documented object-local front/back axis in the saved representation
+bedroom_1,bright,cabinet,1,left,bed,"A cabinet to the left of the bed, aligned with the head.",True,True,Unique explicit anchor target
+bedroom_1,bright,cabinet,2,right,bed,"A cabinet to the right of the bed, aligned with the head.",True,True,Unique explicit anchor target
+bedroom_1,bright,chair,1,front_back,desk,A chair in front of the desk.,False,,No z/elevation or documented object-local front/back axis in the saved representation
+bedroom_1,bright,shelf,1,vertical,desk,A shelf above the desk.,False,,No z/elevation or documented object-local front/back axis in the saved representation
+bedroom_1,quiet,cabinet,1,left,bed,A cabinet placed to the left of the bed against the wall.,True,True,Unique explicit anchor target
+bedroom_1,quiet,cabinet,2,right,bed,A second cabinet placed to the right of the bed against the wall.,True,True,Unique explicit anchor target
+bedroom_1,quiet,chair,1,front_back,desk,A chair placed in front of the desk.,False,,No z/elevation or documented object-local front/back axis in the saved representation
+bedroom_1,quiet,shelf,1,near,desk,A shelf placed near the desk area against the right wall.,True,True,Unique explicit anchor target
+bedroom_1,cluttered,cabinet,1,left,bed,A cabinet placed to the immediate left of the bed.,True,True,Unique explicit anchor target
+bedroom_1,cluttered,cabinet,2,right,bed,A cabinet placed to the immediate right of the bed.,True,True,Unique explicit anchor target
+bedroom_1,cluttered,chair,1,front_back,desk,A chair positioned in front of the desk.,False,,No z/elevation or documented object-local front/back axis in the saved representation
+bedroom_1,cluttered,shelf,1,vertical,desk,A shelf placed on top of the desk.,False,,No z/elevation or documented object-local front/back axis in the saved representation
+bedroom_1,crowded,cabinet,1,right,bed,A small bedside cabinet placed next to the head of the bed on the right side.,True,True,Unique explicit anchor target
+bedroom_1,crowded,cabinet,1,adjacent,bed,A small bedside cabinet placed next to the head of the bed on the right side.,True,True,Unique explicit anchor target
+bedroom_1,crowded,cabinet,2,near,bed,"A second cabinet placed on the opposite side of the bed, near the foot.",True,False,Unique explicit anchor target
+bedroom_1,crowded,chair,1,front_back,desk,"An office chair positioned in front of the desk, facing it.",False,,No z/elevation or documented object-local front/back axis in the saved representation
+bedroom_1,crowded,shelf,1,vertical,desk,A wall-mounted shelf positioned above the desk area.,False,,No z/elevation or documented object-local front/back axis in the saved representation

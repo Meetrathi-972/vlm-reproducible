@@ -1,0 +1,14 @@
+{
+  "task_description": "This is an indoor living room.",
+  "room_dimension": {
+    "room_dimension_x": 5,
+    "room_dimension_y": 5
+  },
+  "assets": {
+    "armchair": 1,
+    "coffee table": 1,
+    "cabinet": 1,
+    "TV stand": 1,
+    "potted plant": 1
+  }
+}

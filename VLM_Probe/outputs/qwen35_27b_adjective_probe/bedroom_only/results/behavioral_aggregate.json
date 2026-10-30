@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "design": "One output per benchmark and condition; no seeds or replicates",
+    "scientific_results": false,
+    "model": "Qwen/Qwen3.5-27B",
+    "provider": "deepinfra",
+    "inference_limitation": "Previously observed nondeterministic API; single outputs cannot isolate adjective effects from generation randomness",
+    "first_divergent_call_indexing": "zero-based"
+  },
+  "rows": [
+    {
+      "condition": "well_organized",
+      "compared_benchmarks": 0,
+      "object_set_diff_mean": null,
+      "object_count_diff_mean": null,
+      "occupancy_hamming_mean": null,
+      "centroid_shift_mean": null,
+      "legality_flip_mean": null,
+      "placement_changed_count": 0,
+      "structural_divergence_count": 0,
+      "first_divergent_calls": {}
+    },
+    {
+      "condition": "spacious",
+      "compared_benchmarks": 0,
+      "object_set_diff_mean": null,
+      "object_count_diff_mean": null,
+      "occupancy_hamming_mean": null,
+      "centroid_shift_mean": null,
+      "legality_flip_mean": null,
+      "placement_changed_count": 0,
+      "structural_divergence_count": 0,
+      "first_divergent_calls": {}
+    },
+    {
+      "condition": "bright",
+      "compared_benchmarks": 0,
+      "object_set_diff_mean": null,
+      "object_count_diff_mean": null,
+      "occupancy_hamming_mean": null,
+      "centroid_shift_mean": null,
+      "legality_flip_mean": null,
+      "placement_changed_count": 0,
+      "structural_divergence_count": 0,
+      "first_divergent_calls": {}
+    },
+    {
+      "condition": "quiet",
+      "compared_benchmarks": 0,
+      "object_set_diff_mean": null,
+      "object_count_diff_mean": null,
+      "occupancy_hamming_mean": null,
+      "centroid_shift_mean": null,
+      "legality_flip_mean": null,
+      "placement_changed_count": 0,
+      "structural_divergence_count": 0,
+      "first_divergent_calls": {}
+    },
+    {
+      "condition": "cluttered",
+      "compared_benchmarks": 0,
+      "object_set_diff_mean": null,
+      "object_count_diff_mean": null,
+      "occupancy_hamming_mean": null,
+      "centroid_shift_mean": null,
+      "legality_flip_mean": null,
+      "placement_changed_count": 0,
+      "structural_divergence_count": 0,
+      "first_divergent_calls": {}
+    },
+    {
+      "condition": "crowded",
+      "compared_benchmarks": 0,
+      "object_set_diff_mean": null,
+      "object_count_diff_mean": null,
+      "occupancy_hamming_mean": null,
+      "centroid_shift_mean": null,
+      "legality_flip_mean": null,
+      "placement_changed_count": 0,
+      "structural_divergence_count": 0,
+      "first_divergent_calls": {}
+    }
+  ]
+}

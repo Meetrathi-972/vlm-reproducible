@@ -1,0 +1,1442 @@
+[
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "well_organized",
+    "label": "bed",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 3.15,
+    "normalized_position_shift": 0.4454772721475249,
+    "bbox_l2_change": 3.313608305156178,
+    "normalized_bbox_l2_change": 0.4686149805543992,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.6465678618675691,
+    "baseline_position": [
+      0.0,
+      1.1
+    ],
+    "adjective_position": [
+      0.0,
+      4.25
+    ],
+    "baseline_bbox": [
+      -1.0,
+      0.2,
+      2.0,
+      1.8
+    ],
+    "adjective_bbox": [
+      -1.0,
+      3.5,
+      2.0,
+      1.5
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": null,
+    "adjective_anchor": null
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "well_organized",
+    "label": "cabinet",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 3.324154027718932,
+    "normalized_position_shift": 0.4701063709417263,
+    "bbox_l2_change": 3.3196385345395663,
+    "normalized_bbox_l2_change": 0.46946778377222004,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.6643794096749236,
+    "baseline_position": [
+      -2.0,
+      0.7
+    ],
+    "adjective_position": [
+      -1.6,
+      4.0
+    ],
+    "baseline_bbox": [
+      -2.3,
+      0.2,
+      0.6,
+      1.0
+    ],
+    "adjective_bbox": [
+      -2.0,
+      3.5,
+      0.8,
+      1.0
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": "bed",
+    "adjective_anchor": "bed"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "well_organized",
+    "label": "cabinet",
+    "occurrence": 2,
+    "status": "shared",
+    "position_shift": 3.324154027718932,
+    "normalized_position_shift": 0.4701063709417263,
+    "bbox_l2_change": 3.3436506994600976,
+    "normalized_bbox_l2_change": 0.47286361670147553,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.666783323126786,
+    "baseline_position": [
+      2.0,
+      0.7
+    ],
+    "adjective_position": [
+      1.6,
+      4.0
+    ],
+    "baseline_bbox": [
+      1.7,
+      0.2,
+      0.6,
+      1.0
+    ],
+    "adjective_bbox": [
+      1.2,
+      3.5,
+      0.8,
+      1.0
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": "bed",
+    "adjective_anchor": "bed"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "well_organized",
+    "label": "chair",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 3.0479501308256345,
+    "normalized_position_shift": 0.4310452412450462,
+    "bbox_l2_change": 3.047950130825634,
+    "normalized_bbox_l2_change": 0.43104524124504606,
+    "rotation_change_degrees": 90.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.788416133777081,
+    "baseline_position": [
+      -0.7,
+      3.2
+    ],
+    "adjective_position": [
+      1.3,
+      0.9
+    ],
+    "baseline_bbox": [
+      -1.0,
+      2.8,
+      0.6,
+      0.8
+    ],
+    "adjective_bbox": [
+      1.0,
+      0.5,
+      0.6,
+      0.8
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 90.0,
+    "baseline_anchor": "desk",
+    "adjective_anchor": "desk"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "well_organized",
+    "label": "desk",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 4.201190307520001,
+    "normalized_position_shift": 0.5941380311005179,
+    "bbox_l2_change": 4.268489194082609,
+    "normalized_bbox_l2_change": 0.6036555309114628,
+    "rotation_change_degrees": 90.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.9835649444749441,
+    "baseline_position": [
+      -0.5,
+      4.2
+    ],
+    "adjective_position": [
+      2.1,
+      0.9
+    ],
+    "baseline_bbox": [
+      -1.2,
+      3.8,
+      1.4,
+      0.8
+    ],
+    "adjective_bbox": [
+      1.5,
+      0.5,
+      1.2,
+      0.8
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 90.0,
+    "baseline_anchor": null,
+    "adjective_anchor": null
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "well_organized",
+    "label": "shelf",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 4.201190307520001,
+    "normalized_position_shift": 0.5941380311005179,
+    "bbox_l2_change": 4.196427051671457,
+    "normalized_bbox_l2_change": 0.5934644049983115,
+    "rotation_change_degrees": 90.0,
+    "anchor_changed": false,
+    "object_type_changed": true,
+    "affected": true,
+    "structural_change_norm": 0.9773433378296492,
+    "baseline_position": [
+      -0.5,
+      4.7
+    ],
+    "adjective_position": [
+      2.1,
+      1.4
+    ],
+    "baseline_bbox": [
+      -1.2,
+      4.5,
+      1.4,
+      0.4
+    ],
+    "adjective_bbox": [
+      1.5,
+      1.3,
+      1.2,
+      0.2
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 90.0,
+    "baseline_anchor": "desk",
+    "adjective_anchor": "desk"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "spacious",
+    "label": "bed",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 3.4,
+    "normalized_position_shift": 0.4808326112068523,
+    "bbox_l2_change": 4.17612260356422,
+    "normalized_bbox_l2_change": 0.590592922409336,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.7615773105863908,
+    "baseline_position": [
+      0.0,
+      1.1
+    ],
+    "adjective_position": [
+      0.0,
+      4.5
+    ],
+    "baseline_bbox": [
+      -1.0,
+      0.2,
+      2.0,
+      1.8
+    ],
+    "adjective_bbox": [
+      -1.0,
+      4.2,
+      2.0,
+      0.6
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": null,
+    "adjective_anchor": null
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "spacious",
+    "label": "cabinet",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 3.7013511046643495,
+    "normalized_position_shift": 0.523450093132096,
+    "bbox_l2_change": 3.806573262134856,
+    "normalized_bbox_l2_change": 0.5383307533477908,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.7508661665037252,
+    "baseline_position": [
+      -2.0,
+      0.7
+    ],
+    "adjective_position": [
+      -1.9,
+      4.4
+    ],
+    "baseline_bbox": [
+      -2.3,
+      0.2,
+      0.6,
+      1.0
+    ],
+    "adjective_bbox": [
+      -2.2,
+      4.0,
+      0.6,
+      0.8
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": "bed",
+    "adjective_anchor": "bed"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "spacious",
+    "label": "cabinet",
+    "occurrence": 2,
+    "status": "shared",
+    "position_shift": 3.7013511046643495,
+    "normalized_position_shift": 0.523450093132096,
+    "bbox_l2_change": 3.806573262134856,
+    "normalized_bbox_l2_change": 0.5383307533477908,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.7508661665037252,
+    "baseline_position": [
+      2.0,
+      0.7
+    ],
+    "adjective_position": [
+      1.9,
+      4.4
+    ],
+    "baseline_bbox": [
+      1.7,
+      0.2,
+      0.6,
+      1.0
+    ],
+    "adjective_bbox": [
+      1.6,
+      4.0,
+      0.6,
+      0.8
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": "bed",
+    "adjective_anchor": "bed"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "spacious",
+    "label": "chair",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 2.8044607324760316,
+    "normalized_position_shift": 0.3966106403010388,
+    "bbox_l2_change": 2.86705423736629,
+    "normalized_bbox_l2_change": 0.4054626986542658,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.5671860364994893,
+    "baseline_position": [
+      -0.7,
+      3.2
+    ],
+    "adjective_position": [
+      -0.15,
+      0.45
+    ],
+    "baseline_bbox": [
+      -1.0,
+      2.8,
+      0.6,
+      0.8
+    ],
+    "adjective_bbox": [
+      -0.4,
+      0.0,
+      0.5,
+      0.9
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": "desk",
+    "adjective_anchor": "desk"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "spacious",
+    "label": "desk",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 3.733630940518894,
+    "normalized_position_shift": 0.5280151512977634,
+    "bbox_l2_change": 3.741657386773941,
+    "normalized_bbox_l2_change": 0.529150262212918,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.7475292636412303,
+    "baseline_position": [
+      -0.5,
+      4.2
+    ],
+    "adjective_position": [
+      0.0,
+      0.5
+    ],
+    "baseline_bbox": [
+      -1.2,
+      3.8,
+      1.4,
+      0.8
+    ],
+    "adjective_bbox": [
+      -1.2,
+      0.2,
+      2.4,
+      0.6
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": null,
+    "adjective_anchor": null
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "spacious",
+    "label": "shelf",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 3.857541315397672,
+    "normalized_position_shift": 0.5455387245649936,
+    "bbox_l2_change": 3.761980861195336,
+    "normalized_bbox_l2_change": 0.532024435529046,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": true,
+    "affected": true,
+    "structural_change_norm": 0.7620121390109216,
+    "baseline_position": [
+      -0.5,
+      4.7
+    ],
+    "adjective_position": [
+      0.0,
+      0.875
+    ],
+    "baseline_bbox": [
+      -1.2,
+      4.5,
+      1.4,
+      0.4
+    ],
+    "adjective_bbox": [
+      -1.0,
+      0.8,
+      2.0,
+      0.15
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": "desk",
+    "adjective_anchor": "desk"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "bright",
+    "label": "bed",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 3.3000000000000003,
+    "normalized_position_shift": 0.4666904755831214,
+    "bbox_l2_change": 3.3301651610693423,
+    "normalized_bbox_l2_change": 0.4709564735726646,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.663023378170031,
+    "baseline_position": [
+      0.0,
+      1.1
+    ],
+    "adjective_position": [
+      0.0,
+      4.4
+    ],
+    "baseline_bbox": [
+      -1.0,
+      0.2,
+      2.0,
+      1.8
+    ],
+    "adjective_bbox": [
+      -1.2,
+      3.5,
+      2.4,
+      1.8
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": null,
+    "adjective_anchor": null
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "bright",
+    "label": "cabinet",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 3.705401462729781,
+    "normalized_position_shift": 0.5240229002629561,
+    "bbox_l2_change": 3.612478373637688,
+    "normalized_bbox_l2_change": 0.510881590977792,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.7318469785412793,
+    "baseline_position": [
+      -2.0,
+      0.7
+    ],
+    "adjective_position": [
+      -1.8,
+      4.4
+    ],
+    "baseline_bbox": [
+      -2.3,
+      0.2,
+      0.6,
+      1.0
+    ],
+    "adjective_bbox": [
+      -2.2,
+      3.8,
+      0.8,
+      1.2
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": "bed",
+    "adjective_anchor": "bed"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "bright",
+    "label": "cabinet",
+    "occurrence": 2,
+    "status": "shared",
+    "position_shift": 3.705401462729781,
+    "normalized_position_shift": 0.5240229002629561,
+    "bbox_l2_change": 3.6235341863986874,
+    "normalized_bbox_l2_change": 0.5124451190127582,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.7329392880723478,
+    "baseline_position": [
+      2.0,
+      0.7
+    ],
+    "adjective_position": [
+      1.8,
+      4.4
+    ],
+    "baseline_bbox": [
+      1.7,
+      0.2,
+      0.6,
+      1.0
+    ],
+    "adjective_bbox": [
+      1.4,
+      3.8,
+      0.8,
+      1.2
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": "bed",
+    "adjective_anchor": "bed"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "bright",
+    "label": "chair",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 3.5608987629529714,
+    "normalized_position_shift": 0.5035871324805669,
+    "bbox_l2_change": 3.560898762952971,
+    "normalized_bbox_l2_change": 0.5035871324805669,
+    "rotation_change_degrees": 90.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.8701723967122836,
+    "baseline_position": [
+      -0.7,
+      3.2
+    ],
+    "adjective_position": [
+      1.5,
+      0.4
+    ],
+    "baseline_bbox": [
+      -1.0,
+      2.8,
+      0.6,
+      0.8
+    ],
+    "adjective_bbox": [
+      1.2,
+      0.0,
+      0.6,
+      0.8
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 90.0,
+    "baseline_anchor": "desk",
+    "adjective_anchor": "desk"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "bright",
+    "label": "desk",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 3.932238548206352,
+    "normalized_position_shift": 0.5561025085359712,
+    "bbox_l2_change": 4.325505750776434,
+    "normalized_bbox_l2_change": 0.6117188896870849,
+    "rotation_change_degrees": 90.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.9661521619289583,
+    "baseline_position": [
+      -0.5,
+      4.2
+    ],
+    "adjective_position": [
+      2.1,
+      1.25
+    ],
+    "baseline_bbox": [
+      -1.2,
+      3.8,
+      1.4,
+      0.8
+    ],
+    "adjective_bbox": [
+      1.5,
+      0.5,
+      1.2,
+      1.5
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 90.0,
+    "baseline_anchor": null,
+    "adjective_anchor": null
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "bright",
+    "label": "shelf",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 3.641771546926029,
+    "normalized_position_shift": 0.5150242712727237,
+    "bbox_l2_change": 3.6864617182333523,
+    "normalized_bbox_l2_change": 0.521344415909483,
+    "rotation_change_degrees": 90.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.8871583849572747,
+    "baseline_position": [
+      -0.5,
+      4.7
+    ],
+    "adjective_position": [
+      2.1,
+      2.15
+    ],
+    "baseline_bbox": [
+      -1.2,
+      4.5,
+      1.4,
+      0.4
+    ],
+    "adjective_bbox": [
+      1.5,
+      2.0,
+      1.2,
+      0.3
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 90.0,
+    "baseline_anchor": "desk",
+    "adjective_anchor": "desk"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "quiet",
+    "label": "bed",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 3.65,
+    "normalized_position_shift": 0.5161879502661797,
+    "bbox_l2_change": 3.8118237105091834,
+    "normalized_bbox_l2_change": 0.5390732788777421,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.7463578230312857,
+    "baseline_position": [
+      0.0,
+      1.1
+    ],
+    "adjective_position": [
+      0.0,
+      4.75
+    ],
+    "baseline_bbox": [
+      -1.0,
+      0.2,
+      2.0,
+      1.8
+    ],
+    "adjective_bbox": [
+      -1.0,
+      4.0,
+      2.0,
+      1.5
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": null,
+    "adjective_anchor": null
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "quiet",
+    "label": "cabinet",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 4.0,
+    "normalized_position_shift": 0.565685424949238,
+    "bbox_l2_change": 4.0,
+    "normalized_bbox_l2_change": 0.565685424949238,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.8,
+    "baseline_position": [
+      -2.0,
+      0.7
+    ],
+    "adjective_position": [
+      -1.9999999999999998,
+      4.7
+    ],
+    "baseline_bbox": [
+      -2.3,
+      0.2,
+      0.6,
+      1.0
+    ],
+    "adjective_bbox": [
+      -2.3,
+      4.2,
+      0.6,
+      1.0
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": "bed",
+    "adjective_anchor": "bed"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "quiet",
+    "label": "cabinet",
+    "occurrence": 2,
+    "status": "shared",
+    "position_shift": 4.0,
+    "normalized_position_shift": 0.565685424949238,
+    "bbox_l2_change": 4.0,
+    "normalized_bbox_l2_change": 0.565685424949238,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.8,
+    "baseline_position": [
+      2.0,
+      0.7
+    ],
+    "adjective_position": [
+      2.0,
+      4.7
+    ],
+    "baseline_bbox": [
+      1.7,
+      0.2,
+      0.6,
+      1.0
+    ],
+    "adjective_bbox": [
+      1.7,
+      4.2,
+      0.6,
+      1.0
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": "bed",
+    "adjective_anchor": "bed"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "quiet",
+    "label": "chair",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 1.8681541692269408,
+    "normalized_position_shift": 0.2641968962724582,
+    "bbox_l2_change": 1.8681541692269403,
+    "normalized_bbox_l2_change": 0.2641968962724581,
+    "rotation_change_degrees": 180.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 1.0675204916066015,
+    "baseline_position": [
+      -0.7,
+      3.2
+    ],
+    "adjective_position": [
+      -0.2,
+      1.4
+    ],
+    "baseline_bbox": [
+      -1.0,
+      2.8,
+      0.6,
+      0.8
+    ],
+    "adjective_bbox": [
+      -0.5,
+      1.0,
+      0.6,
+      0.8
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 180.0,
+    "baseline_anchor": "desk",
+    "adjective_anchor": "desk"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "quiet",
+    "label": "desk",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 3.6345563690772495,
+    "normalized_position_shift": 0.5140038910358559,
+    "bbox_l2_change": 3.7363083384538807,
+    "normalized_bbox_l2_change": 0.5283937925449163,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.7371566997592846,
+    "baseline_position": [
+      -0.5,
+      4.2
+    ],
+    "adjective_position": [
+      0.0,
+      0.6
+    ],
+    "baseline_bbox": [
+      -1.2,
+      3.8,
+      1.4,
+      0.8
+    ],
+    "adjective_bbox": [
+      -1.2,
+      0.2,
+      2.4,
+      0.8
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": null,
+    "adjective_anchor": null
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "quiet",
+    "label": "shelf",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 4.118859065323794,
+    "normalized_position_shift": 0.5824946351684279,
+    "bbox_l2_change": 5.030904491242107,
+    "normalized_bbox_l2_change": 0.7114773362518303,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.9195107394696377,
+    "baseline_position": [
+      -0.5,
+      4.7
+    ],
+    "adjective_position": [
+      1.75,
+      1.25
+    ],
+    "baseline_bbox": [
+      -1.2,
+      4.5,
+      1.4,
+      0.4
+    ],
+    "adjective_bbox": [
+      1.5,
+      0.5,
+      0.5,
+      1.5
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": "desk",
+    "adjective_anchor": "desk"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "cluttered",
+    "label": "bed",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 0.0,
+    "normalized_position_shift": 0.0,
+    "bbox_l2_change": 0.4999999999999999,
+    "normalized_bbox_l2_change": 0.07071067811865474,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.07071067811865474,
+    "baseline_position": [
+      0.0,
+      1.1
+    ],
+    "adjective_position": [
+      0.0,
+      1.1
+    ],
+    "baseline_bbox": [
+      -1.0,
+      0.2,
+      2.0,
+      1.8
+    ],
+    "adjective_bbox": [
+      -1.2,
+      0.1,
+      2.4,
+      2.0
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": null,
+    "adjective_anchor": null
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "cluttered",
+    "label": "cabinet",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 0.10000000000000009,
+    "normalized_position_shift": 0.014142135623730963,
+    "bbox_l2_change": 0.30000000000000004,
+    "normalized_bbox_l2_change": 0.042426406871192854,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.0447213595499958,
+    "baseline_position": [
+      -2.0,
+      0.7
+    ],
+    "adjective_position": [
+      -1.9,
+      0.7
+    ],
+    "baseline_bbox": [
+      -2.3,
+      0.2,
+      0.6,
+      1.0
+    ],
+    "adjective_bbox": [
+      -2.3,
+      0.1,
+      0.8,
+      1.2
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": "bed",
+    "adjective_anchor": "bed"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "cluttered",
+    "label": "cabinet",
+    "occurrence": 2,
+    "status": "shared",
+    "position_shift": 0.10000000000000009,
+    "normalized_position_shift": 0.014142135623730963,
+    "bbox_l2_change": 0.3605551275463989,
+    "normalized_bbox_l2_change": 0.05099019513592784,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.05291502622129181,
+    "baseline_position": [
+      2.0,
+      0.7
+    ],
+    "adjective_position": [
+      1.9,
+      0.7
+    ],
+    "baseline_bbox": [
+      1.7,
+      0.2,
+      0.6,
+      1.0
+    ],
+    "adjective_bbox": [
+      1.5,
+      0.1,
+      0.8,
+      1.2
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": "bed",
+    "adjective_anchor": "bed"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "cluttered",
+    "label": "chair",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 0.6726812023536853,
+    "normalized_position_shift": 0.0951314879522022,
+    "bbox_l2_change": 0.6480740698407862,
+    "normalized_bbox_l2_change": 0.09165151389911683,
+    "rotation_change_degrees": 180.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 1.0086872657072656,
+    "baseline_position": [
+      -0.7,
+      3.2
+    ],
+    "adjective_position": [
+      -0.2,
+      3.65
+    ],
+    "baseline_bbox": [
+      -1.0,
+      2.8,
+      0.6,
+      0.8
+    ],
+    "adjective_bbox": [
+      -0.5,
+      3.2,
+      0.6,
+      0.9
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 180.0,
+    "baseline_anchor": "desk",
+    "adjective_anchor": "desk"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "cluttered",
+    "label": "desk",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 0.6403124237432846,
+    "normalized_position_shift": 0.09055385138137412,
+    "bbox_l2_change": 1.077032961426901,
+    "normalized_bbox_l2_change": 0.15231546211727817,
+    "rotation_change_degrees": 180.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 1.0155786527886455,
+    "baseline_position": [
+      -0.5,
+      4.2
+    ],
+    "adjective_position": [
+      0.0,
+      4.6
+    ],
+    "baseline_bbox": [
+      -1.2,
+      3.8,
+      1.4,
+      0.8
+    ],
+    "adjective_bbox": [
+      -1.2,
+      4.2,
+      2.4,
+      0.8
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 180.0,
+    "baseline_anchor": null,
+    "adjective_anchor": null
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "cluttered",
+    "label": "shelf",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 0.6103277807866849,
+    "normalized_position_shift": 0.08631338250816031,
+    "bbox_l2_change": 0.6082762530298222,
+    "normalized_bbox_l2_change": 0.0860232526704263,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": true,
+    "affected": true,
+    "structural_change_norm": 0.12186057606953941,
+    "baseline_position": [
+      -0.5,
+      4.7
+    ],
+    "adjective_position": [
+      0.0,
+      5.05
+    ],
+    "baseline_bbox": [
+      -1.2,
+      4.5,
+      1.4,
+      0.4
+    ],
+    "adjective_bbox": [
+      -0.8,
+      4.9,
+      1.6,
+      0.3
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": "desk",
+    "adjective_anchor": "desk"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "crowded",
+    "label": "bed",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 3.716180835212409,
+    "normalized_position_shift": 0.5255473337388364,
+    "bbox_l2_change": 3.59583091927304,
+    "normalized_bbox_l2_change": 0.5085272854036447,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.7313002119512887,
+    "baseline_position": [
+      0.0,
+      1.1
+    ],
+    "adjective_position": [
+      -1.5,
+      4.5
+    ],
+    "baseline_bbox": [
+      -1.0,
+      0.2,
+      2.0,
+      1.8
+    ],
+    "adjective_bbox": [
+      -2.4,
+      3.5,
+      1.8,
+      2.0
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": null,
+    "adjective_anchor": null
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "crowded",
+    "label": "cabinet",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 3.623534186398688,
+    "normalized_position_shift": 0.5124451190127582,
+    "bbox_l2_change": 3.717526059088221,
+    "normalized_bbox_l2_change": 0.5257375771237965,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.7341661937191061,
+    "baseline_position": [
+      -2.0,
+      0.7
+    ],
+    "adjective_position": [
+      -0.3,
+      3.9
+    ],
+    "baseline_bbox": [
+      -2.3,
+      0.2,
+      0.6,
+      1.0
+    ],
+    "adjective_bbox": [
+      -0.6,
+      3.5,
+      0.6,
+      0.8
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": "bed",
+    "adjective_anchor": "bed"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "crowded",
+    "label": "cabinet",
+    "occurrence": 2,
+    "status": "shared",
+    "position_shift": 4.272001872658765,
+    "normalized_position_shift": 0.6041522986797285,
+    "bbox_l2_change": 4.305810028322197,
+    "normalized_bbox_l2_change": 0.6089334939055332,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.8577878525602937,
+    "baseline_position": [
+      2.0,
+      0.7
+    ],
+    "adjective_position": [
+      -2.1,
+      1.9
+    ],
+    "baseline_bbox": [
+      1.7,
+      0.2,
+      0.6,
+      1.0
+    ],
+    "adjective_bbox": [
+      -2.4,
+      1.5,
+      0.6,
+      0.8
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": "bed",
+    "adjective_anchor": "bed"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "crowded",
+    "label": "chair",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 1.950640920313116,
+    "normalized_position_shift": 0.27586228448267447,
+    "bbox_l2_change": 2.004993765576342,
+    "normalized_bbox_l2_change": 0.2835489375751565,
+    "rotation_change_degrees": 180.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 1.0754068997360953,
+    "baseline_position": [
+      -0.7,
+      3.2
+    ],
+    "adjective_position": [
+      -0.75,
+      1.25
+    ],
+    "baseline_bbox": [
+      -1.0,
+      2.8,
+      0.6,
+      0.8
+    ],
+    "adjective_bbox": [
+      -1.0,
+      0.8,
+      0.5,
+      0.9
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 180.0,
+    "baseline_anchor": "desk",
+    "adjective_anchor": "desk"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "crowded",
+    "label": "desk",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 3.6623080154459977,
+    "normalized_position_shift": 0.5179285665031425,
+    "bbox_l2_change": 3.61386219991853,
+    "normalized_bbox_l2_change": 0.5110772935672254,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.7276331493273241,
+    "baseline_position": [
+      -0.5,
+      4.2
+    ],
+    "adjective_position": [
+      -0.8,
+      0.55
+    ],
+    "baseline_bbox": [
+      -1.2,
+      3.8,
+      1.4,
+      0.8
+    ],
+    "adjective_bbox": [
+      -1.5,
+      0.2,
+      1.4,
+      0.7
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": null,
+    "adjective_anchor": null
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "crowded",
+    "label": "shelf",
+    "occurrence": 1,
+    "status": "shared",
+    "position_shift": 3.064718584144391,
+    "normalized_position_shift": 0.43341665865538676,
+    "bbox_l2_change": 3.014962686336267,
+    "normalized_bbox_l2_change": 0.42638011210655685,
+    "rotation_change_degrees": 0.0,
+    "anchor_changed": false,
+    "object_type_changed": false,
+    "affected": true,
+    "structural_change_norm": 0.607988486733096,
+    "baseline_position": [
+      -0.5,
+      4.7
+    ],
+    "adjective_position": [
+      -0.8,
+      1.65
+    ],
+    "baseline_bbox": [
+      -1.2,
+      4.5,
+      1.4,
+      0.4
+    ],
+    "adjective_bbox": [
+      -1.4,
+      1.5,
+      1.2,
+      0.3
+    ],
+    "baseline_rotation": 0.0,
+    "adjective_rotation": 0.0,
+    "baseline_anchor": "desk",
+    "adjective_anchor": "desk"
+  }
+]

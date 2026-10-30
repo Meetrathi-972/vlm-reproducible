@@ -1,0 +1,68 @@
+[
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "well_organized",
+    "ccr": 0.06249999609375024,
+    "relevant_changes": "bed#1 position: [0.0, 1.1] -> [0.0, 4.25]; bed#1 bbox: [-1.0, 0.2, 2.0, 1.8] -> [-1.0, 3.5, 2.0, 1.5]; cabinet#1 position: [-2.0, 0.7] -> [-1.6, 4.0]; cabinet#1 bbox: [-2.3, 0.2, 0.6, 1.0] -> [-2.0, 3.5, 0.8, 1.0]; cabinet#2 position: [2.0, 0.7] -> [1.6, 4.0]; cabinet#2 bbox: [1.7, 0.2, 0.6, 1.0] -> [1.2, 3.5, 0.8, 1.0]; chair#1 position: [-0.7, 3.2] -> [1.3, 0.9]; chair#1 bbox: [-1.0, 2.8, 0.6, 0.8] -> [1.0, 0.5, 0.6, 0.8]; chair#1 rotation: 0.0 -> 90.0; desk#1 position: [-0.5, 4.2] -> [2.1, 0.9]; desk#1 bbox: [-1.2, 3.8, 1.4, 0.8] -> [1.5, 0.5, 1.2, 0.8]; desk#1 rotation: 0.0 -> 90.0; shelf#1 position: [-0.5, 4.7] -> [2.1, 1.4]; shelf#1 bbox: [-1.2, 4.5, 1.4, 0.4] -> [1.5, 1.3, 1.2, 0.2]; shelf#1 rotation: 0.0 -> 90.0",
+    "collateral_changes": "shelf#1 object_type: bulk -> ornaments",
+    "collateral_change_details": "shelf#1 object_type: bulk -> ornaments",
+    "relevant_change_count": 15,
+    "collateral_change_count": 1,
+    "total_monitored_changes": 16
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "spacious",
+    "ccr": 0.07692307100591762,
+    "relevant_changes": "bed#1 position: [0.0, 1.1] -> [0.0, 4.5]; bed#1 bbox: [-1.0, 0.2, 2.0, 1.8] -> [-1.0, 4.2, 2.0, 0.6]; cabinet#1 position: [-2.0, 0.7] -> [-1.9, 4.4]; cabinet#1 bbox: [-2.3, 0.2, 0.6, 1.0] -> [-2.2, 4.0, 0.6, 0.8]; cabinet#2 position: [2.0, 0.7] -> [1.9, 4.4]; cabinet#2 bbox: [1.7, 0.2, 0.6, 1.0] -> [1.6, 4.0, 0.6, 0.8]; chair#1 position: [-0.7, 3.2] -> [-0.15, 0.45]; chair#1 bbox: [-1.0, 2.8, 0.6, 0.8] -> [-0.4, 0.0, 0.5, 0.9]; desk#1 position: [-0.5, 4.2] -> [0.0, 0.5]; desk#1 bbox: [-1.2, 3.8, 1.4, 0.8] -> [-1.2, 0.2, 2.4, 0.6]; shelf#1 position: [-0.5, 4.7] -> [0.0, 0.875]; shelf#1 bbox: [-1.2, 4.5, 1.4, 0.4] -> [-1.0, 0.8, 2.0, 0.15]",
+    "collateral_changes": "shelf#1 object_type: bulk -> ornaments",
+    "collateral_change_details": "shelf#1 object_type: bulk -> ornaments",
+    "relevant_change_count": 12,
+    "collateral_change_count": 1,
+    "total_monitored_changes": 13
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "bright",
+    "ccr": null,
+    "relevant_changes": "N/A: relevance unobservable",
+    "collateral_changes": "N/A: relevance unobservable",
+    "collateral_change_details": "None",
+    "relevant_change_count": null,
+    "collateral_change_count": null,
+    "total_monitored_changes": 15
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "quiet",
+    "ccr": null,
+    "relevant_changes": "N/A: relevance unobservable",
+    "collateral_changes": "N/A: relevance unobservable",
+    "collateral_change_details": "None",
+    "relevant_change_count": null,
+    "collateral_change_count": null,
+    "total_monitored_changes": 13
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "cluttered",
+    "ccr": 0.07142856632653098,
+    "relevant_changes": "bed#1 bbox: [-1.0, 0.2, 2.0, 1.8] -> [-1.2, 0.1, 2.4, 2.0]; cabinet#1 position: [-2.0, 0.7] -> [-1.9, 0.7]; cabinet#1 bbox: [-2.3, 0.2, 0.6, 1.0] -> [-2.3, 0.1, 0.8, 1.2]; cabinet#2 position: [2.0, 0.7] -> [1.9, 0.7]; cabinet#2 bbox: [1.7, 0.2, 0.6, 1.0] -> [1.5, 0.1, 0.8, 1.2]; chair#1 position: [-0.7, 3.2] -> [-0.2, 3.65]; chair#1 bbox: [-1.0, 2.8, 0.6, 0.8] -> [-0.5, 3.2, 0.6, 0.9]; chair#1 rotation: 0.0 -> 180.0; desk#1 position: [-0.5, 4.2] -> [0.0, 4.6]; desk#1 bbox: [-1.2, 3.8, 1.4, 0.8] -> [-1.2, 4.2, 2.4, 0.8]; desk#1 rotation: 0.0 -> 180.0; shelf#1 position: [-0.5, 4.7] -> [0.0, 5.05]; shelf#1 bbox: [-1.2, 4.5, 1.4, 0.4] -> [-0.8, 4.9, 1.6, 0.3]",
+    "collateral_changes": "shelf#1 object_type: bulk -> ornaments",
+    "collateral_change_details": "shelf#1 object_type: bulk -> ornaments",
+    "relevant_change_count": 13,
+    "collateral_change_count": 1,
+    "total_monitored_changes": 14
+  },
+  {
+    "benchmark": "bedroom_1",
+    "adjective": "crowded",
+    "ccr": 0.0,
+    "relevant_changes": "bed#1 position: [0.0, 1.1] -> [-1.5, 4.5]; bed#1 bbox: [-1.0, 0.2, 2.0, 1.8] -> [-2.4, 3.5, 1.8, 2.0]; cabinet#1 position: [-2.0, 0.7] -> [-0.3, 3.9]; cabinet#1 bbox: [-2.3, 0.2, 0.6, 1.0] -> [-0.6, 3.5, 0.6, 0.8]; cabinet#2 position: [2.0, 0.7] -> [-2.1, 1.9]; cabinet#2 bbox: [1.7, 0.2, 0.6, 1.0] -> [-2.4, 1.5, 0.6, 0.8]; chair#1 position: [-0.7, 3.2] -> [-0.75, 1.25]; chair#1 bbox: [-1.0, 2.8, 0.6, 0.8] -> [-1.0, 0.8, 0.5, 0.9]; chair#1 rotation: 0.0 -> 180.0; desk#1 position: [-0.5, 4.2] -> [-0.8, 0.55]; desk#1 bbox: [-1.2, 3.8, 1.4, 0.8] -> [-1.5, 0.2, 1.4, 0.7]; shelf#1 position: [-0.5, 4.7] -> [-0.8, 1.65]; shelf#1 bbox: [-1.2, 4.5, 1.4, 0.4] -> [-1.4, 1.5, 1.2, 0.3]",
+    "collateral_changes": "None",
+    "collateral_change_details": "None",
+    "relevant_change_count": 13,
+    "collateral_change_count": 0,
+    "total_monitored_changes": 13
+  }
+]

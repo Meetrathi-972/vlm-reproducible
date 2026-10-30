@@ -1,0 +1,146 @@
+[
+  {
+    "benchmark": "bedroom_1",
+    "condition": "baseline",
+    "baseline_or_intervention": "BASELINE",
+    "subject": "desk#1 + shelf#1",
+    "constraint": "footprint_nonoverlap",
+    "violation_reason": "('desk', 1) bbox=[-1.2, 3.8, 1.4, 0.8]; ('shelf', 1) bbox=[-1.2, 4.5, 1.4, 0.4]; intersection area=0.14 > 1e-6"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "well_organized",
+    "baseline_or_intervention": "ADJECTIVE",
+    "subject": "desk#1",
+    "constraint": "inside_room",
+    "violation_reason": "x_max=2.7 exceeds room limit 2.5"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "well_organized",
+    "baseline_or_intervention": "ADJECTIVE",
+    "subject": "shelf#1",
+    "constraint": "inside_room",
+    "violation_reason": "x_max=2.7 exceeds room limit 2.5"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "well_organized",
+    "baseline_or_intervention": "ADJECTIVE",
+    "subject": "desk#1 + chair#1",
+    "constraint": "footprint_nonoverlap",
+    "violation_reason": "('desk', 1) bbox=[1.5, 0.5, 1.2, 0.8]; ('chair', 1) bbox=[1.0, 0.5, 0.6, 0.8]; intersection area=0.08 > 1e-6"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "spacious",
+    "baseline_or_intervention": "ADJECTIVE",
+    "subject": "desk#1 + chair#1",
+    "constraint": "footprint_nonoverlap",
+    "violation_reason": "('desk', 1) bbox=[-1.2, 0.2, 2.4, 0.6]; ('chair', 1) bbox=[-0.4, 0.0, 0.5, 0.9]; intersection area=0.3 > 1e-6"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "spacious",
+    "baseline_or_intervention": "ADJECTIVE",
+    "subject": "chair#1 + shelf#1",
+    "constraint": "footprint_nonoverlap",
+    "violation_reason": "('chair', 1) bbox=[-0.4, 0.0, 0.5, 0.9]; ('shelf', 1) bbox=[-1.0, 0.8, 2.0, 0.15]; intersection area=0.05 > 1e-6"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "bright",
+    "baseline_or_intervention": "ADJECTIVE",
+    "subject": "bed#1",
+    "constraint": "inside_room",
+    "violation_reason": "y_max=5.3 exceeds room limit 5"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "bright",
+    "baseline_or_intervention": "ADJECTIVE",
+    "subject": "desk#1",
+    "constraint": "inside_room",
+    "violation_reason": "x_max=2.7 exceeds room limit 2.5"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "bright",
+    "baseline_or_intervention": "ADJECTIVE",
+    "subject": "shelf#1",
+    "constraint": "inside_room",
+    "violation_reason": "x_max=2.7 exceeds room limit 2.5"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "bright",
+    "baseline_or_intervention": "ADJECTIVE",
+    "subject": "desk#1 + chair#1",
+    "constraint": "footprint_nonoverlap",
+    "violation_reason": "('desk', 1) bbox=[1.5, 0.5, 1.2, 1.5]; ('chair', 1) bbox=[1.2, 0.0, 0.6, 0.8]; intersection area=0.09 > 1e-6"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "quiet",
+    "baseline_or_intervention": "ADJECTIVE",
+    "subject": "bed#1",
+    "constraint": "inside_room",
+    "violation_reason": "y_max=5.5 exceeds room limit 5"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "quiet",
+    "baseline_or_intervention": "ADJECTIVE",
+    "subject": "cabinet#1",
+    "constraint": "inside_room",
+    "violation_reason": "y_max=5.2 exceeds room limit 5"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "quiet",
+    "baseline_or_intervention": "ADJECTIVE",
+    "subject": "cabinet#2",
+    "constraint": "inside_room",
+    "violation_reason": "y_max=5.2 exceeds room limit 5"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "cluttered",
+    "baseline_or_intervention": "ADJECTIVE",
+    "subject": "shelf#1",
+    "constraint": "inside_room",
+    "violation_reason": "y_max=5.2 exceeds room limit 5"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "cluttered",
+    "baseline_or_intervention": "ADJECTIVE",
+    "subject": "desk#1 + shelf#1",
+    "constraint": "footprint_nonoverlap",
+    "violation_reason": "('desk', 1) bbox=[-1.2, 4.2, 2.4, 0.8]; ('shelf', 1) bbox=[-0.8, 4.9, 1.6, 0.3]; intersection area=0.16 > 1e-6"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "crowded",
+    "baseline_or_intervention": "ADJECTIVE",
+    "subject": "bed#1",
+    "constraint": "inside_room",
+    "violation_reason": "y_max=5.5 exceeds room limit 5"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "crowded",
+    "baseline_or_intervention": "ADJECTIVE",
+    "subject": "desk#1 + chair#1",
+    "constraint": "footprint_nonoverlap",
+    "violation_reason": "('desk', 1) bbox=[-1.5, 0.2, 1.4, 0.7]; ('chair', 1) bbox=[-1.0, 0.8, 0.5, 0.9]; intersection area=0.05 > 1e-6"
+  },
+  {
+    "benchmark": "bedroom_1",
+    "condition": "crowded",
+    "baseline_or_intervention": "ADJECTIVE",
+    "subject": "chair#1 + shelf#1",
+    "constraint": "footprint_nonoverlap",
+    "violation_reason": "('chair', 1) bbox=[-1.0, 0.8, 0.5, 0.9]; ('shelf', 1) bbox=[-1.4, 1.5, 1.2, 0.3]; intersection area=0.1 > 1e-6"
+  }
+]

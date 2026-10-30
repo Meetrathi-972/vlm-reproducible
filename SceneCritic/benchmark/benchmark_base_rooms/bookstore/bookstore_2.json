@@ -1,0 +1,14 @@
+{
+  "task_description": "This is an indoor bookstore.",
+  "room_dimension": {
+    "room_dimension_x": 5,
+    "room_dimension_y": 5
+  },
+  "assets": {
+    "chair": 4,
+    "armchair": 1,
+    "table": 2,
+    "bookshelf": 4,
+    "magazine rack": 1
+  }
+}

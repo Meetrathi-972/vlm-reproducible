@@ -1,0 +1,106 @@
+{
+  "atomic_tasks": [
+    {
+      "id": "add_sofa_001",
+      "object_type": "bulk",
+      "type": "Add",
+      "label": "sofa",
+      "anchor": null,
+      "spatial_hint": "Ahead on the sidewalk, near the road-side edge, aligned along the path boundary.",
+      "bbox_hint": null,
+      "output_schema": {
+        "add": [
+          {
+            "label": "sofa",
+            "object_type": "bulk",
+            "anchor": null,
+            "bbox": [
+              1.0,
+              1.5,
+              0.9,
+              2.0
+            ],
+            "position": [
+              1.45,
+              2.5
+            ],
+            "rotation_angle": 0.0,
+            "description": "A single outdoor-style sofa placed ahead on the forward sidewalk near the road-side edge.",
+            "concise_description": "A single outdoor-style sofa with a low back and armrests."
+          }
+        ],
+        "remove": null,
+        "update": null
+      },
+      "execution_prompt": "Add one bulk sofa ahead on the forward sidewalk, positioned close to the road-side boundary as the main item in a small street-side seating group."
+    },
+    {
+      "id": "add_chair_002",
+      "object_type": "bulk",
+      "type": "Add",
+      "label": "chair",
+      "anchor": "sofa",
+      "spatial_hint": "On the sidewalk beside the sofa, forming a small seating group.",
+      "bbox_hint": null,
+      "output_schema": {
+        "add": [
+          {
+            "label": "chair",
+            "object_type": "bulk",
+            "anchor": null,
+            "bbox": [
+              2.3,
+              1.8,
+              0.6,
+              0.6
+            ],
+            "position": [
+              2.6,
+              2.1
+            ],
+            "rotation_angle": 0.0,
+            "description": "A single outdoor-style chair placed on the sidewalk beside the sofa.",
+            "concise_description": "A single outdoor-style chair with a back and four legs."
+          }
+        ],
+        "remove": null,
+        "update": null
+      },
+      "execution_prompt": "Add one bulk chair on the sidewalk immediately beside the sofa so the chair and sofa form a coherent small seating group ahead of the viewer."
+    },
+    {
+      "id": "add_lamp_003",
+      "object_type": "bulk",
+      "type": "Add",
+      "label": "lamp",
+      "anchor": "sofa",
+      "spatial_hint": "On the sidewalk beside the sofa, acting as portable lighting for the seating group.",
+      "bbox_hint": null,
+      "output_schema": {
+        "add": [
+          {
+            "label": "lamp",
+            "object_type": "bulk",
+            "anchor": null,
+            "bbox": [
+              0.25,
+              1.7,
+              0.3,
+              0.3
+            ],
+            "position": [
+              0.4,
+              2.05
+            ],
+            "rotation_angle": 0.0,
+            "description": "A single portable standing lamp placed beside the sofa on the sidewalk for the street-side seating group.",
+            "concise_description": "A single portable standing lamp with a base, upright, and shade."
+          }
+        ],
+        "remove": null,
+        "update": null
+      },
+      "execution_prompt": "Add one bulk portable lamp on the sidewalk immediately beside the sofa, treating it as a standing lighting object for the seating group without adding any ornament."
+    }
+  ]
+}

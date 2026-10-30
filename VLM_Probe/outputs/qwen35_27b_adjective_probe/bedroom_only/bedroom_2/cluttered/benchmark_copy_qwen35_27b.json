@@ -1,0 +1,17 @@
+{
+  "task_description": "This is a cluttered indoor bedroom.",
+  "room_dimension": {
+    "room_dimension_x": 6,
+    "room_dimension_y": 4
+  },
+  "assets": {
+    "bed": 1,
+    "desk": 1,
+    "chair": 1,
+    "cabinet": 1,
+    "bedside table": 1,
+    "dresser": 1,
+    "mirror": 1,
+    "floor lamp": 1
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "passed": false,
+  "mock": false,
+  "identity": "fe9e76a5a9d545583aefae44094d0e2548b38fd303d96695ccbf2dc65dd7e5e6",
+  "category": "classroom",
+  "seed": 1234,
+  "pairs": [
+    {
+      "pair": 0,
+      "identical_requests": true,
+      "content_identical": false,
+      "passed": false,
+      "first_content_sha256": "e3068fcb2d5fc5d88fb82d30e639e51fd727ddf12f4aad135286a3f7746b3c0e",
+      "second_content_sha256": "872f167daa022293c26f522f1edbab9d352c01c7065deffeaaeb55f24a6a87b8"
+    }
+  ],
+  "replay_passed": false,
+  "classroom_validation_passed": false,
+  "runtime": {
+    "python": "3.13.5",
+    "mock": false,
+    "backend": "huggingface_chat_api",
+    "api_base": "https://router.huggingface.co/v1",
+    "api_method": "POST /chat/completions",
+    "provider": "deepinfra",
+    "provider_name": "DeepInfra",
+    "routed_model": "Qwen/Qwen3.5-27B:deepinfra",
+    "quantization": null,
+    "endpoint_name": "Qwen/Qwen3.5-27B",
+    "server_determinism": "Measured by uncached replay; stochastic replay does not block generation",
+    "local_model_loading": false,
+    "response_format": "json_object",
+    "maximum_retries_per_request": 2
+  },
+  "refinement": {
+    "placement_calls": 1,
+    "best_of_n": false,
+    "heuristic_scoring": false,
+    "feedback": false,
+    "candidate_selection": false,
+    "orientation": false,
+    "scale": false,
+    "hidden_state_capture": false
+  },
+  "scope": "Two actual uncached identical-request pairs; exact final content equality. No cross-hardware/time claim.",
+  "error": "ApiError: Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+  "api_seed_replay_deterministic": false,
+  "replay_completed_pairs": 1,
+  "execution_note": "Two real identical requests returned different content. A further replay request failed with HTTP 402 before classroom validation. No benchmark generations were attempted."
+}

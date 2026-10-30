@@ -1,0 +1,11 @@
+{
+  "task_description": "This is an indoor computer room.",
+  "room_dimension": {
+    "room_dimension_x": 4,
+    "room_dimension_y": 6
+  },
+  "assets": {
+    "conference table": 1,
+    "office chair": 10
+  }
+}

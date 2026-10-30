@@ -1,0 +1,80 @@
+{
+  "objects": [
+    {
+      "label": "sofa_1",
+      "object_type": "bulk",
+      "anchor": null,
+      "bbox": [
+        -2.0,
+        21.0,
+        2.0,
+        0.8
+      ],
+      "position": [
+        -1.0,
+        21.4
+      ],
+      "rotation_angle": 0.0,
+      "description": "A bulk sofa placed on the forward sidewalk as the main item in a small street-side seating group.",
+      "concise_description": "A sofa"
+    },
+    {
+      "label": "chair_1",
+      "object_type": "bulk",
+      "anchor": "sofa",
+      "bbox": [
+        0.4,
+        21.1,
+        0.7,
+        0.7
+      ],
+      "position": [
+        0.75,
+        21.45
+      ],
+      "rotation_angle": 0.0,
+      "description": "A bulk chair placed immediately beside the sofa so the two form a coherent seating group.",
+      "concise_description": "A chair"
+    },
+    {
+      "label": "lamp_1",
+      "object_type": "bulk",
+      "anchor": "sofa",
+      "bbox": [
+        -2.6,
+        21.2,
+        0.4,
+        0.4
+      ],
+      "position": [
+        -2.4,
+        21.4
+      ],
+      "rotation_angle": 0.0,
+      "description": "A bulk standing lamp placed immediately beside the sofa for the seating group.",
+      "concise_description": "A lamp"
+    },
+    {
+      "label": "ego_person",
+      "object_type": "bulk",
+      "anchor": null,
+      "label_index": "ego_person",
+      "position": [
+        0,
+        20
+      ],
+      "bbox": [
+        0,
+        20,
+        0,
+        0
+      ],
+      "description": "Ego agent position",
+      "rotation_angle": 0.0
+    }
+  ],
+  "Environmental_note": "Instruction: move forward",
+  "scene_description": "Moving forward along a tree-lined city sidewalk, with a smooth asphalt road beside it, a few pedestrians ahead, and soft daylight illuminating storefront fronts.",
+  "Environment Name": "sidewalk",
+  "Scene Area": "outdoor"
+}

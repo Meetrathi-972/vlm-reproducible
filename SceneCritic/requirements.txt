@@ -1,0 +1,11 @@
+# Direct dependencies pinned to the existing dspy environment.
+dspy==3.4.0
+numpy==2.2.6
+matplotlib==3.10.9
+networkx==3.4.2
+pillow==12.3.0
+pydantic==2.13.5
+opencv-python==5.0.0.93
+huggingface-hub==1.33.0
+litellm==1.102.1
+scipy==1.15.3

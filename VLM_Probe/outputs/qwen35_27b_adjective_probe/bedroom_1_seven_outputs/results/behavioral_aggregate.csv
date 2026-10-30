@@ -1,0 +1,7 @@
+condition,compared_benchmarks,object_set_diff_mean,object_count_diff_mean,occupancy_hamming_mean,centroid_shift_mean,legality_flip_mean,placement_changed_count,structural_divergence_count,first_divergent_calls
+well_organized,1,0.0,0,0.84,3.5414398002172502,0,1,0,{'bedroom_1': 0}
+spacious,1,0.0,0,0.72,3.5330558662868827,0,1,0,{'bedroom_1': 0}
+bright,1,0.0,0,0.88,3.6409519639241523,0,1,0,{'bedroom_1': 0}
+quiet,1,0.0,0,0.72,3.545261600604664,1,1,0,{'bedroom_1': 0}
+cluttered,1,0.0,0,0.2,0.35388690114727583,0,1,0,{'bedroom_1': 0}
+crowded,1,0.0,0,0.68,3.3815640690288946,0,1,0,{'bedroom_1': 0}

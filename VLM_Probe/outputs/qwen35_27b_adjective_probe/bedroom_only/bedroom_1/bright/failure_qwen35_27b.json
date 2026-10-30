@@ -1,0 +1,12 @@
+{
+  "benchmark": "bedroom_1",
+  "benchmark_path": "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_1.json",
+  "condition": "bright",
+  "adjective": "bright",
+  "original_task_description": "This is an indoor bedroom.",
+  "modified_task_description": "This is a bright indoor bedroom.",
+  "output_path": "bedroom_1/bright",
+  "status": "failed",
+  "started_at": "2026-10-05T07:59:07.700068+00:00",
+  "error": "ApiError: Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}"
+}

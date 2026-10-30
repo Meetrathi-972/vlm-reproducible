@@ -1,0 +1,3548 @@
+{
+  "scope": "bedroom_1 only: seven conditions; existing outputs only",
+  "benchmarks": [
+    "bedroom_1"
+  ],
+  "requested_scenes": 7,
+  "scenes_available": 7,
+  "scenes_missing": 0,
+  "features": [
+    "free_space",
+    "clearance",
+    "regularity",
+    "spacing_consistency"
+  ],
+  "expected_directions": {
+    "spacious": {
+      "free_space": 1,
+      "clearance": 1,
+      "regularity": 1,
+      "spacing_consistency": 1
+    },
+    "well_organized": {
+      "free_space": 1,
+      "clearance": 1,
+      "regularity": 1,
+      "spacing_consistency": 1
+    },
+    "crowded": {
+      "free_space": -1,
+      "clearance": -1,
+      "regularity": -1,
+      "spacing_consistency": -1
+    },
+    "cluttered": {
+      "free_space": -1,
+      "clearance": -1,
+      "regularity": -1,
+      "spacing_consistency": -1
+    }
+  },
+  "denominator": 4,
+  "l2": "NOT APPLICABLE; no inferential analysis",
+  "api_calls": 0,
+  "expectation_assumption": "Spacious/well-organized operationally defined as more open AND more regular; crowded/cluttered as more compact AND less regular. Not universal adjective entailments. Cross-feature scores are limited proxies.",
+  "source_hash": "fc34c607945e43752f65ad37270290c7d5beca69b4b3c82f690a8c3bfcf288dd",
+  "source": "/home/meetrathi-97/Desktop/vlm/SceneCritic/SceneCritic/SceneCritic_evaluator.py",
+  "tables": {
+    "overall_summary": [
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "well_organized",
+        "status": "AVAILABLE",
+        "direction_accuracy": 0.5,
+        "ccr": 0.06249999609375024,
+        "cvr_delta": 0.03125,
+        "src": 1.0,
+        "occupancy_hamming": 0.84,
+        "centroid_shift": 3.5414398002172502
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "spacious",
+        "status": "AVAILABLE",
+        "direction_accuracy": 0.25,
+        "ccr": 0.07692307100591762,
+        "cvr_delta": 0.015625,
+        "src": 1.0,
+        "occupancy_hamming": 0.72,
+        "centroid_shift": 3.5330558662868827
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "bright",
+        "status": "AVAILABLE",
+        "direction_accuracy": null,
+        "ccr": null,
+        "cvr_delta": 0.046875,
+        "src": 1.0,
+        "occupancy_hamming": 0.88,
+        "centroid_shift": 3.6409519639241523
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "quiet",
+        "status": "AVAILABLE",
+        "direction_accuracy": null,
+        "ccr": null,
+        "cvr_delta": 0.03125,
+        "src": 1.0,
+        "occupancy_hamming": 0.72,
+        "centroid_shift": 3.545261600604664
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "cluttered",
+        "status": "AVAILABLE",
+        "direction_accuracy": 0.75,
+        "ccr": 0.07142856632653098,
+        "cvr_delta": 0.015625,
+        "src": 1.0,
+        "occupancy_hamming": 0.2,
+        "centroid_shift": 0.35388690114727583
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "crowded",
+        "status": "AVAILABLE",
+        "direction_accuracy": 0.5,
+        "ccr": 0.0,
+        "cvr_delta": 0.03125,
+        "src": 0.5,
+        "occupancy_hamming": 0.68,
+        "centroid_shift": 3.3815640690288946
+      }
+    ],
+    "direction_accuracy": [
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "well_organized",
+        "semantic_direction_cosine": -0.1868036135126614,
+        "intended_signed_effect_mean": -0.18420471778115105,
+        "correct_features": 2,
+        "denominator": 4,
+        "direction_accuracy": 0.5,
+        "status": "LIMITED operational open-and-regular proxy"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "spacious",
+        "semantic_direction_cosine": -0.12712596569809764,
+        "intended_signed_effect_mean": -0.07243963571858969,
+        "correct_features": 1,
+        "denominator": 4,
+        "direction_accuracy": 0.25,
+        "status": "LIMITED operational open-and-regular proxy"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "bright",
+        "semantic_direction_cosine": null,
+        "intended_signed_effect_mean": null,
+        "correct_features": null,
+        "denominator": null,
+        "direction_accuracy": null,
+        "status": "NOT DIRECTLY OBSERVABLE FROM CURRENT OUTPUT REPRESENTATION"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "quiet",
+        "semantic_direction_cosine": null,
+        "intended_signed_effect_mean": null,
+        "correct_features": null,
+        "denominator": null,
+        "direction_accuracy": null,
+        "status": "NOT DIRECTLY OBSERVABLE FROM CURRENT OUTPUT REPRESENTATION"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "cluttered",
+        "semantic_direction_cosine": 0.6241718088232142,
+        "intended_signed_effect_mean": 0.17298926867505685,
+        "correct_features": 3,
+        "denominator": 4,
+        "direction_accuracy": 0.75,
+        "status": "LIMITED operational open-and-regular proxy"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "crowded",
+        "semantic_direction_cosine": 0.39201025274376455,
+        "intended_signed_effect_mean": 0.2839941574998114,
+        "correct_features": 2,
+        "denominator": 4,
+        "direction_accuracy": 0.5,
+        "status": "LIMITED operational open-and-regular proxy"
+      }
+    ],
+    "semantic_features": [
+      {
+        "benchmark": "bedroom_1",
+        "condition": "baseline",
+        "free_space": 0.7272,
+        "clearance": 0.05421151989096863,
+        "regularity": 0.6580695747298149,
+        "spacing_consistency": 0.5422419717381923
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "well_organized",
+        "free_space": 0.76,
+        "clearance": 0.014142135623730947,
+        "regularity": 0.681165072150184,
+        "spacing_consistency": 0.5
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "spacious",
+        "free_space": 0.8400000000000001,
+        "clearance": 0.042426406871192854,
+        "regularity": 0.5596325799538462,
+        "spacing_consistency": 0.5
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "bright",
+        "free_space": 0.6916,
+        "clearance": 0.014142135623730952,
+        "regularity": 0.7619191343321259,
+        "spacing_consistency": 0.5
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "quiet",
+        "free_space": 0.7555999999999999,
+        "clearance": 0.05656854249492379,
+        "regularity": 0.7458026813803584,
+        "spacing_consistency": 0.5584815598877472
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "cluttered",
+        "free_space": 0.6328,
+        "clearance": 0.023570226039551567,
+        "regularity": 0.653025468771312,
+        "spacing_consistency": 0.548058983988962
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "crowded",
+        "free_space": 0.788,
+        "clearance": 0.009428090415820631,
+        "regularity": 0.6821539150051451,
+        "spacing_consistency": 0.3090169943749474
+      }
+    ],
+    "semantic_feature_deltas": [
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "well_organized",
+        "feature": "free_space",
+        "baseline": 0.7272,
+        "adjective_value": 0.76,
+        "delta": 0.03280000000000005,
+        "expected_direction": "+",
+        "correct": "YES",
+        "signed_relative_effect": 0.04510444842622611
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "well_organized",
+        "feature": "clearance",
+        "baseline": 0.05421151989096863,
+        "adjective_value": 0.014142135623730947,
+        "delta": -0.04006938426723768,
+        "expected_direction": "+",
+        "correct": "NO",
+        "signed_relative_effect": -0.7391168008390792
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "well_organized",
+        "feature": "regularity",
+        "baseline": 0.6580695747298149,
+        "adjective_value": 0.681165072150184,
+        "delta": 0.023095497420369093,
+        "expected_direction": "+",
+        "correct": "YES",
+        "signed_relative_effect": 0.03509577590496498
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "well_organized",
+        "feature": "spacing_consistency",
+        "baseline": 0.5422419717381923,
+        "adjective_value": 0.5,
+        "delta": -0.04224197173819233,
+        "expected_direction": "+",
+        "correct": "NO",
+        "signed_relative_effect": -0.07790229461671612
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "spacious",
+        "feature": "free_space",
+        "baseline": 0.7272,
+        "adjective_value": 0.8400000000000001,
+        "delta": 0.11280000000000012,
+        "expected_direction": "+",
+        "correct": "YES",
+        "signed_relative_effect": 0.15511529824628972
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "spacious",
+        "feature": "clearance",
+        "baseline": 0.05421151989096863,
+        "adjective_value": 0.042426406871192854,
+        "delta": -0.011785113019775778,
+        "expected_direction": "+",
+        "correct": "NO",
+        "signed_relative_effect": -0.21738729436443485
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "spacious",
+        "feature": "regularity",
+        "baseline": 0.6580695747298149,
+        "adjective_value": 0.5596325799538462,
+        "delta": -0.09843699477596868,
+        "expected_direction": "+",
+        "correct": "NO",
+        "signed_relative_effect": -0.14958425213949753
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "spacious",
+        "feature": "spacing_consistency",
+        "baseline": 0.5422419717381923,
+        "adjective_value": 0.5,
+        "delta": -0.04224197173819233,
+        "expected_direction": "+",
+        "correct": "NO",
+        "signed_relative_effect": -0.07790229461671612
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "bright",
+        "feature": "free_space",
+        "baseline": 0.7272,
+        "adjective_value": 0.6916,
+        "delta": -0.035599999999999965,
+        "expected_direction": "N/A",
+        "correct": "N/A",
+        "signed_relative_effect": -0.04895482816992821
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "bright",
+        "feature": "clearance",
+        "baseline": 0.05421151989096863,
+        "adjective_value": 0.014142135623730952,
+        "delta": -0.040069384267237676,
+        "expected_direction": "N/A",
+        "correct": "N/A",
+        "signed_relative_effect": -0.739116800839079
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "bright",
+        "feature": "regularity",
+        "baseline": 0.6580695747298149,
+        "adjective_value": 0.7619191343321259,
+        "delta": 0.10384955960231101,
+        "expected_direction": "N/A",
+        "correct": "N/A",
+        "signed_relative_effect": 0.15780915237692963
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "bright",
+        "feature": "spacing_consistency",
+        "baseline": 0.5422419717381923,
+        "adjective_value": 0.5,
+        "delta": -0.04224197173819233,
+        "expected_direction": "N/A",
+        "correct": "N/A",
+        "signed_relative_effect": -0.07790229461671612
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "quiet",
+        "feature": "free_space",
+        "baseline": 0.7272,
+        "adjective_value": 0.7555999999999999,
+        "delta": 0.02839999999999998,
+        "expected_direction": "N/A",
+        "correct": "N/A",
+        "signed_relative_effect": 0.03905385168612252
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "quiet",
+        "feature": "clearance",
+        "baseline": 0.05421151989096863,
+        "adjective_value": 0.05656854249492379,
+        "delta": 0.002357022603955157,
+        "expected_direction": "N/A",
+        "correct": "N/A",
+        "signed_relative_effect": 0.043477458872886995
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "quiet",
+        "feature": "regularity",
+        "baseline": 0.6580695747298149,
+        "adjective_value": 0.7458026813803584,
+        "delta": 0.08773310665054357,
+        "expected_direction": "N/A",
+        "correct": "N/A",
+        "signed_relative_effect": 0.1333186895441485
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "quiet",
+        "feature": "spacing_consistency",
+        "baseline": 0.5422419717381923,
+        "adjective_value": 0.5584815598877472,
+        "delta": 0.01623958814955484,
+        "expected_direction": "N/A",
+        "correct": "N/A",
+        "signed_relative_effect": 0.02994891404032009
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "cluttered",
+        "feature": "free_space",
+        "baseline": 0.7272,
+        "adjective_value": 0.6328,
+        "delta": -0.09439999999999993,
+        "expected_direction": "-",
+        "correct": "YES",
+        "signed_relative_effect": -0.12981280278767485
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "cluttered",
+        "feature": "clearance",
+        "baseline": 0.05421151989096863,
+        "adjective_value": 0.023570226039551567,
+        "delta": -0.030641293851417065,
+        "expected_direction": "-",
+        "correct": "YES",
+        "signed_relative_effect": -0.5652069653475315
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "cluttered",
+        "feature": "regularity",
+        "baseline": 0.6580695747298149,
+        "adjective_value": 0.653025468771312,
+        "delta": -0.005044105958502909,
+        "expected_direction": "-",
+        "correct": "YES",
+        "signed_relative_effect": -0.007664992406891732
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "cluttered",
+        "feature": "spacing_consistency",
+        "baseline": 0.5422419717381923,
+        "adjective_value": 0.548058983988962,
+        "delta": 0.005817012250769693,
+        "expected_direction": "-",
+        "correct": "NO",
+        "signed_relative_effect": 0.010727685841870687
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "crowded",
+        "feature": "free_space",
+        "baseline": 0.7272,
+        "adjective_value": 0.788,
+        "delta": 0.060800000000000076,
+        "expected_direction": "-",
+        "correct": "NO",
+        "signed_relative_effect": 0.08360824586324837
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "crowded",
+        "feature": "clearance",
+        "baseline": 0.05421151989096863,
+        "adjective_value": 0.009428090415820631,
+        "delta": -0.044783429475148004,
+        "expected_direction": "-",
+        "correct": "YES",
+        "signed_relative_effect": -0.8260717185848533
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "crowded",
+        "feature": "regularity",
+        "baseline": 0.6580695747298149,
+        "adjective_value": 0.6821539150051451,
+        "delta": 0.02408434027533024,
+        "expected_direction": "-",
+        "correct": "NO",
+        "signed_relative_effect": 0.036598415428646974
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "crowded",
+        "feature": "spacing_consistency",
+        "baseline": 0.5422419717381923,
+        "adjective_value": 0.3090169943749474,
+        "delta": -0.23322497736324493,
+        "expected_direction": "-",
+        "correct": "YES",
+        "signed_relative_effect": -0.4301115727062875
+      }
+    ],
+    "ccr_details": [
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "well_organized",
+        "ccr": 0.06249999609375024,
+        "relevant_changes": "bed#1 position: [0.0, 1.1] -> [0.0, 4.25]; bed#1 bbox: [-1.0, 0.2, 2.0, 1.8] -> [-1.0, 3.5, 2.0, 1.5]; cabinet#1 position: [-2.0, 0.7] -> [-1.6, 4.0]; cabinet#1 bbox: [-2.3, 0.2, 0.6, 1.0] -> [-2.0, 3.5, 0.8, 1.0]; cabinet#2 position: [2.0, 0.7] -> [1.6, 4.0]; cabinet#2 bbox: [1.7, 0.2, 0.6, 1.0] -> [1.2, 3.5, 0.8, 1.0]; chair#1 position: [-0.7, 3.2] -> [1.3, 0.9]; chair#1 bbox: [-1.0, 2.8, 0.6, 0.8] -> [1.0, 0.5, 0.6, 0.8]; chair#1 rotation: 0.0 -> 90.0; desk#1 position: [-0.5, 4.2] -> [2.1, 0.9]; desk#1 bbox: [-1.2, 3.8, 1.4, 0.8] -> [1.5, 0.5, 1.2, 0.8]; desk#1 rotation: 0.0 -> 90.0; shelf#1 position: [-0.5, 4.7] -> [2.1, 1.4]; shelf#1 bbox: [-1.2, 4.5, 1.4, 0.4] -> [1.5, 1.3, 1.2, 0.2]; shelf#1 rotation: 0.0 -> 90.0",
+        "collateral_changes": "shelf#1 object_type: bulk -> ornaments",
+        "collateral_change_details": "shelf#1 object_type: bulk -> ornaments",
+        "relevant_change_count": 15,
+        "collateral_change_count": 1,
+        "total_monitored_changes": 16
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "spacious",
+        "ccr": 0.07692307100591762,
+        "relevant_changes": "bed#1 position: [0.0, 1.1] -> [0.0, 4.5]; bed#1 bbox: [-1.0, 0.2, 2.0, 1.8] -> [-1.0, 4.2, 2.0, 0.6]; cabinet#1 position: [-2.0, 0.7] -> [-1.9, 4.4]; cabinet#1 bbox: [-2.3, 0.2, 0.6, 1.0] -> [-2.2, 4.0, 0.6, 0.8]; cabinet#2 position: [2.0, 0.7] -> [1.9, 4.4]; cabinet#2 bbox: [1.7, 0.2, 0.6, 1.0] -> [1.6, 4.0, 0.6, 0.8]; chair#1 position: [-0.7, 3.2] -> [-0.15, 0.45]; chair#1 bbox: [-1.0, 2.8, 0.6, 0.8] -> [-0.4, 0.0, 0.5, 0.9]; desk#1 position: [-0.5, 4.2] -> [0.0, 0.5]; desk#1 bbox: [-1.2, 3.8, 1.4, 0.8] -> [-1.2, 0.2, 2.4, 0.6]; shelf#1 position: [-0.5, 4.7] -> [0.0, 0.875]; shelf#1 bbox: [-1.2, 4.5, 1.4, 0.4] -> [-1.0, 0.8, 2.0, 0.15]",
+        "collateral_changes": "shelf#1 object_type: bulk -> ornaments",
+        "collateral_change_details": "shelf#1 object_type: bulk -> ornaments",
+        "relevant_change_count": 12,
+        "collateral_change_count": 1,
+        "total_monitored_changes": 13
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "bright",
+        "ccr": null,
+        "relevant_changes": "N/A: relevance unobservable",
+        "collateral_changes": "N/A: relevance unobservable",
+        "collateral_change_details": "None",
+        "relevant_change_count": null,
+        "collateral_change_count": null,
+        "total_monitored_changes": 15
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "quiet",
+        "ccr": null,
+        "relevant_changes": "N/A: relevance unobservable",
+        "collateral_changes": "N/A: relevance unobservable",
+        "collateral_change_details": "None",
+        "relevant_change_count": null,
+        "collateral_change_count": null,
+        "total_monitored_changes": 13
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "cluttered",
+        "ccr": 0.07142856632653098,
+        "relevant_changes": "bed#1 bbox: [-1.0, 0.2, 2.0, 1.8] -> [-1.2, 0.1, 2.4, 2.0]; cabinet#1 position: [-2.0, 0.7] -> [-1.9, 0.7]; cabinet#1 bbox: [-2.3, 0.2, 0.6, 1.0] -> [-2.3, 0.1, 0.8, 1.2]; cabinet#2 position: [2.0, 0.7] -> [1.9, 0.7]; cabinet#2 bbox: [1.7, 0.2, 0.6, 1.0] -> [1.5, 0.1, 0.8, 1.2]; chair#1 position: [-0.7, 3.2] -> [-0.2, 3.65]; chair#1 bbox: [-1.0, 2.8, 0.6, 0.8] -> [-0.5, 3.2, 0.6, 0.9]; chair#1 rotation: 0.0 -> 180.0; desk#1 position: [-0.5, 4.2] -> [0.0, 4.6]; desk#1 bbox: [-1.2, 3.8, 1.4, 0.8] -> [-1.2, 4.2, 2.4, 0.8]; desk#1 rotation: 0.0 -> 180.0; shelf#1 position: [-0.5, 4.7] -> [0.0, 5.05]; shelf#1 bbox: [-1.2, 4.5, 1.4, 0.4] -> [-0.8, 4.9, 1.6, 0.3]",
+        "collateral_changes": "shelf#1 object_type: bulk -> ornaments",
+        "collateral_change_details": "shelf#1 object_type: bulk -> ornaments",
+        "relevant_change_count": 13,
+        "collateral_change_count": 1,
+        "total_monitored_changes": 14
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "crowded",
+        "ccr": 0.0,
+        "relevant_changes": "bed#1 position: [0.0, 1.1] -> [-1.5, 4.5]; bed#1 bbox: [-1.0, 0.2, 2.0, 1.8] -> [-2.4, 3.5, 1.8, 2.0]; cabinet#1 position: [-2.0, 0.7] -> [-0.3, 3.9]; cabinet#1 bbox: [-2.3, 0.2, 0.6, 1.0] -> [-0.6, 3.5, 0.6, 0.8]; cabinet#2 position: [2.0, 0.7] -> [-2.1, 1.9]; cabinet#2 bbox: [1.7, 0.2, 0.6, 1.0] -> [-2.4, 1.5, 0.6, 0.8]; chair#1 position: [-0.7, 3.2] -> [-0.75, 1.25]; chair#1 bbox: [-1.0, 2.8, 0.6, 0.8] -> [-1.0, 0.8, 0.5, 0.9]; chair#1 rotation: 0.0 -> 180.0; desk#1 position: [-0.5, 4.2] -> [-0.8, 0.55]; desk#1 bbox: [-1.2, 3.8, 1.4, 0.8] -> [-1.5, 0.2, 1.4, 0.7]; shelf#1 position: [-0.5, 4.7] -> [-0.8, 1.65]; shelf#1 bbox: [-1.2, 4.5, 1.4, 0.4] -> [-1.4, 1.5, 1.2, 0.3]",
+        "collateral_changes": "None",
+        "collateral_change_details": "None",
+        "relevant_change_count": 13,
+        "collateral_change_count": 0,
+        "total_monitored_changes": 13
+      }
+    ],
+    "ccr_collateral_details": [
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "well_organized",
+        "classification": "COLLATERAL",
+        "subject": "shelf#1",
+        "channel": "object_type",
+        "before": "bulk",
+        "after": "ornaments"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "spacious",
+        "classification": "COLLATERAL",
+        "subject": "shelf#1",
+        "channel": "object_type",
+        "before": "bulk",
+        "after": "ornaments"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "cluttered",
+        "classification": "COLLATERAL",
+        "subject": "shelf#1",
+        "channel": "object_type",
+        "before": "bulk",
+        "after": "ornaments"
+      }
+    ],
+    "cvr_summary": [
+      {
+        "benchmark": "bedroom_1",
+        "condition": "baseline",
+        "cvr": 0.015625,
+        "violated_checks": 1,
+        "total_checks": 64,
+        "violation_details": "desk#1 + shelf#1 \u2014 footprint_nonoverlap \u2014 ('desk', 1) bbox=[-1.2, 3.8, 1.4, 0.8]; ('shelf', 1) bbox=[-1.2, 4.5, 1.4, 0.4]; intersection area=0.14 > 1e-6"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "well_organized",
+        "cvr": 0.046875,
+        "violated_checks": 3,
+        "total_checks": 64,
+        "violation_details": "desk#1 \u2014 inside_room \u2014 x_max=2.7 exceeds room limit 2.5; shelf#1 \u2014 inside_room \u2014 x_max=2.7 exceeds room limit 2.5; desk#1 + chair#1 \u2014 footprint_nonoverlap \u2014 ('desk', 1) bbox=[1.5, 0.5, 1.2, 0.8]; ('chair', 1) bbox=[1.0, 0.5, 0.6, 0.8]; intersection area=0.08 > 1e-6"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "spacious",
+        "cvr": 0.03125,
+        "violated_checks": 2,
+        "total_checks": 64,
+        "violation_details": "desk#1 + chair#1 \u2014 footprint_nonoverlap \u2014 ('desk', 1) bbox=[-1.2, 0.2, 2.4, 0.6]; ('chair', 1) bbox=[-0.4, 0.0, 0.5, 0.9]; intersection area=0.3 > 1e-6; chair#1 + shelf#1 \u2014 footprint_nonoverlap \u2014 ('chair', 1) bbox=[-0.4, 0.0, 0.5, 0.9]; ('shelf', 1) bbox=[-1.0, 0.8, 2.0, 0.15]; intersection area=0.05 > 1e-6"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "bright",
+        "cvr": 0.0625,
+        "violated_checks": 4,
+        "total_checks": 64,
+        "violation_details": "bed#1 \u2014 inside_room \u2014 y_max=5.3 exceeds room limit 5; desk#1 \u2014 inside_room \u2014 x_max=2.7 exceeds room limit 2.5; shelf#1 \u2014 inside_room \u2014 x_max=2.7 exceeds room limit 2.5; desk#1 + chair#1 \u2014 footprint_nonoverlap \u2014 ('desk', 1) bbox=[1.5, 0.5, 1.2, 1.5]; ('chair', 1) bbox=[1.2, 0.0, 0.6, 0.8]; intersection area=0.09 > 1e-6"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "quiet",
+        "cvr": 0.046875,
+        "violated_checks": 3,
+        "total_checks": 64,
+        "violation_details": "bed#1 \u2014 inside_room \u2014 y_max=5.5 exceeds room limit 5; cabinet#1 \u2014 inside_room \u2014 y_max=5.2 exceeds room limit 5; cabinet#2 \u2014 inside_room \u2014 y_max=5.2 exceeds room limit 5"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "cluttered",
+        "cvr": 0.03125,
+        "violated_checks": 2,
+        "total_checks": 64,
+        "violation_details": "shelf#1 \u2014 inside_room \u2014 y_max=5.2 exceeds room limit 5; desk#1 + shelf#1 \u2014 footprint_nonoverlap \u2014 ('desk', 1) bbox=[-1.2, 4.2, 2.4, 0.8]; ('shelf', 1) bbox=[-0.8, 4.9, 1.6, 0.3]; intersection area=0.16 > 1e-6"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "crowded",
+        "cvr": 0.046875,
+        "violated_checks": 3,
+        "total_checks": 64,
+        "violation_details": "bed#1 \u2014 inside_room \u2014 y_max=5.5 exceeds room limit 5; desk#1 + chair#1 \u2014 footprint_nonoverlap \u2014 ('desk', 1) bbox=[-1.5, 0.2, 1.4, 0.7]; ('chair', 1) bbox=[-1.0, 0.8, 0.5, 0.9]; intersection area=0.05 > 1e-6; chair#1 + shelf#1 \u2014 footprint_nonoverlap \u2014 ('chair', 1) bbox=[-1.0, 0.8, 0.5, 0.9]; ('shelf', 1) bbox=[-1.4, 1.5, 1.2, 0.3]; intersection area=0.1 > 1e-6"
+      }
+    ],
+    "cvr_details": [
+      {
+        "benchmark": "bedroom_1",
+        "condition": "baseline",
+        "baseline_or_intervention": "BASELINE",
+        "subject": "desk#1 + shelf#1",
+        "constraint": "footprint_nonoverlap",
+        "violation_reason": "('desk', 1) bbox=[-1.2, 3.8, 1.4, 0.8]; ('shelf', 1) bbox=[-1.2, 4.5, 1.4, 0.4]; intersection area=0.14 > 1e-6"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "well_organized",
+        "baseline_or_intervention": "ADJECTIVE",
+        "subject": "desk#1",
+        "constraint": "inside_room",
+        "violation_reason": "x_max=2.7 exceeds room limit 2.5"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "well_organized",
+        "baseline_or_intervention": "ADJECTIVE",
+        "subject": "shelf#1",
+        "constraint": "inside_room",
+        "violation_reason": "x_max=2.7 exceeds room limit 2.5"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "well_organized",
+        "baseline_or_intervention": "ADJECTIVE",
+        "subject": "desk#1 + chair#1",
+        "constraint": "footprint_nonoverlap",
+        "violation_reason": "('desk', 1) bbox=[1.5, 0.5, 1.2, 0.8]; ('chair', 1) bbox=[1.0, 0.5, 0.6, 0.8]; intersection area=0.08 > 1e-6"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "spacious",
+        "baseline_or_intervention": "ADJECTIVE",
+        "subject": "desk#1 + chair#1",
+        "constraint": "footprint_nonoverlap",
+        "violation_reason": "('desk', 1) bbox=[-1.2, 0.2, 2.4, 0.6]; ('chair', 1) bbox=[-0.4, 0.0, 0.5, 0.9]; intersection area=0.3 > 1e-6"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "spacious",
+        "baseline_or_intervention": "ADJECTIVE",
+        "subject": "chair#1 + shelf#1",
+        "constraint": "footprint_nonoverlap",
+        "violation_reason": "('chair', 1) bbox=[-0.4, 0.0, 0.5, 0.9]; ('shelf', 1) bbox=[-1.0, 0.8, 2.0, 0.15]; intersection area=0.05 > 1e-6"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "bright",
+        "baseline_or_intervention": "ADJECTIVE",
+        "subject": "bed#1",
+        "constraint": "inside_room",
+        "violation_reason": "y_max=5.3 exceeds room limit 5"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "bright",
+        "baseline_or_intervention": "ADJECTIVE",
+        "subject": "desk#1",
+        "constraint": "inside_room",
+        "violation_reason": "x_max=2.7 exceeds room limit 2.5"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "bright",
+        "baseline_or_intervention": "ADJECTIVE",
+        "subject": "shelf#1",
+        "constraint": "inside_room",
+        "violation_reason": "x_max=2.7 exceeds room limit 2.5"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "bright",
+        "baseline_or_intervention": "ADJECTIVE",
+        "subject": "desk#1 + chair#1",
+        "constraint": "footprint_nonoverlap",
+        "violation_reason": "('desk', 1) bbox=[1.5, 0.5, 1.2, 1.5]; ('chair', 1) bbox=[1.2, 0.0, 0.6, 0.8]; intersection area=0.09 > 1e-6"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "quiet",
+        "baseline_or_intervention": "ADJECTIVE",
+        "subject": "bed#1",
+        "constraint": "inside_room",
+        "violation_reason": "y_max=5.5 exceeds room limit 5"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "quiet",
+        "baseline_or_intervention": "ADJECTIVE",
+        "subject": "cabinet#1",
+        "constraint": "inside_room",
+        "violation_reason": "y_max=5.2 exceeds room limit 5"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "quiet",
+        "baseline_or_intervention": "ADJECTIVE",
+        "subject": "cabinet#2",
+        "constraint": "inside_room",
+        "violation_reason": "y_max=5.2 exceeds room limit 5"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "cluttered",
+        "baseline_or_intervention": "ADJECTIVE",
+        "subject": "shelf#1",
+        "constraint": "inside_room",
+        "violation_reason": "y_max=5.2 exceeds room limit 5"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "cluttered",
+        "baseline_or_intervention": "ADJECTIVE",
+        "subject": "desk#1 + shelf#1",
+        "constraint": "footprint_nonoverlap",
+        "violation_reason": "('desk', 1) bbox=[-1.2, 4.2, 2.4, 0.8]; ('shelf', 1) bbox=[-0.8, 4.9, 1.6, 0.3]; intersection area=0.16 > 1e-6"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "crowded",
+        "baseline_or_intervention": "ADJECTIVE",
+        "subject": "bed#1",
+        "constraint": "inside_room",
+        "violation_reason": "y_max=5.5 exceeds room limit 5"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "crowded",
+        "baseline_or_intervention": "ADJECTIVE",
+        "subject": "desk#1 + chair#1",
+        "constraint": "footprint_nonoverlap",
+        "violation_reason": "('desk', 1) bbox=[-1.5, 0.2, 1.4, 0.7]; ('chair', 1) bbox=[-1.0, 0.8, 0.5, 0.9]; intersection area=0.05 > 1e-6"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "crowded",
+        "baseline_or_intervention": "ADJECTIVE",
+        "subject": "chair#1 + shelf#1",
+        "constraint": "footprint_nonoverlap",
+        "violation_reason": "('chair', 1) bbox=[-1.0, 0.8, 0.5, 0.9]; ('shelf', 1) bbox=[-1.4, 1.5, 1.2, 0.3]; intersection area=0.1 > 1e-6"
+      }
+    ],
+    "src_summary": [
+      {
+        "benchmark": "bedroom_1",
+        "condition": "baseline",
+        "src": 1.0,
+        "evaluated_relations": 2,
+        "satisfied_relations": 2,
+        "violated_relations": 0,
+        "unevaluated_relations": 3
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "well_organized",
+        "src": 1.0,
+        "evaluated_relations": 2,
+        "satisfied_relations": 2,
+        "violated_relations": 0,
+        "unevaluated_relations": 2
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "spacious",
+        "src": 1.0,
+        "evaluated_relations": 2,
+        "satisfied_relations": 2,
+        "violated_relations": 0,
+        "unevaluated_relations": 2
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "bright",
+        "src": 1.0,
+        "evaluated_relations": 2,
+        "satisfied_relations": 2,
+        "violated_relations": 0,
+        "unevaluated_relations": 2
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "quiet",
+        "src": 1.0,
+        "evaluated_relations": 3,
+        "satisfied_relations": 3,
+        "violated_relations": 0,
+        "unevaluated_relations": 1
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "cluttered",
+        "src": 1.0,
+        "evaluated_relations": 2,
+        "satisfied_relations": 2,
+        "violated_relations": 0,
+        "unevaluated_relations": 2
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "crowded",
+        "src": 0.5,
+        "evaluated_relations": 4,
+        "satisfied_relations": 2,
+        "violated_relations": 2,
+        "unevaluated_relations": 2
+      }
+    ],
+    "src_details": [
+      {
+        "benchmark": "bedroom_1",
+        "condition": "baseline",
+        "subject": "cabinet#1",
+        "relation": "left",
+        "anchor": "bed",
+        "textual_statement": "A wooden cabinet placed to the left of the bed against the wall.",
+        "geometry_test": "x_subject=-2 < x_anchor=0 - 1e-6",
+        "expected": "left",
+        "actual": "left",
+        "result": "SATISFIED",
+        "reason": "Preserved prior explicit geometric rule",
+        "subject_bbox": [
+          -2.3,
+          0.2,
+          0.6,
+          1.0
+        ],
+        "anchor_bbox": [
+          -1.0,
+          0.2,
+          2.0,
+          1.8
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "baseline",
+        "subject": "cabinet#2",
+        "relation": "right",
+        "anchor": "bed",
+        "textual_statement": "A matching wooden cabinet placed to the right of the bed against the wall.",
+        "geometry_test": "x_subject=2 > x_anchor=0 + 1e-6",
+        "expected": "right",
+        "actual": "right",
+        "result": "SATISFIED",
+        "reason": "Preserved prior explicit geometric rule",
+        "subject_bbox": [
+          1.7,
+          0.2,
+          0.6,
+          1.0
+        ],
+        "anchor_bbox": [
+          -1.0,
+          0.2,
+          2.0,
+          1.8
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "baseline",
+        "subject": "desk#1",
+        "relation": "near",
+        "anchor": null,
+        "textual_statement": "A desk placed against the opposite wall near the window.",
+        "geometry_test": "",
+        "expected": "near",
+        "actual": null,
+        "result": "UNEVALUATED",
+        "reason": "Missing/ambiguous/unmentioned anchor target; no guessed referent",
+        "subject_bbox": [
+          -1.2,
+          3.8,
+          1.4,
+          0.8
+        ],
+        "anchor_bbox": null
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "baseline",
+        "subject": "chair#1",
+        "relation": "front of",
+        "anchor": "desk",
+        "textual_statement": "A chair positioned in front of the desk for seating.",
+        "geometry_test": "",
+        "expected": "front of",
+        "actual": null,
+        "result": "UNEVALUATED",
+        "reason": "UNEVALUATED: checked-in OrientationVerifier verifies facing directions, not textual front/behind half-spaces. No arbitrary proxy added.",
+        "subject_bbox": [
+          -1.0,
+          2.8,
+          0.6,
+          0.8
+        ],
+        "anchor_bbox": [
+          -1.2,
+          3.8,
+          1.4,
+          0.8
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "baseline",
+        "subject": "shelf#1",
+        "relation": "above",
+        "anchor": "desk",
+        "textual_statement": "A shelf mounted on the wall above the desk.",
+        "geometry_test": "2D footprint intersection=0.14; no z_min/z_max or support-surface elevation",
+        "expected": "above",
+        "actual": null,
+        "result": "UNEVALUATED",
+        "reason": "UNEVALUATED: no vertical extent; full 3D projection + contact cannot be established. Checked-in evaluator has no textual vertical/support verifier.",
+        "subject_bbox": [
+          -1.2,
+          4.5,
+          1.4,
+          0.4
+        ],
+        "anchor_bbox": [
+          -1.2,
+          3.8,
+          1.4,
+          0.8
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "well_organized",
+        "subject": "cabinet#1",
+        "relation": "left",
+        "anchor": "bed",
+        "textual_statement": "A cabinet placed to the left of the bed.",
+        "geometry_test": "x_subject=-1.6 < x_anchor=0 - 1e-6",
+        "expected": "left",
+        "actual": "left",
+        "result": "SATISFIED",
+        "reason": "Preserved prior explicit geometric rule",
+        "subject_bbox": [
+          -2.0,
+          3.5,
+          0.8,
+          1.0
+        ],
+        "anchor_bbox": [
+          -1.0,
+          3.5,
+          2.0,
+          1.5
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "well_organized",
+        "subject": "cabinet#2",
+        "relation": "right",
+        "anchor": "bed",
+        "textual_statement": "A cabinet placed to the right of the bed.",
+        "geometry_test": "x_subject=1.6 > x_anchor=0 + 1e-6",
+        "expected": "right",
+        "actual": "right",
+        "result": "SATISFIED",
+        "reason": "Preserved prior explicit geometric rule",
+        "subject_bbox": [
+          1.2,
+          3.5,
+          0.8,
+          1.0
+        ],
+        "anchor_bbox": [
+          -1.0,
+          3.5,
+          2.0,
+          1.5
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "well_organized",
+        "subject": "chair#1",
+        "relation": "front of",
+        "anchor": "desk",
+        "textual_statement": "A chair positioned in front of the desk.",
+        "geometry_test": "",
+        "expected": "front of",
+        "actual": null,
+        "result": "UNEVALUATED",
+        "reason": "UNEVALUATED: checked-in OrientationVerifier verifies facing directions, not textual front/behind half-spaces. No arbitrary proxy added.",
+        "subject_bbox": [
+          1.0,
+          0.5,
+          0.6,
+          0.8
+        ],
+        "anchor_bbox": [
+          1.5,
+          0.5,
+          1.2,
+          0.8
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "well_organized",
+        "subject": "shelf#1",
+        "relation": "on top of",
+        "anchor": "desk",
+        "textual_statement": "A shelf placed on top of the desk.",
+        "geometry_test": "2D footprint intersection=0; no z_min/z_max or support-surface elevation",
+        "expected": "on top of",
+        "actual": null,
+        "result": "UNEVALUATED",
+        "reason": "UNEVALUATED: no vertical extent; full 3D projection + contact cannot be established. Checked-in evaluator has no textual vertical/support verifier.",
+        "subject_bbox": [
+          1.5,
+          1.3,
+          1.2,
+          0.2
+        ],
+        "anchor_bbox": [
+          1.5,
+          0.5,
+          1.2,
+          0.8
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "spacious",
+        "subject": "cabinet#1",
+        "relation": "left",
+        "anchor": "bed",
+        "textual_statement": "A cabinet placed to the left of the bed.",
+        "geometry_test": "x_subject=-1.9 < x_anchor=0 - 1e-6",
+        "expected": "left",
+        "actual": "left",
+        "result": "SATISFIED",
+        "reason": "Preserved prior explicit geometric rule",
+        "subject_bbox": [
+          -2.2,
+          4.0,
+          0.6,
+          0.8
+        ],
+        "anchor_bbox": [
+          -1.0,
+          4.2,
+          2.0,
+          0.6
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "spacious",
+        "subject": "cabinet#2",
+        "relation": "right",
+        "anchor": "bed",
+        "textual_statement": "A cabinet placed to the right of the bed.",
+        "geometry_test": "x_subject=1.9 > x_anchor=0 + 1e-6",
+        "expected": "right",
+        "actual": "right",
+        "result": "SATISFIED",
+        "reason": "Preserved prior explicit geometric rule",
+        "subject_bbox": [
+          1.6,
+          4.0,
+          0.6,
+          0.8
+        ],
+        "anchor_bbox": [
+          -1.0,
+          4.2,
+          2.0,
+          0.6
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "spacious",
+        "subject": "chair#1",
+        "relation": "under",
+        "anchor": "desk",
+        "textual_statement": "A chair placed under the desk.",
+        "geometry_test": "2D footprint intersection=0.3; no z_min/z_max or support-surface elevation",
+        "expected": "under",
+        "actual": null,
+        "result": "UNEVALUATED",
+        "reason": "UNEVALUATED: no vertical extent; full 3D projection + contact cannot be established. Checked-in evaluator has no textual vertical/support verifier.",
+        "subject_bbox": [
+          -0.4,
+          0.0,
+          0.5,
+          0.9
+        ],
+        "anchor_bbox": [
+          -1.2,
+          0.2,
+          2.4,
+          0.6
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "spacious",
+        "subject": "shelf#1",
+        "relation": "on top of",
+        "anchor": "desk",
+        "textual_statement": "A shelf placed on top of the desk.",
+        "geometry_test": "2D footprint intersection=0; no z_min/z_max or support-surface elevation",
+        "expected": "on top of",
+        "actual": null,
+        "result": "UNEVALUATED",
+        "reason": "UNEVALUATED: no vertical extent; full 3D projection + contact cannot be established. Checked-in evaluator has no textual vertical/support verifier.",
+        "subject_bbox": [
+          -1.0,
+          0.8,
+          2.0,
+          0.15
+        ],
+        "anchor_bbox": [
+          -1.2,
+          0.2,
+          2.4,
+          0.6
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "bright",
+        "subject": "cabinet#1",
+        "relation": "left",
+        "anchor": "bed",
+        "textual_statement": "A cabinet to the left of the bed, aligned with the head.",
+        "geometry_test": "x_subject=-1.8 < x_anchor=0 - 1e-6",
+        "expected": "left",
+        "actual": "left",
+        "result": "SATISFIED",
+        "reason": "Preserved prior explicit geometric rule",
+        "subject_bbox": [
+          -2.2,
+          3.8,
+          0.8,
+          1.2
+        ],
+        "anchor_bbox": [
+          -1.2,
+          3.5,
+          2.4,
+          1.8
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "bright",
+        "subject": "cabinet#2",
+        "relation": "right",
+        "anchor": "bed",
+        "textual_statement": "A cabinet to the right of the bed, aligned with the head.",
+        "geometry_test": "x_subject=1.8 > x_anchor=0 + 1e-6",
+        "expected": "right",
+        "actual": "right",
+        "result": "SATISFIED",
+        "reason": "Preserved prior explicit geometric rule",
+        "subject_bbox": [
+          1.4,
+          3.8,
+          0.8,
+          1.2
+        ],
+        "anchor_bbox": [
+          -1.2,
+          3.5,
+          2.4,
+          1.8
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "bright",
+        "subject": "chair#1",
+        "relation": "front of",
+        "anchor": "desk",
+        "textual_statement": "A chair in front of the desk.",
+        "geometry_test": "",
+        "expected": "front of",
+        "actual": null,
+        "result": "UNEVALUATED",
+        "reason": "UNEVALUATED: checked-in OrientationVerifier verifies facing directions, not textual front/behind half-spaces. No arbitrary proxy added.",
+        "subject_bbox": [
+          1.2,
+          0.0,
+          0.6,
+          0.8
+        ],
+        "anchor_bbox": [
+          1.5,
+          0.5,
+          1.2,
+          1.5
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "bright",
+        "subject": "shelf#1",
+        "relation": "above",
+        "anchor": "desk",
+        "textual_statement": "A shelf above the desk.",
+        "geometry_test": "2D footprint intersection=0; no z_min/z_max or support-surface elevation",
+        "expected": "above",
+        "actual": null,
+        "result": "UNEVALUATED",
+        "reason": "UNEVALUATED: no vertical extent; full 3D projection + contact cannot be established. Checked-in evaluator has no textual vertical/support verifier.",
+        "subject_bbox": [
+          1.5,
+          2.0,
+          1.2,
+          0.3
+        ],
+        "anchor_bbox": [
+          1.5,
+          0.5,
+          1.2,
+          1.5
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "quiet",
+        "subject": "cabinet#1",
+        "relation": "left",
+        "anchor": "bed",
+        "textual_statement": "A cabinet placed to the left of the bed against the wall.",
+        "geometry_test": "x_subject=-2 < x_anchor=0 - 1e-6",
+        "expected": "left",
+        "actual": "left",
+        "result": "SATISFIED",
+        "reason": "Preserved prior explicit geometric rule",
+        "subject_bbox": [
+          -2.3,
+          4.2,
+          0.6,
+          1.0
+        ],
+        "anchor_bbox": [
+          -1.0,
+          4.0,
+          2.0,
+          1.5
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "quiet",
+        "subject": "cabinet#2",
+        "relation": "right",
+        "anchor": "bed",
+        "textual_statement": "A second cabinet placed to the right of the bed against the wall.",
+        "geometry_test": "x_subject=2 > x_anchor=0 + 1e-6",
+        "expected": "right",
+        "actual": "right",
+        "result": "SATISFIED",
+        "reason": "Preserved prior explicit geometric rule",
+        "subject_bbox": [
+          1.7,
+          4.2,
+          0.6,
+          1.0
+        ],
+        "anchor_bbox": [
+          -1.0,
+          4.0,
+          2.0,
+          1.5
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "quiet",
+        "subject": "chair#1",
+        "relation": "front of",
+        "anchor": "desk",
+        "textual_statement": "A chair placed in front of the desk.",
+        "geometry_test": "",
+        "expected": "front of",
+        "actual": null,
+        "result": "UNEVALUATED",
+        "reason": "UNEVALUATED: checked-in OrientationVerifier verifies facing directions, not textual front/behind half-spaces. No arbitrary proxy added.",
+        "subject_bbox": [
+          -0.5,
+          1.0,
+          0.6,
+          0.8
+        ],
+        "anchor_bbox": [
+          -1.2,
+          0.2,
+          2.4,
+          0.8
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "quiet",
+        "subject": "shelf#1",
+        "relation": "near",
+        "anchor": "desk",
+        "textual_statement": "A shelf placed near the desk area against the right wall.",
+        "geometry_test": "edge gap=0.3 <= 1.061",
+        "expected": "near",
+        "actual": "near",
+        "result": "SATISFIED",
+        "reason": "Preserved prior explicit geometric rule",
+        "subject_bbox": [
+          1.5,
+          0.5,
+          0.5,
+          1.5
+        ],
+        "anchor_bbox": [
+          -1.2,
+          0.2,
+          2.4,
+          0.8
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "cluttered",
+        "subject": "cabinet#1",
+        "relation": "left",
+        "anchor": "bed",
+        "textual_statement": "A cabinet placed to the immediate left of the bed.",
+        "geometry_test": "x_subject=-1.9 < x_anchor=0 - 1e-6",
+        "expected": "left",
+        "actual": "left",
+        "result": "SATISFIED",
+        "reason": "Preserved prior explicit geometric rule",
+        "subject_bbox": [
+          -2.3,
+          0.1,
+          0.8,
+          1.2
+        ],
+        "anchor_bbox": [
+          -1.2,
+          0.1,
+          2.4,
+          2.0
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "cluttered",
+        "subject": "cabinet#2",
+        "relation": "right",
+        "anchor": "bed",
+        "textual_statement": "A cabinet placed to the immediate right of the bed.",
+        "geometry_test": "x_subject=1.9 > x_anchor=0 + 1e-6",
+        "expected": "right",
+        "actual": "right",
+        "result": "SATISFIED",
+        "reason": "Preserved prior explicit geometric rule",
+        "subject_bbox": [
+          1.5,
+          0.1,
+          0.8,
+          1.2
+        ],
+        "anchor_bbox": [
+          -1.2,
+          0.1,
+          2.4,
+          2.0
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "cluttered",
+        "subject": "chair#1",
+        "relation": "front of",
+        "anchor": "desk",
+        "textual_statement": "A chair positioned in front of the desk.",
+        "geometry_test": "",
+        "expected": "front of",
+        "actual": null,
+        "result": "UNEVALUATED",
+        "reason": "UNEVALUATED: checked-in OrientationVerifier verifies facing directions, not textual front/behind half-spaces. No arbitrary proxy added.",
+        "subject_bbox": [
+          -0.5,
+          3.2,
+          0.6,
+          0.9
+        ],
+        "anchor_bbox": [
+          -1.2,
+          4.2,
+          2.4,
+          0.8
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "cluttered",
+        "subject": "shelf#1",
+        "relation": "on top of",
+        "anchor": "desk",
+        "textual_statement": "A shelf placed on top of the desk.",
+        "geometry_test": "2D footprint intersection=0.16; no z_min/z_max or support-surface elevation",
+        "expected": "on top of",
+        "actual": null,
+        "result": "UNEVALUATED",
+        "reason": "UNEVALUATED: no vertical extent; full 3D projection + contact cannot be established. Checked-in evaluator has no textual vertical/support verifier.",
+        "subject_bbox": [
+          -0.8,
+          4.9,
+          1.6,
+          0.3
+        ],
+        "anchor_bbox": [
+          -1.2,
+          4.2,
+          2.4,
+          0.8
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "crowded",
+        "subject": "cabinet#1",
+        "relation": "right",
+        "anchor": "bed",
+        "textual_statement": "A small bedside cabinet placed next to the head of the bed on the right side.",
+        "geometry_test": "x_subject=-0.3 > x_anchor=-1.5 + 1e-6",
+        "expected": "right",
+        "actual": "right",
+        "result": "SATISFIED",
+        "reason": "Preserved prior explicit geometric rule",
+        "subject_bbox": [
+          -0.6,
+          3.5,
+          0.6,
+          0.8
+        ],
+        "anchor_bbox": [
+          -2.4,
+          3.5,
+          1.8,
+          2.0
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "crowded",
+        "subject": "cabinet#1",
+        "relation": "adjacent",
+        "anchor": "bed",
+        "textual_statement": "A small bedside cabinet placed next to the head of the bed on the right side.",
+        "geometry_test": "edge gap=0 <= 0.3536; intersection=8.882e-17 <= 1e-6",
+        "expected": "adjacent",
+        "actual": "adjacent",
+        "result": "SATISFIED",
+        "reason": "Preserved prior explicit geometric rule",
+        "subject_bbox": [
+          -0.6,
+          3.5,
+          0.6,
+          0.8
+        ],
+        "anchor_bbox": [
+          -2.4,
+          3.5,
+          1.8,
+          2.0
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "crowded",
+        "subject": "cabinet#2",
+        "relation": "near",
+        "anchor": "bed",
+        "textual_statement": "A second cabinet placed on the opposite side of the bed, near the foot.",
+        "geometry_test": "edge gap=1.2 <= 1.061",
+        "expected": "near",
+        "actual": "not near",
+        "result": "VIOLATED",
+        "reason": "Preserved prior explicit geometric rule",
+        "subject_bbox": [
+          -2.4,
+          1.5,
+          0.6,
+          0.8
+        ],
+        "anchor_bbox": [
+          -2.4,
+          3.5,
+          1.8,
+          2.0
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "crowded",
+        "subject": "chair#1",
+        "relation": "front of",
+        "anchor": "desk",
+        "textual_statement": "An office chair positioned in front of the desk, facing it.",
+        "geometry_test": "",
+        "expected": "front of",
+        "actual": null,
+        "result": "UNEVALUATED",
+        "reason": "UNEVALUATED: checked-in OrientationVerifier verifies facing directions, not textual front/behind half-spaces. No arbitrary proxy added.",
+        "subject_bbox": [
+          -1.0,
+          0.8,
+          0.5,
+          0.9
+        ],
+        "anchor_bbox": [
+          -1.5,
+          0.2,
+          1.4,
+          0.7
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "crowded",
+        "subject": "chair#1",
+        "relation": "facing",
+        "anchor": "desk",
+        "textual_statement": "An office chair positioned in front of the desk, facing it.",
+        "geometry_test": "SceneCritic yaw=180; target yaw=355.9; angular error=175.9 deg <= 75 (coincident centers pass)",
+        "expected": "facing",
+        "actual": "not facing",
+        "result": "VIOLATED",
+        "reason": "Exact OrientationVerifier._check_faces_point / _angle_check: hard",
+        "subject_bbox": [
+          -1.0,
+          0.8,
+          0.5,
+          0.9
+        ],
+        "anchor_bbox": [
+          -1.5,
+          0.2,
+          1.4,
+          0.7
+        ]
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "crowded",
+        "subject": "shelf#1",
+        "relation": "above",
+        "anchor": "desk",
+        "textual_statement": "A wall-mounted shelf positioned above the desk area.",
+        "geometry_test": "2D footprint intersection=0; no z_min/z_max or support-surface elevation",
+        "expected": "above",
+        "actual": null,
+        "result": "UNEVALUATED",
+        "reason": "UNEVALUATED: no vertical extent; full 3D projection + contact cannot be established. Checked-in evaluator has no textual vertical/support verifier.",
+        "subject_bbox": [
+          -1.4,
+          1.5,
+          1.2,
+          0.3
+        ],
+        "anchor_bbox": [
+          -1.5,
+          0.2,
+          1.4,
+          0.7
+        ]
+      }
+    ],
+    "scenecritic_relation_support": [
+      {
+        "relation": "front of",
+        "scenecritic_supported": "NO explicit textual rule",
+        "current_data_sufficient": "NO",
+        "evaluation_rule": "No textual front/behind verifier in checked-in source",
+        "used": "NO",
+        "source": "/home/meetrathi-97/Desktop/vlm/SceneCritic/SceneCritic/SceneCritic_evaluator.py"
+      },
+      {
+        "relation": "behind",
+        "scenecritic_supported": "NO explicit textual rule",
+        "current_data_sufficient": "NO",
+        "evaluation_rule": "No textual front/behind verifier in checked-in source",
+        "used": "NO",
+        "source": "/home/meetrathi-97/Desktop/vlm/SceneCritic/SceneCritic/SceneCritic_evaluator.py"
+      },
+      {
+        "relation": "facing",
+        "scenecritic_supported": "YES (orientation facing test)",
+        "current_data_sufficient": "YES",
+        "evaluation_rule": "Exact _check_faces_point: yaw target=(atan2(dy,dx)+90)%360; angular error <=75; coincident centers pass",
+        "used": "YES for stated unique-target relations",
+        "source": "/home/meetrathi-97/Desktop/vlm/SceneCritic/SceneCritic/SceneCritic_evaluator.py"
+      },
+      {
+        "relation": "above",
+        "scenecritic_supported": "NO explicit textual rule",
+        "current_data_sufficient": "NO",
+        "evaluation_rule": "No vertical relation verifier; missing z extent",
+        "used": "NO",
+        "source": "/home/meetrathi-97/Desktop/vlm/SceneCritic/SceneCritic/SceneCritic_evaluator.py"
+      },
+      {
+        "relation": "below",
+        "scenecritic_supported": "NO explicit textual rule",
+        "current_data_sufficient": "NO",
+        "evaluation_rule": "No vertical relation verifier; missing z extent",
+        "used": "NO",
+        "source": "/home/meetrathi-97/Desktop/vlm/SceneCritic/SceneCritic/SceneCritic_evaluator.py"
+      },
+      {
+        "relation": "on top of",
+        "scenecritic_supported": "NO explicit textual rule",
+        "current_data_sufficient": "NO",
+        "evaluation_rule": "No contact/support verifier; missing z/support surfaces; 2D full intersection is insufficient",
+        "used": "NO",
+        "source": "/home/meetrathi-97/Desktop/vlm/SceneCritic/SceneCritic/SceneCritic_evaluator.py"
+      },
+      {
+        "relation": "under",
+        "scenecritic_supported": "NO explicit textual rule",
+        "current_data_sufficient": "NO",
+        "evaluation_rule": "No vertical relation verifier; missing z extent",
+        "used": "NO",
+        "source": "/home/meetrathi-97/Desktop/vlm/SceneCritic/SceneCritic/SceneCritic_evaluator.py"
+      }
+    ],
+    "input_inventory": [
+      {
+        "benchmark": "bedroom_1",
+        "condition": "baseline",
+        "status": "AVAILABLE",
+        "source": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/baseline/run_qwen35_27b.json"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "well_organized",
+        "status": "AVAILABLE",
+        "source": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/well_organized/run_qwen35_27b.json"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "spacious",
+        "status": "AVAILABLE",
+        "source": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/spacious/run_qwen35_27b.json"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "bright",
+        "status": "AVAILABLE",
+        "source": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/bright/run_qwen35_27b.json"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "quiet",
+        "status": "AVAILABLE",
+        "source": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/quiet/run_qwen35_27b.json"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "cluttered",
+        "status": "AVAILABLE",
+        "source": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/cluttered/run_qwen35_27b.json"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "condition": "crowded",
+        "status": "AVAILABLE",
+        "source": "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/crowded/run_qwen35_27b.json"
+      }
+    ],
+    "l1_behavioral_results": [
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "well_organized",
+        "object_set_diff": 0.0,
+        "object_count_diff": 0,
+        "occupancy_hamming": 0.84,
+        "centroid_shift": 3.5414398002172502,
+        "legality_flip": 0,
+        "first_divergent_call": 0,
+        "first_divergent_stage": "description",
+        "structural_divergence": false,
+        "placement_changed": true,
+        "baseline_call_count": 4,
+        "adjective_call_count": 4,
+        "baseline_object_count": 6,
+        "adjective_object_count": 6,
+        "baseline_legality": 0,
+        "adjective_legality": 0,
+        "baseline_oob": false,
+        "adjective_oob": true
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "spacious",
+        "object_set_diff": 0.0,
+        "object_count_diff": 0,
+        "occupancy_hamming": 0.72,
+        "centroid_shift": 3.5330558662868827,
+        "legality_flip": 0,
+        "first_divergent_call": 0,
+        "first_divergent_stage": "description",
+        "structural_divergence": false,
+        "placement_changed": true,
+        "baseline_call_count": 4,
+        "adjective_call_count": 4,
+        "baseline_object_count": 6,
+        "adjective_object_count": 6,
+        "baseline_legality": 0,
+        "adjective_legality": 0,
+        "baseline_oob": false,
+        "adjective_oob": false
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "bright",
+        "object_set_diff": 0.0,
+        "object_count_diff": 0,
+        "occupancy_hamming": 0.88,
+        "centroid_shift": 3.6409519639241523,
+        "legality_flip": 0,
+        "first_divergent_call": 0,
+        "first_divergent_stage": "description",
+        "structural_divergence": false,
+        "placement_changed": true,
+        "baseline_call_count": 4,
+        "adjective_call_count": 4,
+        "baseline_object_count": 6,
+        "adjective_object_count": 6,
+        "baseline_legality": 0,
+        "adjective_legality": 0,
+        "baseline_oob": false,
+        "adjective_oob": true
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "quiet",
+        "object_set_diff": 0.0,
+        "object_count_diff": 0,
+        "occupancy_hamming": 0.72,
+        "centroid_shift": 3.545261600604664,
+        "legality_flip": 1,
+        "first_divergent_call": 0,
+        "first_divergent_stage": "description",
+        "structural_divergence": false,
+        "placement_changed": true,
+        "baseline_call_count": 4,
+        "adjective_call_count": 4,
+        "baseline_object_count": 6,
+        "adjective_object_count": 6,
+        "baseline_legality": 0,
+        "adjective_legality": 1,
+        "baseline_oob": false,
+        "adjective_oob": true
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "cluttered",
+        "object_set_diff": 0.0,
+        "object_count_diff": 0,
+        "occupancy_hamming": 0.2,
+        "centroid_shift": 0.35388690114727583,
+        "legality_flip": 0,
+        "first_divergent_call": 0,
+        "first_divergent_stage": "description",
+        "structural_divergence": false,
+        "placement_changed": true,
+        "baseline_call_count": 4,
+        "adjective_call_count": 4,
+        "baseline_object_count": 6,
+        "adjective_object_count": 6,
+        "baseline_legality": 0,
+        "adjective_legality": 0,
+        "baseline_oob": false,
+        "adjective_oob": true
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "crowded",
+        "object_set_diff": 0.0,
+        "object_count_diff": 0,
+        "occupancy_hamming": 0.68,
+        "centroid_shift": 3.3815640690288946,
+        "legality_flip": 0,
+        "first_divergent_call": 0,
+        "first_divergent_stage": "description",
+        "structural_divergence": false,
+        "placement_changed": true,
+        "baseline_call_count": 4,
+        "adjective_call_count": 4,
+        "baseline_object_count": 6,
+        "adjective_object_count": 6,
+        "baseline_legality": 0,
+        "adjective_legality": 0,
+        "baseline_oob": false,
+        "adjective_oob": true
+      }
+    ],
+    "per_object_results": [
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "well_organized",
+        "label": "bed",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 3.15,
+        "normalized_position_shift": 0.4454772721475249,
+        "bbox_l2_change": 3.313608305156178,
+        "normalized_bbox_l2_change": 0.4686149805543992,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.6465678618675691,
+        "baseline_position": [
+          0.0,
+          1.1
+        ],
+        "adjective_position": [
+          0.0,
+          4.25
+        ],
+        "baseline_bbox": [
+          -1.0,
+          0.2,
+          2.0,
+          1.8
+        ],
+        "adjective_bbox": [
+          -1.0,
+          3.5,
+          2.0,
+          1.5
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": null,
+        "adjective_anchor": null
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "well_organized",
+        "label": "cabinet",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 3.324154027718932,
+        "normalized_position_shift": 0.4701063709417263,
+        "bbox_l2_change": 3.3196385345395663,
+        "normalized_bbox_l2_change": 0.46946778377222004,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.6643794096749236,
+        "baseline_position": [
+          -2.0,
+          0.7
+        ],
+        "adjective_position": [
+          -1.6,
+          4.0
+        ],
+        "baseline_bbox": [
+          -2.3,
+          0.2,
+          0.6,
+          1.0
+        ],
+        "adjective_bbox": [
+          -2.0,
+          3.5,
+          0.8,
+          1.0
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": "bed",
+        "adjective_anchor": "bed"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "well_organized",
+        "label": "cabinet",
+        "occurrence": 2,
+        "status": "shared",
+        "position_shift": 3.324154027718932,
+        "normalized_position_shift": 0.4701063709417263,
+        "bbox_l2_change": 3.3436506994600976,
+        "normalized_bbox_l2_change": 0.47286361670147553,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.666783323126786,
+        "baseline_position": [
+          2.0,
+          0.7
+        ],
+        "adjective_position": [
+          1.6,
+          4.0
+        ],
+        "baseline_bbox": [
+          1.7,
+          0.2,
+          0.6,
+          1.0
+        ],
+        "adjective_bbox": [
+          1.2,
+          3.5,
+          0.8,
+          1.0
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": "bed",
+        "adjective_anchor": "bed"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "well_organized",
+        "label": "chair",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 3.0479501308256345,
+        "normalized_position_shift": 0.4310452412450462,
+        "bbox_l2_change": 3.047950130825634,
+        "normalized_bbox_l2_change": 0.43104524124504606,
+        "rotation_change_degrees": 90.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.788416133777081,
+        "baseline_position": [
+          -0.7,
+          3.2
+        ],
+        "adjective_position": [
+          1.3,
+          0.9
+        ],
+        "baseline_bbox": [
+          -1.0,
+          2.8,
+          0.6,
+          0.8
+        ],
+        "adjective_bbox": [
+          1.0,
+          0.5,
+          0.6,
+          0.8
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 90.0,
+        "baseline_anchor": "desk",
+        "adjective_anchor": "desk"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "well_organized",
+        "label": "desk",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 4.201190307520001,
+        "normalized_position_shift": 0.5941380311005179,
+        "bbox_l2_change": 4.268489194082609,
+        "normalized_bbox_l2_change": 0.6036555309114628,
+        "rotation_change_degrees": 90.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.9835649444749441,
+        "baseline_position": [
+          -0.5,
+          4.2
+        ],
+        "adjective_position": [
+          2.1,
+          0.9
+        ],
+        "baseline_bbox": [
+          -1.2,
+          3.8,
+          1.4,
+          0.8
+        ],
+        "adjective_bbox": [
+          1.5,
+          0.5,
+          1.2,
+          0.8
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 90.0,
+        "baseline_anchor": null,
+        "adjective_anchor": null
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "well_organized",
+        "label": "shelf",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 4.201190307520001,
+        "normalized_position_shift": 0.5941380311005179,
+        "bbox_l2_change": 4.196427051671457,
+        "normalized_bbox_l2_change": 0.5934644049983115,
+        "rotation_change_degrees": 90.0,
+        "anchor_changed": false,
+        "object_type_changed": true,
+        "affected": true,
+        "structural_change_norm": 0.9773433378296492,
+        "baseline_position": [
+          -0.5,
+          4.7
+        ],
+        "adjective_position": [
+          2.1,
+          1.4
+        ],
+        "baseline_bbox": [
+          -1.2,
+          4.5,
+          1.4,
+          0.4
+        ],
+        "adjective_bbox": [
+          1.5,
+          1.3,
+          1.2,
+          0.2
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 90.0,
+        "baseline_anchor": "desk",
+        "adjective_anchor": "desk"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "spacious",
+        "label": "bed",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 3.4,
+        "normalized_position_shift": 0.4808326112068523,
+        "bbox_l2_change": 4.17612260356422,
+        "normalized_bbox_l2_change": 0.590592922409336,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.7615773105863908,
+        "baseline_position": [
+          0.0,
+          1.1
+        ],
+        "adjective_position": [
+          0.0,
+          4.5
+        ],
+        "baseline_bbox": [
+          -1.0,
+          0.2,
+          2.0,
+          1.8
+        ],
+        "adjective_bbox": [
+          -1.0,
+          4.2,
+          2.0,
+          0.6
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": null,
+        "adjective_anchor": null
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "spacious",
+        "label": "cabinet",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 3.7013511046643495,
+        "normalized_position_shift": 0.523450093132096,
+        "bbox_l2_change": 3.806573262134856,
+        "normalized_bbox_l2_change": 0.5383307533477908,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.7508661665037252,
+        "baseline_position": [
+          -2.0,
+          0.7
+        ],
+        "adjective_position": [
+          -1.9,
+          4.4
+        ],
+        "baseline_bbox": [
+          -2.3,
+          0.2,
+          0.6,
+          1.0
+        ],
+        "adjective_bbox": [
+          -2.2,
+          4.0,
+          0.6,
+          0.8
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": "bed",
+        "adjective_anchor": "bed"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "spacious",
+        "label": "cabinet",
+        "occurrence": 2,
+        "status": "shared",
+        "position_shift": 3.7013511046643495,
+        "normalized_position_shift": 0.523450093132096,
+        "bbox_l2_change": 3.806573262134856,
+        "normalized_bbox_l2_change": 0.5383307533477908,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.7508661665037252,
+        "baseline_position": [
+          2.0,
+          0.7
+        ],
+        "adjective_position": [
+          1.9,
+          4.4
+        ],
+        "baseline_bbox": [
+          1.7,
+          0.2,
+          0.6,
+          1.0
+        ],
+        "adjective_bbox": [
+          1.6,
+          4.0,
+          0.6,
+          0.8
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": "bed",
+        "adjective_anchor": "bed"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "spacious",
+        "label": "chair",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 2.8044607324760316,
+        "normalized_position_shift": 0.3966106403010388,
+        "bbox_l2_change": 2.86705423736629,
+        "normalized_bbox_l2_change": 0.4054626986542658,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.5671860364994893,
+        "baseline_position": [
+          -0.7,
+          3.2
+        ],
+        "adjective_position": [
+          -0.15,
+          0.45
+        ],
+        "baseline_bbox": [
+          -1.0,
+          2.8,
+          0.6,
+          0.8
+        ],
+        "adjective_bbox": [
+          -0.4,
+          0.0,
+          0.5,
+          0.9
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": "desk",
+        "adjective_anchor": "desk"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "spacious",
+        "label": "desk",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 3.733630940518894,
+        "normalized_position_shift": 0.5280151512977634,
+        "bbox_l2_change": 3.741657386773941,
+        "normalized_bbox_l2_change": 0.529150262212918,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.7475292636412303,
+        "baseline_position": [
+          -0.5,
+          4.2
+        ],
+        "adjective_position": [
+          0.0,
+          0.5
+        ],
+        "baseline_bbox": [
+          -1.2,
+          3.8,
+          1.4,
+          0.8
+        ],
+        "adjective_bbox": [
+          -1.2,
+          0.2,
+          2.4,
+          0.6
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": null,
+        "adjective_anchor": null
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "spacious",
+        "label": "shelf",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 3.857541315397672,
+        "normalized_position_shift": 0.5455387245649936,
+        "bbox_l2_change": 3.761980861195336,
+        "normalized_bbox_l2_change": 0.532024435529046,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": true,
+        "affected": true,
+        "structural_change_norm": 0.7620121390109216,
+        "baseline_position": [
+          -0.5,
+          4.7
+        ],
+        "adjective_position": [
+          0.0,
+          0.875
+        ],
+        "baseline_bbox": [
+          -1.2,
+          4.5,
+          1.4,
+          0.4
+        ],
+        "adjective_bbox": [
+          -1.0,
+          0.8,
+          2.0,
+          0.15
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": "desk",
+        "adjective_anchor": "desk"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "bright",
+        "label": "bed",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 3.3000000000000003,
+        "normalized_position_shift": 0.4666904755831214,
+        "bbox_l2_change": 3.3301651610693423,
+        "normalized_bbox_l2_change": 0.4709564735726646,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.663023378170031,
+        "baseline_position": [
+          0.0,
+          1.1
+        ],
+        "adjective_position": [
+          0.0,
+          4.4
+        ],
+        "baseline_bbox": [
+          -1.0,
+          0.2,
+          2.0,
+          1.8
+        ],
+        "adjective_bbox": [
+          -1.2,
+          3.5,
+          2.4,
+          1.8
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": null,
+        "adjective_anchor": null
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "bright",
+        "label": "cabinet",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 3.705401462729781,
+        "normalized_position_shift": 0.5240229002629561,
+        "bbox_l2_change": 3.612478373637688,
+        "normalized_bbox_l2_change": 0.510881590977792,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.7318469785412793,
+        "baseline_position": [
+          -2.0,
+          0.7
+        ],
+        "adjective_position": [
+          -1.8,
+          4.4
+        ],
+        "baseline_bbox": [
+          -2.3,
+          0.2,
+          0.6,
+          1.0
+        ],
+        "adjective_bbox": [
+          -2.2,
+          3.8,
+          0.8,
+          1.2
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": "bed",
+        "adjective_anchor": "bed"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "bright",
+        "label": "cabinet",
+        "occurrence": 2,
+        "status": "shared",
+        "position_shift": 3.705401462729781,
+        "normalized_position_shift": 0.5240229002629561,
+        "bbox_l2_change": 3.6235341863986874,
+        "normalized_bbox_l2_change": 0.5124451190127582,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.7329392880723478,
+        "baseline_position": [
+          2.0,
+          0.7
+        ],
+        "adjective_position": [
+          1.8,
+          4.4
+        ],
+        "baseline_bbox": [
+          1.7,
+          0.2,
+          0.6,
+          1.0
+        ],
+        "adjective_bbox": [
+          1.4,
+          3.8,
+          0.8,
+          1.2
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": "bed",
+        "adjective_anchor": "bed"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "bright",
+        "label": "chair",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 3.5608987629529714,
+        "normalized_position_shift": 0.5035871324805669,
+        "bbox_l2_change": 3.560898762952971,
+        "normalized_bbox_l2_change": 0.5035871324805669,
+        "rotation_change_degrees": 90.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.8701723967122836,
+        "baseline_position": [
+          -0.7,
+          3.2
+        ],
+        "adjective_position": [
+          1.5,
+          0.4
+        ],
+        "baseline_bbox": [
+          -1.0,
+          2.8,
+          0.6,
+          0.8
+        ],
+        "adjective_bbox": [
+          1.2,
+          0.0,
+          0.6,
+          0.8
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 90.0,
+        "baseline_anchor": "desk",
+        "adjective_anchor": "desk"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "bright",
+        "label": "desk",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 3.932238548206352,
+        "normalized_position_shift": 0.5561025085359712,
+        "bbox_l2_change": 4.325505750776434,
+        "normalized_bbox_l2_change": 0.6117188896870849,
+        "rotation_change_degrees": 90.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.9661521619289583,
+        "baseline_position": [
+          -0.5,
+          4.2
+        ],
+        "adjective_position": [
+          2.1,
+          1.25
+        ],
+        "baseline_bbox": [
+          -1.2,
+          3.8,
+          1.4,
+          0.8
+        ],
+        "adjective_bbox": [
+          1.5,
+          0.5,
+          1.2,
+          1.5
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 90.0,
+        "baseline_anchor": null,
+        "adjective_anchor": null
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "bright",
+        "label": "shelf",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 3.641771546926029,
+        "normalized_position_shift": 0.5150242712727237,
+        "bbox_l2_change": 3.6864617182333523,
+        "normalized_bbox_l2_change": 0.521344415909483,
+        "rotation_change_degrees": 90.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.8871583849572747,
+        "baseline_position": [
+          -0.5,
+          4.7
+        ],
+        "adjective_position": [
+          2.1,
+          2.15
+        ],
+        "baseline_bbox": [
+          -1.2,
+          4.5,
+          1.4,
+          0.4
+        ],
+        "adjective_bbox": [
+          1.5,
+          2.0,
+          1.2,
+          0.3
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 90.0,
+        "baseline_anchor": "desk",
+        "adjective_anchor": "desk"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "quiet",
+        "label": "bed",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 3.65,
+        "normalized_position_shift": 0.5161879502661797,
+        "bbox_l2_change": 3.8118237105091834,
+        "normalized_bbox_l2_change": 0.5390732788777421,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.7463578230312857,
+        "baseline_position": [
+          0.0,
+          1.1
+        ],
+        "adjective_position": [
+          0.0,
+          4.75
+        ],
+        "baseline_bbox": [
+          -1.0,
+          0.2,
+          2.0,
+          1.8
+        ],
+        "adjective_bbox": [
+          -1.0,
+          4.0,
+          2.0,
+          1.5
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": null,
+        "adjective_anchor": null
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "quiet",
+        "label": "cabinet",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 4.0,
+        "normalized_position_shift": 0.565685424949238,
+        "bbox_l2_change": 4.0,
+        "normalized_bbox_l2_change": 0.565685424949238,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.8,
+        "baseline_position": [
+          -2.0,
+          0.7
+        ],
+        "adjective_position": [
+          -1.9999999999999998,
+          4.7
+        ],
+        "baseline_bbox": [
+          -2.3,
+          0.2,
+          0.6,
+          1.0
+        ],
+        "adjective_bbox": [
+          -2.3,
+          4.2,
+          0.6,
+          1.0
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": "bed",
+        "adjective_anchor": "bed"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "quiet",
+        "label": "cabinet",
+        "occurrence": 2,
+        "status": "shared",
+        "position_shift": 4.0,
+        "normalized_position_shift": 0.565685424949238,
+        "bbox_l2_change": 4.0,
+        "normalized_bbox_l2_change": 0.565685424949238,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.8,
+        "baseline_position": [
+          2.0,
+          0.7
+        ],
+        "adjective_position": [
+          2.0,
+          4.7
+        ],
+        "baseline_bbox": [
+          1.7,
+          0.2,
+          0.6,
+          1.0
+        ],
+        "adjective_bbox": [
+          1.7,
+          4.2,
+          0.6,
+          1.0
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": "bed",
+        "adjective_anchor": "bed"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "quiet",
+        "label": "chair",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 1.8681541692269408,
+        "normalized_position_shift": 0.2641968962724582,
+        "bbox_l2_change": 1.8681541692269403,
+        "normalized_bbox_l2_change": 0.2641968962724581,
+        "rotation_change_degrees": 180.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 1.0675204916066015,
+        "baseline_position": [
+          -0.7,
+          3.2
+        ],
+        "adjective_position": [
+          -0.2,
+          1.4
+        ],
+        "baseline_bbox": [
+          -1.0,
+          2.8,
+          0.6,
+          0.8
+        ],
+        "adjective_bbox": [
+          -0.5,
+          1.0,
+          0.6,
+          0.8
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 180.0,
+        "baseline_anchor": "desk",
+        "adjective_anchor": "desk"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "quiet",
+        "label": "desk",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 3.6345563690772495,
+        "normalized_position_shift": 0.5140038910358559,
+        "bbox_l2_change": 3.7363083384538807,
+        "normalized_bbox_l2_change": 0.5283937925449163,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.7371566997592846,
+        "baseline_position": [
+          -0.5,
+          4.2
+        ],
+        "adjective_position": [
+          0.0,
+          0.6
+        ],
+        "baseline_bbox": [
+          -1.2,
+          3.8,
+          1.4,
+          0.8
+        ],
+        "adjective_bbox": [
+          -1.2,
+          0.2,
+          2.4,
+          0.8
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": null,
+        "adjective_anchor": null
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "quiet",
+        "label": "shelf",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 4.118859065323794,
+        "normalized_position_shift": 0.5824946351684279,
+        "bbox_l2_change": 5.030904491242107,
+        "normalized_bbox_l2_change": 0.7114773362518303,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.9195107394696377,
+        "baseline_position": [
+          -0.5,
+          4.7
+        ],
+        "adjective_position": [
+          1.75,
+          1.25
+        ],
+        "baseline_bbox": [
+          -1.2,
+          4.5,
+          1.4,
+          0.4
+        ],
+        "adjective_bbox": [
+          1.5,
+          0.5,
+          0.5,
+          1.5
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": "desk",
+        "adjective_anchor": "desk"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "cluttered",
+        "label": "bed",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 0.0,
+        "normalized_position_shift": 0.0,
+        "bbox_l2_change": 0.4999999999999999,
+        "normalized_bbox_l2_change": 0.07071067811865474,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.07071067811865474,
+        "baseline_position": [
+          0.0,
+          1.1
+        ],
+        "adjective_position": [
+          0.0,
+          1.1
+        ],
+        "baseline_bbox": [
+          -1.0,
+          0.2,
+          2.0,
+          1.8
+        ],
+        "adjective_bbox": [
+          -1.2,
+          0.1,
+          2.4,
+          2.0
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": null,
+        "adjective_anchor": null
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "cluttered",
+        "label": "cabinet",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 0.10000000000000009,
+        "normalized_position_shift": 0.014142135623730963,
+        "bbox_l2_change": 0.30000000000000004,
+        "normalized_bbox_l2_change": 0.042426406871192854,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.0447213595499958,
+        "baseline_position": [
+          -2.0,
+          0.7
+        ],
+        "adjective_position": [
+          -1.9,
+          0.7
+        ],
+        "baseline_bbox": [
+          -2.3,
+          0.2,
+          0.6,
+          1.0
+        ],
+        "adjective_bbox": [
+          -2.3,
+          0.1,
+          0.8,
+          1.2
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": "bed",
+        "adjective_anchor": "bed"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "cluttered",
+        "label": "cabinet",
+        "occurrence": 2,
+        "status": "shared",
+        "position_shift": 0.10000000000000009,
+        "normalized_position_shift": 0.014142135623730963,
+        "bbox_l2_change": 0.3605551275463989,
+        "normalized_bbox_l2_change": 0.05099019513592784,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.05291502622129181,
+        "baseline_position": [
+          2.0,
+          0.7
+        ],
+        "adjective_position": [
+          1.9,
+          0.7
+        ],
+        "baseline_bbox": [
+          1.7,
+          0.2,
+          0.6,
+          1.0
+        ],
+        "adjective_bbox": [
+          1.5,
+          0.1,
+          0.8,
+          1.2
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": "bed",
+        "adjective_anchor": "bed"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "cluttered",
+        "label": "chair",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 0.6726812023536853,
+        "normalized_position_shift": 0.0951314879522022,
+        "bbox_l2_change": 0.6480740698407862,
+        "normalized_bbox_l2_change": 0.09165151389911683,
+        "rotation_change_degrees": 180.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 1.0086872657072656,
+        "baseline_position": [
+          -0.7,
+          3.2
+        ],
+        "adjective_position": [
+          -0.2,
+          3.65
+        ],
+        "baseline_bbox": [
+          -1.0,
+          2.8,
+          0.6,
+          0.8
+        ],
+        "adjective_bbox": [
+          -0.5,
+          3.2,
+          0.6,
+          0.9
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 180.0,
+        "baseline_anchor": "desk",
+        "adjective_anchor": "desk"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "cluttered",
+        "label": "desk",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 0.6403124237432846,
+        "normalized_position_shift": 0.09055385138137412,
+        "bbox_l2_change": 1.077032961426901,
+        "normalized_bbox_l2_change": 0.15231546211727817,
+        "rotation_change_degrees": 180.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 1.0155786527886455,
+        "baseline_position": [
+          -0.5,
+          4.2
+        ],
+        "adjective_position": [
+          0.0,
+          4.6
+        ],
+        "baseline_bbox": [
+          -1.2,
+          3.8,
+          1.4,
+          0.8
+        ],
+        "adjective_bbox": [
+          -1.2,
+          4.2,
+          2.4,
+          0.8
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 180.0,
+        "baseline_anchor": null,
+        "adjective_anchor": null
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "cluttered",
+        "label": "shelf",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 0.6103277807866849,
+        "normalized_position_shift": 0.08631338250816031,
+        "bbox_l2_change": 0.6082762530298222,
+        "normalized_bbox_l2_change": 0.0860232526704263,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": true,
+        "affected": true,
+        "structural_change_norm": 0.12186057606953941,
+        "baseline_position": [
+          -0.5,
+          4.7
+        ],
+        "adjective_position": [
+          0.0,
+          5.05
+        ],
+        "baseline_bbox": [
+          -1.2,
+          4.5,
+          1.4,
+          0.4
+        ],
+        "adjective_bbox": [
+          -0.8,
+          4.9,
+          1.6,
+          0.3
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": "desk",
+        "adjective_anchor": "desk"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "crowded",
+        "label": "bed",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 3.716180835212409,
+        "normalized_position_shift": 0.5255473337388364,
+        "bbox_l2_change": 3.59583091927304,
+        "normalized_bbox_l2_change": 0.5085272854036447,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.7313002119512887,
+        "baseline_position": [
+          0.0,
+          1.1
+        ],
+        "adjective_position": [
+          -1.5,
+          4.5
+        ],
+        "baseline_bbox": [
+          -1.0,
+          0.2,
+          2.0,
+          1.8
+        ],
+        "adjective_bbox": [
+          -2.4,
+          3.5,
+          1.8,
+          2.0
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": null,
+        "adjective_anchor": null
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "crowded",
+        "label": "cabinet",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 3.623534186398688,
+        "normalized_position_shift": 0.5124451190127582,
+        "bbox_l2_change": 3.717526059088221,
+        "normalized_bbox_l2_change": 0.5257375771237965,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.7341661937191061,
+        "baseline_position": [
+          -2.0,
+          0.7
+        ],
+        "adjective_position": [
+          -0.3,
+          3.9
+        ],
+        "baseline_bbox": [
+          -2.3,
+          0.2,
+          0.6,
+          1.0
+        ],
+        "adjective_bbox": [
+          -0.6,
+          3.5,
+          0.6,
+          0.8
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": "bed",
+        "adjective_anchor": "bed"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "crowded",
+        "label": "cabinet",
+        "occurrence": 2,
+        "status": "shared",
+        "position_shift": 4.272001872658765,
+        "normalized_position_shift": 0.6041522986797285,
+        "bbox_l2_change": 4.305810028322197,
+        "normalized_bbox_l2_change": 0.6089334939055332,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.8577878525602937,
+        "baseline_position": [
+          2.0,
+          0.7
+        ],
+        "adjective_position": [
+          -2.1,
+          1.9
+        ],
+        "baseline_bbox": [
+          1.7,
+          0.2,
+          0.6,
+          1.0
+        ],
+        "adjective_bbox": [
+          -2.4,
+          1.5,
+          0.6,
+          0.8
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": "bed",
+        "adjective_anchor": "bed"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "crowded",
+        "label": "chair",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 1.950640920313116,
+        "normalized_position_shift": 0.27586228448267447,
+        "bbox_l2_change": 2.004993765576342,
+        "normalized_bbox_l2_change": 0.2835489375751565,
+        "rotation_change_degrees": 180.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 1.0754068997360953,
+        "baseline_position": [
+          -0.7,
+          3.2
+        ],
+        "adjective_position": [
+          -0.75,
+          1.25
+        ],
+        "baseline_bbox": [
+          -1.0,
+          2.8,
+          0.6,
+          0.8
+        ],
+        "adjective_bbox": [
+          -1.0,
+          0.8,
+          0.5,
+          0.9
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 180.0,
+        "baseline_anchor": "desk",
+        "adjective_anchor": "desk"
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "crowded",
+        "label": "desk",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 3.6623080154459977,
+        "normalized_position_shift": 0.5179285665031425,
+        "bbox_l2_change": 3.61386219991853,
+        "normalized_bbox_l2_change": 0.5110772935672254,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.7276331493273241,
+        "baseline_position": [
+          -0.5,
+          4.2
+        ],
+        "adjective_position": [
+          -0.8,
+          0.55
+        ],
+        "baseline_bbox": [
+          -1.2,
+          3.8,
+          1.4,
+          0.8
+        ],
+        "adjective_bbox": [
+          -1.5,
+          0.2,
+          1.4,
+          0.7
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": null,
+        "adjective_anchor": null
+      },
+      {
+        "benchmark": "bedroom_1",
+        "adjective": "crowded",
+        "label": "shelf",
+        "occurrence": 1,
+        "status": "shared",
+        "position_shift": 3.064718584144391,
+        "normalized_position_shift": 0.43341665865538676,
+        "bbox_l2_change": 3.014962686336267,
+        "normalized_bbox_l2_change": 0.42638011210655685,
+        "rotation_change_degrees": 0.0,
+        "anchor_changed": false,
+        "object_type_changed": false,
+        "affected": true,
+        "structural_change_norm": 0.607988486733096,
+        "baseline_position": [
+          -0.5,
+          4.7
+        ],
+        "adjective_position": [
+          -0.8,
+          1.65
+        ],
+        "baseline_bbox": [
+          -1.2,
+          4.5,
+          1.4,
+          0.4
+        ],
+        "adjective_bbox": [
+          -1.4,
+          1.5,
+          1.2,
+          0.3
+        ],
+        "baseline_rotation": 0.0,
+        "adjective_rotation": 0.0,
+        "baseline_anchor": "desk",
+        "adjective_anchor": "desk"
+      }
+    ],
+    "bedroom_1_descriptive_summary": [
+      {
+        "adjective": "well_organized",
+        "n_benchmarks": 1,
+        "direction_accuracy": 0.5,
+        "ccr": 0.06249999609375024,
+        "cvr_delta": 0.03125,
+        "src": 1.0,
+        "occupancy_hamming": 0.84,
+        "centroid_shift": 3.5414398002172502
+      },
+      {
+        "adjective": "spacious",
+        "n_benchmarks": 1,
+        "direction_accuracy": 0.25,
+        "ccr": 0.07692307100591762,
+        "cvr_delta": 0.015625,
+        "src": 1.0,
+        "occupancy_hamming": 0.72,
+        "centroid_shift": 3.5330558662868827
+      },
+      {
+        "adjective": "bright",
+        "n_benchmarks": 1,
+        "direction_accuracy": null,
+        "ccr": null,
+        "cvr_delta": 0.046875,
+        "src": 1.0,
+        "occupancy_hamming": 0.88,
+        "centroid_shift": 3.6409519639241523
+      },
+      {
+        "adjective": "quiet",
+        "n_benchmarks": 1,
+        "direction_accuracy": null,
+        "ccr": null,
+        "cvr_delta": 0.03125,
+        "src": 1.0,
+        "occupancy_hamming": 0.72,
+        "centroid_shift": 3.545261600604664
+      },
+      {
+        "adjective": "cluttered",
+        "n_benchmarks": 1,
+        "direction_accuracy": 0.75,
+        "ccr": 0.07142856632653098,
+        "cvr_delta": 0.015625,
+        "src": 1.0,
+        "occupancy_hamming": 0.2,
+        "centroid_shift": 0.35388690114727583
+      },
+      {
+        "adjective": "crowded",
+        "n_benchmarks": 1,
+        "direction_accuracy": 0.5,
+        "ccr": 0.0,
+        "cvr_delta": 0.03125,
+        "src": 0.5,
+        "occupancy_hamming": 0.68,
+        "centroid_shift": 3.3815640690288946
+      }
+    ]
+  },
+  "limitations": [
+    "Only bedroom_1 is evaluated; results cannot generalize across rooms",
+    "One output per condition; no stochastic replicates; prior API non-reproducibility",
+    "Four-sign matrix needs disclosed operational assumptions",
+    "No z geometry; vertical full-intersection/contact unavailable",
+    "Facing rule is exact checked-in SceneCritic; front/behind are not implemented there"
+  ],
+  "preserved_input_hashes": {
+    "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_1.json": "fd0cf864184d99d2775f03d220828b6777ee69350b3b00b3a76f8f8ac8300877",
+    "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_3.json": "858fa0883af35e7d4721bd2dec579065fd3e6ead308d3024ec2e4068595f2a68",
+    "/home/meetrathi-97/Desktop/vlm/SceneCritic/benchmark/benchmark_base_rooms/bedroom/bedroom_2.json": "2dc5da8f9d81ebf2faba144c12e2e223bc315ae737aebfaf2c7de37a93b280ca",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/results/behavioral_aggregate.json": "4abe742bbc6e9ad7d98a0465fcbcd1a133233dc96a87cf58e92079165e40d6a6",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/results/experiment_manifest.json": "332fdff79d0fdbedc976d253de3018da0a22f9be1838db8046756d1a45fa8f75",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/results/behavioral_summary.json": "f6df0b981efef10cfec0d1691c91eb5ba07e91b7c628c5b7f0e0779d3659fc0f",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/results/provider_catalog_qwen35_27b.json": "d5943e59a56c08ad7107f1e41d29703897c8da395e611aa6124877b9786332a5",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_1/crowded/failure_qwen35_27b.json": "294f1aa6905778da7c6366feaf02aed09d66ca918cf9e20e987f048e2af71d89",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_1/crowded/benchmark_copy_qwen35_27b.json": "80bec1cbad1a8ab912e721ab90ac5932c54cadda5589dc16ac17fad360e95a87",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_1/crowded/calls_qwen35_27b.json": "bd535db3b8c4af50ad84af883b92f2db1eb43544e080bc9e7c4656c462f5f6e5",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_1/cluttered/failure_qwen35_27b.json": "a68bf31ba26488eb362d244a4f52b1d545b4d3217dd0aa469e0b6a5bba593355",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_1/cluttered/benchmark_copy_qwen35_27b.json": "9bf96148d106bc47498e05f2b8617801bee46b98c56ce14dd218dd226a776fd2",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_1/cluttered/calls_qwen35_27b.json": "afcca4491db8f90ed86862aa25c5b9d9e72f55a67875e2888f15a3fee66f285d",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_1/baseline/planning_0_0.json": "e69dbbd862c09de4a5867abb492fa59b8f8b46afa5facee275dde8d2f3332052",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_1/baseline/run_qwen35_27b.json": "80baa0397d9aab1f07528ddb65acad9a3ffac29532eb409135a7969419413551",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_1/baseline/benchmark_copy_qwen35_27b.json": "fd0cf864184d99d2775f03d220828b6777ee69350b3b00b3a76f8f8ac8300877",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_1/baseline/initial_model_output_qwen35_27b.json": "f5d46637a07828919ac9de0ed2054210eb1d3ee524789f0de3a58d0bacba2e77",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_1/baseline/scene_pos_0_0.json": "14ed8ad7d556082189b7917069b2a9bff346b2623cfd6ec63489a912a5a04abd",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_1/baseline/calls_qwen35_27b.json": "fd7241b2a8e83965283cc3b1e7bc8dc383f433c810206f5e39144bfda6016e1b",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_1/bright/failure_qwen35_27b.json": "54adffeb39212b0b238c2a1eb852082221a60055c9158cd402603742d431cfba",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_1/bright/benchmark_copy_qwen35_27b.json": "245ca6c726313609305a443b2e39d4586b85c1598e92c4bf60a8c042fdc04eea",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_1/bright/calls_qwen35_27b.json": "aad81ca80513c8519fb965e7fe058ab49a31bd20749cacf18b0383274629572e",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_1/quiet/failure_qwen35_27b.json": "aaf32a6ed3648608b8eb01f0b84d395ced08cc3de150e35dcfdbe6b3399835e0",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_1/quiet/benchmark_copy_qwen35_27b.json": "2d263afb1b8d40f5a7afc2eee498e8a07451e228ee48781a7d2660e2626aa49a",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_1/quiet/calls_qwen35_27b.json": "f037c87032f5b33cb19b9884e3a279735a37aac18428e3caa2afbf68c7d66f46",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_1/spacious/failure_qwen35_27b.json": "74142285aaa0a30a6f24cdc261add2c473d5a0a36241f52dc2fd8753f6466755",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_1/spacious/benchmark_copy_qwen35_27b.json": "5ccd90d879e9ec6320dd27cb0c672d1364defd263696e0af97719122bfc59aed",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_1/spacious/calls_qwen35_27b.json": "5b9517dfc9ed38676a48425d390e72e4a9672d7c6d62f098bd06954e125c8464",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_1/well_organized/failure_qwen35_27b.json": "1b75adbb4c6fb1dff42e902f2c77fc842da0d2435516002cdffc1c738c6af264",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_1/well_organized/benchmark_copy_qwen35_27b.json": "4f2a8922483628709f798ba6c8eefa97558877256e6d909b61299438e6c9441f",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_1/well_organized/calls_qwen35_27b.json": "9f46510e3232b84cda5eb85e5992c6f57aaf5527727e9206934f5d2c07dc56f7",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_3/crowded/failure_qwen35_27b.json": "348ed7df2425fe33e957ab571afc52e6a8e73581dc4b86edf8568e98696df4c3",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_3/crowded/benchmark_copy_qwen35_27b.json": "a905e2fae64d2fc166cf44763f8adbc96fc7cc827bd2d7c40c171eb22520eb03",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_3/crowded/calls_qwen35_27b.json": "bd535db3b8c4af50ad84af883b92f2db1eb43544e080bc9e7c4656c462f5f6e5",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_3/cluttered/failure_qwen35_27b.json": "b7b08a290ad98df470cd3f732ce61e42d654ff8b445606b0702383771ae68e35",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_3/cluttered/benchmark_copy_qwen35_27b.json": "6d950415972db3af65d9ee2cb85905096b5cde56bb659f648fbc3a3358653a5c",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_3/cluttered/calls_qwen35_27b.json": "afcca4491db8f90ed86862aa25c5b9d9e72f55a67875e2888f15a3fee66f285d",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_3/baseline/failure_qwen35_27b.json": "ac0fcf58554d486a0aa0b8e24ae94034bfb306d7d8f0fba4ea74edef06d87569",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_3/baseline/benchmark_copy_qwen35_27b.json": "858fa0883af35e7d4721bd2dec579065fd3e6ead308d3024ec2e4068595f2a68",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_3/baseline/calls_qwen35_27b.json": "4c8059239e6b74936e22ba14fab5b9b6122adcdc241c7eb5629bec3b41ce6453",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_3/bright/failure_qwen35_27b.json": "2656a52bd19b4fd76918dc57267ea5de908714dada98ae074b7a7a44198350be",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_3/bright/benchmark_copy_qwen35_27b.json": "434ece21cf16f3c9c059bae5a7deb17bc6795e70c15049737f8ab5540fe9c272",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_3/bright/calls_qwen35_27b.json": "aad81ca80513c8519fb965e7fe058ab49a31bd20749cacf18b0383274629572e",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_3/quiet/failure_qwen35_27b.json": "ee4b630f5573722332a06b1f95d1a25506865d25e3b8ceec59ea7ce6f8836d30",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_3/quiet/benchmark_copy_qwen35_27b.json": "dba3b4960dd7a366b72d369281bb373c283193a9e4d5ab040dd73d6b8f346f58",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_3/quiet/calls_qwen35_27b.json": "f037c87032f5b33cb19b9884e3a279735a37aac18428e3caa2afbf68c7d66f46",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_3/spacious/failure_qwen35_27b.json": "dcd698f05105c5129bee072850b5dc09292528ec0be962e23166fd5cfbf3e70b",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_3/spacious/benchmark_copy_qwen35_27b.json": "f42cf5bb8025c70958df4ce6623db858954f685e9a87e566384a6fcba6d68bf2",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_3/spacious/calls_qwen35_27b.json": "5b9517dfc9ed38676a48425d390e72e4a9672d7c6d62f098bd06954e125c8464",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_3/well_organized/failure_qwen35_27b.json": "c023e5ffad8a49770427a52185877d7c3dba5468c2f519973ac692b0933c55b2",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_3/well_organized/benchmark_copy_qwen35_27b.json": "5f97b8876c969c4bcd29d3995819ab7f3d1baeb8914c96f5537356559537756b",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_3/well_organized/calls_qwen35_27b.json": "39426ea1da16c3854b12ea46e1dd9e7c01af99d1823994795e5b11f7522c627a",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_2/crowded/failure_qwen35_27b.json": "00762dd08971c293f5b339c8a3e0f2a5977adb051b7f06aa4628d2f785d6a454",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_2/crowded/benchmark_copy_qwen35_27b.json": "718c5150e0de8d0a7345fba4cb5cbb29a71ee720ddcce55752c96af19d9edb98",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_2/crowded/calls_qwen35_27b.json": "bd535db3b8c4af50ad84af883b92f2db1eb43544e080bc9e7c4656c462f5f6e5",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_2/cluttered/failure_qwen35_27b.json": "dd56a9bd0fc2cea156c91f358c1fef41abd1fc1107d6a50a68fc35b06a73e114",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_2/cluttered/benchmark_copy_qwen35_27b.json": "7b568ee6fc3c1395bced742269e03ba133afa0ae7dd3b7a8b1a9bed04b59c482",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_2/cluttered/calls_qwen35_27b.json": "afcca4491db8f90ed86862aa25c5b9d9e72f55a67875e2888f15a3fee66f285d",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_2/baseline/failure_qwen35_27b.json": "b7adb7d437588d3cfd9759f2e7163832a06011a4afd2840a89df50adda4de653",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_2/baseline/benchmark_copy_qwen35_27b.json": "2dc5da8f9d81ebf2faba144c12e2e223bc315ae737aebfaf2c7de37a93b280ca",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_2/baseline/calls_qwen35_27b.json": "4c8059239e6b74936e22ba14fab5b9b6122adcdc241c7eb5629bec3b41ce6453",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_2/bright/failure_qwen35_27b.json": "2344b8b181fc90fa96945d2be899a477121c949315a36f3d44df492c6c0dcdf7",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_2/bright/benchmark_copy_qwen35_27b.json": "3d0275d46c6da455272c9ffac376d884f542b3629955fc3555d942de9e0e7c95",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_2/bright/calls_qwen35_27b.json": "aad81ca80513c8519fb965e7fe058ab49a31bd20749cacf18b0383274629572e",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_2/quiet/failure_qwen35_27b.json": "ea59abd82dbae560c8a0af9ad9c3eeb5e7a538b9fa2c52266cdfc6eec3a2a1f1",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_2/quiet/benchmark_copy_qwen35_27b.json": "435a6a04f0d82078b42231945130960c97bb653dda57cab8c7bffd20d1b74d98",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_2/quiet/calls_qwen35_27b.json": "f037c87032f5b33cb19b9884e3a279735a37aac18428e3caa2afbf68c7d66f46",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_2/spacious/failure_qwen35_27b.json": "a2bab4405ee8829d1a78c3583457fd6d9d77998ec872e5d177b0017a38e7f5ee",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_2/spacious/benchmark_copy_qwen35_27b.json": "3e04fee424c276cb96d72896a402d02524ed4124fb11bfa270b98333fceaa15a",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_2/spacious/calls_qwen35_27b.json": "5b9517dfc9ed38676a48425d390e72e4a9672d7c6d62f098bd06954e125c8464",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_2/well_organized/failure_qwen35_27b.json": "8d242aaabc56e145b68cdeffeafd3d81689d7e4ae2eff2c4c01427c709f18e43",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_2/well_organized/benchmark_copy_qwen35_27b.json": "b88f59e3b8a154c9dec9b354df1477171eee95b21b27b9274d72123f31f7619d",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_only/bedroom_2/well_organized/calls_qwen35_27b.json": "39426ea1da16c3854b12ea46e1dd9e7c01af99d1823994795e5b11f7522c627a",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/validation_qwen35_27b/api_replay_pair_0_request_0_qwen35_27b.json": "e86f2daa58f1fd5589487570c93c76c54d55e997d97f7420793c8081f5bb246f",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/validation_qwen35_27b/api_replay_pair_0_request_1_qwen35_27b.json": "ed23c8763baa550bbad35466a01fd67ca81f2577426fe47e057408da29a29a90",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/validation_qwen35_27b/validation_qwen35_27b.json": "3e962136b198d29c07be94fb5eaee02428d00f9c5e4af0ae1c03ec8ee5913a9d",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/validation_qwen35_27b/api_replay_pair_1_request_0_qwen35_27b.json": "76d635857006524f4cef1984fc705b548e1ddb578e17d29e5c0e986f98800847",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/results/experiment_manifest.json": "9c7bfe7c34f59cd397e0fe16cf70d7465253bff7c74e7eefaba8d365397a33c0",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/results/behavioral_summary.json": "43a433f98fbef6ea7192b346c47eab17b5fc85d47919554781a0bf4e0fb689ea",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/results/variance_summary.json": "43a433f98fbef6ea7192b346c47eab17b5fc85d47919554781a0bf4e0fb689ea",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/results/provider_catalog_qwen35_27b.json": "d5943e59a56c08ad7107f1e41d29703897c8da395e611aa6124877b9786332a5",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/results/behavioral_aggregate.json": "4b8cedb4ab7cde78a1f49c89a184e8fa4b3e692f9ae96c5bafca4cdae6408911",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/results/experiment_manifest.json": "c59866d18121f34dff99e444a7dae82b6ab8708c805a64f37e0f5deddb9d4e67",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/results/behavioral_summary.json": "bc80a47f33839a56b495e49fa5e6a7437bd3c4665d0d7983367ed1a73ba9b01d",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/results/provider_catalog_qwen35_27b.json": "d5943e59a56c08ad7107f1e41d29703897c8da395e611aa6124877b9786332a5",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/evaluation/constraint_details.json": "647ca1d1ce8632a052e72a53751444b6a6f3449cd87b4446ddbe97ee20b86cde",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/evaluation/l2_results.json": "37c9ac3affea29e6a06ad07d865a0a40b8346f5e8ae6ba33cf4f65b3de8b2102",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/evaluation/semantic_feature_results.json": "cdb9afdbee4ab7c7b030ffad8caa3a9696b5cdd36d98651841c6874f302a8bb2",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/evaluation/scene_features.json": "26de3131c739a4f713095f240e8f8eefe8dc9d0b731c5a3166d7919d8d001263",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/evaluation/validity_results.json": "ae9d70b5c7c6588d525a5b4355704d7ee88105f050f12b935e42275ee105d920",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/evaluation/spatial_relation_details.json": "105b61a38ebab1b1aec1066e69fbb7614e99d29b774bd4b3d9eaec3a387c6776",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/evaluation/final_evaluation_results.json": "df5ceb05c5d2a505a2a003540d879f3fa6734f11bb1b526a2366345591393956",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/evaluation/opposite_pair_results.json": "82caf6e69c79eac2a26ab543c6326470e05216812f22d893669fd3b8bc3dc711",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/evaluation/semantic_results.json": "40839b6e4bffa1d02f6109c207267aed51b8785021d32c7c0f738d5b93a31b94",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/evaluation/per_object_results.json": "c247aa9e25bb127ef1f19cc586355a1317137430177f12470e674b5b6e09264c",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/evaluation/l1_behavioral_results.json": "285130a98851e9fd3865acc623fcbdb6769b5c8eb58001557857b110b553011b",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/evaluation/integrated_summary.json": "1818accb5f11060e034684d165335d7ecebfde1020cbd2e21f2f6b108246155a",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/evaluation/specificity_results.json": "1f2423814fa8f1107b40436e81c44096ef3c90052698c51f78f00a00bfc48dfb",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/crowded/planning_0_0.json": "392e28c3def39f2801dff702e5b32d85c7d000435e99acabe1fbca22eaf2ff9c",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/crowded/run_qwen35_27b.json": "68c3ffb374421bd794b908d3a3ae658cf6fb88c5c6643f7134bfd2edb3a9487e",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/crowded/benchmark_copy_qwen35_27b.json": "80bec1cbad1a8ab912e721ab90ac5932c54cadda5589dc16ac17fad360e95a87",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/crowded/initial_model_output_qwen35_27b.json": "69baa19e680b9415e715d0f247310ed7fc55bc6d3ed965f1f79179e20b8f1c91",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/crowded/scene_pos_0_0.json": "e34c98d97c135967eeca65ff3d84a31e95d8a58e583e68a73624bb577612512a",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/crowded/calls_qwen35_27b.json": "215510c40254290a9f750913f94fbea6ac2f4a4a03770edee758ad03f1a2ca5e",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/cluttered/planning_0_0.json": "df0a94abd62fc9f6088ab7620b554ade00c5ada61cf21116322e3d2efd03c30b",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/cluttered/run_qwen35_27b.json": "4078be70c59a3855592b364e58432c4c520ec20c185214c0979ff28a422105ee",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/cluttered/benchmark_copy_qwen35_27b.json": "9bf96148d106bc47498e05f2b8617801bee46b98c56ce14dd218dd226a776fd2",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/cluttered/initial_model_output_qwen35_27b.json": "a731a74626c55783baf4c17fa02b9f84227941bb4cd8407f8053e6e00473d752",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/cluttered/scene_pos_0_0.json": "cfa30357ae274b28310f6867177e242499807a17b03c75abe48bda261441fdde",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/cluttered/calls_qwen35_27b.json": "b128c4cf59f7b40c33296e73af8c6e8e59df84a17073ce77ea9553b11908ef83",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/baseline/planning_0_0.json": "a7bf1c2dbf36fe3b8640606008197ccbb9fc82a65f2a331903768a4c937a7b72",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/baseline/run_qwen35_27b.json": "1abf997da1555a62b9d4c6a516648e5291c676878fc639b5a5f9e361d39c98d0",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/baseline/benchmark_copy_qwen35_27b.json": "fd0cf864184d99d2775f03d220828b6777ee69350b3b00b3a76f8f8ac8300877",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/baseline/initial_model_output_qwen35_27b.json": "baa3df4702fe2ccf7ad86c1874f76c1cd2c6db2d8b1360a4038ac2c51fdb46ce",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/baseline/scene_pos_0_0.json": "ccedaeb45d31d21a5bb6d23d45e6bed9e222e6b7182a77aa5dcb2b0fd536ac66",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/baseline/calls_qwen35_27b.json": "4dd6f912743e7e8399ef63342da44015e9898fbe8cb4979b4aac874fc9715121",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/bright/planning_0_0.json": "e7d6e2c405a6c712bbe825bf61837ea95ec3f40bca7dcaa341ba0b5ef0c7b558",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/bright/run_qwen35_27b.json": "670fc2177f9c0e5e70d086c76a7de80240da8d5a8a9ee84bf8544d2ae858f0e4",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/bright/benchmark_copy_qwen35_27b.json": "245ca6c726313609305a443b2e39d4586b85c1598e92c4bf60a8c042fdc04eea",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/bright/initial_model_output_qwen35_27b.json": "b0d274f1e82311dcc6e3c481ea3b3686bfc491136828b0e81891993de9a23b76",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/bright/scene_pos_0_0.json": "029c366bc8a12bdf0180500dafea20c23e0fd167dcf5b0d38e2999610a37c0a2",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/bright/calls_qwen35_27b.json": "399013e888a8823d0469553bb8878e1559ff3dd021f775296250d13428410132",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/quiet/planning_0_0.json": "b1f5c037ee149b499037b4ce622ed6fd9687c842b9c7962664149d9632537e0d",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/quiet/run_qwen35_27b.json": "1dc6a6e618a573a789daf985d59d123b934498518926e633f754e7b541d9ce78",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/quiet/benchmark_copy_qwen35_27b.json": "2d263afb1b8d40f5a7afc2eee498e8a07451e228ee48781a7d2660e2626aa49a",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/quiet/initial_model_output_qwen35_27b.json": "71750729f3efc25b3f95628dc1a547e055eca1832428a7e731ebf74de05f8693",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/quiet/scene_pos_0_0.json": "f0a48e164662e79266cb2497322429f31009b34ed12141c3eb81a3197b8da9cf",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/quiet/calls_qwen35_27b.json": "96753d358bbf2885378b1988c94f537ce98e0c8431ce9bd620a42804bbe3751b",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/spacious/planning_0_0.json": "478751ea8f6b5d91bccff1243e04d31d7959a5ecb514d1e0c3d41675bd228be1",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/spacious/run_qwen35_27b.json": "1ae93bcb7c63dd4079d7b9dc793ad99e1e13d9d91360d262bc95fff1371d82d7",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/spacious/benchmark_copy_qwen35_27b.json": "5ccd90d879e9ec6320dd27cb0c672d1364defd263696e0af97719122bfc59aed",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/spacious/initial_model_output_qwen35_27b.json": "324d0bfc7d1497adc89148c5aa3e9710a46f4298f4d5b56575ba85f16f9d1d03",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/spacious/scene_pos_0_0.json": "ec975f7d264b1a97c68e83dbc9a7ade0e91a0e38a8d87bdc86769c1b682178c8",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/spacious/calls_qwen35_27b.json": "ebdd3da952ae53ac811ab2af031073cf85eb3ac025766909b3223d21645e2825",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/well_organized/planning_0_0.json": "44af07b7fea908f83fc7e6acb62283fa422027cad2bc1e0d9632c9152f4d89db",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/well_organized/run_qwen35_27b.json": "d1166b0a78efc81311bead1515a5293e37455914bf10cf89e3e13327f415a47f",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/well_organized/benchmark_copy_qwen35_27b.json": "4f2a8922483628709f798ba6c8eefa97558877256e6d909b61299438e6c9441f",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/well_organized/initial_model_output_qwen35_27b.json": "3fd13c07036ae7d8488cc140366da897f0567ddb240706ddff967f4e06f8adfc",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/well_organized/scene_pos_0_0.json": "b3a0392eb13658dcc697673e8b42e8e8d7bf0a2de26d68b6eee9e46fdc42dcf9",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/bedroom_1/well_organized/calls_qwen35_27b.json": "129ba6171ce7948a4416a47521099114a48697d44bce894b06d9faa7d6f9e50d",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/baseline_replay_20261005T183016Z/planning_0_0.json": "26980f97645828357a8a1051b7f8058bda4023630928a5fc86c96549018b5136",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/baseline_replay_20261005T183016Z/run_qwen35_27b.json": "064df99580872b6a54a4413ff66579e5c5ea1d5711578f1a64ef81605d9b7fbb",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/baseline_replay_20261005T183016Z/benchmark_copy_qwen35_27b.json": "fd0cf864184d99d2775f03d220828b6777ee69350b3b00b3a76f8f8ac8300877",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/baseline_replay_20261005T183016Z/initial_model_output_qwen35_27b.json": "295dbd82cd0f4e64ce00d477a7704025e5e312ad2b2e8d8f32680c025201005a",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/baseline_replay_20261005T183016Z/scene_pos_0_0.json": "c138f903d3f0f6df8364433862bad4f90a76cdf532bc512c2705123742283760",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/baseline_replay_20261005T183016Z/calls_qwen35_27b.json": "461863a0076dca8e779b7e27ba193959cb84c1181d527047b1248311e44cd6e9",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/baseline_replay_20261005T183016Z/comparison_report.json": "df200ea94aad04723d5b8684a2eb56a5408de833ca42394158b705a46c45b4d1",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/determinism_attempt_20261005T183227Z/resumed_comparison_report.json": "d97a65ddc1d1f7217c72c3ea8c5c0403a8f9845c711591b13bfe7e326985b531",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/determinism_attempt_20261005T183227Z/report.json": "ef673eba2a0bcdafa15d90fb89fd408e481843c99f3f9c18bc52314e11597ffc",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/determinism_attempt_20261005T183227Z/replay_1/planning_0_0.json": "c6dc4a95b2a4c09b537b0227c20a78f613502bc1c751eefa1b72855b2ee4d610",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/determinism_attempt_20261005T183227Z/replay_1/run_qwen35_27b.json": "5a58871d7d74ee996c9f34d93ba993fb77f40b1052be1cd8dc5d1ce0437530a4",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/determinism_attempt_20261005T183227Z/replay_1/benchmark_copy_qwen35_27b.json": "fd0cf864184d99d2775f03d220828b6777ee69350b3b00b3a76f8f8ac8300877",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/determinism_attempt_20261005T183227Z/replay_1/initial_model_output_qwen35_27b.json": "0d45da14c0951b2b209457296917a74eb9600eb76c2eee01c978ded964c47bd5",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/determinism_attempt_20261005T183227Z/replay_1/scene_pos_0_0.json": "94770c8eefd652b5838ef75fac3f39e5a877895b7ba117ddf03274a6dd98f940",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/determinism_attempt_20261005T183227Z/replay_1/calls_qwen35_27b.json": "9876e6e5608f38881941ad5a4144279bbd4efd9895fc17d71e677b2cd628e015",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/determinism_attempt_20261005T183227Z/replay_2/benchmark_copy_qwen35_27b.json": "fd0cf864184d99d2775f03d220828b6777ee69350b3b00b3a76f8f8ac8300877",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/determinism_attempt_20261005T183227Z/replay_2/calls_qwen35_27b.json": "868eddc716162528fb8cbb5cc44577748a4c90585be6b9788bfb3c0c7f75c87a",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/determinism_attempt_20261005T183227Z/replay_2_resumed_20261005T183643Z/planning_0_0.json": "ac7158d623ae99cb3b23e2664e029118c53fa3c8917f0a3f16a9b3f69f57c42e",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/determinism_attempt_20261005T183227Z/replay_2_resumed_20261005T183643Z/run_qwen35_27b.json": "ca3cc38d9b20088962735b0fdc52da4bd37a9620c878fe5f3f3c4e0a4490c5e7",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/determinism_attempt_20261005T183227Z/replay_2_resumed_20261005T183643Z/benchmark_copy_qwen35_27b.json": "fd0cf864184d99d2775f03d220828b6777ee69350b3b00b3a76f8f8ac8300877",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/determinism_attempt_20261005T183227Z/replay_2_resumed_20261005T183643Z/initial_model_output_qwen35_27b.json": "3ed926965df549cafc2fd5595b08ddecaef0055f5820a662a9543462b5bd3665",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/determinism_attempt_20261005T183227Z/replay_2_resumed_20261005T183643Z/scene_pos_0_0.json": "2d14d6ea301edb8eae2ebea04c3aa525ef441007674fbcb03828ad7bdee6be42",
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/determinism_attempt_20261005T183227Z/replay_2_resumed_20261005T183643Z/calls_qwen35_27b.json": "16dfd4c245ae51bde66f46db9c7bc815ca709bf18d43696a9eb68e979e4de640",
+    "/home/meetrathi-97/Desktop/vlm/SceneCritic/SceneCritic/SceneCritic_evaluator.py": "fc34c607945e43752f65ad37270290c7d5beca69b4b3c82f690a8c3bfcf288dd"
+  }
+}

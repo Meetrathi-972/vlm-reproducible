@@ -1,0 +1,58 @@
+[
+  {
+    "relation": "front of",
+    "scenecritic_supported": "NO explicit textual rule",
+    "current_data_sufficient": "NO",
+    "evaluation_rule": "No textual front/behind verifier in checked-in source",
+    "used": "NO",
+    "source": "/home/meetrathi-97/Desktop/vlm/SceneCritic/SceneCritic/SceneCritic_evaluator.py"
+  },
+  {
+    "relation": "behind",
+    "scenecritic_supported": "NO explicit textual rule",
+    "current_data_sufficient": "NO",
+    "evaluation_rule": "No textual front/behind verifier in checked-in source",
+    "used": "NO",
+    "source": "/home/meetrathi-97/Desktop/vlm/SceneCritic/SceneCritic/SceneCritic_evaluator.py"
+  },
+  {
+    "relation": "facing",
+    "scenecritic_supported": "YES (orientation facing test)",
+    "current_data_sufficient": "YES",
+    "evaluation_rule": "Exact _check_faces_point: yaw target=(atan2(dy,dx)+90)%360; angular error <=75; coincident centers pass",
+    "used": "YES for stated unique-target relations",
+    "source": "/home/meetrathi-97/Desktop/vlm/SceneCritic/SceneCritic/SceneCritic_evaluator.py"
+  },
+  {
+    "relation": "above",
+    "scenecritic_supported": "NO explicit textual rule",
+    "current_data_sufficient": "NO",
+    "evaluation_rule": "No vertical relation verifier; missing z extent",
+    "used": "NO",
+    "source": "/home/meetrathi-97/Desktop/vlm/SceneCritic/SceneCritic/SceneCritic_evaluator.py"
+  },
+  {
+    "relation": "below",
+    "scenecritic_supported": "NO explicit textual rule",
+    "current_data_sufficient": "NO",
+    "evaluation_rule": "No vertical relation verifier; missing z extent",
+    "used": "NO",
+    "source": "/home/meetrathi-97/Desktop/vlm/SceneCritic/SceneCritic/SceneCritic_evaluator.py"
+  },
+  {
+    "relation": "on top of",
+    "scenecritic_supported": "NO explicit textual rule",
+    "current_data_sufficient": "NO",
+    "evaluation_rule": "No contact/support verifier; missing z/support surfaces; 2D full intersection is insufficient",
+    "used": "NO",
+    "source": "/home/meetrathi-97/Desktop/vlm/SceneCritic/SceneCritic/SceneCritic_evaluator.py"
+  },
+  {
+    "relation": "under",
+    "scenecritic_supported": "NO explicit textual rule",
+    "current_data_sufficient": "NO",
+    "evaluation_rule": "No vertical relation verifier; missing z extent",
+    "used": "NO",
+    "source": "/home/meetrathi-97/Desktop/vlm/SceneCritic/SceneCritic/SceneCritic_evaluator.py"
+  }
+]

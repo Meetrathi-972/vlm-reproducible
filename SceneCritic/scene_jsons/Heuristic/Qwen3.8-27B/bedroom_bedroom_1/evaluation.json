@@ -1,0 +1,648 @@
+{
+  "sp_score": 0.9055555555555554,
+  "sp_score_weighted": 0.8583333333333334,
+  "by_rule": {
+    "scale": 1.0,
+    "overlap": 1.0,
+    "overlap_obb": 1.0,
+    "orientation": 0.6,
+    "cooccurrence": 1.0,
+    "completeness": 0.8333333333333334
+  },
+  "n_violations": 3,
+  "n_hard_violations": 2,
+  "violations": [
+    {
+      "rule": "orientation",
+      "severity": "soft",
+      "object_id": "cabinet_2",
+      "message": "cabinet 'cabinet_2' near desk 'desk_1' but doesn't face it (yaw=0\u00b0, faces_desk=47%)",
+      "details": {
+        "check_type": "faces_pair",
+        "target_cat": "desk",
+        "yaw": 0.0,
+        "data_fraction": 0.472
+      }
+    },
+    {
+      "rule": "orientation",
+      "severity": "hard",
+      "object_id": "desk_1",
+      "message": "desk 'desk_1' near chair 'chair_1' but doesn't face it (yaw=0\u00b0, faces_chair=51%)",
+      "details": {
+        "check_type": "faces_pair",
+        "target_cat": "chair",
+        "yaw": 0.0,
+        "data_fraction": 0.508
+      }
+    },
+    {
+      "rule": "completeness",
+      "severity": "hard",
+      "object_id": "scene",
+      "message": "'shelf' (canonical 'shelf') object 1/1 missing.",
+      "details": {
+        "raw": "shelf",
+        "canonical": "shelf",
+        "expected": 1,
+        "actual": 0,
+        "missing_instance": 1,
+        "aliases_checked": [
+          "magazine_rack",
+          "bread_display_shelf",
+          "shelf"
+        ]
+      }
+    }
+  ],
+  "successes": [
+    {
+      "rule": "scale",
+      "object_id": "bed_1",
+      "message": "bed 'bed_1' scale OK | width=1.500m (expected 1.363\u20132.729m); depth=2.000m (expected 0.776\u20132.262m); height=1.781m (expected 1.002\u20132.560m)",
+      "details": {
+        "axes": [
+          {
+            "axis": "width",
+            "actual": 1.5,
+            "expected_p5": 1.363,
+            "expected_p95": 2.729
+          },
+          {
+            "axis": "depth",
+            "actual": 2.0,
+            "expected_p5": 0.776,
+            "expected_p95": 2.262
+          },
+          {
+            "axis": "height",
+            "actual": 1.7810000000000001,
+            "expected_p5": 1.002,
+            "expected_p95": 2.56
+          }
+        ]
+      }
+    },
+    {
+      "rule": "scale",
+      "object_id": "cabinet_1",
+      "message": "cabinet 'cabinet_1' scale OK | width=0.800m (expected 0.391\u20133.000m); depth=0.600m (expected 0.379\u20132.512m); height=0.675m (expected 0.298\u20131.052m)",
+      "details": {
+        "axes": [
+          {
+            "axis": "width",
+            "actual": 0.8,
+            "expected_p5": 0.391,
+            "expected_p95": 3.0
+          },
+          {
+            "axis": "depth",
+            "actual": 0.6,
+            "expected_p5": 0.379,
+            "expected_p95": 2.512
+          },
+          {
+            "axis": "height",
+            "actual": 0.675,
+            "expected_p5": 0.298,
+            "expected_p95": 1.052
+          }
+        ]
+      }
+    },
+    {
+      "rule": "scale",
+      "object_id": "cabinet_2",
+      "message": "cabinet 'cabinet_2' scale OK | width=1.400m (expected 0.391\u20133.000m); depth=0.500m (expected 0.379\u20132.512m); height=0.675m (expected 0.298\u20131.052m)",
+      "details": {
+        "axes": [
+          {
+            "axis": "width",
+            "actual": 1.4,
+            "expected_p5": 0.391,
+            "expected_p95": 3.0
+          },
+          {
+            "axis": "depth",
+            "actual": 0.5,
+            "expected_p5": 0.379,
+            "expected_p95": 2.512
+          },
+          {
+            "axis": "height",
+            "actual": 0.675,
+            "expected_p5": 0.298,
+            "expected_p95": 1.052
+          }
+        ]
+      }
+    },
+    {
+      "rule": "scale",
+      "object_id": "desk_1",
+      "message": "desk 'desk_1' scale OK | width=1.400m (expected 0.671\u20132.031m); depth=0.700m (expected 0.545\u20132.404m); height=0.993m (expected 0.526\u20131.459m)",
+      "details": {
+        "axes": [
+          {
+            "axis": "width",
+            "actual": 1.4,
+            "expected_p5": 0.671,
+            "expected_p95": 2.031
+          },
+          {
+            "axis": "depth",
+            "actual": 0.7,
+            "expected_p5": 0.545,
+            "expected_p95": 2.404
+          },
+          {
+            "axis": "height",
+            "actual": 0.9925,
+            "expected_p5": 0.526,
+            "expected_p95": 1.459
+          }
+        ]
+      }
+    },
+    {
+      "rule": "scale",
+      "object_id": "chair_1",
+      "message": "chair 'chair_1' scale OK | width=0.500m (expected 0.396\u20130.759m); depth=0.500m (expected 0.469\u20131.077m); height=0.681m (expected 0.397\u20130.966m)",
+      "details": {
+        "axes": [
+          {
+            "axis": "width",
+            "actual": 0.5,
+            "expected_p5": 0.396,
+            "expected_p95": 0.759
+          },
+          {
+            "axis": "depth",
+            "actual": 0.5,
+            "expected_p5": 0.469,
+            "expected_p95": 1.077
+          },
+          {
+            "axis": "height",
+            "actual": 0.6815,
+            "expected_p5": 0.397,
+            "expected_p95": 0.966
+          }
+        ]
+      }
+    },
+    {
+      "rule": "overlap_obb",
+      "object_id": "bed_1,cabinet_1",
+      "message": "bed 'bed_1' and cabinet 'cabinet_1' do not overlap (OBB)",
+      "details": {
+        "obj_a": "bed_1",
+        "obj_b": "cabinet_1",
+        "penetration_m": 0.0,
+        "method": "obb_sat"
+      }
+    },
+    {
+      "rule": "overlap_obb",
+      "object_id": "bed_1,cabinet_2",
+      "message": "bed 'bed_1' and cabinet 'cabinet_2' do not overlap (OBB)",
+      "details": {
+        "obj_a": "bed_1",
+        "obj_b": "cabinet_2",
+        "penetration_m": 0.0,
+        "method": "obb_sat"
+      }
+    },
+    {
+      "rule": "overlap_obb",
+      "object_id": "bed_1,desk_1",
+      "message": "bed 'bed_1' and desk 'desk_1' do not overlap (OBB)",
+      "details": {
+        "obj_a": "bed_1",
+        "obj_b": "desk_1",
+        "penetration_m": 0.0,
+        "method": "obb_sat"
+      }
+    },
+    {
+      "rule": "overlap_obb",
+      "object_id": "bed_1,chair_1",
+      "message": "bed 'bed_1' and chair 'chair_1' do not overlap (OBB)",
+      "details": {
+        "obj_a": "bed_1",
+        "obj_b": "chair_1",
+        "penetration_m": 0.0,
+        "method": "obb_sat"
+      }
+    },
+    {
+      "rule": "overlap_obb",
+      "object_id": "cabinet_1,cabinet_2",
+      "message": "cabinet 'cabinet_1' and cabinet 'cabinet_2' do not overlap (OBB)",
+      "details": {
+        "obj_a": "cabinet_1",
+        "obj_b": "cabinet_2",
+        "penetration_m": 0.0,
+        "method": "obb_sat"
+      }
+    },
+    {
+      "rule": "overlap_obb",
+      "object_id": "cabinet_1,desk_1",
+      "message": "cabinet 'cabinet_1' and desk 'desk_1' do not overlap (OBB)",
+      "details": {
+        "obj_a": "cabinet_1",
+        "obj_b": "desk_1",
+        "penetration_m": 0.0,
+        "method": "obb_sat"
+      }
+    },
+    {
+      "rule": "overlap_obb",
+      "object_id": "cabinet_1,chair_1",
+      "message": "cabinet 'cabinet_1' and chair 'chair_1' do not overlap (OBB)",
+      "details": {
+        "obj_a": "cabinet_1",
+        "obj_b": "chair_1",
+        "penetration_m": 0.0,
+        "method": "obb_sat"
+      }
+    },
+    {
+      "rule": "overlap_obb",
+      "object_id": "cabinet_2,desk_1",
+      "message": "cabinet 'cabinet_2' and desk 'desk_1' do not overlap (OBB)",
+      "details": {
+        "obj_a": "cabinet_2",
+        "obj_b": "desk_1",
+        "penetration_m": 0.0,
+        "method": "obb_sat"
+      }
+    },
+    {
+      "rule": "overlap_obb",
+      "object_id": "cabinet_2,chair_1",
+      "message": "cabinet 'cabinet_2' and chair 'chair_1' do not overlap (OBB)",
+      "details": {
+        "obj_a": "cabinet_2",
+        "obj_b": "chair_1",
+        "penetration_m": 0.0,
+        "method": "obb_sat"
+      }
+    },
+    {
+      "rule": "overlap_obb",
+      "object_id": "desk_1,chair_1",
+      "message": "desk 'desk_1' and chair 'chair_1' do not overlap (OBB)",
+      "details": {
+        "obj_a": "desk_1",
+        "obj_b": "chair_1",
+        "penetration_m": 0.0,
+        "method": "obb_sat"
+      }
+    },
+    {
+      "rule": "orientation",
+      "object_id": "bed_1",
+      "message": "bed 'bed_1' orientation OK: back_to_wall (yaw=0\u00b0)",
+      "details": {
+        "check_type": "back_to_wall",
+        "yaw": 0.0,
+        "data_fraction": 0.541,
+        "n_samples": 11191
+      }
+    },
+    {
+      "rule": "orientation",
+      "object_id": "bed_1",
+      "message": "bed 'bed_1' orientation OK: faces_center (yaw=0\u00b0)",
+      "details": {
+        "check_type": "faces_center",
+        "yaw": 0.0,
+        "data_fraction": 0.327,
+        "n_samples": 11139
+      }
+    },
+    {
+      "rule": "orientation",
+      "object_id": "cabinet_1",
+      "message": "cabinet 'cabinet_1' orientation OK: back_to_wall (yaw=0\u00b0)",
+      "details": {
+        "check_type": "back_to_wall",
+        "yaw": 0.0,
+        "data_fraction": 0.362,
+        "n_samples": 65032
+      }
+    },
+    {
+      "rule": "orientation",
+      "object_id": "cabinet_1",
+      "message": "cabinet 'cabinet_1' orientation OK: faces_center (yaw=0\u00b0)",
+      "details": {
+        "check_type": "faces_center",
+        "yaw": 0.0,
+        "data_fraction": 0.36,
+        "n_samples": 64989
+      }
+    },
+    {
+      "rule": "orientation",
+      "object_id": "cabinet_1",
+      "message": "cabinet 'cabinet_1' orientation OK: faces_pair (target=desk, yaw=0\u00b0)",
+      "details": {
+        "check_type": "faces_pair",
+        "target_cat": "desk",
+        "target_obj_id": "desk_1",
+        "yaw": 0.0,
+        "data_fraction": 0.472,
+        "n_samples": 72,
+        "max_dist": 6.0
+      }
+    },
+    {
+      "rule": "orientation",
+      "object_id": "chair_1",
+      "message": "chair 'chair_1' orientation OK: faces_pair (target=desk, yaw=0\u00b0)",
+      "details": {
+        "check_type": "faces_pair",
+        "target_cat": "desk",
+        "target_obj_id": "desk_1",
+        "yaw": 0.0,
+        "data_fraction": 0.407,
+        "n_samples": 246,
+        "max_dist": 6.0
+      }
+    },
+    {
+      "rule": "cooccurrence",
+      "object_id": "bed_1,cabinet_1",
+      "message": "'bed' and 'cabinet' plausibility OK (frac=0.41)",
+      "details": {
+        "cat_a": "bed",
+        "cat_b": "cabinet",
+        "fraction": 0.411,
+        "frac_a_b": 0.411,
+        "frac_b_a": 0.322,
+        "check_type": "plausibility_pass"
+      }
+    },
+    {
+      "rule": "cooccurrence",
+      "object_id": "bed_1,cabinet_2",
+      "message": "'bed' and 'cabinet' plausibility OK (frac=0.41)",
+      "details": {
+        "cat_a": "bed",
+        "cat_b": "cabinet",
+        "fraction": 0.411,
+        "frac_a_b": 0.411,
+        "frac_b_a": 0.322,
+        "check_type": "plausibility_pass"
+      }
+    },
+    {
+      "rule": "cooccurrence",
+      "object_id": "bed_1,cabinet_1",
+      "message": "'bed' and 'cabinet' proximity OK (dist=2.93m \u2264 3.5m)",
+      "details": {
+        "cat_a": "bed",
+        "cat_b": "cabinet",
+        "distance": 2.935,
+        "max_distance": 3.5,
+        "fraction": 0.411,
+        "check_type": "data_driven_proximity_pass"
+      }
+    },
+    {
+      "rule": "cooccurrence",
+      "object_id": "bed_1,chair_1",
+      "message": "'bed' and 'chair' plausibility OK (frac=0.21)",
+      "details": {
+        "cat_a": "bed",
+        "cat_b": "chair",
+        "fraction": 0.205,
+        "frac_a_b": 0.205,
+        "frac_b_a": 0.171,
+        "check_type": "plausibility_pass"
+      }
+    },
+    {
+      "rule": "cooccurrence",
+      "object_id": "bed_1,chair_1",
+      "message": "'bed' and 'chair' proximity OK (dist=3.48m \u2264 3.5m)",
+      "details": {
+        "cat_a": "bed",
+        "cat_b": "chair",
+        "distance": 3.476,
+        "max_distance": 3.5,
+        "fraction": 0.205,
+        "check_type": "data_driven_proximity_pass"
+      }
+    },
+    {
+      "rule": "cooccurrence",
+      "object_id": "bed_1,desk_1",
+      "message": "'bed' and 'desk' plausibility OK (frac=0.19)",
+      "details": {
+        "cat_a": "bed",
+        "cat_b": "desk",
+        "fraction": 0.191,
+        "frac_a_b": 0.041,
+        "frac_b_a": 0.191,
+        "check_type": "plausibility_pass"
+      }
+    },
+    {
+      "rule": "cooccurrence",
+      "object_id": "cabinet_1,chair_1",
+      "message": "'cabinet' and 'chair' plausibility OK (frac=0.37)",
+      "details": {
+        "cat_a": "cabinet",
+        "cat_b": "chair",
+        "fraction": 0.369,
+        "frac_a_b": 0.347,
+        "frac_b_a": 0.369,
+        "check_type": "plausibility_pass"
+      }
+    },
+    {
+      "rule": "cooccurrence",15. evaluation.json
+      "object_id": "cabinet_2,chair_1",
+      "message": "'cabinet' and 'chair' plausibility OK (frac=0.37)",
+      "details": {
+        "cat_a": "cabinet",
+        "cat_b": "chair",
+        "fraction": 0.369,
+        "frac_a_b": 0.347,
+        "frac_b_a": 0.369,
+        "check_type": "plausibility_pass"
+      }
+    },
+    {
+      "rule": "cooccurrence",
+      "object_id": "cabinet_1,chair_1",
+      "message": "'cabinet' and 'chair' proximity OK (dist=2.55m \u2264 3.5m)",
+      "details": {
+        "cat_a": "cabinet",
+        "cat_b": "chair",
+        "distance": 2.55,
+        "max_distance": 3.5,
+        "fraction": 0.369,
+        "check_type": "data_driven_proximity_pass"
+      }
+    },
+    {
+      "rule": "cooccurrence",
+      "object_id": "cabinet_1,desk_1",
+      "message": "'cabinet' and 'desk' plausibility OK (frac=0.13)",
+      "details": {
+        "cat_a": "cabinet",
+        "cat_b": "desk",
+        "fraction": 0.131,
+        "frac_a_b": 0.022,
+        "frac_b_a": 0.131,
+        "check_type": "plausibility_pass"
+      }
+    },
+    {
+      "rule": "cooccurrence",
+      "object_id": "cabinet_2,desk_1",
+      "message": "'cabinet' and 'desk' plausibility OK (frac=0.13)",
+      "details": {
+        "cat_a": "cabinet",
+        "cat_b": "desk",
+        "fraction": 0.131,
+        "frac_a_b": 0.022,
+        "frac_b_a": 0.131,
+        "check_type": "plausibility_pass"
+      }
+    },
+    {
+      "rule": "cooccurrence",
+      "object_id": "chair_1,desk_1",
+      "message": "'chair' and 'desk' plausibility OK (frac=0.45)",
+      "details": {
+        "cat_a": "chair",
+        "cat_b": "desk",
+        "fraction": 0.447,
+        "frac_a_b": 0.08,
+        "frac_b_a": 0.447,
+        "check_type": "plausibility_pass"
+      }
+    },
+    {
+      "rule": "cooccurrence",
+      "object_id": "chair_1,desk_1",
+      "message": "'chair' and 'desk' proximity OK (dist=1.04m \u2264 3.5m)",
+      "details": {
+        "cat_a": "chair",
+        "cat_b": "desk",
+        "distance": 1.044,
+        "max_distance": 3.5,
+        "fraction": 0.447,
+        "check_type": "data_driven_proximity_pass"
+      }
+    },
+    {
+      "rule": "completeness",
+      "object_id": "scene",
+      "message": "'bed' (canonical 'bed') object 1/1 found.",
+      "details": {
+        "raw": "bed",
+        "canonical": "bed",
+        "expected": 1,
+        "actual": 1,
+        "instance": 1,
+        "aliases_checked": [
+          "bed_frame",
+          "king-size_bed",
+          "king_bed",
+          "kids_bed",
+          "single_bed",
+          "double_bed",
+          "queen_bed",
+          "children_bed",
+          "bed"
+        ]
+      }
+    },
+    {
+      "rule": "completeness",
+      "object_id": "scene",
+      "message": "'cabinet' (canonical 'cabinet') object 1/2 found.",
+      "details": {
+        "raw": "cabinet",
+        "canonical": "cabinet",
+        "expected": 2,
+        "actual": 2,
+        "instance": 1,
+        "aliases_checked": [
+          "cupboard",
+          "wine_cabinet",
+          "cabinet",
+          "children_cabinet",
+          "cabinet/shelf/desk",
+          "storage_cabinet"
+        ]
+      }
+    },
+    {
+      "rule": "completeness",
+      "object_id": "scene",
+      "message": "'cabinet' (canonical 'cabinet') object 2/2 found.",
+      "details": {
+        "raw": "cabinet",
+        "canonical": "cabinet",
+        "expected": 2,
+        "actual": 2,
+        "instance": 2,
+        "aliases_checked": [
+          "cupboard",
+          "wine_cabinet",
+          "cabinet",
+          "children_cabinet",
+          "cabinet/shelf/desk",
+          "storage_cabinet"
+        ]
+      }
+    },
+    {
+      "rule": "completeness",
+      "object_id": "scene",
+      "message": "'desk' (canonical 'desk') object 1/1 found.",
+      "details": {
+        "raw": "desk",
+        "canonical": "desk",
+        "expected": 1,
+        "actual": 1,
+        "instance": 1,
+        "aliases_checked": [
+          "computer_desk",
+          "desk",
+          "writing_desk",
+          "study_desk"
+        ]
+      }
+    },
+    {
+      "rule": "completeness",
+      "object_id": "scene",
+      "message": "'chair' (canonical 'chair') object 1/1 found.",
+      "details": {
+        "raw": "chair",
+        "canonical": "chair",
+        "expected": 1,
+        "actual": 1,
+        "instance": 1,
+        "aliases_checked": [
+          "desk_chair",
+          "classic_chinese_chair",
+          "chair",
+          "dining_chair",
+          "dressing_chair",
+          "office_chair",
+          "lounge_chair/cafe_chair/office_chair"
+        ]
+      }
+    }
+  ]
+}

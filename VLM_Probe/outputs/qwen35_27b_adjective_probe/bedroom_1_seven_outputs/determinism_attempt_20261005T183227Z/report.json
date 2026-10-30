@@ -1,0 +1,40 @@
+{
+  "status": "failed",
+  "model": "Qwen/Qwen3.5-27B",
+  "provider": "deepinfra",
+  "generation_parameters": {
+    "model": "Qwen/Qwen3.5-27B:deepinfra",
+    "seed": 1234,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 1,
+    "max_tokens": 8192,
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "stop": [],
+    "reasoning_effort": "none",
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "n": 1
+  },
+  "do_sample": "Not documented in the routed chat API; omitted",
+  "experiment_generations": 0,
+  "runs": [
+    "/home/meetrathi-97/Desktop/vlm/VLM_Probe/outputs/qwen35_27b_adjective_probe/bedroom_1_seven_outputs/determinism_attempt_20261005T183227Z/replay_1"
+  ],
+  "error": "Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+  "api_attempt_count": 6,
+  "completed_stage_comparisons": [
+    {
+      "stage": "description",
+      "requests_identical": true,
+      "outputs_byte_identical": true,
+      "first_sha256": "8adea266e1a9cdfd0dc5f01d1f51d184d8c9040e1c1c14eaf91e98d33712ac62",
+      "second_sha256": "8adea266e1a9cdfd0dc5f01d1f51d184d8c9040e1c1c14eaf91e98d33712ac62"
+    }
+  ],
+  "full_pipeline_comparison_completed": false
+}

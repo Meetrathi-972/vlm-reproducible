@@ -1,0 +1,37 @@
+benchmark,condition,feature,baseline_value,adjective_value,delta,signed_relative_effect,expected_sign,direction_satisfied,semantic_status
+bedroom_1,well_organized,free_space,0.7272,0.76,0.03280000000000005,0.04510444842622611,,,Observed geometric collateral/unspecified feature; not a semantic target
+bedroom_1,well_organized,clearance,0.05421151989096863,0.014142135623730947,-0.04006938426723768,-0.7391168008390792,,,Observed geometric collateral/unspecified feature; not a semantic target
+bedroom_1,well_organized,density,0.24,0.24,0.0,0.0,,,Observed geometric collateral/unspecified feature; not a semantic target
+bedroom_1,well_organized,regularity,0.6580695747298149,0.681165072150184,0.023095497420369093,0.03509577590496498,1,True,DESCRIPTIVE intended geometric feature
+bedroom_1,well_organized,alignment,0.6333333333333333,0.7,0.06666666666666665,0.1052629916900131,1,True,DESCRIPTIVE intended geometric feature
+bedroom_1,well_organized,spacing_consistency,0.5422419717381923,0.5,-0.04224197173819233,-0.07790229461671612,1,False,DESCRIPTIVE intended geometric feature
+bedroom_1,spacious,free_space,0.7272,0.8400000000000001,0.11280000000000012,0.15511529824628972,1,True,DESCRIPTIVE intended geometric feature
+bedroom_1,spacious,clearance,0.05421151989096863,0.042426406871192854,-0.011785113019775778,-0.21738729436443485,1,False,DESCRIPTIVE intended geometric feature
+bedroom_1,spacious,density,0.24,0.24,0.0,0.0,-1,False,DESCRIPTIVE intended geometric feature
+bedroom_1,spacious,regularity,0.6580695747298149,0.5596325799538462,-0.09843699477596868,-0.14958425213949753,,,Observed geometric collateral/unspecified feature; not a semantic target
+bedroom_1,spacious,alignment,0.6333333333333333,0.8,0.16666666666666674,0.2631574792250329,,,Observed geometric collateral/unspecified feature; not a semantic target
+bedroom_1,spacious,spacing_consistency,0.5422419717381923,0.5,-0.04224197173819233,-0.07790229461671612,,,Observed geometric collateral/unspecified feature; not a semantic target
+bedroom_1,bright,free_space,0.7272,0.6916,-0.035599999999999965,-0.04895482816992821,,,Observed geometric collateral/unspecified feature; not a semantic target
+bedroom_1,bright,clearance,0.05421151989096863,0.014142135623730952,-0.040069384267237676,-0.739116800839079,,,Observed geometric collateral/unspecified feature; not a semantic target
+bedroom_1,bright,density,0.24,0.24,0.0,0.0,,,Observed geometric collateral/unspecified feature; not a semantic target
+bedroom_1,bright,regularity,0.6580695747298149,0.7619191343321259,0.10384955960231101,0.15780915237692963,,,Observed geometric collateral/unspecified feature; not a semantic target
+bedroom_1,bright,alignment,0.6333333333333333,0.7333333333333334,0.10000000000000009,0.15789448753501983,,,Observed geometric collateral/unspecified feature; not a semantic target
+bedroom_1,bright,spacing_consistency,0.5422419717381923,0.5,-0.04224197173819233,-0.07790229461671612,,,Observed geometric collateral/unspecified feature; not a semantic target
+bedroom_1,quiet,free_space,0.7272,0.7555999999999999,0.02839999999999998,0.03905385168612252,,,Observed geometric collateral/unspecified feature; not a semantic target
+bedroom_1,quiet,clearance,0.05421151989096863,0.05656854249492379,0.002357022603955157,0.043477458872886995,,,Observed geometric collateral/unspecified feature; not a semantic target
+bedroom_1,quiet,density,0.24,0.24,0.0,0.0,,,Observed geometric collateral/unspecified feature; not a semantic target
+bedroom_1,quiet,regularity,0.6580695747298149,0.7458026813803584,0.08773310665054357,0.1333186895441485,,,Observed geometric collateral/unspecified feature; not a semantic target
+bedroom_1,quiet,alignment,0.6333333333333333,0.7666666666666666,0.1333333333333333,0.2105259833800262,,,Observed geometric collateral/unspecified feature; not a semantic target
+bedroom_1,quiet,spacing_consistency,0.5422419717381923,0.5584815598877472,0.01623958814955484,0.02994891404032009,,,Observed geometric collateral/unspecified feature; not a semantic target
+bedroom_1,cluttered,free_space,0.7272,0.6328,-0.09439999999999993,-0.12981280278767485,,,Observed geometric collateral/unspecified feature; not a semantic target
+bedroom_1,cluttered,clearance,0.05421151989096863,0.023570226039551567,-0.030641293851417065,-0.5652069653475315,,,Observed geometric collateral/unspecified feature; not a semantic target
+bedroom_1,cluttered,density,0.24,0.24,0.0,0.0,1,False,DESCRIPTIVE intended geometric feature
+bedroom_1,cluttered,regularity,0.6580695747298149,0.653025468771312,-0.005044105958502909,-0.007664992406891732,-1,True,DESCRIPTIVE intended geometric feature
+bedroom_1,cluttered,alignment,0.6333333333333333,0.7333333333333334,0.10000000000000009,0.15789448753501983,-1,False,DESCRIPTIVE intended geometric feature
+bedroom_1,cluttered,spacing_consistency,0.5422419717381923,0.548058983988962,0.005817012250769693,0.010727685841870687,-1,False,DESCRIPTIVE intended geometric feature
+bedroom_1,crowded,free_space,0.7272,0.788,0.060800000000000076,0.08360824586324837,-1,False,DESCRIPTIVE intended geometric feature
+bedroom_1,crowded,clearance,0.05421151989096863,0.009428090415820631,-0.044783429475148004,-0.8260717185848533,-1,True,DESCRIPTIVE intended geometric feature
+bedroom_1,crowded,density,0.24,0.24,0.0,0.0,1,False,DESCRIPTIVE intended geometric feature
+bedroom_1,crowded,regularity,0.6580695747298149,0.6821539150051451,0.02408434027533024,0.036598415428646974,,,Observed geometric collateral/unspecified feature; not a semantic target
+bedroom_1,crowded,alignment,0.6333333333333333,0.6333333333333333,0.0,0.0,,,Observed geometric collateral/unspecified feature; not a semantic target
+bedroom_1,crowded,spacing_consistency,0.5422419717381923,0.3090169943749474,-0.23322497736324493,-0.4301115727062875,,,Observed geometric collateral/unspecified feature; not a semantic target

@@ -1,0 +1,10 @@
+{
+  "metadata": {
+    "status": "not_run",
+    "reason": "ApiError: Hugging Face HTTP 402: {\"error\":\"You have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.\"}",
+    "mock": false,
+    "experiment_identity": "fe9e76a5a9d545583aefae44094d0e2548b38fd303d96695ccbf2dc65dd7e5e6",
+    "scientific_results": false
+  },
+  "rows": []
+}

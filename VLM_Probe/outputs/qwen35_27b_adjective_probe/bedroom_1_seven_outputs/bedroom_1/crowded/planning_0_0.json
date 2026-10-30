@@ -1,0 +1,124 @@
+{
+  "atomic_tasks": [
+    {
+      "id": "task_001",
+      "object_type": "bulk",
+      "type": "Add",
+      "label": "bed",
+      "anchor": null,
+      "spatial_hint": "Place the bed against the left wall in the corner to maximize floor space.",
+      "bbox_hint": [
+        10,
+        10,
+        150,
+        200
+      ],
+      "output_schema": {
+        "add": [],
+        "remove": [],
+        "update": []
+      },
+      "execution_prompt": "Add a bed to the scene positioned against the left wall in a corner."
+    },
+    {
+      "id": "task_002",
+      "object_type": "bulk",
+      "type": "Add",
+      "label": "cabinet",
+      "anchor": "bed",
+      "spatial_hint": "Place the first cabinet next to the head of the bed.",
+      "bbox_hint": [
+        160,
+        10,
+        50,
+        100
+      ],
+      "output_schema": {
+        "add": [],
+        "remove": [],
+        "update": []
+      },
+      "execution_prompt": "Add a cabinet next to the head of the bed."
+    },
+    {
+      "id": "task_003",
+      "object_type": "bulk",
+      "type": "Add",
+      "label": "cabinet",
+      "anchor": "bed",
+      "spatial_hint": "Place the second cabinet on the opposite side of the bed.",
+      "bbox_hint": [
+        160,
+        120,
+        50,
+        100
+      ],
+      "output_schema": {
+        "add": [],
+        "remove": [],
+        "update": []
+      },
+      "execution_prompt": "Add a second cabinet on the opposite side of the bed."
+    },
+    {
+      "id": "task_004",
+      "object_type": "bulk",
+      "type": "Add",
+      "label": "desk",
+      "anchor": null,
+      "spatial_hint": "Place the desk along the far wall, away from the bed area.",
+      "bbox_hint": [
+        220,
+        10,
+        100,
+        100
+      ],
+      "output_schema": {
+        "add": [],
+        "remove": [],
+        "update": []
+      },
+      "execution_prompt": "Add a desk along the far wall to create a work zone."
+    },
+    {
+      "id": "task_005",
+      "object_type": "bulk",
+      "type": "Add",
+      "label": "chair",
+      "anchor": "desk",
+      "spatial_hint": "Place the chair in front of the desk, slightly tucked under.",
+      "bbox_hint": [
+        240,
+        110,
+        40,
+        40
+      ],
+      "output_schema": {
+        "add": [],
+        "remove": [],
+        "update": []
+      },
+      "execution_prompt": "Add a chair positioned in front of the desk."
+    },
+    {
+      "id": "task_006",
+      "object_type": "bulk",
+      "type": "Add",
+      "label": "shelf",
+      "anchor": "desk",
+      "spatial_hint": "Place the shelf above the desk or on the wall directly behind it.",
+      "bbox_hint": [
+        220,
+        10,
+        100,
+        30
+      ],
+      "output_schema": {
+        "add": [],
+        "remove": [],
+        "update": []
+      },
+      "execution_prompt": "Add a shelf mounted on the wall above or behind the desk."
+    }
+  ]
+}
